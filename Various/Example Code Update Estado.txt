@@ -1,0 +1,68 @@
+Service : 
+
+        public static async Task<Product> UpdateEstadoProduct(string conString, int productID, int estadoID)
+        {
+            try
+            {
+                using (SqlConnection  con = new SqlConnection(conString))
+                {
+                    string updateEstado = "UPDATE Product ser estadoID = @estadoID WHERE productID = @productID";
+                    using (SqlCommand queryUpdateEstado = new SqlCommand(updateEstado))
+                    {
+                        queryUpdateEstado.Connection = con;
+                        queryUpdateEstado.Parameters.Add("@estadoID", SqlDbType.Int).Value = estadoID;
+                        queryUpdateEstado.Parameters.Add("@productID", SqlDbType.Int).Value = productID;
+                        con.Open();
+                        queryUpdateEstado.ExecuteNonQuery();
+                        con.Close();
+                        return await GetProduct(conString, productID);
+                    }
+                }
+            }
+            catch(Exception ex)
+            {
+                throw;
+            }
+        }
+
+
+Logic:
+
+public static async Task<Response> UpdateEstadoProduct(string conString, int  productID, int estadoID)
+        {
+            Response response = new Response();
+            try
+            {
+                Product productReturned = await ProductService.UpdateEstadoProduct(conString, productID, estadoID);
+                if (productReturned.ProductID == 0)
+                {
+                    response.StatusCode = StatusCodes.NOTFOUND;
+                    response.Message = "Product was not found";
+                }
+                else
+                {
+                    response.StatusCode = StatusCodes.SUCCESS;
+                    response.Message = "Product estado was updated";
+                    response.Data = productReturned;
+                }
+            }
+            catch( Exception ex)
+            {
+                response.StatusCode = StatusCodes.INTERNALSERVERERROR;
+                response.Message = ex.ToString();
+            }
+            return response;
+        }
+
+Controller:
+
+        public async Task<IActionResult> UpdateEstadoProduct(int productID, int estadoID)
+        {
+            string CS = _configuration.GetConnectionString("WebApiDatabase");
+            Response response = await ProductLogic.UpdateEstadoProduct(CS, productID, estadoID);
+            if(response.StatusCode != ComfyCatalogBLL.Utils.StatusCodes.SUCCESS)
+            {
+                return StatusCode((int)response.StatusCode);
+            }
+            return new JsonResult(response);
+        }

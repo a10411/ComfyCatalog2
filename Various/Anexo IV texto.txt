@@ -1,0 +1,30 @@
+Nome: Nuno Filipe Ribeiro Veloso
+Número : 10411
+
+Curso : Licenciatura em Engenharia de Sistemas Informáticos
+
+Temas ou áreas preferenciais para realização de Estágio : Desenvolvimento de aplicações, 
+Desktop ou Mobile.
+
+Objetivos : Criação (full-stack) de uma web app que servirá como catálogo de imagens
+para os produtos vendidos pela empresa. Os dados relativos às meias serão importados,
+de forma síncrona ou não, a partir de uma base de dados, já existente na empresa (ACCESS).
+Em cada produto, estarão associadas observações, introduzidas pelo user (cliente da empresa).
+Para além de servir de catálogo, das amostras para venda da empresa, também vai serão 
+armazenadas observações, deixadas pelos clientes, em cada produto.
+Por último, poderá ser implementada uma funcionalidade para esboçar a imagem do produto
+(como apontamentos por parte do cliente). 
+
+Nome da organização de acolhimento : ComfySocks
+
+Morada da organização de acolhimento : Rua SãoJoão da Pedra Leital, nº 817
+4770 464 Requião, Vila Nova de Famalicão
+‍Portugal 
+
+Telefone: 
+
+Supervisor na organização de acolhimento: 
+
+Carga: Diretor da Empresa
+
+Horário de Estágio: das 9 às 17:30

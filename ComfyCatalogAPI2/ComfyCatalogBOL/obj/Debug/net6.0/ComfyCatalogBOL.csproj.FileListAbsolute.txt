@@ -1,0 +1,24 @@
+C:\Users\nuno.veloso\Desktop\ComfyCatalog\ComfyCatalog API Project\ComfyCatalogAPI\ComfyCatalogBOL\obj\Debug\net6.0\ComfyCatalogBOL.csproj.AssemblyReference.cache
+C:\Users\nuno.veloso\Desktop\ComfyCatalog\ComfyCatalog API Project\ComfyCatalogAPI\ComfyCatalogBOL\obj\Debug\net6.0\ComfyCatalogBOL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nuno.veloso\Desktop\ComfyCatalog\ComfyCatalog API Project\ComfyCatalogAPI\ComfyCatalogBOL\obj\Debug\net6.0\ComfyCatalogBOL.AssemblyInfoInputs.cache
+C:\Users\nuno.veloso\Desktop\ComfyCatalog\ComfyCatalog API Project\ComfyCatalogAPI\ComfyCatalogBOL\obj\Debug\net6.0\ComfyCatalogBOL.AssemblyInfo.cs
+C:\Users\nuno.veloso\Desktop\ComfyCatalog\ComfyCatalog API Project\ComfyCatalogAPI\ComfyCatalogBOL\obj\Debug\net6.0\ComfyCatalogBOL.csproj.CoreCompileInputs.cache
+C:\Users\nuno.veloso\Desktop\ComfyCatalog\ComfyCatalog API Project\ComfyCatalogAPI\ComfyCatalogBOL\bin\Debug\net6.0\ComfyCatalogBOL.deps.json
+C:\Users\nuno.veloso\Desktop\ComfyCatalog\ComfyCatalog API Project\ComfyCatalogAPI\ComfyCatalogBOL\bin\Debug\net6.0\ComfyCatalogBOL.dll
+C:\Users\nuno.veloso\Desktop\ComfyCatalog\ComfyCatalog API Project\ComfyCatalogAPI\ComfyCatalogBOL\bin\Debug\net6.0\ComfyCatalogBOL.pdb
+C:\Users\nuno.veloso\Desktop\ComfyCatalog\ComfyCatalog API Project\ComfyCatalogAPI\ComfyCatalogBOL\obj\Debug\net6.0\ComfyCatalogBOL.dll
+C:\Users\nuno.veloso\Desktop\ComfyCatalog\ComfyCatalog API Project\ComfyCatalogAPI\ComfyCatalogBOL\obj\Debug\net6.0\refint\ComfyCatalogBOL.dll
+C:\Users\nuno.veloso\Desktop\ComfyCatalog\ComfyCatalog API Project\ComfyCatalogAPI\ComfyCatalogBOL\obj\Debug\net6.0\ComfyCatalogBOL.pdb
+C:\Users\nuno.veloso\Desktop\ComfyCatalog\ComfyCatalog API Project\ComfyCatalogAPI\ComfyCatalogBOL\obj\Debug\net6.0\ref\ComfyCatalogBOL.dll
+C:\Users\nuno.veloso\Desktop\ComfyCatalog 2\ComfyCatalogAPI2\ComfyCatalogBOL\bin\Debug\net6.0\ComfyCatalogBOL.deps.json
+C:\Users\nuno.veloso\Desktop\ComfyCatalog 2\ComfyCatalogAPI2\ComfyCatalogBOL\bin\Debug\net6.0\ComfyCatalogBOL.dll
+C:\Users\nuno.veloso\Desktop\ComfyCatalog 2\ComfyCatalogAPI2\ComfyCatalogBOL\bin\Debug\net6.0\ComfyCatalogBOL.pdb
+C:\Users\nuno.veloso\Desktop\ComfyCatalog 2\ComfyCatalogAPI2\ComfyCatalogBOL\obj\Debug\net6.0\ComfyCatalogBOL.csproj.AssemblyReference.cache
+C:\Users\nuno.veloso\Desktop\ComfyCatalog 2\ComfyCatalogAPI2\ComfyCatalogBOL\obj\Debug\net6.0\ComfyCatalogBOL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nuno.veloso\Desktop\ComfyCatalog 2\ComfyCatalogAPI2\ComfyCatalogBOL\obj\Debug\net6.0\ComfyCatalogBOL.AssemblyInfoInputs.cache
+C:\Users\nuno.veloso\Desktop\ComfyCatalog 2\ComfyCatalogAPI2\ComfyCatalogBOL\obj\Debug\net6.0\ComfyCatalogBOL.AssemblyInfo.cs
+C:\Users\nuno.veloso\Desktop\ComfyCatalog 2\ComfyCatalogAPI2\ComfyCatalogBOL\obj\Debug\net6.0\ComfyCatalogBOL.csproj.CoreCompileInputs.cache
+C:\Users\nuno.veloso\Desktop\ComfyCatalog 2\ComfyCatalogAPI2\ComfyCatalogBOL\obj\Debug\net6.0\ComfyCatalogBOL.dll
+C:\Users\nuno.veloso\Desktop\ComfyCatalog 2\ComfyCatalogAPI2\ComfyCatalogBOL\obj\Debug\net6.0\refint\ComfyCatalogBOL.dll
+C:\Users\nuno.veloso\Desktop\ComfyCatalog 2\ComfyCatalogAPI2\ComfyCatalogBOL\obj\Debug\net6.0\ComfyCatalogBOL.pdb
+C:\Users\nuno.veloso\Desktop\ComfyCatalog 2\ComfyCatalogAPI2\ComfyCatalogBOL\obj\Debug\net6.0\ref\ComfyCatalogBOL.dll
