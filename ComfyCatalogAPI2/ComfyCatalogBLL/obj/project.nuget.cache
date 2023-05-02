@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QUXdYCJszey2deTsrmE4AS3KqILb53hWpQjQMahGC4KI7nW4nhbTCNFZEjGmAH81u9SgYAcpFoIIZrKcAfkVGw==",
+  "dgSpecHash": "5EAMC2wWr/TJzLa8xH7BzLIVAV6QvF5j31FwhxmLdWxEeqDlM1prOJkzP8lwGRYVOxg4wiUbXxNxl8eVsG29PQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\nuno.veloso\\Desktop\\ComfyCatalog 2\\ComfyCatalogAPI2\\ComfyCatalogBLL\\ComfyCatalogBLL.csproj",
+  "projectFilePath": "C:\\Users\\nuno.veloso\\Desktop\\ComfyCatalog2\\ComfyCatalogAPI2\\ComfyCatalogBLL\\ComfyCatalogBLL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nuno.veloso\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\nuno.veloso\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",

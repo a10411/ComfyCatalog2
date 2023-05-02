@@ -607,11 +607,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nuno.veloso\\Desktop\\ComfyCatalog 2\\ComfyCatalogAPI2\\ComfyCatalogBOL\\ComfyCatalogBOL.csproj",
+      "projectUniqueName": "C:\\Users\\nuno.veloso\\Desktop\\ComfyCatalog2\\ComfyCatalogAPI2\\ComfyCatalogBOL\\ComfyCatalogBOL.csproj",
       "projectName": "ComfyCatalogBOL",
-      "projectPath": "C:\\Users\\nuno.veloso\\Desktop\\ComfyCatalog 2\\ComfyCatalogAPI2\\ComfyCatalogBOL\\ComfyCatalogBOL.csproj",
+      "projectPath": "C:\\Users\\nuno.veloso\\Desktop\\ComfyCatalog2\\ComfyCatalogAPI2\\ComfyCatalogBOL\\ComfyCatalogBOL.csproj",
       "packagesPath": "C:\\Users\\nuno.veloso\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nuno.veloso\\Desktop\\ComfyCatalog 2\\ComfyCatalogAPI2\\ComfyCatalogBOL\\obj\\",
+      "outputPath": "C:\\Users\\nuno.veloso\\Desktop\\ComfyCatalog2\\ComfyCatalogAPI2\\ComfyCatalogBOL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\nuno.veloso\\AppData\\Roaming\\NuGet\\NuGet.Config",

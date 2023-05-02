@@ -4002,11 +4002,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nuno.veloso\\Desktop\\ComfyCatalog 2\\ComfyCatalogAPI2\\ComfyCatalogBLL\\ComfyCatalogBLL.csproj",
+      "projectUniqueName": "C:\\Users\\nuno.veloso\\Desktop\\ComfyCatalog2\\ComfyCatalogAPI2\\ComfyCatalogBLL\\ComfyCatalogBLL.csproj",
       "projectName": "ComfyCatalogBLL",
-      "projectPath": "C:\\Users\\nuno.veloso\\Desktop\\ComfyCatalog 2\\ComfyCatalogAPI2\\ComfyCatalogBLL\\ComfyCatalogBLL.csproj",
+      "projectPath": "C:\\Users\\nuno.veloso\\Desktop\\ComfyCatalog2\\ComfyCatalogAPI2\\ComfyCatalogBLL\\ComfyCatalogBLL.csproj",
       "packagesPath": "C:\\Users\\nuno.veloso\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nuno.veloso\\Desktop\\ComfyCatalog 2\\ComfyCatalogAPI2\\ComfyCatalogBLL\\obj\\",
+      "outputPath": "C:\\Users\\nuno.veloso\\Desktop\\ComfyCatalog2\\ComfyCatalogAPI2\\ComfyCatalogBLL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\nuno.veloso\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4023,11 +4023,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\nuno.veloso\\Desktop\\ComfyCatalog 2\\ComfyCatalogAPI2\\ComfyCatalogBOL\\ComfyCatalogBOL.csproj": {
-              "projectPath": "C:\\Users\\nuno.veloso\\Desktop\\ComfyCatalog 2\\ComfyCatalogAPI2\\ComfyCatalogBOL\\ComfyCatalogBOL.csproj"
+            "C:\\Users\\nuno.veloso\\Desktop\\ComfyCatalog2\\ComfyCatalogAPI2\\ComfyCatalogBOL\\ComfyCatalogBOL.csproj": {
+              "projectPath": "C:\\Users\\nuno.veloso\\Desktop\\ComfyCatalog2\\ComfyCatalogAPI2\\ComfyCatalogBOL\\ComfyCatalogBOL.csproj"
             },
-            "C:\\Users\\nuno.veloso\\Desktop\\ComfyCatalog 2\\ComfyCatalogAPI2\\ComfyCatalogDAL\\ComfyCatalogDAL.csproj": {
-              "projectPath": "C:\\Users\\nuno.veloso\\Desktop\\ComfyCatalog 2\\ComfyCatalogAPI2\\ComfyCatalogDAL\\ComfyCatalogDAL.csproj"
+            "C:\\Users\\nuno.veloso\\Desktop\\ComfyCatalog2\\ComfyCatalogAPI2\\ComfyCatalogDAL\\ComfyCatalogDAL.csproj": {
+              "projectPath": "C:\\Users\\nuno.veloso\\Desktop\\ComfyCatalog2\\ComfyCatalogAPI2\\ComfyCatalogDAL\\ComfyCatalogDAL.csproj"
             }
           }
         }

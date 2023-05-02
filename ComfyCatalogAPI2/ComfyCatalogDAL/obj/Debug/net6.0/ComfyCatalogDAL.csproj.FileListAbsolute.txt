@@ -28,3 +28,18 @@ C:\Users\nuno.veloso\Desktop\ComfyCatalog 2\ComfyCatalogAPI2\ComfyCatalogDAL\obj
 C:\Users\nuno.veloso\Desktop\ComfyCatalog 2\ComfyCatalogAPI2\ComfyCatalogDAL\obj\Debug\net6.0\refint\ComfyCatalogDAL.dll
 C:\Users\nuno.veloso\Desktop\ComfyCatalog 2\ComfyCatalogAPI2\ComfyCatalogDAL\obj\Debug\net6.0\ComfyCatalogDAL.pdb
 C:\Users\nuno.veloso\Desktop\ComfyCatalog 2\ComfyCatalogAPI2\ComfyCatalogDAL\obj\Debug\net6.0\ref\ComfyCatalogDAL.dll
+C:\Users\nuno.veloso\Desktop\ComfyCatalog2\ComfyCatalogAPI2\ComfyCatalogDAL\bin\Debug\net6.0\ComfyCatalogDAL.deps.json
+C:\Users\nuno.veloso\Desktop\ComfyCatalog2\ComfyCatalogAPI2\ComfyCatalogDAL\bin\Debug\net6.0\ComfyCatalogDAL.dll
+C:\Users\nuno.veloso\Desktop\ComfyCatalog2\ComfyCatalogAPI2\ComfyCatalogDAL\bin\Debug\net6.0\ComfyCatalogDAL.pdb
+C:\Users\nuno.veloso\Desktop\ComfyCatalog2\ComfyCatalogAPI2\ComfyCatalogDAL\bin\Debug\net6.0\ComfyCatalogBOL.dll
+C:\Users\nuno.veloso\Desktop\ComfyCatalog2\ComfyCatalogAPI2\ComfyCatalogDAL\bin\Debug\net6.0\ComfyCatalogBOL.pdb
+C:\Users\nuno.veloso\Desktop\ComfyCatalog2\ComfyCatalogAPI2\ComfyCatalogDAL\obj\Debug\net6.0\ComfyCatalogDAL.csproj.AssemblyReference.cache
+C:\Users\nuno.veloso\Desktop\ComfyCatalog2\ComfyCatalogAPI2\ComfyCatalogDAL\obj\Debug\net6.0\ComfyCatalogDAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nuno.veloso\Desktop\ComfyCatalog2\ComfyCatalogAPI2\ComfyCatalogDAL\obj\Debug\net6.0\ComfyCatalogDAL.AssemblyInfoInputs.cache
+C:\Users\nuno.veloso\Desktop\ComfyCatalog2\ComfyCatalogAPI2\ComfyCatalogDAL\obj\Debug\net6.0\ComfyCatalogDAL.AssemblyInfo.cs
+C:\Users\nuno.veloso\Desktop\ComfyCatalog2\ComfyCatalogAPI2\ComfyCatalogDAL\obj\Debug\net6.0\ComfyCatalogDAL.csproj.CoreCompileInputs.cache
+C:\Users\nuno.veloso\Desktop\ComfyCatalog2\ComfyCatalogAPI2\ComfyCatalogDAL\obj\Debug\net6.0\ComfyCatalogDAL.csproj.CopyComplete
+C:\Users\nuno.veloso\Desktop\ComfyCatalog2\ComfyCatalogAPI2\ComfyCatalogDAL\obj\Debug\net6.0\ComfyCatalogDAL.dll
+C:\Users\nuno.veloso\Desktop\ComfyCatalog2\ComfyCatalogAPI2\ComfyCatalogDAL\obj\Debug\net6.0\refint\ComfyCatalogDAL.dll
+C:\Users\nuno.veloso\Desktop\ComfyCatalog2\ComfyCatalogAPI2\ComfyCatalogDAL\obj\Debug\net6.0\ComfyCatalogDAL.pdb
+C:\Users\nuno.veloso\Desktop\ComfyCatalog2\ComfyCatalogAPI2\ComfyCatalogDAL\obj\Debug\net6.0\ref\ComfyCatalogDAL.dll

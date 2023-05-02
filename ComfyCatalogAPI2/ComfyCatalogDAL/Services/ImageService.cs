@@ -28,7 +28,7 @@ namespace ComfyCatalogDAL.Services
             var imgList = new List<Image>();
             using (SqlConnection con = new SqlConnection(conString))
             {
-                SqlCommand cmd = new SqlCommand("SELECT * FROM [Image]", con);
+                SqlCommand cmd = new SqlCommand("SELECT * FROM dbo.[Image]", con);
                 cmd.CommandType = CommandType.Text;
                 con.Open();
                 SqlDataReader rdr = cmd.ExecuteReader();
@@ -113,7 +113,7 @@ namespace ComfyCatalogDAL.Services
 
                 using (SqlConnection con = new SqlConnection(conString))
                 {
-                    string addImage = "INSERT INTO [Image] (imagePath, imageName) OUTPUT INSERTED.imageID VALUES (@imagePath, @imageName)";
+                    string addImage = "INSERT INTO dbo.[Image] (imagePath, imageName) OUTPUT INSERTED.imageID VALUES (@imagePath, @imageName)";
                     using (SqlCommand queryAddImage = new SqlCommand(addImage))
                     {
                         queryAddImage.Connection = con;

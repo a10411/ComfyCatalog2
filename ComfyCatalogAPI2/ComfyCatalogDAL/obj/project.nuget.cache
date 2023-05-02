@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xqG6To4sh9obSCGdjQ1ui1r+S3uybLSDyrR2ZPQrPtqqft+u6zW7qqi5tnatTF7nCQ5GKlAMHqNqNUNPCX4QLQ==",
+  "dgSpecHash": "vRtSFnSCwtsSg7MY4LuBKh7e1JNLojbfvv3wEE7KSemK3afSkjDSXgV2jXPJ/TfqOiJA2as3Bd4Rw9aCuTNkrQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\nuno.veloso\\Desktop\\ComfyCatalog 2\\ComfyCatalogAPI2\\ComfyCatalogDAL\\ComfyCatalogDAL.csproj",
+  "projectFilePath": "C:\\Users\\nuno.veloso\\Desktop\\ComfyCatalog2\\ComfyCatalogAPI2\\ComfyCatalogDAL\\ComfyCatalogDAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nuno.veloso\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
     "C:\\Users\\nuno.veloso\\.nuget\\packages\\microsoft.extensions.primitives\\2.2.0\\microsoft.extensions.primitives.2.2.0.nupkg.sha512",
