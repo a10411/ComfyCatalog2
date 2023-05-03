@@ -38,6 +38,20 @@ namespace ComfyCatalogBLL.Logic
             return response;
         }
 
+        public static async Task<Response> GetProductByBrand(string conString, string brandName)
+        {
+            Response response = new Response();
+            List<Product> productsList = await ProductService.GetProductByBrand(brandName, conString);
+            if(productsList.Count != 0)
+            {
+                response.StatusCode = StatusCodes.SUCCESS;
+                response.Message = "Sucesso na obtenção dos dados";
+                response.Data = productsList;
+
+            }
+            return response;
+        }
+
         /// <summary>
         /// Trata da parte lógica relativa à criação de um produto na base de dados (sala que diz respeito a um Produto)
         /// Gera uma resposta que será utilizada pela ComfyCatalogAPI para responder ao request do utilizador (POST - Product (AddProduct))

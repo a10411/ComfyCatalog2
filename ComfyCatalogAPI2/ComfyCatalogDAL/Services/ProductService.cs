@@ -26,7 +26,7 @@ namespace ComfyCatalogDAL.Services
 
         public static async Task<List<Product>> GetAllProducts(string conString)
         {   
-        var productList = new List<Product>();
+            var productList = new List<Product>();
             using (SqlConnection con = new SqlConnection(conString))
             {
                 SqlCommand cmd = new SqlCommand("SELECT * FROM Product", con);
@@ -66,10 +66,38 @@ namespace ComfyCatalogDAL.Services
         }
 
         /// <summary>
-        /// Método que visa aceder à base de dados SQL Server via query e obter um user por username
+        /// Método que visa aceder à base de dados SQL Server via query e obter os produtos de cada Marca
         /// </summary>
         /// <param name="conString">String de conexão à base de dados, presente no projeto "ComfyCatalogAPI", no ficheiro appsettings.json</param>
         /// <returns>Lista dos produtos</returns>
+        public static async Task<List<Product>> GetProductByBrand(string conString, string brandName)
+        {
+            var productList = new List<Product>();
+            using (SqlConnection con = new SqlConnection( conString))
+            {
+                SqlCommand cmd = new SqlCommand($"SELECT p.* FROM Product p INNER JOIN Brand b ON p.brandID = b.brandID WHERE b.BrandName = '{brandName}'", con);
+                cmd.CommandType = CommandType.Text;
+                con.Open();
+
+                SqlDataReader rdr = cmd.ExecuteReader();
+                while (rdr.Read())
+                {
+                    Product product = new Product(rdr);
+                    productList.Add(product);
+                }
+                rdr.Close();
+                con.Close();
+            }
+            return productList;
+
+        }
+
+
+        /// <summary>
+        /// Método que visa aceder à base de dados SQL Server via query e obter um user por username
+        /// </summary>
+        /// <param name="conString">String de conexão à base de dados, presente no projeto "ComfyCatalogAPI", no ficheiro appsettings.json</param>
+        /// <returns>User com determinado Username</returns>
         public static async Task<User> GetUserByUsername(string conString, string username)
         {
             User user = new User();
@@ -135,7 +163,7 @@ namespace ComfyCatalogDAL.Services
         }
 
         /// <summary>
-        /// Método que visa aceder à base de dados via SQL Query e adicionar um novo registo na tabela Favourites consoante o usernae de um user 
+        /// Método que visa aceder à base de dados via SQL Query e adicionar um novo registo na tabela Favourites consoante o username de um user 
         /// </summary>
         /// <param name="conString">String de conexão à base de dados, presente no projeto "ComfyCatalogAPI", no ficheiro appsettings.json</param>
         /// <param name="username">username do cliente a quem se vai adicionar um produto favorito</param>
@@ -169,6 +197,36 @@ namespace ComfyCatalogDAL.Services
             {
                 throw;
             }
+        }
+
+        public static async Task<Boolean> SetProductToImage(string conString, int productID, int imageID)
+        {
+            try
+            {
+                Product product = await GetProduct(conString, productID);
+                Image img = await ImageService.GetImageByID(conString, imageID);
+
+                using(SqlConnection con = new SqlConnection(conString))
+                {
+                    string addProductImage = "INSERT INTO Product_Image (imageID, productID) VALUES (@imageID, @productID)";
+                    using (SqlCommand queryAddProductImage = new SqlCommand(addProductImage))
+                    {
+                        queryAddProductImage.Connection = con;
+                        queryAddProductImage.Parameters.Add("@imageID", SqlDbType.Int).Value = imageID;
+                        queryAddProductImage.Parameters.Add("@productID", SqlDbType.Int).Value = productID;
+
+                        con.Open();
+                        queryAddProductImage.ExecuteNonQuery();
+                        con.Close();
+                        return true;
+                    }
+                }
+            }
+            catch 
+            { 
+                throw; 
+            }
+
         }
 
         #endregion
@@ -292,7 +350,35 @@ namespace ComfyCatalogDAL.Services
             }
         }
 
+        /// <summary>
+        /// Método que visa aceder à base de dados SQL Server via query e apagar o registo de um produto Favorito
+        /// </summary>
+        /// <param name="conString">String de conexão à base de dados, presente no projeto "ComfyCatalogAPI", no ficheiro appsettings.json</param>
+        /// <returns> sucesso ou erro</returns>
+        public static async Task<Boolean> DeleteFavorite(string conString, int favoriteID)
+        {
+            try
+            {
+                using (SqlConnection con = new SqlConnection(conString))
+                {
+                    string deleteFavorite = $"DELETE FROM Product WHERE productID = {favoriteID}";
+                    using (SqlCommand queryDeleteFavorite = new SqlCommand(deleteFavorite))
+                    {
+                        queryDeleteFavorite.Connection = con;
+                        con.Open();
+                        queryDeleteFavorite.ExecuteNonQuery();
+                        con.Close();
+                        return true;
 
+                    }
+                }
+
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+        }
         #endregion
 
     }

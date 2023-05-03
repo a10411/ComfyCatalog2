@@ -70,31 +70,7 @@ namespace ComfyCatalogDAL.Services
 
 
         #region POST
-        /*
-        public static async Task<Boolean> AddImage(string conString, Image imageToAdd)
-        {
-            try
-            {
-                using (SqlConnection con = new SqlConnection(conString))
-                {
-                    string addImage = "INSERT INTO [Image] ( imageData) VALUES ( @imageData)";
-                    using (SqlCommand queryAddImage = new SqlCommand(addImage))
-                    {
-                        queryAddImage.Connection = con;
-                        queryAddImage.Parameters.Add("@imageData", SqlDbType.VarBinary).Value = imageToAdd.ImageData;
-                        con.Open();
-                        queryAddImage.ExecuteNonQuery();
-                        con.Close();
-                        return true;
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                throw;
-            }
-        }
-        */
+   
 
         public static void SaveFile(string path, IFormFile file)
         {
