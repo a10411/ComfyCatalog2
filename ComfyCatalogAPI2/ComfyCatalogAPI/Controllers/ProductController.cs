@@ -65,10 +65,34 @@ namespace ComfyCatalogAPI.Controllers
         [SwaggerResponse(StatusCodes.Status500InternalServerError, Description = "An unexpected API error has occurred.")]
         [HttpGet]
         [Route("/GetProductsByBrand")]
-        public async Task<IActionResult> GetlProductsByBrand(string brandName)
+        public async Task<IActionResult> GetProductsByBrand(string brandName)
         {
             string CS = _configuration.GetConnectionString("WebApiDatabase");
             Response response = await ProductLogic.GetProductByBrand(brandName, CS);
+            if(response.StatusCode != ComfyCatalogBLL.Utils.StatusCodes.SUCCESS)
+            {
+                return StatusCode((int)response.StatusCode);
+            }
+            return new JsonResult(response);
+        }
+
+        /// <summary>
+        /// Request GET relativo aos Produtos
+        /// </summary>
+        /// <returns>Retorna a response obtida pelo BLL para o utilizador. Idealmente, retornará a lista de produtos</returns>
+        [SwaggerResponse(StatusCodes.Status200OK, Description = "Method successfully executed.")]
+        [SwaggerResponse(StatusCodes.Status204NoContent, Description = "No content was found.")]
+        [SwaggerResponse(StatusCodes.Status400BadRequest, Description = "The endpoint or data structure is not in line with expectations.")]
+        [SwaggerResponse(StatusCodes.Status401Unauthorized, Description = "Api key authentication was not provided or it is not valid.")]
+        [SwaggerResponse(StatusCodes.Status403Forbidden, Description = "You do not have permissions to perform the operation.")]
+        [SwaggerResponse(StatusCodes.Status404NotFound, Description = "The requested resource was not found.")]
+        [SwaggerResponse(StatusCodes.Status500InternalServerError, Description = "An unexpected API error has occurred.")]
+        [HttpGet]
+        [Route("/GetProductsBySport")]
+        public async Task<IActionResult> GetProductsBySport(string sport)
+        {
+            string CS = _configuration.GetConnectionString("WebApiDatabase");
+            Response response = await ProductLogic.GetProductBySport(sport, CS);
             if(response.StatusCode != ComfyCatalogBLL.Utils.StatusCodes.SUCCESS)
             {
                 return StatusCode((int)response.StatusCode);

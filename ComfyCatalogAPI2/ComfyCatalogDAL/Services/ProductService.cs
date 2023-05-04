@@ -65,6 +65,26 @@ namespace ComfyCatalogDAL.Services
             // retorna um produto com id = 0 caso não encontre nenhum com este ID
         }
 
+        public static async Task<List<Product>> GetProductBySport(string conString, string sport)
+        {
+            var productList = new List<Product>();
+            using (SqlConnection con = new SqlConnection( conString))
+            {
+                SqlCommand cmd = new SqlCommand($"SELECT * FROM Product WHERE sport = '{sport}'", con);
+                cmd.CommandType = CommandType.Text;
+                con.Open();
+
+                SqlDataReader rdr = cmd.ExecuteReader();
+                while (rdr.Read())
+                {
+                    productList.Add(new Product(rdr));
+                }
+                rdr.Close();
+                con.Close();
+            }
+            return productList;
+        } 
+
         /// <summary>
         /// Método que visa aceder à base de dados SQL Server via query e obter os produtos de cada Marca
         /// </summary>
