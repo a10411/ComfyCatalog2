@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import {BrowserRouter, Route, Switch, NavLink } from 'react-router-dom';
 import {Home} from './Home';
 import {LoginRegister} from './LoginRegister';
 import {UserComponents} from './UserComponents';
