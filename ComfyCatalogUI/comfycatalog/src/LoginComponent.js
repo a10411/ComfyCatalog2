@@ -1,7 +1,7 @@
 function LoginComponent(){
     return(
         <div>
-            <h2>LoginComponents</h2>
+            <h2>Login Components</h2>
             {/* add User components here */}
         </div>
     )

@@ -1,6 +1,6 @@
 import './CSS/App.css';
 import { BrowserRouter, Routes, Route, NavLink } from 'react-router-dom';
-import { LoginComponent  } from './LoginComponent';
+import LoginComponent  from './LoginComponent';
 import ComfyLogo from './Static Images/ComfyLogo.jpg'; 
 
 
