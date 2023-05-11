@@ -32,7 +32,7 @@ namespace ComfyCatalogDAL.Services
             {
                 using (SqlConnection con = new SqlConnection(conString))
                 {
-                    SqlCommand cmd = new SqlCommand($"SELECT * FROM Administrador where email = '{username}'", con);
+                    SqlCommand cmd = new SqlCommand($"SELECT * FROM [Admin] where username = '{username}'", con);
 
                     cmd.CommandType = CommandType.Text;
                     con.Open();
@@ -43,7 +43,7 @@ namespace ComfyCatalogDAL.Services
                         string hashedPWFromDb = rdr["password_hash"].ToString();
                         string salt = rdr["password_salt"].ToString();
                         rdr.Close();
-                        con.Close();
+                        con.Close();    
                         if (HashSalt.CompareHashedPasswords(password, hashedPWFromDb, salt))
                         {
                             return true;
@@ -77,7 +77,7 @@ namespace ComfyCatalogDAL.Services
         /// <param name="username">Email do administrador que se pretende registar</param>
         /// <param name="password">Password do administrador que se pretende registar</param>
         /// <returns>True caso administrador tenha sido introduzido, erro interno caso tenha existido algum erro</returns>
-        public static async Task<Boolean> RegisterAdministrador(string conString, string username, string password)
+        public static async Task<Boolean> RegisterAdmin(string conString, string username, string password)
         {
             string salt = HashSalt.GenerateSalt();
             byte[] hashedPW = HashSalt.GetHash(password, salt);

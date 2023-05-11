@@ -1,35 +1,37 @@
 import './CSS/App.css';
 import { BrowserRouter, Routes, Route, NavLink } from 'react-router-dom';
-import LoginComponent  from './LoginComponent';
-import ComfyLogo from './Static Images/ComfyLogo.jpg'; 
-
+import LoginComponent from './LoginComponent';
+import RegisterComponent from './RegisterComponent';
+import MotoLogo from './Utils/MotoLogo';
+import BackgroundImage from './Utils/Background';
 
 function App() {
   return (
-    <div className="App container">
-       
+    <div className="AppContainer">
       <BrowserRouter>
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
-          <ul className="navbar-nav mr-auto">
-            <li>
-            <a href="https://www.comfysocks.dk/" target="_blank" className="site_link">Home</a>
+        <BackgroundImage />
+        <nav className="navbar navbar-expand-sm navbar-light bg-light">
+        <MotoLogo />
+          <ul className="navbar-nav3 mr-auto">
+            <li className='nav-item m-1'>
+              <a href="https://www.comfysocks.dk/" target="_blank" className="nav-link">Home</a>
             </li>
-            <li>
-              <NavLink to="/LoginComponent" className="navlink"> Login </NavLink>
+          </ul>
+          <ul className="navbar-nav2 ml-auto">
+            <li className='nav-item m-1'>
+              <NavLink className="nav-link" to="/LoginComponent">Login </NavLink>
+            </li>
+            <li className='nav-item m-1'>
+              <NavLink className="nav-link" to="/RegisterComponent" >Register </NavLink>
             </li>
           </ul>
         </nav>
         <Routes>
-          <Route exact path="/" component={App} />
-          <Route path="/LoginComponent" component={LoginComponent} />
+          <Route path="/LoginComponent" element={<LoginComponent />} />
+          <Route path="/RegisterComponent" element={<RegisterComponent />} />
         </Routes>
+        
       </BrowserRouter>
-      <div className='Moto_Logo container'>
-          <img src={ComfyLogo} alt="ComfyCatalog" className='logo-image' />
-          <h3> The best fit for your socks </h3>
-      </div>
-
-      
     </div>
   );
 }

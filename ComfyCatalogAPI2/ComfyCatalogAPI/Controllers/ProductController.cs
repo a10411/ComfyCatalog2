@@ -111,7 +111,7 @@ namespace ComfyCatalogAPI.Controllers
         [SwaggerResponse(StatusCodes.Status403Forbidden, Description = "You do not have permissions to perform the operation.")]
         [SwaggerResponse(StatusCodes.Status404NotFound, Description = "The requested resource was not found.")]
         [SwaggerResponse(StatusCodes.Status500InternalServerError, Description = "An unexpected API error has occurred.")]
-        //[Authorize]
+        //[Authorize(Roles = "Admin")]
         [HttpPost]
         public async Task<IActionResult> AddProduct(Product productToAdd)
         {

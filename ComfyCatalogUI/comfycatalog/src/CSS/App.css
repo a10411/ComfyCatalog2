@@ -1,33 +1,102 @@
+
+body{
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  min-height: 100%;
+}
+
+
 .App {
   text-align: center;
+  width: 100%;
 }
 
-.Moto_Logo {
-  width: 100px;
+.AppContainer{
+  width: 100%;
+  
+ 
+}
+
+.Moto_LogoContainer {
+ 
   display: flex;
   flex-direction: column;
-  align-items: center;
   position: fixed;
-  bottom: 100px;
-  left: 47%;
-  animation: fade-in 2s infinite alternate;
+  animation: fade-in 1s infinite alternate; 
+  
+
 }
 
-.site_link{
-  text-decoration: none;
-  color: black;
-  margin-left: 10px;
-}
-
-.navlink{
-  text-decoration: none;
-  color: black;
+.Moto_LogoContainer img {
+  width: 160px;
+  height: 75px;
+  
 }
 
 .navbar-nav{
-  margin-top: 50px;
   width: 100%;
+  margin-left: 40px;
+  list-style: none;
+  font-size: large;
+  display: flex;
+  height: 100px;
   
+  
+}
+
+.navbar-nav2{
+  margin-right: 40px;
+  margin-top: 41px;  
+  display: flex;
+  list-style: none;
+  font-size: large;
+  height: 50px;
+  margin-bottom: 20px;
+
+  
+
+}
+
+.navbar-nav3{
+  margin-right: 40px;
+  margin-top: 12px;  
+  display: flex;
+  list-style: none;
+  font-size: large;
+  width: 100%;
+  margin-left: 150px;
+  height: 20px;
+  
+
+}
+
+
+
+.nav-link {
+  position: relative;
+  margin-left: 30px;
+  color: rgb(198, 198, 198);
+ 
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: currentColor;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+  margin-bottom: -2px;
+  
+}
+
+.nav-link:hover::after {
+  transform: scaleX(0.8);
 }
 
 @keyframes fade-in {
@@ -43,5 +112,12 @@ h3{
   font-size: medium;
   height: auto;
   position: fixed;
-  bottom: 10px;
+  bottom: 390px;
 }
+
+h2{
+  font-size: medium;
+  height: auto;
+  position: fixed;
+}
+
