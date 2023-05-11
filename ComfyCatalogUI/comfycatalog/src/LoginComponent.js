@@ -1,7 +1,9 @@
 import { useState } from 'react';
 import './CSS/Login.css';
+import { variables } from './Utils/Variables';
 
 function LoginComponent() {
+  const API_URL = variables.API_URL;
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
@@ -13,27 +15,27 @@ function LoginComponent() {
 
   const handleLogin = async () => {
     try {
-      const response = await fetch(`/api/Login${loginType === 'admin' ? 'Admin' : 'User'}`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ username, password }),
-      });
-      const data = await response.json();
-      if (data.success) {
-        // login was successful, store the JWT token and redirect to appropriate page
-        localStorage.setItem('token', data.token);
-        window.location.href = loginType === 'admin' ? '/AdminComponents' : '/UserComponents';
-      } else {
-        // login failed, display error message
-        setError(data.error);
-      }
+        const response = await fetch(`${API_URL}/Login${loginType === 'admin' ? 'Admin' : 'User'}?username=${username}&password=${password}`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        });
+        const data = await response.json();
+        if (response.ok) {
+            // login was successful, store the JWT token and redirect to appropriate page
+            localStorage.setItem('token', data.token);
+            window.location.href = loginType === 'admin' ? '/AdminComponents' : '/UserComponents';
+        } else {
+            // login failed, display error message
+            setError(data.message);
+        }
     } catch (error) {
-      console.error(error);
-      setError('An error occurred while logging in.');
+        console.error(error);
+        setError('An error occurred while logging in.');
     }
-  };
+};
+
 
   return (
     <div>

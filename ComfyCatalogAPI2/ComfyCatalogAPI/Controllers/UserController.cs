@@ -65,12 +65,16 @@ namespace ComfyCatalogAPI.Controllers
         [SwaggerResponse(StatusCodes.Status404NotFound, Description = "The requested resource was not found.")]
         [SwaggerResponse(StatusCodes.Status500InternalServerError, Description = "An unexpected API error has occurred.")]
         [HttpPost]
-        [Route("/LoginUser")]
+        [Route("/api/LoginUser")]
+        
         public async Task<IActionResult> LoginUser(string username, string password)
         {
+            
+
             string CS = _configuration.GetConnectionString("WebApiDatabase");
             Response response = await UserLogic.LoginUser(CS, username, password);
-            if(response.StatusCode != ComfyCatalogBLL.Utils.StatusCodes.SUCCESS)
+            Response.Headers.Add("Access-Control-Allow-Origin", "*");
+            if (response.StatusCode != ComfyCatalogBLL.Utils.StatusCodes.SUCCESS)
             {
                 return StatusCode((int)response.StatusCode);
             }

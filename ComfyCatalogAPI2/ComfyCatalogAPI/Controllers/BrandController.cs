@@ -66,6 +66,7 @@ namespace ComfyCatalogAPI.Controllers
         [SwaggerResponse(StatusCodes.Status500InternalServerError, Description = "An unexpected API error has occurred.")]
         //[Authorize]
         [HttpPost]
+        [Route("/AddBrand")]
         public async Task<IActionResult> AddBrand(Brand brandToAdd)
         {
             string CS = _configuration.GetConnectionString("WebApiDatabase");
