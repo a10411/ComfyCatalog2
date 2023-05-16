@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "GLFUjkRco2bT+AUGRTSi4FXZVJAigBOHydhACOQTfl9zPPXuNThvcRo2XRr9a93tROulDFBifxkG1Hs1tnlsSA==",
+  "dgSpecHash": "0JReekOSRx/UhbaYkqdhJR9tQRs8Xlvj+3RP7qTtLb7UjKLlyC4eGrLAZZPR0LKyptjGYHBaQgF8RunAhfRQmg==",
   "success": true,
   "projectFilePath": "C:\\Users\\nuno.veloso\\Desktop\\ComfyCatalog2\\ComfyCatalogAPI2\\ComfyCatalogAPI\\ComfyCatalogAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nuno.veloso\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\nuno.veloso\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",
+    "C:\\Users\\nuno.veloso\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.16\\microsoft.aspnetcore.authentication.jwtbearer.6.0.16.nupkg.sha512",
     "C:\\Users\\nuno.veloso\\.nuget\\packages\\microsoft.aspnetcore.authorization\\2.2.0\\microsoft.aspnetcore.authorization.2.2.0.nupkg.sha512",
     "C:\\Users\\nuno.veloso\\.nuget\\packages\\microsoft.aspnetcore.authorization.policy\\2.2.0\\microsoft.aspnetcore.authorization.policy.2.2.0.nupkg.sha512",
     "C:\\Users\\nuno.veloso\\.nuget\\packages\\microsoft.aspnetcore.cors\\2.2.0\\microsoft.aspnetcore.cors.2.2.0.nupkg.sha512",
@@ -39,6 +40,8 @@
     "C:\\Users\\nuno.veloso\\.nuget\\packages\\microsoft.identitymodel.abstractions\\6.29.0\\microsoft.identitymodel.abstractions.6.29.0.nupkg.sha512",
     "C:\\Users\\nuno.veloso\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.29.0\\microsoft.identitymodel.jsonwebtokens.6.29.0.nupkg.sha512",
     "C:\\Users\\nuno.veloso\\.nuget\\packages\\microsoft.identitymodel.logging\\6.29.0\\microsoft.identitymodel.logging.6.29.0.nupkg.sha512",
+    "C:\\Users\\nuno.veloso\\.nuget\\packages\\microsoft.identitymodel.protocols\\6.10.0\\microsoft.identitymodel.protocols.6.10.0.nupkg.sha512",
+    "C:\\Users\\nuno.veloso\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\6.10.0\\microsoft.identitymodel.protocols.openidconnect.6.10.0.nupkg.sha512",
     "C:\\Users\\nuno.veloso\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.29.0\\microsoft.identitymodel.tokens.6.29.0.nupkg.sha512",
     "C:\\Users\\nuno.veloso\\.nuget\\packages\\microsoft.net.http.headers\\2.2.0\\microsoft.net.http.headers.2.2.0.nupkg.sha512",
     "C:\\Users\\nuno.veloso\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",

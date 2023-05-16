@@ -15,10 +15,11 @@ function LoginComponent() {
 
   const handleLogin = async () => {
     try {
-        const response = await fetch(`${API_URL}/Login${loginType === 'admin' ? 'Admin' : 'User'}?username=${username}&password=${password}`, {
+        const response = await fetch(`${API_URL}/api/Login${loginType === 'admin' ? 'Admin' : 'User'}?username=${username}&password=${password}`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
+             
             },
         });
         const data = await response.json();

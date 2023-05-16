@@ -160,3 +160,6 @@ C:\Users\nuno.veloso\Desktop\ComfyCatalog2\ComfyCatalogAPI2\ComfyCatalogAPI\obj\
 C:\Users\nuno.veloso\Desktop\ComfyCatalog2\ComfyCatalogAPI2\ComfyCatalogAPI\obj\Debug\net6.0\ComfyCatalogAPI.pdb
 C:\Users\nuno.veloso\Desktop\ComfyCatalog2\ComfyCatalogAPI2\ComfyCatalogAPI\obj\Debug\net6.0\ComfyCatalogAPI.genruntimeconfig.cache
 C:\Users\nuno.veloso\Desktop\ComfyCatalog2\ComfyCatalogAPI2\ComfyCatalogAPI\obj\Debug\net6.0\ref\ComfyCatalogAPI.dll
+C:\Users\nuno.veloso\Desktop\ComfyCatalog2\ComfyCatalogAPI2\ComfyCatalogAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\nuno.veloso\Desktop\ComfyCatalog2\ComfyCatalogAPI2\ComfyCatalogAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\nuno.veloso\Desktop\ComfyCatalog2\ComfyCatalogAPI2\ComfyCatalogAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
