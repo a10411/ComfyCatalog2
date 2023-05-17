@@ -65,6 +65,30 @@ namespace ComfyCatalogDAL.Services
 
         }
 
+        private static async Task<bool> UsernameExists(string conString, string username)
+        {
+            try
+            {
+                using (SqlConnection con = new SqlConnection(conString))
+                {
+                    string query = "SELECT COUNT(*) FROM [Admin] WHERE username = @username";
+                    using (SqlCommand command = new SqlCommand(query))
+                    {
+                        command.Connection = con;
+                        command.Parameters.Add("@username", SqlDbType.Char).Value = username;
+                        con.Open();
+                        int count = (int)await command.ExecuteScalarAsync();
+                        con.Close();
+                        return count > 0; // Returns true if the username already exists
+                    }
+                }
+            }
+            catch
+            {
+                throw;
+            }
+        }
+
         #endregion
 
 
@@ -79,6 +103,10 @@ namespace ComfyCatalogDAL.Services
         /// <returns>True caso administrador tenha sido introduzido, erro interno caso tenha existido algum erro</returns>
         public static async Task<Boolean> RegisterAdmin(string conString, string username, string password)
         {
+            if (await UsernameExists(conString, username))
+            {
+                return false; // Username already exists
+            }
             string salt = HashSalt.GenerateSalt();
             byte[] hashedPW = HashSalt.GetHash(password, salt);
             try

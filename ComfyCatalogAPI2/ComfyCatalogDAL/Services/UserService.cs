@@ -45,6 +45,31 @@ namespace ComfyCatalogDAL.Services
             return userList;
         }
 
+        private static async Task<bool> UsernameExists(string conString, string username)
+        {
+            try
+            {
+                using (SqlConnection con = new SqlConnection(conString))
+                {
+                    string query = "SELECT COUNT(*) FROM [User] WHERE username = @username";
+                    using (SqlCommand command = new SqlCommand(query))
+                    {
+                        command.Connection = con;
+                        command.Parameters.Add("@username", SqlDbType.Char).Value = username;
+                        con.Open();
+                        int count = (int)await command.ExecuteScalarAsync();
+                        con.Close();
+                        return count > 0; // Returns true if the username already exists
+                    }
+                }
+            }
+            catch
+            {
+                throw;
+            }
+        }
+
+
         /// <summary>
         /// Método que visa aceder à base de dados SQL via query e confirmar se os dados de email e password são válidos e pertencem a um utilizador existente na BD (efetuar Login)
         /// </summary>
@@ -104,6 +129,10 @@ namespace ComfyCatalogDAL.Services
         /// <returns>True caso utilizador tenha sido introduzido, erro interno caso tenha existido algum erro</returns>
         public static async Task<Boolean> RegisterUser(string conString, string username, string password)
         {
+            if (await UsernameExists(conString, username))
+            {
+                return false; // Username already exists
+            }
             string salt = HashSalt.GenerateSalt();
             byte[] hashedPW = HashSalt.GetHash(password, salt);
             try
