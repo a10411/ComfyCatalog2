@@ -1,19 +1,24 @@
-import {UserProducts} from './User/UserProducts';
+import UserProducts from './User/UserProducts';
 import {UserProductDetail} from './User/UserProductDetail';
 import {UserObservations} from './User/UserObservations';
 import {UserObservationDetail} from './User/UserObservationDetails';
 import {UserBrands} from './User/UserBrands';
 import {UserSports} from './User/UserSports';
 import {UserFavourites} from './User/UserFavourites';
+import './CSS/App.css';
+import { variables } from './Utils/Variables';
+import { BrowserRouter } from 'react-router-dom';
 
+function UserComponents() {
+    return (
+   
+            <div>
+                <h1> USER COMPONENTS </h1>
+                <UserProducts/>
+            </div>
 
-function UserComponents(){
-    return(
-        <div>
-            <h2>User Components</h2>
-            {/* add User components here */}
-        </div>
-    )
-}
+     
+    );
+  }
 
 export default UserComponents;

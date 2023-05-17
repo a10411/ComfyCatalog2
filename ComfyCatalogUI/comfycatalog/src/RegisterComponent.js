@@ -5,7 +5,7 @@ function RegisterComponent(){
     return(
         <div>
             <h3>
-                This is the Register Component
+                This is the Register Component yeah
             </h3>
         </div>
     )

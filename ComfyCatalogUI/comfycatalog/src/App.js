@@ -1,40 +1,20 @@
-import './CSS/App.css';
-import { BrowserRouter, Routes, Route, NavLink } from 'react-router-dom';
+import React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import LoginComponent from './LoginComponent';
-import RegisterComponent from './RegisterComponent';
-import MotoLogo from './Utils/MotoLogo';
-import BackgroundImage from './Utils/Background';
+import UserComponents from './UserComponents';
+import AdminComponents from './AdminComponents';
+import HomeComponent from './HomeComponent';
 
 function App() {
-
-  
   return (
-    <div className="AppContainer">
-      <BrowserRouter>
-        <BackgroundImage />
-        <nav className="navbar navbar-expand-sm navbar-light bg-light">
-        <MotoLogo />
-          <ul className="navbar-nav3 mr-auto">
-            <li className='nav-item m-1'>
-              <a href="https://www.comfysocks.dk/" target="_blank" className="nav-link">Home</a>
-            </li>
-          </ul>
-          <ul className="navbar-nav2 ml-auto">
-            <li className='nav-item m-1'>
-              <NavLink className="nav-link" to="/LoginComponent">Login </NavLink>
-            </li>
-            <li className='nav-item m-1'>
-              <NavLink className="nav-link" to="/RegisterComponent" >Register </NavLink>
-            </li>
-          </ul>
-        </nav>
-        <Routes>
-          <Route path="/LoginComponent" element={<LoginComponent />} />
-          <Route path="/RegisterComponent" element={<RegisterComponent />} />
-        </Routes>
-        
-      </BrowserRouter>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomeComponent />} />
+        <Route path="/LoginComponent" element={<LoginComponent />} />
+        <Route path="/UserComponents" element={<UserComponents />} />
+        <Route path="/AdminComponents" element={<AdminComponents />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

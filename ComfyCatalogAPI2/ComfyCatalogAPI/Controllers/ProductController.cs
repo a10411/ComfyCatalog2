@@ -40,7 +40,7 @@ namespace ComfyCatalogAPI.Controllers
         [SwaggerResponse(StatusCodes.Status404NotFound, Description = "The requested resource was not found.")]
         [SwaggerResponse(StatusCodes.Status500InternalServerError, Description = "An unexpected API error has occurred.")]
         [HttpGet]
-        [Route("/GetAllProducts")]
+        [Route("/api/GetAllProducts")]
         public async Task<IActionResult> GetAllProducts()
         {
             string CS = _configuration.GetConnectionString("WebApiDatabase");
