@@ -92,6 +92,8 @@ namespace ComfyCatalogBLL.Logic
             return response;
         }
 
+
+
         /// <summary>
         /// Trata da parte lógica relativa à atualização de um produto que resida na base de dados
         /// Gera uma resposta que será utilizada pela ComfyCatalogAPI para responder ao request do utilizador (PATCH - Produto (UpdateProduct))

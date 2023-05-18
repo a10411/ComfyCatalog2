@@ -43,19 +43,19 @@ namespace ComfyCatalogDAL.Services
             return imgList;
         }
 
-       public static async Task<Image> GetImageByID(string conString, int imageID)
+       public static async Task<Image> GetImageByID(string conString, int productID)
         {
             Image img = new Image();
             using(SqlConnection con = new SqlConnection(conString))
             {
-                SqlCommand cmd = new SqlCommand($"SELECT * FROM [Image] WHERE imageID = {imageID}", con);
+                SqlCommand cmd = new SqlCommand($"SELECT * FROM dbo.[Image] WHERE productID = {productID}", con);
                 cmd.CommandType = CommandType.Text;
                 con.Open();
 
                 SqlDataReader rdr = cmd.ExecuteReader();
                 while (rdr.Read())
                 {
-                    img = new Image();
+                    img = new Image(rdr);
                 }
                 rdr.Close();
                 con.Close();
@@ -80,7 +80,7 @@ namespace ComfyCatalogDAL.Services
             }
         }
 
-        public static async Task<Image> AddImage(string conString, IFormFile file)
+        public static async Task<Image> AddImage(string conString, IFormFile file, int productID)
         {
             try
             {
@@ -89,12 +89,13 @@ namespace ComfyCatalogDAL.Services
 
                 using (SqlConnection con = new SqlConnection(conString))
                 {
-                    string addImage = "INSERT INTO dbo.[Image] (imagePath, imageName) OUTPUT INSERTED.imageID VALUES (@imagePath, @imageName)";
+                    string addImage = "INSERT INTO dbo.[Image] (imagePath, imageName, productID) OUTPUT INSERTED.imageID VALUES (@imagePath, @imageName, @productID)";
                     using (SqlCommand queryAddImage = new SqlCommand(addImage))
                     {
                         queryAddImage.Connection = con;
                         queryAddImage.Parameters.Add("@imagePath", SqlDbType.VarChar).Value = path;
                         queryAddImage.Parameters.Add("@imageName", SqlDbType.VarChar).Value = file.FileName;
+                        queryAddImage.Parameters.Add("@productID", SqlDbType.Int).Value = productID;
                         con.Open();
                         int imageID = (int)queryAddImage.ExecuteScalar();
                         con.Close();
@@ -103,7 +104,8 @@ namespace ComfyCatalogDAL.Services
                         {
                             ImageID = imageID,
                             ImagePath = path,
-                            ImageName = file.FileName
+                            ImageName = file.FileName,
+                            ProductID = productID
                         };
                         return image;
                     }

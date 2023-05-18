@@ -19,7 +19,6 @@ namespace ComfyCatalogBOL.Models
         public int EstadoID { get; set; }
         public string ProductName { get; set; }
         public string Sport { get; set; }
-        
         public string Composition { get; set; }
         public string Colour { get; set; }
         public int ClientNumber { get; set; }

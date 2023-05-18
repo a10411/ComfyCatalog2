@@ -11,11 +11,17 @@ import { BrowserRouter } from 'react-router-dom';
 
 function UserComponents() {
     return (
-   
-            <div>
+          <div>
+              <div className='titleContainer'>
                 <h1> USER COMPONENTS </h1>
+                
+              </div>
+              <div className='userProductsContainer'>
                 <UserProducts/>
-            </div>
+              </div>
+          </div>
+        
+           
 
      
     );

@@ -42,6 +42,19 @@ namespace ComfyCatalogBLL.Logic
             return response;
         }
 
+        public static async Task<Response> GetImageByID(string conString, int imageID)
+        {
+            Response response= new Response();
+            Image img = await ImageService.GetImageByID(conString, imageID);
+            if(img != null)
+            {
+                response.StatusCode = StatusCodes.SUCCESS;
+                response.Message = "Sucesso na obtenção da imagem";
+                response.Data = img;
+            }
+            return response;
+        }
+
         /// <summary>
         /// Trata da parte lógica relativa à criação de uma imagem na base de dados. 
         /// Gera uma resposta que será utilizada pela ComfyCatalogAPI para responder ao request do utilizador (POST - Product (AddProduct))
@@ -70,12 +83,12 @@ namespace ComfyCatalogBLL.Logic
         }
         */
 
-        public static async Task<Response> AddImage(string conString, IFormFile file)
+        public static async Task<Response> AddImage(string conString, IFormFile file, int productID)
         {
             Response response = new Response();
             try
             {
-                Image image = await ImageService.AddImage(conString, file);
+                Image image = await ImageService.AddImage(conString, file, productID);
 
                 response.Data = image;
                 response.StatusCode = StatusCodes.SUCCESS;
@@ -88,6 +101,8 @@ namespace ComfyCatalogBLL.Logic
             }
             return response;
         }
+
+    
 
 
         /// <summary>
