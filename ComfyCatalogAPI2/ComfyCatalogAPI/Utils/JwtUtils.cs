@@ -45,5 +45,43 @@ namespace ComfyCatalogAPI.Utils
 
         }
 
+        public string GetUserIDByToken(string token)
+        {
+            var tokenHandler = new JwtSecurityTokenHandler();
+            var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:Key"]));
+            var validationParameters = new TokenValidationParameters
+            {
+                ValidateIssuer = true,
+                ValidIssuer = _configuration["Jwt:Issuer"],
+                ValidateAudience = true,
+                ValidAudience = _configuration["Jwt:Audience"],
+                ValidateIssuerSigningKey = true,
+                IssuerSigningKey = securityKey
+            };
+
+            try
+            {
+                // Validate and parse the token
+                var claimsPrincipal = tokenHandler.ValidateToken(token, validationParameters, out _);
+
+                // Retrieve the user ID claim from the token
+                var userIDClaim = claimsPrincipal.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier);
+
+                if (userIDClaim != null)
+                {
+                    return userIDClaim.Value;
+                }
+            }
+            catch (Exception ex)
+            {
+                // Token validation failed
+                // Handle the exception or return null, depending on your needs
+                Console.WriteLine(ex.Message);
+            }
+
+            return null; // User ID not found in the token or token validation failed
+        }
+
+
     }
 }

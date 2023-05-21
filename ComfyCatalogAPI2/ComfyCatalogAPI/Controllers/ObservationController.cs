@@ -72,6 +72,7 @@ namespace ComfyCatalogAPI.Controllers
         [SwaggerResponse(StatusCodes.Status404NotFound, Description = "The requested resource was not found.")]
         [SwaggerResponse(StatusCodes.Status500InternalServerError, Description = "An unexpected API error has occurred.")]
         [HttpPost]
+        [Route("/api/AddObservation")]
         public async Task<IActionResult> AddObservation(Observation obsToAdd)
         {
             string CS = _configuration.GetConnectionString("WebApiDatabase");
@@ -120,6 +121,7 @@ namespace ComfyCatalogAPI.Controllers
         [SwaggerResponse(StatusCodes.Status404NotFound, Description = "The requested resource was not found.")]
         [SwaggerResponse(StatusCodes.Status500InternalServerError, Description = "An unexpected API error has occurred.")]
         [HttpDelete]
+        [Route("/api/DeleteObservation/{observationId}")]
         public async Task <IActionResult> DeleteObservation(int ObsID)
         {
             string CS = _configuration.GetConnectionString("WebApiDatabase");

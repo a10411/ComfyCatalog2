@@ -224,7 +224,7 @@ namespace ComfyCatalogDAL.Services
             try
             {
                 Product product = await GetProduct(conString, productID);
-                Image img = await ImageService.GetImageByID(conString, imageID);
+                Image img = await ImageService.GetImageByProductID(conString, imageID);
 
                 using(SqlConnection con = new SqlConnection(conString))
                 {

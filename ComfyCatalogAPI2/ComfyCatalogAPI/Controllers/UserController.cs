@@ -27,6 +27,42 @@ namespace ComfyCatalogAPI.Controllers
             _configuration = configuration;
         }
 
+        [SwaggerResponse(StatusCodes.Status200OK, Description = "Method successfully executed.")]
+        [SwaggerResponse(StatusCodes.Status204NoContent, Description = "No content was found.")]
+        [SwaggerResponse(StatusCodes.Status400BadRequest, Description = "The endpoint or data structure is not in line with expectations.")]
+        [SwaggerResponse(StatusCodes.Status401Unauthorized, Description = "Api key authentication was not provided or it is not valid.")]
+        [SwaggerResponse(StatusCodes.Status403Forbidden, Description = "You do not have permissions to perform the operation.")]
+        [SwaggerResponse(StatusCodes.Status404NotFound, Description = "The requested resource was not found.")]
+        [SwaggerResponse(StatusCodes.Status500InternalServerError, Description = "An unexpected API error has occurred.")]
+        [HttpGet]
+        [Route("api/GetIDByToken")]
+        public IActionResult GetIDByToken(string token)
+        {
+            try
+            {
+                // Validate the token or perform any necessary checks
+
+                // Extract the user ID from the token
+                JwtUtils jwt = new JwtUtils(_configuration);
+                string userID = jwt.GetUserIDByToken(token);
+
+                if (string.IsNullOrEmpty(userID))
+                {
+                    // User ID not found in the token
+                    return BadRequest("Invalid token or user ID not found.");
+                }
+
+                // Return the user ID in the response
+                return Ok(userID);
+            }
+            catch (Exception ex)
+            {
+                // An error occurred while processing the token
+                return StatusCode(500, "An error occurred while retrieving the user ID.");
+            }
+        }
+
+
         /// <summary>
         /// Request GET relativo aos Utilizadores
         /// Apenas um admin consegue fazer este request com sucesso (Authorize(Roles="Admin"))

@@ -42,10 +42,10 @@ namespace ComfyCatalogBLL.Logic
             return response;
         }
 
-        public static async Task<Response> GetImageByID(string conString, int imageID)
+        public static async Task<Response> GetImageByProductID(string conString, int imageID)
         {
             Response response= new Response();
-            Image img = await ImageService.GetImageByID(conString, imageID);
+            Image img = await ImageService.GetImageByProductID(conString, imageID);
             if(img != null)
             {
                 response.StatusCode = StatusCodes.SUCCESS;

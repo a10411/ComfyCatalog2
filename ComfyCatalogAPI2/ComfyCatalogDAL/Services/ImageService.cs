@@ -43,7 +43,7 @@ namespace ComfyCatalogDAL.Services
             return imgList;
         }
 
-       public static async Task<Image> GetImageByID(string conString, int productID)
+       public static async Task<Image> GetImageByProductID(string conString, int productID)
         {
             Image img = new Image();
             using(SqlConnection con = new SqlConnection(conString))
@@ -84,7 +84,8 @@ namespace ComfyCatalogDAL.Services
         {
             try
             {
-                string path = Path.Combine(@"Q:\ComfyCatalog Images\Product_Images", file.FileName);
+                string path = Path.Combine(@"C:\Users\nfrv9\Desktop\ComfyCatalog2\ComfyCatalogAPI2\ComfyCatalogAPI\Images", file.FileName);
+                //string path = Path.Combine(@"Q:\ComfyCatalog Images\Product_Images", file.FileName); // PATH DO SERVIDOR DA EMPRESA
                 SaveFile(path, file);
 
                 using (SqlConnection con = new SqlConnection(conString))
@@ -131,7 +132,7 @@ namespace ComfyCatalogDAL.Services
             try
             {
                 Product product = await ProductService.GetProduct(conString, productID);
-                Image image = await GetImageByID(conString, productID);
+                Image image = await GetImageByProductID(conString, productID);
 
                 using(SqlConnection con = new SqlConnection(conString))
                 {
