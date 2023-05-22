@@ -8,17 +8,23 @@ import {UserFavourites} from './User/UserFavourites';
 import './CSS/App.css';
 import { variables } from './Utils/Variables';
 import { BrowserRouter } from 'react-router-dom';
+import Sidebar from './Sidebar';
 
 function UserComponents() {
     return (
           <div>
               <div className='titleContainer'>
                 <h1> USER COMPONENTS </h1>
-                
+              </div>
+              <div className='sidebarContainer'>
+              <Sidebar />
               </div>
               <div className='userProductsContainer'>
                 <UserProducts/>
+                
               </div>
+              
+
           </div>
         
            

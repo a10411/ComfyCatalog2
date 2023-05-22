@@ -8,10 +8,6 @@ function UserProducts() {
   const [products, setProducts] = useState([]);
   const [images, setImages] = useState([]);
   const [imagesFetched, setImagesFetched] = useState(false);
-  const [selectedProduct, setSelectedProduct] = useState(null);
-  const [observationModalOpen, setObservationModalOpen] = useState(false);
-  const [observationTitle, setObservationTitle] = useState('');
-  const [observationBody, setObservationBody] = useState('');
   const [userID, setUserID] = useState(null);
 
   useEffect(() => {
@@ -60,43 +56,6 @@ function UserProducts() {
     }
   };
 
-  const openObservationModal = (product) => {
-    setSelectedProduct(product);
-    setObservationModalOpen(true);
-  };
-
-  const closeObservationModal = () => {
-    setSelectedProduct(null);
-    setObservationModalOpen(false);
-    setObservationTitle('');
-    setObservationBody('');
-  };
-
-  const submitObservation = async () => {
-    try {
-      const response = await fetch(`${API_URL}/api/AddObservation`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          productID: selectedProduct.productID,
-          title: observationTitle,
-          body: observationBody,
-          userID: userID,
-        }),
-      });
-      if (response.ok) {
-        // Observation successfully submitted
-        console.log('Observation submitted successfully');
-      } else {
-        console.error('Failed to submit observation:', response.statusText);
-      }
-    } catch (error) {
-      console.error('An error occurred while submitting observation:', error);
-    }
-    closeObservationModal();
-  };
 
   if (!Array.isArray(products)) {
     return <div>Products are not available.</div>;
@@ -125,32 +84,9 @@ function UserProducts() {
               />
             ))}
           <div className="product-name">{product.productName}</div>
-          <button onClick={() => openObservationModal(product)}>Add Observation</button>
         </div>
       ))}
 
-      {observationModalOpen && (
-        <div className="observation-modal">
-          <div className="observation-modal-content">
-            <h2>Add Observation</h2>
-            <input
-              type="text"
-              value={observationTitle}
-              onChange={(e) => setObservationTitle(e.target.value)}
-              placeholder="Observation Title"
-            />
-            <textarea
-              value={observationBody}
-              onChange={(e) => setObservationBody(e.target.value)}
-              placeholder="Observation Body"
-            ></textarea>
-            <div>
-              <button onClick={submitObservation}>Submit</button>
-              <button onClick={closeObservationModal}>Cancel</button>
-            </div>
-          </div>
-        </div>
-      )}
     </div>
   );
 }
