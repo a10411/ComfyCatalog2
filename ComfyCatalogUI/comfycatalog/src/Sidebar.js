@@ -4,10 +4,9 @@ import './CSS/Sidebar.css';
 import football from './Utils/Icons/football.svg';
 import heart from './Utils/Icons/heart.svg';
 import pencil3 from './Utils/Icons/pencil3.svg';
-import tm from './Utils/Icons/tm.svg';
 import trademark2 from './Utils/Icons/trademark2.svg';
 import logoutIcon from './Utils/Icons/logout.svg';
-import Logout from './Logout';
+
 
 const Sidebar = ({ handleLogout }) => {
   return (

@@ -21,6 +21,8 @@ function UserComponents() {
     localStorage.removeItem('token'); // Clear the token from localStorage
     navigate('/');
   };
+
+  
     return (
           <div>
               <div className='titleContainer'>
@@ -33,13 +35,7 @@ function UserComponents() {
                 <UserProducts/>
                 
               </div>
-              
-
           </div>
-        
-           
-
-     
     );
   }
 

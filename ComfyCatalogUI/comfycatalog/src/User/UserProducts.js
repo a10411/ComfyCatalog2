@@ -10,12 +10,17 @@ function UserProducts() {
   const [imagesFetched, setImagesFetched] = useState(false);
   const [userID, setUserID] = useState(null);
 
+
+
   useEffect(() => {
     fetchProducts();
     fetchImages();
      // Retrieve the logged-in user's ID (e.g., from session, local storage, or context)
     
   }, []);
+
+
+
 
   const fetchProducts = async () => {
     try {
