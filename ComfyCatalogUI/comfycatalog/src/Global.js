@@ -1,7 +1,7 @@
 let token = null;
 
 export function setToken(newToken) {
-  token = newToken;
+  localStorage.setItem('token', newToken);;
 }
 
 export function getToken() {

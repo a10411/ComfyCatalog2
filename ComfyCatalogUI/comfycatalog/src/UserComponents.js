@@ -9,15 +9,25 @@ import './CSS/App.css';
 import { variables } from './Utils/Variables';
 import { BrowserRouter } from 'react-router-dom';
 import Sidebar from './Sidebar';
+import { useNavigate } from 'react-router-dom';
 
 function UserComponents() {
+
+  const token = localStorage.getItem('token');
+  console.log(token);
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    localStorage.removeItem('token'); // Clear the token from localStorage
+    navigate('/');
+  };
     return (
           <div>
               <div className='titleContainer'>
                 <h1> USER COMPONENTS </h1>
               </div>
               <div className='sidebarContainer'>
-              <Sidebar />
+              <Sidebar handleLogout={handleLogout} />
               </div>
               <div className='userProductsContainer'>
                 <UserProducts/>

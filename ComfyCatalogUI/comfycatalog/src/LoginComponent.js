@@ -10,7 +10,7 @@ function LoginComponent() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
-  const [loginType, setLoginType] = useState('user'); // default to user login
+  const [loginType, setLoginType] = useState(''); // default to user login
 
   const handleLoginTypeChange = (event) => {
     setLoginType(event.target.value);
@@ -25,10 +25,12 @@ function LoginComponent() {
         },
       });
       const data = await response.json();
+      //console.log(data);
       if (response.ok) {
-        // Login was successful, store the JWT token and redirect to appropriate page
-        const token = data.token; // Access the 'token' property from 'data'
+       
+        const token = data.data // Access the 'token' property from 'data'
         setToken(token);
+        console.log(token);
         window.location.href = loginType === 'admin' ? '/AdminComponents' : '/UserComponents';
       } else {
         // Login failed, display error message

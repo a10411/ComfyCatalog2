@@ -9,7 +9,7 @@ import trademark2 from './Utils/Icons/trademark2.svg';
 import logoutIcon from './Utils/Icons/logout.svg';
 import Logout from './Logout';
 
-const Sidebar = () => {
+const Sidebar = ({ handleLogout }) => {
   return (
     <div className="sidebar">
       <ul className="ulSidebar">
@@ -35,7 +35,7 @@ const Sidebar = () => {
         </li>
       </ul>
       <div className="liSidebar"style={{ marginTop: '90px' }}>
-      <NavLink to="/Logout" className="nav-linkSidebar">
+      <NavLink onClick={handleLogout} to="/Logout" className="nav-linkSidebar">
           <img src={logoutIcon} alt="Logout Icon" className="nav-icon" title="Logout" />
         </NavLink>
       </div>

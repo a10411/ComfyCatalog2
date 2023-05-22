@@ -70,3 +70,8 @@ form {
   .submitLoginRegister{
     border-radius: 16px;
   }
+
+  .error{
+    width: 70px;
+    height: auto;
+  }

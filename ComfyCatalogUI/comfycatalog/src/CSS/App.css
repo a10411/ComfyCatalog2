@@ -21,19 +21,20 @@ body{
 
 .Moto_LogoContainer {
  
-  display: flex;
-  flex-direction: column;
-  position: fixed;
+
+  
+
   animation: fade-in 1s infinite alternate; 
   
 
 }
 
 .Moto_LogoContainer img {
-  width: 160px;
-  height: 75px;
-  margin-left: 600px;
-  margin-top: 2px; 
+  width: 80px;
+  height: auto;
+  justify-content: center;
+ 
+  top: 0; 
   
   
 }
