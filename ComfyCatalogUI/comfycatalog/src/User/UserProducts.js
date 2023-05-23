@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { variables } from '../Utils/Variables';
 import '../CSS/App.css';
+import { useNavigate } from 'react-router-dom';
 
 
 function UserProducts() {
@@ -9,7 +10,10 @@ function UserProducts() {
   const [images, setImages] = useState([]);
   const [imagesFetched, setImagesFetched] = useState(false);
   const [userID, setUserID] = useState(null);
-  const token = localStorage.getItem('token');
+  const [unauthorized, setUnauthorized] = useState(false);
+  const [notification, setNotification] = useState('');
+  const navigate = useNavigate();
+
 
 
   useEffect(() => {
@@ -24,26 +28,37 @@ function UserProducts() {
 
   const fetchProducts = async () => {
     try {
-      const response = await fetch(`${API_URL}/api/GetAllProducts`, {
-        headers: {
-          'Authorization': 'Bearer ' + token
-        }
-      });
-      if (response.ok) {
-        const responseData = await response.json();
-        console.log(responseData);
-        if (Array.isArray(responseData.data)) {
-          setProducts(responseData.data);
+      const token = localStorage.getItem('token');
+  
+      if (token) {
+        const response = await fetch(`${API_URL}/api/GetAllProducts`, {
+          headers: {
+            'Authorization': `Bearer ${token}`
+          }
+        });
+        if (response.ok) {
+          const responseData = await response.json();
+          console.log(responseData);
+          if (Array.isArray(responseData.data)) {
+            setProducts(responseData.data);
+          } else {
+            console.error('Products data is not in the expected format:', responseData);
+          }
+        } else if (response.status === 401) {
+          setUnauthorized(true);
+          setNotification('Unauthorized: Please login to access this page.');
         } else {
-          console.error('Products data is not in the expected format:', responseData);
+          console.error('Failed to fetch products:', response.statusText);
         }
       } else {
-        console.error('Failed to fetch products:', response.statusText);
+        setUnauthorized(true);
+        setNotification('Unauthorized: Please login to access this page.');
       }
     } catch (error) {
       console.error('An error occurred while fetching products:', error);
     }
   };
+  
   
 
   const fetchImages = async () => {
@@ -80,25 +95,34 @@ function UserProducts() {
   }
 
   return (
-    <div className="product-container">
-      {products.map((product) => (
-        <div key={product.productID} className="product-card">
-          {images
-            .filter((image) => image.productID === product.productID)
-            .map((image) => (
-              <img
-                key={image.imageID}
-                src={`${API_URL}/api/GetImage/${image.imageName}`}
-                alt={product.productName}
-                className="product-image"
-              />
-            ))}
-          <div className="product-name">{product.productName}</div>
+    <div>
+      {unauthorized ? (
+        <div>
+          <p>Unauthorized: Please login to access this page.</p>
+          <button className='goToLogin' onClick={() => navigate('/') }>Go to Login</button>
         </div>
-      ))}
-
+      ) : (
+        <div className="product-container">
+          {products.map((product) => (
+            <div key={product.productID} className="product-card">
+              {images
+                .filter((image) => image.productID === product.productID)
+                .map((image) => (
+                  <img
+                    key={image.imageID}
+                    src={`${API_URL}/api/GetImage/${image.imageName}`}
+                    alt={product.productName}
+                    className="product-image"
+                  />
+                ))}
+              <div className="product-name">{product.productName}</div>
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   );
+  
 }
 
 export default UserProducts;

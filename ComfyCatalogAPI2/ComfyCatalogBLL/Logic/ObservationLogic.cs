@@ -112,12 +112,12 @@ namespace ComfyCatalogBLL.Logic
         /// <param name="obsID">ID da observação a remover</param>
         /// <returns>Response com Status Code e mensagem (indicando que a observação foi apagado)</returns>
 
-        public static async Task<Response> DeleteObservation(string conString, int obsID)
+        public static async Task<Response> DeleteObservation(string conString, int observationId)
         {
             Response response = new Response();
             try
             {
-                if(await ObservationService.DeleteObservation(conString, obsID))
+                if(await ObservationService.DeleteObservation(conString, observationId))
                 {
                     response.StatusCode = StatusCodes.SUCCESS;
                     response.Message = "Observation was deleted from this product";

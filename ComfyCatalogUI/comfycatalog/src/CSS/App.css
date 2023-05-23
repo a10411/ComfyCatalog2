@@ -185,3 +185,13 @@ img {
   justify-content: center;
 }
 
+.goToLogin {
+  background-color: #ccc;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}

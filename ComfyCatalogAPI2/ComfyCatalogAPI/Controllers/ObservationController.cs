@@ -122,10 +122,10 @@ namespace ComfyCatalogAPI.Controllers
         [SwaggerResponse(StatusCodes.Status500InternalServerError, Description = "An unexpected API error has occurred.")]
         [HttpDelete]
         [Route("/api/DeleteObservation/{observationId}")]
-        public async Task <IActionResult> DeleteObservation(int ObsID)
+        public async Task <IActionResult> DeleteObservation(int observationId)
         {
             string CS = _configuration.GetConnectionString("WebApiDatabase");
-            Response response = await ObservationLogic.DeleteObservation(CS, ObsID);
+            Response response = await ObservationLogic.DeleteObservation(CS, observationId);
             if (response.StatusCode != ComfyCatalogBLL.Utils.StatusCodes.SUCCESS)
             {
                 return StatusCode((int)response.StatusCode);

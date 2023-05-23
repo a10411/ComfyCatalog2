@@ -7,7 +7,7 @@ import Sidebar from '../Sidebar';
 function UserObservations({ productId }) {
   const API_URL = variables.API_URL;
   const [observations, setObservations] = useState([]);
-  const [newObservation, setNewObservation] = useState('');
+
 
   useEffect(() => {
     fetchObservations();
@@ -31,27 +31,6 @@ function UserObservations({ productId }) {
     }
   };
 
-  const addObservation = async () => {
-    try {
-      const response = await fetch(`${API_URL}/api/AddObservation`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ productId, observation: newObservation }),
-      });
-
-      if (response.ok) {
-        // Refresh the observations after successfully adding a new one
-        fetchObservations();
-        setNewObservation('');
-      } else {
-        console.error('Failed to add observation:', response.statusText);
-      }
-    } catch (error) {
-      console.error('An error occurred while adding observation:', error);
-    }
-  };
 
   const deleteObservation = async (observationId) => {
     try {
@@ -70,11 +49,6 @@ function UserObservations({ productId }) {
     }
   };
 
-  function formatDate(dateString) {
-    const date = new Date(dateString);
-    return date.toLocaleString(); // Adjust the formatting options as per your requirements
-  }
-    
 
   return (
     <div className='containerObs'>
@@ -95,14 +69,14 @@ function UserObservations({ productId }) {
             </thead>
             <tbody>
               {observations.map((observation) => (
-                <tr key={observation.observationId}>
+                <tr key={observation.observationID}>
                   <td>{observation.productID}</td>
                   <td>{observation.userID}</td>
                   <td>{observation.title}</td>
                   <td>{observation.body.substring(0, 20)}{observation.body.length > 20 ? "..." : ""}</td>
                   <td>{observation.date_Hour ? observation.date_Hour.substring(0, 10) : ''}</td>
                   <td>
-                    <button onClick={() => deleteObservation(observation.observationId)}>Delete</button>
+                    <button onClick={() => deleteObservation(observation.observationID)}>Delete</button>
                   </td>
                 </tr>
               ))}
