@@ -78,43 +78,40 @@ function UserObservations({ productId }) {
 
   return (
     <div className='containerObs'>
-      <h2>Observations</h2>
+      
       <Sidebar/>
-      {observations.length > 0 ? (
-        <table>
-          <thead>
-            <tr>
-              <th>Product ID</th>
-              <th>User ID</th>
-              <th>Title</th>
-              <th>Body</th>
-              <th>Date_Hour</th>
-              <th>Actions</th>
-            </tr>
-          </thead>
-          <tbody>
-            {observations.map((observation) => (
-              <tr key={observation.observationId}>
-                <td>{observation.productID}</td>
-                <td>{observation.userID}</td>
-                <td>{observation.title}</td>
-                <td>{observation.body}</td>
-                <td>{observation.date_hour ? observation.date_hour.substring(0, 10) : ''}</td>
-
-                
-                <td>
-                  <button onClick={() => deleteObservation(observation.observationId)}>Delete</button>
-                  
-                </td>
+      <div className='tableWrapper'>
+        {observations.length > 0 ? (
+          <table>
+            <thead>
+              <tr>
+                <th>Product ID</th>
+                <th>User ID</th>
+                <th>Title</th>
+                <th>Body</th>
+                <th>Date_Hour</th>
+                <th>Actions</th>
               </tr>
-            ))}
-          </tbody>
-        </table>
-       
-      ) : (
-        <p>No observations found.</p>
-        
-      )}
+            </thead>
+            <tbody>
+              {observations.map((observation) => (
+                <tr key={observation.observationId}>
+                  <td>{observation.productID}</td>
+                  <td>{observation.userID}</td>
+                  <td>{observation.title}</td>
+                  <td>{observation.body.substring(0, 20)}{observation.body.length > 20 ? "..." : ""}</td>
+                  <td>{observation.date_Hour ? observation.date_Hour.substring(0, 10) : ''}</td>
+                  <td>
+                    <button onClick={() => deleteObservation(observation.observationId)}>Delete</button>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        ) : (
+          <p>No observations found.</p>
+        )}
+      </div>
     </div>
   );
 }

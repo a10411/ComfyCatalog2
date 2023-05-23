@@ -9,7 +9,7 @@ function UserProducts() {
   const [images, setImages] = useState([]);
   const [imagesFetched, setImagesFetched] = useState(false);
   const [userID, setUserID] = useState(null);
-
+  const token = localStorage.getItem('token');
 
 
   useEffect(() => {
@@ -24,7 +24,11 @@ function UserProducts() {
 
   const fetchProducts = async () => {
     try {
-      const response = await fetch(`${API_URL}/api/GetAllProducts`);
+      const response = await fetch(`${API_URL}/api/GetAllProducts`, {
+        headers: {
+          'Authorization': 'Bearer ' + token
+        }
+      });
       if (response.ok) {
         const responseData = await response.json();
         console.log(responseData);
@@ -40,6 +44,7 @@ function UserProducts() {
       console.error('An error occurred while fetching products:', error);
     }
   };
+  
 
   const fetchImages = async () => {
     try {
