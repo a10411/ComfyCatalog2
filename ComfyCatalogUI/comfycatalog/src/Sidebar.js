@@ -6,7 +6,7 @@ import heart from './Utils/Icons/heart.svg';
 import pencil3 from './Utils/Icons/pencil3.svg';
 import trademark2 from './Utils/Icons/trademark2.svg';
 import logoutIcon from './Utils/Icons/logout.svg';
-
+import sock from './Utils/Icons/sock.svg';
 
 const Sidebar = ({ handleLogout }) => {
   return (
@@ -32,9 +32,14 @@ const Sidebar = ({ handleLogout }) => {
             <img src={pencil3} alt="Observations Icon" className="nav-icon" title="Observations" />
           </NavLink>
         </li>
+        <li className="liSidebar">
+          <NavLink to="/UserComponents" className="nav-linkSidebar">
+            <img src={sock} alt="Products Icon" className="nav-icon" title="Products" />
+          </NavLink>
+        </li>
       </ul>
-      <div className="liSidebar"style={{ marginTop: '90px' }}>
-      <NavLink onClick={handleLogout} to="/Logout" className="nav-linkSidebar">
+      <div className="liSidebar" style={{ marginTop: '90px' }}>
+        <NavLink to="/Logout" className="nav-linkSidebar">
           <img src={logoutIcon} alt="Logout Icon" className="nav-icon" title="Logout" />
         </NavLink>
       </div>

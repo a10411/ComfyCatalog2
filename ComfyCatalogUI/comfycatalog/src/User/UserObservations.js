@@ -4,18 +4,25 @@ import '../CSS/App.css';
 import '../CSS/ObsTable.css';
 import Sidebar from '../Sidebar';
 
-function UserObservations({ productId }) {
+function UserObservations({ productId, userID }) {
   const API_URL = variables.API_URL;
   const [observations, setObservations] = useState([]);
 
 
   useEffect(() => {
-    fetchObservations();
-  }, [productId]);
+    if (userID) {
+      fetchObservations(userID);
+    }
+  }, [productId, userID]);
 
-  const fetchObservations = async () => {
+
+
+  const fetchObservations = async (userID) => {
     try {
-      const response = await fetch(`${API_URL}/Observation`);
+      const response = await fetch(`${API_URL}/api/GetObservationsByUserID/${userID}`, {
+        method: 'GET',
+      });
+
       if (response.ok) {
         const responseData = await response.json();
         if (Array.isArray(responseData.data)) {

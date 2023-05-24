@@ -45,6 +45,29 @@ namespace ComfyCatalogDAL.Services
             return userList;
         }
 
+        public static async Task<int> GetUserIDFromCredentials(string conString, string username)
+        {
+            int userID = 0;
+
+            using (SqlConnection con = new SqlConnection(conString))
+            {
+                string query = $"SELECT UserID FROM [User] WHERE username = '{username}'";
+                SqlCommand cmd = new SqlCommand(query, con);
+                cmd.CommandType = CommandType.Text;
+                con.Open();
+
+                SqlDataReader rdr = cmd.ExecuteReader();
+                while(rdr.Read())
+                {
+                    userID = rdr.GetInt32(0);
+                }
+                rdr.Close();
+                con.Close();
+            }
+
+            return userID;
+        }
+
         private static async Task<bool> UsernameExists(string conString, string username)
         {
             try

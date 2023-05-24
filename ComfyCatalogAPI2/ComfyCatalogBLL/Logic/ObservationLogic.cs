@@ -19,7 +19,7 @@ namespace ComfyCatalogBLL.Logic
     /// </summary>
     public class ObservationLogic
     {
-        public static async Task <Response> GetObservation(string conString)
+        public static async Task <Response> GetAllObservations(string conString)
         {
             Response response = new Response();
             List<Observation> obsList = await ObservationService.GetAllObservations(conString);
@@ -31,6 +31,20 @@ namespace ComfyCatalogBLL.Logic
             }
             return response;
         }
+      
+        public static async Task<Response> GetObservationsByUserID(string conString, int userID)
+        {
+            Response response = new Response();
+            List<Observation> obsList = await ObservationService.GetObservationsByUserID(conString, userID);
+            if (obsList.Count != 0)
+            {
+                response.StatusCode = StatusCodes.SUCCESS;
+                response.Message = "Sucesso na obtenção dos dados";
+                response.Data = obsList;
+            }
+            return response;
+        }
+      
 
         public static async Task<Response> GetObservationByProduct(string conString, int productID)
         {

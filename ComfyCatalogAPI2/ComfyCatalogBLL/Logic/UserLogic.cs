@@ -38,6 +38,19 @@ namespace ComfyCatalogBLL.Logic
             return response;
         }
 
+        public static async Task<Response> GetUserIDFromCredentials(string conString, string username)
+        {
+            Response response = new Response();
+            int userID = await ComfyCatalogDAL.Services.UserService.GetUserIDFromCredentials(conString, username);
+            if (userID > 0)
+            {
+                response.StatusCode = StatusCodes.SUCCESS;
+                response.Message = "UserID obtido";
+                response.Data = userID;
+            }
+            return response;
+        }
+
         /// <summary>
         /// Trata da parte lógica relativa ao Login do User
         /// Gera uma resposta que será utilizada pela ComfyCatalogAPI para resopnder ao request do utilizador (POST - User (LoginUser))

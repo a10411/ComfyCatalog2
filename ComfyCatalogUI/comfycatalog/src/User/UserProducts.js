@@ -24,8 +24,6 @@ function UserProducts() {
   }, []);
 
 
-
-
   const fetchProducts = async () => {
     try {
       const token = localStorage.getItem('token');

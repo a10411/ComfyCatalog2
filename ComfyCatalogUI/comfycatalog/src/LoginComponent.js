@@ -25,10 +25,23 @@ function LoginComponent() {
         },
       });
       const data = await response.json();
-      //console.log(data);
+  
       if (response.ok) {
-       
-        const token = data.data // Access the 'token' property from 'data'
+        const token = data.data;
+        
+        // Retrieve the user ID from the backend
+        const userIDResponse = await fetch(`${API_URL}/api/GetUserIDFromCredentials?username=${username}`, {
+          method: 'GET',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${token}` // Include the token in the request headers
+          },
+        });
+        const userIDData = await userIDResponse.json();
+        const userID = userIDData.data; // Access the 'userID' property from 'userIDData'
+  
+        // Do something with the user ID, such as storing it in state or using it for further operations
+  
         setToken(token);
         console.log(token);
         window.location.href = loginType === 'admin' ? '/AdminComponents' : '/UserComponents';
@@ -41,6 +54,7 @@ function LoginComponent() {
       setError('An error occurred while logging in.');
     }
   };
+  
 
   return (
     <div>

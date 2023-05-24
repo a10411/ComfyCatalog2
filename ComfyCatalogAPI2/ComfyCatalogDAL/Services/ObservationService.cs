@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
+using System.Globalization;
 
 namespace ComfyCatalogDAL.Services
 {
@@ -41,6 +42,27 @@ namespace ComfyCatalogDAL.Services
             return obsList;
         }
 
+        public static async Task<List<Observation>> GetObservationsByUserID(string conString, int userID)
+        {
+            var obsList = new List<Observation>();
+            using (SqlConnection con = new SqlConnection(conString))
+            {
+                SqlCommand cmd = new SqlCommand("SELECT * FROM Observation WHERE userID = @UserID", con);
+                cmd.CommandType = CommandType.Text;
+                cmd.Parameters.AddWithValue("@UserID", userID);
+                con.Open();
+
+                SqlDataReader rdr = await cmd.ExecuteReaderAsync();
+                while (rdr.Read())
+                {
+                    Observation observation = new Observation(rdr);
+                    obsList.Add(observation);
+                }
+                rdr.Close();
+                con.Close();
+            }
+            return obsList;
+        }
 
         public static async Task<List<Observation>> GetObservationByProduct(string conString, int productID )
         {
