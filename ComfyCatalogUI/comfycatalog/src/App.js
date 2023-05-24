@@ -8,6 +8,7 @@ import UserBrandsComponent from './User/UserBrands';
 import UserFavouritesComponent from './User/UserFavourites';
 import UserSportsComponent from './User/UserSports';
 import UserObservationsComponent from './User/UserObservations';
+import UserObservationDetailsComponent from './User/UserObservationDetails';
 import Logout from './Logout'; 
 
 
@@ -35,6 +36,8 @@ function App() {
         <Route path="/UserFavourites" element={<UserFavouritesComponent />} />
         <Route path="/UserSports" element={<UserSportsComponent />} />
         <Route path="/UserObservations" element={<UserObservationsComponent />} />
+        <Route path="/UserObservationDetails" element={<UserObservationDetailsComponent />} />
+        <UserObservationDetailsComponent observation={selectedObservation} />
         <Route path="/Logout" element={<Logout />} />
       </Routes>
     </BrowserRouter>

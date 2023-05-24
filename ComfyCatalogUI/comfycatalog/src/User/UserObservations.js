@@ -4,11 +4,22 @@ import '../CSS/App.css';
 import '../CSS/ObsTable.css';
 import Sidebar from '../Sidebar';
 import { getUserID } from '../Global';
+import { useNavigate } from 'react-router-dom';
+
 
 function UserObservations({ productId}) {
   const API_URL = variables.API_URL;
   const [observations, setObservations] = useState([]);
+  const [selectedObservation, setSelectedObservation] = useState(null);
   const userID = localStorage.getItem('UserID');
+  const navigate = useNavigate();
+
+
+
+  const handleViewObservation = (observation) => {
+    setSelectedObservation(observation);
+    navigate('/UserObservationDetails');
+  };
 
   useEffect(() => { 
     fetchObservations(userID);
@@ -78,9 +89,11 @@ function UserObservations({ productId}) {
                   <td>{observation.productID}</td>
                   <td>{observation.title}</td>
                   <td>{observation.body.substring(0, 20)}{observation.body.length > 20 ? "..." : ""}</td>
-                  <td>{observation.date_Hour ? observation.date_Hour.substring(0, 15) : ''}</td>
+                  <td>{observation.date_Hour ? observation.date_Hour.substring(0, 16) : ''}</td>
                   <td>
-                    <button onClick={() => deleteObservation(observation.observationID)}>Delete</button>
+                    <button className='buttonObsDel' onClick={() => deleteObservation(observation.observationID)}>Delete</button>
+                    
+                    <button onClick={() => handleViewObservation(observation)}>View</button>
                   </td>
                 </tr>
               ))}

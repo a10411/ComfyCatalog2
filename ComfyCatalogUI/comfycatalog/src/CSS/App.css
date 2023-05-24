@@ -39,8 +39,6 @@ body{
   
 }
 
-
-
 .navbar-nav2{
 
   margin-right: 75%;
@@ -64,8 +62,6 @@ li {
   margin-left: 15px;
   
 }
-
-
 
 
 .nav-link {
@@ -226,4 +222,19 @@ img {
 
 p{
   text-align: center;
+}
+
+.buttonObsDel {
+  margin-right: 10px;
+  border-radius: 16px;
+  background-color: rgb(124, 0, 0);
+  justify-content: center;
+
+}
+
+.buttonObsView {
+  margin-left: 10px;
+  border-radius: 16px;
+  background-color: rgb(186, 193, 197);
+  justify-content: center;
 }

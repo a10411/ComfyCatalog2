@@ -1,0 +1,33 @@
+.observation-details-container {
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .observation-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .observation-title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .observation-date {
+    font-size: 14px;
+    color: #000000;
+  }
+  
+  .observation-body {
+    text-align: center;
+  }
+  
+  .observation-text {
+    font-size: 16px;
+  }
+  

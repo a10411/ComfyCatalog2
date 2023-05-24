@@ -42,6 +42,26 @@ namespace ComfyCatalogDAL.Services
             return obsList;
         }
 
+        public static async Task<Observation> GetObservationByID(string conString, int obsID)
+        {
+            Observation obs = new Observation();
+            using (SqlConnection con = new SqlConnection(conString))
+            {
+                SqlCommand cmd = new SqlCommand($"SELECT * FROM Observation WHERE obsID = {obsID}", con);
+                cmd.CommandType = CommandType.Text;
+                con.Open();
+
+                SqlDataReader rdr = cmd.ExecuteReader();
+                while(rdr.Read())
+                {
+                    obs = new Observation(rdr);
+                }
+                rdr.Close();
+                con.Close();
+            }
+            return obs;
+        }
+
         public static async Task<List<Observation>> GetObservationsByUserID(string conString, int userID)
         {
             var obsList = new List<Observation>();
