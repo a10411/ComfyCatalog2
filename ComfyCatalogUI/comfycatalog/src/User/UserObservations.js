@@ -3,23 +3,23 @@ import { variables } from '../Utils/Variables';
 import '../CSS/App.css';
 import '../CSS/ObsTable.css';
 import Sidebar from '../Sidebar';
+import { getUserID } from '../Global';
 
-function UserObservations({ productId, userID }) {
+function UserObservations({ productId}) {
   const API_URL = variables.API_URL;
   const [observations, setObservations] = useState([]);
+  const userID = localStorage.getItem('UserID');
 
+  useEffect(() => { 
+    fetchObservations(userID);
+  }, [productId]);
 
-  useEffect(() => {
-    if (userID) {
-      fetchObservations(userID);
-    }
-  }, [productId, userID]);
-
+  getUserID();
 
 
   const fetchObservations = async (userID) => {
     try {
-      const response = await fetch(`${API_URL}/api/GetObservationsByUserID/${userID}`, {
+      const response = await fetch(`${API_URL}/api/GetObservationByUserID/${userID}`, {
         method: 'GET',
       });
 
@@ -47,7 +47,7 @@ function UserObservations({ productId, userID }) {
 
       if (response.ok) {
         // Refresh the observations after successfully deleting one
-        fetchObservations();
+        fetchObservations(userID);
       } else {
         console.error('Failed to delete observation:', response.statusText);
       }
@@ -59,15 +59,13 @@ function UserObservations({ productId, userID }) {
 
   return (
     <div className='containerObs'>
-      
       <Sidebar/>
       <div className='tableWrapper'>
-        {observations.length > 0 ? (
+      {observations.length > 0 ? (  
           <table>
             <thead>
               <tr>
                 <th>Product ID</th>
-                <th>User ID</th>
                 <th>Title</th>
                 <th>Body</th>
                 <th>Date_Hour</th>
@@ -78,10 +76,9 @@ function UserObservations({ productId, userID }) {
               {observations.map((observation) => (
                 <tr key={observation.observationID}>
                   <td>{observation.productID}</td>
-                  <td>{observation.userID}</td>
                   <td>{observation.title}</td>
                   <td>{observation.body.substring(0, 20)}{observation.body.length > 20 ? "..." : ""}</td>
-                  <td>{observation.date_Hour ? observation.date_Hour.substring(0, 10) : ''}</td>
+                  <td>{observation.date_Hour ? observation.date_Hour.substring(0, 15) : ''}</td>
                   <td>
                     <button onClick={() => deleteObservation(observation.observationID)}>Delete</button>
                   </td>
@@ -89,9 +86,9 @@ function UserObservations({ productId, userID }) {
               ))}
             </tbody>
           </table>
-        ) : (
-          <p>No observations found.</p>
-        )}
+                ) : (
+                  <p>No observations found.</p>
+                )}
       </div>
     </div>
   );

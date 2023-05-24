@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './CSS/Login.css';
 import { variables } from './Utils/Variables';
-import { setToken } from './Global.js';
+import { setUserID, setToken } from './Global.js';
 
 
 
@@ -39,11 +39,12 @@ function LoginComponent() {
         });
         const userIDData = await userIDResponse.json();
         const userID = userIDData.data; // Access the 'userID' property from 'userIDData'
-  
-        // Do something with the user ID, such as storing it in state or using it for further operations
-  
+        
+        setUserID(userID);  
+        console.log(userID);
         setToken(token);
         console.log(token);
+        
         window.location.href = loginType === 'admin' ? '/AdminComponents' : '/UserComponents';
       } else {
         // Login failed, display error message

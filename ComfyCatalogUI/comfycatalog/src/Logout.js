@@ -6,8 +6,10 @@ const Logout = () => {
   const [showConfirmation, setShowConfirmation] = useState(false);
 
   const handleLogout = () => {
-    const token = localStorage.getItem('token');
+    
     localStorage.removeItem('token');
+    
+    localStorage.removeItem('userID');
     navigate('/');
   };
 
@@ -21,19 +23,24 @@ const Logout = () => {
   };
 
   return (
-    <div>
+    <div className="LogoutContainer">
       {showConfirmation ? (
-        <div>
+        <div className="LogoutConfirmationContainer">
           <p>Are you sure you want to logout?</p>
-          <button onClick={handleLogout}>Yes</button>
-          <button onClick={handleCancel}>No</button>
+          <div className="LogoutButtons">
+            <button className="LogoutButton" onClick={handleLogout}>Yes</button>
+            <button className="LogoutButton" onClick={handleCancel}>No</button>
+          </div>
         </div>
       ) : (
-        <button onClick={handleConfirmation}>Logout</button>
+        <button className="LogoutButton" onClick={handleConfirmation}>Logout</button>
       )}
     </div>
   );
 };
 
+
+
 export default Logout;
+
 

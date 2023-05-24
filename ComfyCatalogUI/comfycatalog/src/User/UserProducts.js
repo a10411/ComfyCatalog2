@@ -27,7 +27,8 @@ function UserProducts() {
   const fetchProducts = async () => {
     try {
       const token = localStorage.getItem('token');
-  
+      const userID = localStorage.getItem('userID');
+      console.log(userID)
       if (token) {
         const response = await fetch(`${API_URL}/api/GetAllProducts`, {
           headers: {
@@ -36,7 +37,7 @@ function UserProducts() {
         });
         if (response.ok) {
           const responseData = await response.json();
-          console.log(responseData);
+          
           if (Array.isArray(responseData.data)) {
             setProducts(responseData.data);
           } else {
@@ -96,7 +97,7 @@ function UserProducts() {
     <div>
       {unauthorized ? (
         <div>
-          <p>Unauthorized: Please login to access this page.</p>
+          <p>{notification}</p>
           <button className='goToLogin' onClick={() => navigate('/') }>Go to Login</button>
         </div>
       ) : (

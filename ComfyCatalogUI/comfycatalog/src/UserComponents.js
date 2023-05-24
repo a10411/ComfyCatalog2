@@ -10,18 +10,30 @@ import { variables } from './Utils/Variables';
 import { BrowserRouter } from 'react-router-dom';
 import Sidebar from './Sidebar';
 import { useNavigate } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import {getToken, getUserID} from './Global';
 
 function UserComponents() {
 
-  const token = localStorage.getItem('token');
-  console.log(token);
+  getToken();
+  const token = getToken();
   const navigate = useNavigate();
+  console.log(token);
+  const userID = getUserID();
+  console.log(userID);
+
 
   const handleLogout = () => {
-    localStorage.removeItem('token'); // Clear the token from localStorage
+    localStorage.removeItem('token');
+    localStorage.removeItem('UserID'); // Clear the token from localStorage
     navigate('/');
   };
 
+  useEffect(() => {
+    if (!token) {
+      navigate('/'); // Navigate to home page if token is not found
+    }
+  }, [token, navigate]);
   
     return (
           <div>
