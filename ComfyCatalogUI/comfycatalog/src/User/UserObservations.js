@@ -18,7 +18,7 @@ function UserObservations({ productId}) {
 
   const handleViewObservation = (observation) => {
     setSelectedObservation(observation);
-    navigate('/UserObservationDetails');
+    navigate('/UserObservationDetails', { state: { observationID: observation.observationID } });
   };
 
   useEffect(() => { 
@@ -93,7 +93,7 @@ function UserObservations({ productId}) {
                   <td>
                     <button className='buttonObsDel' onClick={() => deleteObservation(observation.observationID)}>Delete</button>
                     
-                    <button onClick={() => handleViewObservation(observation)}>View</button>
+                    <button className='buttonObsView' onClick={() => handleViewObservation(observation)}>View</button>
                   </td>
                 </tr>
               ))}

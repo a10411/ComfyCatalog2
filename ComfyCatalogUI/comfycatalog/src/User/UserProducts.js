@@ -13,6 +13,7 @@ function UserProducts() {
   const [unauthorized, setUnauthorized] = useState(false);
   const [notification, setNotification] = useState('');
   const navigate = useNavigate();
+  const [searchTerm, setSearchTerm] = useState('');
 
 
 
@@ -22,6 +23,14 @@ function UserProducts() {
      // Retrieve the logged-in user's ID (e.g., from session, local storage, or context)
     
   }, []);
+
+  const handleSearch = (e) => {
+    setSearchTerm(e.target.value);
+  };
+
+  const filteredProducts = products.filter((product) =>
+  product.productName.toLowerCase().includes(searchTerm.toLowerCase())
+);
 
 
   const fetchProducts = async () => {
@@ -95,32 +104,48 @@ function UserProducts() {
 
   return (
     <div>
+           <input
+            type="text"
+            value={searchTerm}
+            onChange={handleSearch}
+            placeholder="Search product..."
+            className="search-input"
+          />
       {unauthorized ? (
         <div>
           <p>{notification}</p>
           <button className='goToLogin' onClick={() => navigate('/') }>Go to Login</button>
         </div>
       ) : (
+        
         <div className="product-container">
-          {products.map((product) => (
-            <div key={product.productID} className="product-card">
-              {images
-                .filter((image) => image.productID === product.productID)
-                .map((image) => (
-                  <img
-                    key={image.imageID}
-                    src={`${API_URL}/api/GetImage/${image.imageName}`}
-                    alt={product.productName}
-                    className="product-image"
-                  />
-                ))}
-              <div className="product-name">{product.productName}</div>
-            </div>
-          ))}
+     
+          {filteredProducts.length === 0 ? (
+            <div className="no-products">No products found.</div>
+          ) : (
+            filteredProducts.map((product) => (
+              <div key={product.productID} className="product-card">
+                {images
+                  .filter((image) => image.productID === product.productID)
+                  .map((image) => (
+                    <img
+                      key={image.imageID}
+                      src={`${API_URL}/api/GetImage/${image.imageName}`}
+                      alt={product.productName}
+                      className="product-image"
+                    />
+                  ))}
+                <div className="product-name">{product.productName}</div>
+                
+              </div>
+              
+            ))
+          )}
         </div>
       )}
     </div>
   );
+  
   
 }
 

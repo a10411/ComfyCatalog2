@@ -15,12 +15,9 @@ import {getToken, getUserID} from './Global';
 
 function UserComponents() {
 
-  getToken();
   const token = getToken();
-  const navigate = useNavigate();
-  console.log(token);
   const userID = getUserID();
-  console.log(userID);
+  const navigate = useNavigate();
 
 
   const handleLogout = () => {
@@ -37,15 +34,14 @@ function UserComponents() {
   
     return (
           <div>
-              <div className='titleContainer'>
-                <h1> USER COMPONENTS </h1>
-              </div>
+              {/* <div className='titleContainer'>
+                <h1> COMFYSOCKS </h1>
+              </div> */}
               <div className='sidebarContainer'>
               <Sidebar handleLogout={handleLogout} />
               </div>
               <div className='userProductsContainer'>
-                <UserProducts/>
-                
+                <UserProducts/>  
               </div>
           </div>
     );

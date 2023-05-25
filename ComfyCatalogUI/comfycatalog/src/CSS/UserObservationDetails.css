@@ -1,33 +1,38 @@
 .observation-details-container {
-    width: 500px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
+  width: 1080px;
+  height: auto;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 16px;
+}
+
+.observation-details-header {
+  text-align: center;
   
-  .observation-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
-  }
-  
-  .observation-title {
-    font-size: 20px;
-    font-weight: bold;
-  }
-  
-  .observation-date {
-    font-size: 14px;
-    color: #000000;
-  }
-  
-  .observation-body {
-    text-align: center;
-  }
-  
-  .observation-text {
-    font-size: 16px;
-  }
-  
+}
+
+.observation-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  top: 0;
+}
+
+.observation-date {
+  font-size: 20px;
+  color: #000000;
+}
+
+.observation-details-body {
+  text-align: center;
+}
+
+.observation-text {
+  font-size: 20px;
+}

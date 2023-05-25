@@ -37,7 +37,6 @@ function App() {
         <Route path="/UserSports" element={<UserSportsComponent />} />
         <Route path="/UserObservations" element={<UserObservationsComponent />} />
         <Route path="/UserObservationDetails" element={<UserObservationDetailsComponent />} />
-        <UserObservationDetailsComponent observation={selectedObservation} />
         <Route path="/Logout" element={<Logout />} />
       </Routes>
     </BrowserRouter>

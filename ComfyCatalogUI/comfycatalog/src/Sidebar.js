@@ -13,13 +13,13 @@ const Sidebar = ({ handleLogout }) => {
     <div className="sidebar">
       <ul className="ulSidebar">
         <li className="liSidebar">
-          <NavLink to="/UserBrands" className="nav-linkSidebar">
-            <img src={trademark2} alt="Brands Icon" className="nav-icon" title="Brands" />
+          <NavLink to="/UserFavourites" className="nav-linkSidebar">
+            <img src={heart} alt="Favorites Icon" className="nav-icon" title="Favorites" />
           </NavLink>
         </li>
         <li className="liSidebar">
-          <NavLink to="/UserFavourites" className="nav-linkSidebar">
-            <img src={heart} alt="Favorites Icon" className="nav-icon" title="Favorites" />
+          <NavLink to="/UserBrands" className="nav-linkSidebar">
+            <img src={trademark2} alt="Brands Icon" className="nav-icon" title="Brands" />
           </NavLink>
         </li>
         <li className="liSidebar">
