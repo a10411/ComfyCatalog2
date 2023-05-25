@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes , Navigate } from 'react-router-dom';
 import LoginComponent from './LoginComponent';
+import RegisterComponent from './RegisterComponent';
 import UserComponents from './UserComponents';
 import AdminComponents from './AdminComponents';
 import HomeComponent from './HomeComponent';
@@ -30,6 +31,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomeComponent />} />
         <Route path="/LoginComponent" element={<LoginComponent />} />
+        <Route path="/RegisterComponent" element={<RegisterComponent />} />
         <Route path="/UserComponents" element={<UserComponents />} />
         <Route path="/AdminComponents" element={<AdminComponents />} />
         <Route path="/UserBrands" element={<UserBrandsComponent />} />
