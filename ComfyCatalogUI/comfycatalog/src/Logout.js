@@ -19,10 +19,11 @@ const Logout = () => {
 
   const handleCancel = () => {
     setShowConfirmation(false);
-    navigate('/UserComponents'); // Replace 'UserProducts' with the appropriate route
+    navigate('/UserComponents'); 
   };
 
   return (
+    
     <div className="LogoutContainer">
       {showConfirmation ? (
         <div className="LogoutConfirmationContainer">

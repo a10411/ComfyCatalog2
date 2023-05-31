@@ -104,22 +104,22 @@ function UserProducts() {
 
   return (
     <div>
-           <input
-            type="text"
-            value={searchTerm}
-            onChange={handleSearch}
-            placeholder="Search product..."
-            className="search-input"
-          />
+      <h1>
+      <input
+        type="text"
+        value={searchTerm}
+        onChange={handleSearch}
+        placeholder="Search product..."
+        className="search-input"
+      />
+      </h1>
       {unauthorized ? (
         <div>
           <p>{notification}</p>
           <button className='goToLogin' onClick={() => navigate('/') }>Go to Login</button>
         </div>
       ) : (
-        
         <div className="product-container">
-     
           {filteredProducts.length === 0 ? (
             <div className="no-products">No products found.</div>
           ) : (
@@ -136,12 +136,12 @@ function UserProducts() {
                     />
                   ))}
                 <div className="product-name">{product.productName}</div>
-                
               </div>
               
             ))
           )}
         </div>
+       
       )}
     </div>
   );

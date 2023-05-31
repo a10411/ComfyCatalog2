@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Route, Routes , Navigate } from 'react-router-dom';
 import LoginComponent from './LoginComponent';
 import RegisterComponent from './RegisterComponent';
@@ -15,7 +15,17 @@ import Logout from './Logout';
 
 
 const PrivateRoute = ({ path, element }) => {
-  const isAuthenticated = !!localStorage.getItem('token');
+  const [isAuthenticated, setIsAuthenticated] = useState(!!localStorage.getItem('token'));
+
+  useEffect(() => {
+    // Check authentication state when component mounts
+    const checkAuthentication = () => {
+      const token = localStorage.getItem('token');
+      setIsAuthenticated(!!token);
+    };
+
+    checkAuthentication();
+  }, []);
 
   if (isAuthenticated) {
     return <Route path={path} element={element} />;

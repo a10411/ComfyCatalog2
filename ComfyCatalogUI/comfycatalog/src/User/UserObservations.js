@@ -5,6 +5,7 @@ import '../CSS/ObsTable.css';
 import Sidebar from '../Sidebar';
 import { getUserID } from '../Global';
 import { useNavigate } from 'react-router-dom';
+import { getToken } from '../Global';
 
 
 function UserObservations({ productId}) {
@@ -13,6 +14,8 @@ function UserObservations({ productId}) {
   const [selectedObservation, setSelectedObservation] = useState(null);
   const userID = localStorage.getItem('UserID');
   const navigate = useNavigate();
+  const [unauthorized, setUnauthorized] = useState(false);
+  const [notification, setNotification] = useState('');
 
 
 
@@ -30,6 +33,12 @@ function UserObservations({ productId}) {
 
   const fetchObservations = async (userID) => {
     try {
+      const token = getToken();
+      if (!token) {
+        setUnauthorized(true);
+        setNotification('Unauthorized: Please login to access this page.');
+        return;
+      }
       const response = await fetch(`${API_URL}/api/GetObservationByUserID/${userID}`, {
         method: 'GET',
       });

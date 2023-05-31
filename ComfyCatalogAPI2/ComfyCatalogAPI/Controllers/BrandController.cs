@@ -41,7 +41,7 @@ namespace ComfyCatalogAPI.Controllers
         [SwaggerResponse(StatusCodes.Status404NotFound, Description = "The requested resource was not found.")]
         [SwaggerResponse(StatusCodes.Status500InternalServerError, Description = "An unexpected API error has occurred.")]
         [HttpGet]
-        [Route("/GetAllBrands")]
+        [Route("/api/GetAllBrands")]
         public async Task<IActionResult> GetAllBrands()
         {
             string CS = _configuration.GetConnectionString("WebApiDatabase");
@@ -66,7 +66,7 @@ namespace ComfyCatalogAPI.Controllers
         [SwaggerResponse(StatusCodes.Status500InternalServerError, Description = "An unexpected API error has occurred.")]
         //[Authorize]
         [HttpPost]
-        [Route("/AddBrand")]
+        [Route("/api/AddBrand")]
         public async Task<IActionResult> AddBrand(Brand brandToAdd)
         {
             string CS = _configuration.GetConnectionString("WebApiDatabase");

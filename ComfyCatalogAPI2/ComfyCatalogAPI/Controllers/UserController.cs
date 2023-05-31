@@ -159,7 +159,7 @@ namespace ComfyCatalogAPI.Controllers
         [SwaggerResponse(StatusCodes.Status500InternalServerError, Description = "An unexpected API error has occurred.")]
         //[Authorize(Roles = "Admin")]
         [HttpPost]
-        [Route("/RegisterUser")]
+        [Route("/api/RegisterUser")]
         public async Task<IActionResult> RegisterUser(string username, string password)
         {
             string CS = _configuration.GetConnectionString("WebApiDatabase");

@@ -98,7 +98,7 @@ h2{
 
 h1{
   font-size: large;
-  margin-left: 100px;
+  margin-left: 120px;
  
 }
 
@@ -118,16 +118,6 @@ h1{
   margin-left: 100px;
 }
 
-.search-input{
-  height: 25px;
-  text-decoration: none;
-  font-family: 'Courier New', Courier, monospace;
-}
-
-.search-input::placeholder {
-  font-family: Arial, sans-serif !important;
-  /* Add any other desired styles */
-}
 
 
 .product-container {
@@ -235,4 +225,25 @@ p{
   justify-content: center;
 }
 
+.confirmPassword{
+  margin-right: 65px;
+}
 
+.password-strength-bar {
+  width: 15%;
+  height: 10px;
+  background: #ccc;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.password-strength-indicator {
+  height: 100%;
+  transition: width 0.5s ease;
+  width: 15%;
+  
+}
+
+span {
+  font-size: 12px;
+}

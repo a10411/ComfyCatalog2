@@ -19,13 +19,6 @@ function UserComponents() {
   const userID = getUserID();
   const navigate = useNavigate();
 
-
-  const handleLogout = () => {
-    localStorage.removeItem('token');
-    localStorage.removeItem('UserID'); // Clear the token from localStorage
-    navigate('/');
-  };
-
   useEffect(() => {
     if (!token) {
       navigate('/'); // Navigate to home page if token is not found
@@ -38,9 +31,9 @@ function UserComponents() {
                 <h1> COMFYSOCKS </h1>
               </div> */}
               <div className='sidebarContainer'>
-              <Sidebar handleLogout={handleLogout} />
+              <Sidebar />
               </div>
-              <div className='userProductsContainer'>
+              <div >
                 <UserProducts/>  
               </div>
           </div>
