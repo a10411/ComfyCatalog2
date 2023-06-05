@@ -2,6 +2,10 @@ import { useEffect, useState } from 'react';
 import { variables } from '../Utils/Variables';
 import '../CSS/App.css';
 import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import { faPlus } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { getUserID } from '../Global';
 
 
 function UserProducts() {
@@ -15,13 +19,10 @@ function UserProducts() {
   const navigate = useNavigate();
   const [searchTerm, setSearchTerm] = useState('');
 
-
-
   useEffect(() => {
     fetchProducts();
     fetchImages();
-     // Retrieve the logged-in user's ID (e.g., from session, local storage, or context)
-    
+    // Retrieve the logged-in user's ID (e.g., from session, local storage, or context)
   }, []);
 
   const handleSearch = (e) => {
@@ -29,24 +30,28 @@ function UserProducts() {
   };
 
   const filteredProducts = products.filter((product) =>
-  product.productName.toLowerCase().includes(searchTerm.toLowerCase())
-);
+    product.productName.toLowerCase().includes(searchTerm.toLowerCase())
+  );
 
+  const navigateToAddObservation = (productID) => {
+    navigate('/UserAddObservation', { state: { productID } });
+  };
 
   const fetchProducts = async () => {
     try {
       const token = localStorage.getItem('token');
       const userID = localStorage.getItem('userID');
-      console.log(userID)
+ 
+      
       if (token) {
         const response = await fetch(`${API_URL}/api/GetAllProducts`, {
           headers: {
-            'Authorization': `Bearer ${token}`
-          }
+            Authorization: `Bearer ${token}`,
+          },
         });
         if (response.ok) {
           const responseData = await response.json();
-          
+
           if (Array.isArray(responseData.data)) {
             setProducts(responseData.data);
           } else {
@@ -66,8 +71,6 @@ function UserProducts() {
       console.error('An error occurred while fetching products:', error);
     }
   };
-  
-  
 
   const fetchImages = async () => {
     try {
@@ -89,7 +92,6 @@ function UserProducts() {
     }
   };
 
-
   if (!Array.isArray(products)) {
     return <div>Products are not available.</div>;
   }
@@ -105,18 +107,20 @@ function UserProducts() {
   return (
     <div>
       <h1>
-      <input
-        type="text"
-        value={searchTerm}
-        onChange={handleSearch}
-        placeholder="Search product..."
-        className="search-input"
-      />
+        <input
+          type="text"
+          value={searchTerm}
+          onChange={handleSearch}
+          placeholder="Search product..."
+          className="search-input"
+        />
       </h1>
       {unauthorized ? (
         <div>
           <p>{notification}</p>
-          <button className='goToLogin' onClick={() => navigate('/') }>Go to Login</button>
+          <button className="goToLogin" onClick={() => navigate('/')}>
+            Go to Login
+          </button>
         </div>
       ) : (
         <div className="product-container">
@@ -136,17 +140,18 @@ function UserProducts() {
                     />
                   ))}
                 <div className="product-name">{product.productName}</div>
+                <div
+              className="plus-icon-container"
+              onClick={() => navigateToAddObservation(product.productID)}>
+              <FontAwesomeIcon icon={faPlus} className="plus-icon" />
+            </div>
               </div>
-              
             ))
           )}
         </div>
-       
       )}
     </div>
   );
-  
-  
 }
 
 export default UserProducts;

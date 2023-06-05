@@ -30,6 +30,8 @@ function UserObservations({ productId}) {
 
   getUserID();
 
+  console.log(userID);
+
 
   const fetchObservations = async (userID) => {
     try {

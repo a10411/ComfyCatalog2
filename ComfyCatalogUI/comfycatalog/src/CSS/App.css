@@ -247,3 +247,25 @@ p{
 span {
   font-size: 12px;
 }
+
+/* 
+.product-card {
+  position: relative;
+} */
+
+.plus-icon-container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1; /* Ensures the plus icon appears above the product image */
+  cursor: pointer;
+}
+
+.plus-icon {
+  color: #ffffff;
+  background-color: #000000;
+  padding: 8px;
+  border-radius: 50%;
+  
+  
+}
