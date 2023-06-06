@@ -74,6 +74,9 @@ function UserProductDetail() {
         <Sidebar />
       </div>
       <div className="product-details">
+      {imageURL && (
+            <img className="product-image" src={`${API_URL}/api/GetImage/${imageURL}`} alt="Product" />
+        )}
         <div className="product-details-content">
           <p className="product-detail">
             <span className="product-label">Product Name:</span>
@@ -108,11 +111,7 @@ function UserProductDetail() {
             <span className="product-value">{product.productType}</span>
           </p>
         </div>
-        {imageURL && (
-          <div className="product-image-container">
-            <img className="product-image" src={`${API_URL}/api/GetImage/${imageURL}`} alt="Product" />
-          </div>
-        )}
+
       </div>
     </div>
   );
