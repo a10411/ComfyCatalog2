@@ -38,6 +38,19 @@ namespace ComfyCatalogBLL.Logic
             return response;
         }
 
+        public static async Task<Response> GetProduct(string conString, int productID)
+        {
+            Response response = new Response();
+            Product product = await ProductService.GetProduct(conString, productID);
+            if (product.ProductID > 0)
+            {
+                response.StatusCode = StatusCodes.SUCCESS;
+                response.Message = "Sucesso na obtenção dos dados";
+                response.Data = product;
+            }
+            return response;
+        }
+
         public static async Task<Response> GetProductByBrand(string conString, string brandName)
         {
             Response response = new Response();

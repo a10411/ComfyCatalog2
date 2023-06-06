@@ -3,7 +3,7 @@ import { variables } from '../Utils/Variables';
 import '../CSS/App.css';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-import { faPlus } from '@fortawesome/free-solid-svg-icons';
+import { faPlus, faInfoCircle } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { getUserID } from '../Global';
 
@@ -34,8 +34,15 @@ function UserProducts() {
   );
 
   const navigateToAddObservation = (productID) => {
-    navigate('/UserAddObservation', { state: { productID } });
+    const imageURL = images.find(image => image.productID === productID)?.imageName;
+    navigate('/UserAddObservation', { state: { productID, imageURL } });
   };
+  
+  const navigateToProductDetails = (productID) => {
+    const imageURL = images.find((image) => image.productID === productID)?.imageName;
+    navigate('/UserProductDetail', { state: { productID, imageURL } });
+  };
+  
 
   const fetchProducts = async () => {
     try {
@@ -140,11 +147,21 @@ function UserProducts() {
                     />
                   ))}
                 <div className="product-name">{product.productName}</div>
-                <div
-              className="plus-icon-container"
-              onClick={() => navigateToAddObservation(product.productID)}>
-              <FontAwesomeIcon icon={faPlus} className="plus-icon" />
-            </div>
+                <div className="product-icons">
+                  <FontAwesomeIcon
+                    icon={faInfoCircle}
+                    className="product-icon"
+                    onClick={() => navigateToProductDetails(product.productID)}
+                  />
+                  <FontAwesomeIcon
+                    icon={faPlus}
+                    className="product-icon"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      navigateToAddObservation(product.productID);
+                    }}
+                  />
+                </div>
               </div>
             ))
           )}

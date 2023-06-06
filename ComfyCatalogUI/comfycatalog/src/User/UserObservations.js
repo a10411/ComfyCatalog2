@@ -100,7 +100,8 @@ function UserObservations({ productId}) {
                   <td>{observation.productID}</td>
                   <td>{observation.title}</td>
                   <td>{observation.body.substring(0, 20)}{observation.body.length > 20 ? "..." : ""}</td>
-                  <td>{observation.date_Hour ? observation.date_Hour.substring(0, 16) : ''}</td>
+                  <td>{observation.date_Hour ? observation.date_Hour.substring(0, 16).replace('T', ' |') : ''}</td>
+
                   <td>
                     <button className='buttonObsDel' onClick={() => deleteObservation(observation.observationID)}>Delete</button>
                     

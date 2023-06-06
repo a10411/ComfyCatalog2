@@ -5,6 +5,7 @@ import RegisterComponent from './RegisterComponent';
 import UserComponents from './UserComponents';
 import AdminComponents from './AdminComponents';
 import HomeComponent from './HomeComponent';
+import UserProductsDetailComponent from './User/UserProductDetail';
 import UserBrandsComponent from './User/UserBrands';
 import UserFavouritesComponent from './User/UserFavourites';
 import UserSportsComponent from './User/UserSports';
@@ -51,6 +52,7 @@ function App() {
         <Route path="/UserObservations" element={<UserObservationsComponent />} />
         <Route path="/UserObservationDetails" element={<UserObservationDetailsComponent />} />
         <Route path="/UserAddObservation" element={<UserAddObservationComponent/>} />
+        <Route path="/UserProductDetail" element={<UserProductsDetailComponent/>} />
         <Route path="/Logout" element={<Logout />} />
       </Routes>
     </BrowserRouter>
