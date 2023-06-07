@@ -1,19 +1,57 @@
 
-  .product-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1540px; /* 7 cards per row (180px width + 20px margin) */
+  margin: 0 auto; /* Center the container horizontally */
+  margin-top: 20px;
+}
+
+.product-card {
+  flex-basis: calc((100% - 120px) / 6); /* Calculate width with 6 cards per row */
+  max-width: 200px; /* Limit width of individual cards */
+  height: 240px;
+  border: 1px solid #292828;
+  margin: 20px;
+  border-radius: 16px;
+  position: relative;
+  animation: cardAppear 0.8s forwards;
+}
+
+@media (max-width: 1200px) {
+  .product-card {
+    flex-basis: calc((100% - 80px) / 5); /* 5 cards per row */
+  }
+}
+
+@media (max-width: 900px) {
+  .product-card {
+    flex-basis: calc((100% - 60px) / 4); /* 4 cards per row */
+  }
+}
+
+@media (max-width: 600px) {
+  .product-card {
+    flex-basis: calc((100% - 40px) / 3); /* 3 cards per row */
+  }
+}
+
+
+@keyframes cardAppear {
+  0% {
+    transform: translateY(1250px); /* Initially shifted up */
+    opacity: 0; /* Initially hidden */
+ 
+  }
+  100% {
+    transform: translateY(0); /* Shifted down to original position */
+    opacity: 1; /* Visible */
     
   }
-  
-  .product-card {
-    width: 180px;
-    height: 240px;
-    border: 2px solid #292828;
-    margin: 20px;
-    border-radius: 16px;
-    position: relative;
-  }
+}
+
+
   
   .product-card img {
     width: 100%;

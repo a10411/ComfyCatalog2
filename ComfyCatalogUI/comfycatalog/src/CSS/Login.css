@@ -1,16 +1,22 @@
 
 
 form {
-
-    margin-top: 10%;
-    
+  position: absolute;
+    border: solid 1px;
+    margin-top: 200px; 
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-
+    width: fit-content;
+    margin-left: 35vw;
+    padding: 20px;
+    border-radius: 16px;
+    height: auto;
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
   }
   
+
+
   input[type="text"],
   input[type="password"] {
     padding: 10px;
@@ -41,8 +47,8 @@ form {
   button[type="submit"] {
     padding: 10px 20px;
     margin: 20px;
-    background-color: #606460;
-    color: white;
+    background-color: #505050;
+    color: rgb(26, 26, 26);
     border: none;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
@@ -52,7 +58,7 @@ form {
   }
   
   button[type="submit"]:hover {
-    background-color: #c0c6c1;
+    background-color: #4b4b4b;
   }
   
   button[type="submit"]:active {
@@ -69,6 +75,13 @@ form {
 
   .submitLoginRegister{
     border-radius: 16px;
+    background-color: #570b0b;
+  }
+
+  .submitLoginRegister:hover{
+    border-radius: 16px;
+    background-color: #666666;
+   
   }
 
   .error{

@@ -13,7 +13,7 @@ function HomeComponent() {
         <MotoLogo />
 
         <ul className="navbar-nav2">
-          <li className='nav-item m-1 ml-auto'>
+        <li className='nav-item m-1 ml-auto'>
             <a href="https://www.comfysocks.dk/" target="_blank" className="nav-link">Home</a>
           </li>
         </ul>

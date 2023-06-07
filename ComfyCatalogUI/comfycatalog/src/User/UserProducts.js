@@ -104,7 +104,11 @@ function UserProducts() {
   }
 
   if (!imagesFetched) {
-    return <div>Loading images...</div>;
+    return (
+      <div>
+        <img src="loading.svg" alt="Loading" />
+      </div>
+    );
   }
 
   if (!Array.isArray(images)) {

@@ -12,6 +12,7 @@ import Sidebar from './Sidebar';
 import { useNavigate } from 'react-router-dom';
 import React, { useEffect, useState } from 'react';
 import {getToken, getUserID} from './Global';
+import loading from './Utils/Icons/loading.svg';
 
 function UserComponents() {
 
@@ -31,7 +32,7 @@ function UserComponents() {
                 <h1> COMFYSOCKS </h1>
               </div> */}
               <div className='sidebarContainer'>
-              <Sidebar />
+                <Sidebar /> 
               </div>
               <div >
                 <UserProducts/>  

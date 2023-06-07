@@ -1,6 +1,6 @@
 .containerObs {
   padding-top: 200px;
-  max-width: 1400px;
+  max-width: 90vw;
   margin: 0 auto;
   padding: 20px;
   margin-left: 14vh;
@@ -19,7 +19,6 @@ h2 {
 
 button {
   padding: 10px 20px;
-  background-color: #b4b4b4;
   color: #fff;
   border: none;
   cursor: pointer;
@@ -29,7 +28,20 @@ button {
   overflow-x: auto;
   border-radius: 16px;
   border: 1px solid black;
-  margin-top: 50px;
+  margin-top: 86px;
+  animation: fadeIn 1s forwards;
+}
+
+
+@keyframes fadeIn {
+  0% {
+ 
+    opacity: 0;
+  }
+  100% {
+    
+    opacity: 1;
+  }
 }
 
 table {
