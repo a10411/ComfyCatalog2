@@ -1,0 +1,39 @@
+
+  .product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  }
+  
+  .product-card {
+    width: 180px;
+    height: 240px;
+    border: 2px solid #292828;
+    margin: 20px;
+    border-radius: 16px;
+    position: relative;
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: 100%;
+    
+    margin: 0px;
+    border-radius: 16px;
+  }
+  
+  .product-name {
+    text-align: center;
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    right: 0;
+  }
+  
+  .product-name {
+    text-align: center;
+  }
+  
+
+

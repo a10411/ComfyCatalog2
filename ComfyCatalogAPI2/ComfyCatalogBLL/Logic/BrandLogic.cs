@@ -38,6 +38,19 @@ namespace ComfyCatalogBLL.Logic
             return response;
         }
 
+        public static async Task<Response> GetBrand(string conString, int brandID)
+        {
+            Response response = new Response();
+            Brand brand = await BrandService.GetBrand(conString, brandID);
+            if(brand.BrandID > 0)
+            {
+                response.StatusCode = StatusCodes.SUCCESS;
+                response.Message = "Success in obtaining the data";
+                response.Data = brand;
+            }
+            return response;
+        }
+
         /// <summary>
         /// Trata da parte lógica relativa à criação de um produto na base de dados (sala que diz respeito a uma Marca)
         /// Gera uma resposta que será utilizada pela ComfyCatalogAPI para responder ao request do utilizador (POST - Brand (AddBrand))

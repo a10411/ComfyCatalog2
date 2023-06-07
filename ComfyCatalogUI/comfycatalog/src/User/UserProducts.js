@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { variables } from '../Utils/Variables';
-import '../CSS/App.css';
+import '../CSS/UserProducts.css'
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import { faPlus, faInfoCircle } from '@fortawesome/free-solid-svg-icons';
@@ -39,7 +39,7 @@ function UserProducts() {
   };
   
   const navigateToProductDetails = (productID) => {
-    const imageURL = images.find((image) => image.productID === productID)?.imageName;
+    const imageURL = images.find(image => image.productID === productID)?.imageName;
     navigate('/UserProductDetail', { state: { productID, imageURL } });
   };
   

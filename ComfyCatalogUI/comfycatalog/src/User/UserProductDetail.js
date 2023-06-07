@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { variables } from '../Utils/Variables';
 import Sidebar from '../Sidebar';
-import '../CSS/App.css';
 import '../CSS/ProductDetail.css';
 
 function UserProductDetail() {
@@ -13,25 +12,26 @@ function UserProductDetail() {
   const [loading, setLoading] = useState(true);
   const [imageURL, setImageURL] = useState('');
 
+  
   useEffect(() => {
     fetchProduct();
     fetchImageURL();
+    fetchBrand();
   }, []);
 
   const fetchProduct = async () => {
     try {
       const token = localStorage.getItem('token');
-
       if (token) {
         const response = await fetch(`${API_URL}/api/GetProduct?productID=${productID}`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
         });
-
         if (response.ok) {
           const productData = await response.json();
-          setProduct(productData);
+          const brandName = await fetchBrand(productData.data?.brandID);
+          setProduct({ ...productData.data, brandName });
           setLoading(false);
         } else if (response.status === 401) {
           console.error('Unauthorized: Please login to access this page.');
@@ -45,20 +45,42 @@ function UserProductDetail() {
       console.error('An error occurred while fetching product:', error);
     }
   };
+  
+
 
   const fetchImageURL = async () => {
     try {
-      const response = await fetch(`${API_URL}/api/GetImage/${location.state?.imageURL}`);
-      if (response.ok) {
-        const imageURL = response.url;
-        setImageURL(imageURL);
-      } else {
-        console.error('Failed to fetch image:', response.statusText);
+      const imageName = location.state?.imageURL;
+      if (imageName) {
+        const response = await fetch(`${variables.API_URL}/api/GetImage/${imageName}`);
+        if (response.ok) {
+          setImageURL(imageName);
+        } else {
+          console.error('Failed to fetch image:', response.statusText);
+        }
       }
     } catch (error) {
       console.error('An error occurred while fetching image:', error);
     }
   };
+  
+  const fetchBrand = async (brandID) => {
+   
+    try {
+      const response = await fetch(`${API_URL}/api/GetBrand?brandID=${brandID}`);
+      if (response.ok) {
+        const brandData = await response.json();
+        return brandData.data.brandName;
+      } else {
+        console.error('Failed to fetch brand:', response.statusText);
+      }
+    } catch (error) {
+      console.error('An error occurred while fetching brand:', error);
+    }
+    return null;
+  };
+  
+  
 
   if (loading) {
     return <div>Loading product details...</div>;
@@ -70,51 +92,54 @@ function UserProductDetail() {
 
   return (
     <div>
-      <div className="side">
+      <div>
         <Sidebar />
       </div>
-      <div className="product-details">
-      {imageURL && (
-            <img className="product-image" src={`${API_URL}/api/GetImage/${imageURL}`} alt="Product" />
-        )}
-        <div className="product-details-content">
-          <p className="product-detail">
-            <span className="product-label">Product Name:</span>
-            <span className="product-value">{product.productName}</span>
-          </p>
-          <p className="product-detail">
-            <span className="product-label">Brand ID:</span>
-            <span className="product-value">{product.brandID}</span>
-          </p>
-          <p className="product-detail">
-            <span className="product-label">Estado ID:</span>
-            <span className="product-value">{product.estadoID}</span>
-          </p>
-          <p className="product-detail">
-            <span className="product-label">Sport:</span>
-            <span className="product-value">{product.sport}</span>
-          </p>
-          <p className="product-detail">
-            <span className="product-label">Composition:</span>
-            <span className="product-value">{product.composition}</span>
-          </p>
-          <p className="product-detail">
-            <span className="product-label">Colour:</span>
-            <span className="product-value">{product.colour}</span>
-          </p>
-          <p className="product-detail">
-            <span className="product-label">Client Number:</span>
-            <span className="product-value">{product.clientNumber}</span>
-          </p>
-          <p className="product-detail">
-            <span className="product-label">Product Type:</span>
-            <span className="product-value">{product.productType}</span>
-          </p>
+      <div className="productDetail-container">
+        <div className="productDetail-content">
+          <table className="product-table">
+            <tbody>
+              <tr>
+                <td className="product-label">Product Name:</td>
+                <td className="product-value">{product.productName}</td>
+              </tr>
+              <tr>
+                <td className="product-label">Brand Name:</td>
+                <td className="product-value">{product.brandName}</td>
+              </tr>
+              <tr>
+                <td className="product-label">Sport:</td>
+                <td className="product-value">{product.sport}</td>
+              </tr>
+              <tr>
+                <td className="product-label">Composition:</td>
+                <td className="product-value">{product.composition}</td>
+              </tr>
+              <tr>
+                <td className="product-label">Colour:</td>
+                <td className="product-value">{product.colour}</td>
+              </tr>
+              <tr>
+                <td className="product-label">Client Number:</td>
+                <td className="product-value">{product.clientNumber}</td>
+              </tr>
+              <tr>
+                <td className="product-label">Product Type:</td>
+                <td className="product-value">{product.productType}</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-
+        <div className="productDetail-image-container">
+          {imageURL && (
+            <img className="productDetail-image" src={`${API_URL}/api/GetImage/${imageURL}`} />
+          )}
+        </div>
       </div>
     </div>
   );
+  
+  
 }
 
 export default UserProductDetail;
