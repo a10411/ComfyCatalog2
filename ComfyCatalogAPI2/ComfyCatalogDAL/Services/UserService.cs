@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using ComfyCatalogBOL.Models;
 using ComfyCatalogDAL.Auth;
+using System.Net.Http.Headers;
 
 namespace ComfyCatalogDAL.Services
 {
@@ -43,6 +44,26 @@ namespace ComfyCatalogDAL.Services
                 con.Close();
             }
             return userList;
+        }
+
+        public static async Task<User> GetUser(string conString, int userID)
+        {
+            User user = new User();
+            using(SqlConnection con = new SqlConnection(conString))
+            {
+                SqlCommand cmd = new SqlCommand($"SELECT * FROM [USER] WHERE userID ={userID}", con);
+                cmd.CommandType = CommandType.Text;
+                con.Open();
+
+                SqlDataReader rdr = cmd.ExecuteReader();
+                while (rdr.Read())
+                {
+                    user = new User(rdr);
+                }
+                rdr.Close();
+                con.Close();
+            }
+            return user;
         }
 
         public static async Task<int> GetUserIDFromCredentials(string conString, string username)

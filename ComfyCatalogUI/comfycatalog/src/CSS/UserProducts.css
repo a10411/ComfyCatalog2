@@ -75,3 +75,16 @@
   
 
 
+  .search-input-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .search-input {
+    width: 100%;
+    max-width: 300px; /* Adjust the max-width as desired */
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+  

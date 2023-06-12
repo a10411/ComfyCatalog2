@@ -105,7 +105,25 @@ namespace ComfyCatalogBLL.Logic
             return response;
         }
 
+        public static async Task<Response> SetFavoriteProductToUser(string conString, int userID, int productID)
+        {
+            Response response = new Response();
+            try
+            {
+                if(await ProductService.SetFavouriteProductToUser(conString, userID, productID))
+                {
+                    response.StatusCode = StatusCodes.SUCCESS;
+                    response.Message = "Product was Added to Favorites";
 
+                }
+            }
+            catch(Exception ex)
+            {
+                response.StatusCode = StatusCodes.INTERNALSERVERERROR;
+                response.Message = ex.ToString();
+            }
+            return response;
+        }
 
         /// <summary>
         /// Trata da parte lógica relativa à atualização de um produto que resida na base de dados

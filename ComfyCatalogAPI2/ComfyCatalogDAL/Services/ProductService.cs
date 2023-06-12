@@ -188,11 +188,11 @@ namespace ComfyCatalogDAL.Services
         /// <param name="conString">String de conexão à base de dados, presente no projeto "ComfyCatalogAPI", no ficheiro appsettings.json</param>
         /// <param name="username">username do cliente a quem se vai adicionar um produto favorito</param>
         /// <returns>True se adicionar, False se não adicionar</returns>
-        public static async Task<Boolean> SetFavouriteProductToUser(string conString, string username, int productID)
+        public static async Task<Boolean> SetFavouriteProductToUser(string conString, int userID, int productID)
         {
             try
             {
-                User user = await GetUserByUsername(conString, username);
+                User user = await UserService.GetUser(conString, userID);
                 Product product = await GetProduct(conString, productID);
 
                 using (SqlConnection con = new SqlConnection(conString))

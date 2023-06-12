@@ -1,6 +1,6 @@
 .sidebar {
-  width: 100px; /* Adjust the width as needed */
-  height: 100vh; /* Adjust the height as needed */
+  width: 100px;
+  height: 100vh;
   position: fixed;
   top: 0px;
   left: 0;
@@ -12,12 +12,25 @@
 }
 
 .expanded {
-  /* Adjust the expanded width as needed */
-  animation: slideRight 0.8s forwards ; 
+  animation: slideRight 0.5s forwards;
 }
+
 @keyframes slideRight {
-  from { width: 100px; }
-  to { width: 150px;}
+  from {
+    width: 100px;
+  }
+  to {
+    width: 250px;
+  }
+}
+
+@keyframes showUp {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .ulSidebar {
@@ -28,14 +41,12 @@
   margin-top: 102px;
   border-radius: 16px;
   justify-self: center;
-  
 }
-
 
 .liSidebar {
   width: 50px;
   height: 50px;
-  background-color: #000000;
+  background-color: #ffffff;
   margin: 10px;
   display: flex;
   margin-top: 40px;
@@ -43,12 +54,13 @@
   justify-content: center;
   margin-left: 22px;
   border: solid 2px;
+  position: relative;
 }
 
 .liSidebarOut {
   width: 50px;
   height: 50px;
-  background-color: #000000;
+  background-color: #ffffff;
   margin: 10px;
   display: flex;
   position: absolute;
@@ -59,11 +71,12 @@
   border-radius: 64px;
 }
 
-.expand-icon{
+.expand-icon {
   width: 40px;
   height: 40px;
   text-decoration: none;
-  color: #000;
+  color: #ffffff;
+  background-color: #ffffff;
   font-size: medium;
   margin-top: 10px;
   margin-left: 30px;
@@ -78,7 +91,7 @@
   width: 40px;
   height: 40px;
   text-decoration: none;
-  color: #000;
+  color: #000000;
   font-size: medium;
   margin-top: 10px;
   margin-left: 0px;
@@ -89,15 +102,28 @@
   flex-direction: column;
 }
 
-.nav-link-title {
-  position: static;
-  font-size: 18px;
-  margin-top: 5px;
-  border-radius: 64px;
-  width: auto;
-  text-align: center;
-  white-space: nowrap;
+.nav-link-icon-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
 }
+
+.nav-link-title {
+  position: absolute;
+  width: 150px; /* Adjust the width as desired */
+  margin-left: 50px;
+  font-size: 12px;
+  border-radius: 16px;
+  padding: 5px;
+  background-color: #ffffff;
+  text-align: center;
+  animation: showUp 1s;
+  margin-bottom: 12px;
+  
+}
+
+
 
 .nav-icon {
   margin-top: 0;
@@ -108,10 +134,3 @@
   position: static;
 }
 
-.nav-link-icon-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  white-space: nowrap;
-}

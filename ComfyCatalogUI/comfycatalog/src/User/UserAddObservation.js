@@ -86,8 +86,9 @@ function UserAddObservation() {
   // ...
   
   return (
+    
     <div className="addObs-container">
-      
+        <Sidebar />
       <img src={imageURL} alt="Product" className="addObs-product-image" />
       <div className='addObs-subcontainer'>
       <input

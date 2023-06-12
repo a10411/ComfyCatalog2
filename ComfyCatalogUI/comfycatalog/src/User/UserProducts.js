@@ -118,6 +118,7 @@ function UserProducts() {
   return (
     <div>
       <h1>
+      <div className="search-input-wrapper">
         <input
           type="text"
           value={searchTerm}
@@ -125,6 +126,7 @@ function UserProducts() {
           placeholder="Search product..."
           className="search-input"
         />
+      </div>
       </h1>
       {unauthorized ? (
         <div>

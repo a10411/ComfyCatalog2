@@ -9,7 +9,7 @@ function HomeComponent() {
   return (
     <div className="AppContainer">
       <BackgroundImage />
-      <nav className="navbar navbar-expand-sm navbar-light bg-light">
+      <nav className="navbar navbar-expand-sm navbar-light bg-white">
         <MotoLogo />
 
         <ul className="navbar-nav2">
