@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Reflection.PortableExecutable;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -64,6 +65,27 @@ namespace ComfyCatalogDAL.Services
             return product;
             // retorna um produto com id = 0 caso não encontre nenhum com este ID
         }
+
+        public static async Task<Boolean> CheckIfProductIsFavourite(string conString,int userID, int productID)
+        {
+            Boolean isFavourite = false;
+            using (SqlConnection con = new SqlConnection(conString))
+            {
+                SqlCommand cmd = new SqlCommand($"SELECT * FROM Favourite WHERE userID = {userID} AND productID = {productID}", con);
+                cmd.CommandType = CommandType.Text;
+                con.Open();
+                SqlDataReader rdr = cmd.ExecuteReader();
+                if (rdr.HasRows)
+                {
+                    isFavourite = true;
+                }
+                rdr.Close();
+                con.Close();
+            }
+            return isFavourite;
+        }
+
+        
 
         public static async Task<List<Product>> GetProductBySport(string conString, string sport)
         {

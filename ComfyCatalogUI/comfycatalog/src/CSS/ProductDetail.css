@@ -84,3 +84,26 @@
   border-radius: 8px;
 }
 
+.favorite-icon {
+  cursor: pointer;
+  color: #848181;
+  transition: color 0.2s ease;
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  width: 40px;
+  height: 40px;
+
+ 
+}
+
+.favorite-icon.favorite {
+  color: black;
+  
+}
+
+.favorite-message {
+  display: block;
+  color: green;
+  margin-top: 5px;
+}

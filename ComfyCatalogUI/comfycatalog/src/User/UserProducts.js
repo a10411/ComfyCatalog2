@@ -6,6 +6,8 @@ import { Link } from 'react-router-dom';
 import { faPlus, faInfoCircle } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { getUserID } from '../Global';
+import { faHeart } from '@fortawesome/free-solid-svg-icons';
+
 
 
 function UserProducts() {
@@ -18,6 +20,7 @@ function UserProducts() {
   const [notification, setNotification] = useState('');
   const navigate = useNavigate();
   const [searchTerm, setSearchTerm] = useState('');
+
 
   useEffect(() => {
     fetchProducts();

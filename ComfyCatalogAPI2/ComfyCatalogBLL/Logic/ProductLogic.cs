@@ -68,12 +68,31 @@ namespace ComfyCatalogBLL.Logic
         public static async Task<Response> GetProductBySport(string conString, string sport)
         {
             Response response = new Response();
-            List<Product> productList = await ProductService.GetProductBySport(sport, conString);
+            List<Product> productList = await ProductService.GetProductBySport(conString, sport);
             if(productList.Count != 0)
             {
                 response.StatusCode = StatusCodes.SUCCESS;
                 response.Message = "Sucesso na obtenção dos dados";
                 response.Data = productList;
+            }
+            return response;
+        }
+
+        public static async Task<Response> CheckIfProductIsFavourite(string conString, int userID, int productID)
+        {
+            Response response = new Response();
+            Boolean isFav = await ProductService.CheckIfProductIsFavourite(conString, userID, productID);
+            if(!isFav)
+            {
+                response.StatusCode = StatusCodes.SUCCESS;
+                response.Message = "O produto não é favorito";
+                response.Data = isFav;
+            }
+            else
+            {
+                response.StatusCode = StatusCodes.SUCCESS;
+                response.Message = "O produto é favorito";
+                response.Data = isFav;
             }
             return response;
         }
@@ -109,12 +128,16 @@ namespace ComfyCatalogBLL.Logic
         {
             Response response = new Response();
             try
-            {
-                if(await ProductService.SetFavouriteProductToUser(conString, userID, productID))
+            {   
+                if (await ProductService.CheckIfProductIsFavourite(conString, userID, productID))
+                {
+                    response.StatusCode = StatusCodes.SUCCESS;
+                    response.Message = "Product is already Favourite";
+                }
+                else if(await ProductService.SetFavouriteProductToUser(conString, userID, productID))
                 {
                     response.StatusCode = StatusCodes.SUCCESS;
                     response.Message = "Product was Added to Favorites";
-
                 }
             }
             catch(Exception ex)
