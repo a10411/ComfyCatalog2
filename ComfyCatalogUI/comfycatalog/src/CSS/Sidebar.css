@@ -118,7 +118,7 @@
   padding: 5px;
   background-color: #ffffff;
   text-align: center;
-  animation: showUp 1s;
+  animation: showUp 2s;
   margin-bottom: 12px;
   
 }
@@ -134,3 +134,44 @@
   position: static;
 }
 
+@media (max-width: 1366px) {
+  .sidebar {
+    width: 100px;
+  }
+  
+  .expanded {
+    animation: none;
+    width: 200px;
+  }
+  
+  .ulSidebar {
+    margin-top: 82px;
+    
+  }
+  
+  .liSidebar {
+    margin-top: 20px;
+    
+  }
+  
+
+
+  .liSidebarOut {
+    bottom: 20px;
+  }
+  
+  .expand-icon {
+    margin-left: 28px;
+  }
+  
+  .nav-linkSidebar {
+    margin-left: 0px;
+  }
+  
+  .nav-link-title {
+    width: 120px;
+    margin-left: 37px;
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+}

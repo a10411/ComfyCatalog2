@@ -46,3 +46,15 @@ C:\Users\nfrv9\Desktop\ComfyCatalog2\ComfyCatalogAPI2\ComfyCatalogBOL\obj\Debug\
 C:\Users\nfrv9\Desktop\ComfyCatalog2\ComfyCatalogAPI2\ComfyCatalogBOL\obj\Debug\net6.0\refint\ComfyCatalogBOL.dll
 C:\Users\nfrv9\Desktop\ComfyCatalog2\ComfyCatalogAPI2\ComfyCatalogBOL\obj\Debug\net6.0\ComfyCatalogBOL.pdb
 C:\Users\nfrv9\Desktop\ComfyCatalog2\ComfyCatalogAPI2\ComfyCatalogBOL\obj\Debug\net6.0\ref\ComfyCatalogBOL.dll
+C:\Users\mjare\Desktop\ComfyCatalog2\ComfyCatalogAPI2\ComfyCatalogBOL\bin\Debug\net6.0\ComfyCatalogBOL.deps.json
+C:\Users\mjare\Desktop\ComfyCatalog2\ComfyCatalogAPI2\ComfyCatalogBOL\bin\Debug\net6.0\ComfyCatalogBOL.dll
+C:\Users\mjare\Desktop\ComfyCatalog2\ComfyCatalogAPI2\ComfyCatalogBOL\bin\Debug\net6.0\ComfyCatalogBOL.pdb
+C:\Users\mjare\Desktop\ComfyCatalog2\ComfyCatalogAPI2\ComfyCatalogBOL\obj\Debug\net6.0\ComfyCatalogBOL.csproj.AssemblyReference.cache
+C:\Users\mjare\Desktop\ComfyCatalog2\ComfyCatalogAPI2\ComfyCatalogBOL\obj\Debug\net6.0\ComfyCatalogBOL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mjare\Desktop\ComfyCatalog2\ComfyCatalogAPI2\ComfyCatalogBOL\obj\Debug\net6.0\ComfyCatalogBOL.AssemblyInfoInputs.cache
+C:\Users\mjare\Desktop\ComfyCatalog2\ComfyCatalogAPI2\ComfyCatalogBOL\obj\Debug\net6.0\ComfyCatalogBOL.AssemblyInfo.cs
+C:\Users\mjare\Desktop\ComfyCatalog2\ComfyCatalogAPI2\ComfyCatalogBOL\obj\Debug\net6.0\ComfyCatalogBOL.csproj.CoreCompileInputs.cache
+C:\Users\mjare\Desktop\ComfyCatalog2\ComfyCatalogAPI2\ComfyCatalogBOL\obj\Debug\net6.0\ComfyCatalogBOL.dll
+C:\Users\mjare\Desktop\ComfyCatalog2\ComfyCatalogAPI2\ComfyCatalogBOL\obj\Debug\net6.0\refint\ComfyCatalogBOL.dll
+C:\Users\mjare\Desktop\ComfyCatalog2\ComfyCatalogAPI2\ComfyCatalogBOL\obj\Debug\net6.0\ComfyCatalogBOL.pdb
+C:\Users\mjare\Desktop\ComfyCatalog2\ComfyCatalogAPI2\ComfyCatalogBOL\obj\Debug\net6.0\ref\ComfyCatalogBOL.dll

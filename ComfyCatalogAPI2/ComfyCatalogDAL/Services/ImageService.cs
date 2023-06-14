@@ -84,7 +84,7 @@ namespace ComfyCatalogDAL.Services
         {
             try
             {
-                string path = Path.Combine(@"C:\Users\nfrv9\Desktop\ComfyCatalog2\ComfyCatalogAPI2\ComfyCatalogAPI\Images", file.FileName);
+                string path = Path.Combine(@"C:\Users\mjare\Desktop\ComfyCatalog2\ComfyCatalogAPI2\ComfyCatalogAPI\Images", file.FileName);
                 //string path = Path.Combine(@"Q:\ComfyCatalog Images\Product_Images", file.FileName); // PATH DO SERVIDOR DA EMPRESA
                 SaveFile(path, file);
 

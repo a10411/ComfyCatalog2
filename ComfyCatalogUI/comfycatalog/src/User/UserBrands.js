@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { variables } from '../Utils/Variables';
-import '../CSS/App.css';
+import '../CSS/UserProducts.css';
 import { useNavigate } from 'react-router-dom';
 import Sidebar from '../Sidebar';
 
@@ -107,6 +107,7 @@ function UserBrands() {
   return (
     <div>
       <h1>
+      <div className="search-input-wrapper">
       <input 
         type="text"
         value={searchTerm}
@@ -114,6 +115,7 @@ function UserBrands() {
         placeholder="Search brand..."
         className="search-input"
       />
+      </div>
       </h1>
       <Sidebar />
       {unauthorized ? (

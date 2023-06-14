@@ -15,22 +15,25 @@ function UserProductDetail() {
   const [loading, setLoading] = useState(true);
   const [imageURL, setImageURL] = useState('');
   const [isFavorite, setIsFavorite] = useState(false);
+  const [showFavoriteMessage, setShowFavoriteMessage] = useState(false);
 
   useEffect(() => {
     fetchProduct();
     fetchImageURL();
     checkIfProductIsFavorite();
     fetchBrand();
-    checkIfProductIsFavorite();
   }, []);
 
   const checkIfProductIsFavorite = async () => {
     try {
       const userID = getUserID();
-      const response = await fetch(`${API_URL}/api/IsProductFavorite?userID=${userID}&productID=${productID}`);
+      const response = await fetch(`${API_URL}/api/CheckIfProductIsFavourite?userID=${userID}&productID=${productID}`);
       if (response.ok) {
         const isFavorite = await response.json();
-        setIsFavorite(isFavorite); // Update the isFavorite state directly
+        setIsFavorite(isFavorite);
+        if (isFavorite) {
+          setShowFavoriteMessage(true);
+        }
       } else if (response.status === 401) {
         console.error('Unauthorized: Please login to access this page.');
       } else {
@@ -40,6 +43,8 @@ function UserProductDetail() {
       console.error('An error occurred while fetching favorite status:', error);
     }
   };
+  
+  
 
   const fetchProduct = async () => {
     try {
@@ -67,6 +72,7 @@ function UserProductDetail() {
       console.error('An error occurred while fetching product:', error);
     }
   };
+  
 
   const fetchImageURL = async () => {
     try {
@@ -99,14 +105,15 @@ function UserProductDetail() {
     return null;
   };
 
-
-  
-
-  const handleFavoriteClick = async () => {
-    try {
-      const userID = getUserID();
-      const token = localStorage.getItem('token');
-      if (token) {
+const handleFavoriteClick = async () => {
+  try {
+    const userID = getUserID();
+    const token = localStorage.getItem('token');
+    if (token) {
+      if (isFavorite) {
+        setShowFavoriteMessage(true); 
+        console.log('This product is already a favorite.');
+      } else {
         const response = await fetch(
           `${API_URL}/api/SetFavoriteProductToUser?userID=${userID}&productID=${productID}`,
           {
@@ -117,26 +124,21 @@ function UserProductDetail() {
           }
         );
         if (response.ok) {
-          if (isFavorite) {
-            <span className="favorite-message">This product is already a favorite.</span>
-            console.log('This product is already a favorite.');
-          } else {
-            // Success: Update the user's favorite products
-            setIsFavorite(!isFavorite);
-          }
+          setIsFavorite(!isFavorite);
         } else if (response.status === 401) {
           console.error('Unauthorized: Please login to access this page.');
         } else {
           console.error('Failed to set favorite product:', response.statusText);
         }
-      } else {
-        console.error('Unauthorized: Please login to access this page.');
       }
-    } catch (error) {
-      console.error('An error occurred while setting favorite product:', error);
+    } else {
+      console.error('Unauthorized: Please login to access this page.');
     }
-  };
-  
+  } catch (error) {
+    console.error('An error occurred while setting favorite product:', error);
+  }
+};
+
 
   if (loading) {
     return <div>Loading product details...</div>;
@@ -152,13 +154,15 @@ function UserProductDetail() {
         <Sidebar />
       </div>
       <div className="productDetail-container">
-      <FontAwesomeIcon
-        icon={faHeart}
-        className={`favorite-icon ${isFavorite ? 'favorite' : ''}`}
-        onClick={handleFavoriteClick}
-      />
+        <FontAwesomeIcon
+          icon={faHeart}
+          className={`favorite-icon ${isFavorite ? 'favorite' : ''}`}
+          onClick={handleFavoriteClick}
+        />
+        {showFavoriteMessage && (
+          <span className="favorite-message">This product is already a favorite.</span>
+        )}
         <div className="productDetail-content">
-          
           <table className="product-table">
             <tbody>
               <tr>

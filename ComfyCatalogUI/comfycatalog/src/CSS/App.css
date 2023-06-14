@@ -95,6 +95,26 @@ li {
   to { opacity: 1; }
 }
 
+@media (max-width: 1366px) {
+
+
+  .navbar-nav2 {
+    margin-right: 0;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  li {
+    margin-left: 10px;
+  }
+
+  .nav-link {
+    margin-left: 15px;
+  }
+}
+
+
 img{
   width: 100px;
 }

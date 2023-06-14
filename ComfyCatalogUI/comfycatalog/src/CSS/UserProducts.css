@@ -2,7 +2,7 @@
 .product-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  
   max-width: 1540px; /* 7 cards per row (180px width + 20px margin) */
   margin: 0 auto; /* Center the container horizontally */
   margin-top: 20px;
@@ -78,7 +78,7 @@
 
   .search-input-wrapper {
     display: flex;
-    justify-content: center;
+   
     margin-left: 75px;
   }
   

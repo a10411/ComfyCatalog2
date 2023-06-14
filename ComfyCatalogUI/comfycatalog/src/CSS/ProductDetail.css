@@ -88,9 +88,7 @@
   cursor: pointer;
   color: #848181;
   transition: color 0.2s ease;
-  position: absolute;
-  top: 20px;
-  left: 50px;
+  margin-right: 20px;
   width: 40px;
   height: 40px;
 
@@ -106,4 +104,22 @@
   display: block;
   color: green;
   margin-top: 5px;
+  margin-right: 20px;
+}
+
+@media (max-width: 1366px) {
+  .product-detail {
+    margin-right: 100px;
+  }
+
+  .productDetail-container {
+    margin-left: 300px;
+    margin-right: 25px;
+    width: 70vw;
+    height: 80vh;
+  }
+
+  .productDetail-image-container {
+    margin-left: 100px;
+  }
 }
