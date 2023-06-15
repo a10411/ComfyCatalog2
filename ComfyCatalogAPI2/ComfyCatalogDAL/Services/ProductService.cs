@@ -185,7 +185,6 @@ namespace ComfyCatalogDAL.Services
                         queryAddProduct.Parameters.Add("@brandID", SqlDbType.Int).Value = productToAdd.BrandID;
                         queryAddProduct.Parameters.Add("@estadoID", SqlDbType.Int).Value = productToAdd.EstadoID;
                         queryAddProduct.Parameters.Add("@productName", SqlDbType.Char).Value = productToAdd.ProductName;
-                        queryAddProduct.Parameters.Add("@sport", SqlDbType.Char).Value = productToAdd.Sport;
                         queryAddProduct.Parameters.Add("@composition", SqlDbType.Char).Value = productToAdd.Composition;
                         queryAddProduct.Parameters.Add("@colour", SqlDbType.Char).Value = productToAdd.Colour;
                         queryAddProduct.Parameters.Add("@clientNumber", SqlDbType.Int).Value =productToAdd.ClientNumber;
@@ -289,7 +288,6 @@ namespace ComfyCatalogDAL.Services
             productUpdated.BrandID = productUpdated.BrandID != 0 ? productUpdated.BrandID : productCurrent.BrandID;
             productUpdated.EstadoID = productUpdated.EstadoID != 0 ? productUpdated.EstadoID : productCurrent.EstadoID;
             productUpdated.ProductName = productUpdated.ProductName != String.Empty && productUpdated.ProductName != null ? productUpdated.ProductName : productCurrent.ProductName;
-            productUpdated.Sport = productUpdated.Sport != String.Empty && productUpdated.Sport != null ? productUpdated.Sport : productCurrent.Sport;
             productUpdated.Composition = productUpdated.Composition != String.Empty && productUpdated.Composition != null ? productUpdated.Composition : productCurrent.Composition;
             productUpdated.Colour = productUpdated.Colour != String.Empty && productUpdated.Colour != null ? productUpdated.Colour : productCurrent.Colour;
             productUpdated.ClientNumber = productUpdated.ClientNumber != 0 ? productUpdated.ClientNumber : productCurrent.ClientNumber;
@@ -307,7 +305,6 @@ namespace ComfyCatalogDAL.Services
                         queryUpdateProduct.Parameters.Add("@brandID", SqlDbType.Int).Value = productUpdated.BrandID;
                         queryUpdateProduct.Parameters.Add("@estadoID", SqlDbType.Int).Value = productCurrent.EstadoID;
                         queryUpdateProduct.Parameters.Add("productName", SqlDbType.Char).Value = productUpdated.ProductName;
-                        queryUpdateProduct.Parameters.Add("@sport", SqlDbType.Char).Value = productUpdated.Sport;
                         queryUpdateProduct.Parameters.Add("@composition", SqlDbType.Char).Value = productUpdated.Composition;
                         queryUpdateProduct.Parameters.Add("@colour", SqlDbType.Char).Value = productUpdated.Colour;
                         queryUpdateProduct.Parameters.Add("@clientNumber", SqlDbType.Int).Value = productUpdated.ClientNumber;

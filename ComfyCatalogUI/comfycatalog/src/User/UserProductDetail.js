@@ -176,7 +176,7 @@ const handleFavoriteClick = async () => {
               </tr>
               <tr>
                 <td className="product-label">Sport:</td>
-                <td className="product-value">{product.sport}</td>
+                {/* <td className="product-value">{product.sport}</td> SUBSTITUIR */}
               </tr>
               <tr>
                 <td className="product-label">Composition:</td>
