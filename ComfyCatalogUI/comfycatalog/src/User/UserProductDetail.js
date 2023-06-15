@@ -30,7 +30,9 @@ function UserProductDetail() {
       const response = await fetch(`${API_URL}/api/CheckIfProductIsFavourite?userID=${userID}&productID=${productID}`);
       if (response.ok) {
         const isFavorite = await response.json();
-        setIsFavorite(isFavorite);
+        
+        
+        setIsFavorite(isFavorite.data);
         if (isFavorite) {
           setShowFavoriteMessage(true);
         }
@@ -42,6 +44,7 @@ function UserProductDetail() {
     } catch (error) {
       console.error('An error occurred while fetching favorite status:', error);
     }
+    
   };
   
   
@@ -159,9 +162,7 @@ const handleFavoriteClick = async () => {
           className={`favorite-icon ${isFavorite ? 'favorite' : ''}`}
           onClick={handleFavoriteClick}
         />
-        {showFavoriteMessage && (
-          <span className="favorite-message">This product is already a favorite.</span>
-        )}
+      
         <div className="productDetail-content">
           <table className="product-table">
             <tbody>

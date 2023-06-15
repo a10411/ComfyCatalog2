@@ -6,7 +6,7 @@
   max-width: 1540px; /* 7 cards per row (180px width + 20px margin) */
   margin: 0 auto; /* Center the container horizontally */
   margin-top: 20px;
-  margin-left: 130px;
+  margin-left: 285px;
 }
 
 .product-card {
@@ -79,13 +79,13 @@
   .search-input-wrapper {
     display: flex;
    
-    margin-left: 75px;
+    margin-left: 175px;
   }
   
   .search-input {
     width: 100%;
     max-width: 300px; /* Adjust the max-width as desired */
-    padding: 8px;
+    padding: 10px;
     border-radius: 8px;
     border: 1px solid #ccc;
   }
