@@ -21,7 +21,8 @@ namespace ComfyCatalogBOL.Models
         public string Composition { get; set; }
         public string Colour { get; set; }
         public int ClientNumber { get; set; }
-        public string ProductType { get; set; }    
+        public string ProductType { get; set; }  
+        public int SportID { get; set; }
         
         public Product() { }
 
@@ -40,6 +41,7 @@ namespace ComfyCatalogBOL.Models
             this.Colour = rdr["colour"].ToString() ?? string.Empty;
             this.ClientNumber = Convert.ToInt32(rdr["clientNumber"]);
             this.ProductType = rdr["productType"].ToString() ?? string.Empty;
+            this.SportID = Convert.ToInt32(rdr["sportID"]);
 
 
         }

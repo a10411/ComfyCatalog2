@@ -1,0 +1,92 @@
+
+.brand-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1540px; /* 7 cards per row (180px width + 20px margin) */
+    margin: 0 auto; /* Center the container horizontally */
+    margin-top: 20px;
+    margin-left: 285px;
+  }
+  
+  .brand-card {
+    flex-basis: calc((100% - 120px) / 5); /* Calculate width with 6 cards per row */
+    max-width: 240px; /* Limit width of individual cards */
+    height: 240px;
+    border: 1px solid #292828;
+    margin: 20px;
+    border-radius: 16px;
+    position: relative;
+    animation: cardAppear 0.8s forwards;
+  }
+  
+  @media (max-width: 1200px) {
+    .brand-card {
+      flex-basis: calc((100% - 80px) / 4); /* 5 cards per row */
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .brand-card {
+      flex-basis: calc((100% - 60px) / 3); /* 4 cards per row */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .brand-card {
+      flex-basis: calc((100% - 40px) / 1); /* 3 cards per row */
+    }
+  }
+  
+  
+  @keyframes cardAppear {
+    0% {
+      transform: translateY(1250px); /* Initially shifted up */
+      opacity: 0; /* Initially hidden */
+   
+    }
+    100% {
+      transform: translateY(0); /* Shifted down to original position */
+      opacity: 1; /* Visible */
+      
+    }
+  }
+  
+  
+    
+    .brand-card img {
+      width: 100%;
+      height: 100%;
+      
+      margin: 0px;
+      border-radius: 16px;
+    }
+    
+    .brand-name {
+      text-align: center;
+      position: absolute;
+      bottom: -30px;
+      left: 0;
+      right: 0;
+    }
+    
+    .brand-name {
+      text-align: center;
+    }
+    
+  
+  
+    .search-input-wrapper {
+      display: flex;
+     
+      margin-left: 245px;
+    }
+    
+    .search-input {
+      width: 100%;
+      max-width: 300px; /* Adjust the max-width as desired */
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+    

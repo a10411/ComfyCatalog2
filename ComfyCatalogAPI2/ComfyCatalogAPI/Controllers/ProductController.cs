@@ -153,6 +153,7 @@ namespace ComfyCatalogAPI.Controllers
         [SwaggerResponse(StatusCodes.Status404NotFound, Description = "The requested resource was not found.")]
         [SwaggerResponse(StatusCodes.Status500InternalServerError, Description = "An unexpected API error has occurred.")]
         //[Authorize(Roles = "Admin")]
+        [Route("/api/AddProduct")]
         [HttpPost]
         public async Task<IActionResult> AddProduct(Product productToAdd)
         {

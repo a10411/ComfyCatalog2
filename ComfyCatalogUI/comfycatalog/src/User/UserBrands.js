@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { variables } from '../Utils/Variables';
-import '../CSS/UserProducts.css';
+import '../CSS/UserBrands.css';
 import { useNavigate } from 'react-router-dom';
 import Sidebar from '../Sidebar';
 
@@ -20,7 +20,7 @@ function UserBrands() {
 
   useEffect(() => {
     fetchBrands();
-    fetchImages();
+ 
      // Retrieve the logged-in user's ID (e.g., from session, local storage, or context)
     
   }, []);
@@ -71,34 +71,14 @@ function UserBrands() {
   
   
 
-  const fetchImages = async () => {
-    try {
-      const response = await fetch(`${API_URL}/api/GetAllImages`);
-      if (response.ok) {
-        const responseData = await response.json();
-        console.log(responseData);
-        if (Array.isArray(responseData.data)) {
-          setImages(responseData.data);
-          setImagesFetched(true);
-        } else {
-          console.error('Images data is not in the expected format:', responseData);
-        }
-      } else {
-        console.error('Failed to fetch images:', response.statusText);
-      }
-    } catch (error) {
-      console.error('An error occurred while fetching images:', error);
-    }
-  };
+
 
 
   if (!Array.isArray(brands)) {
     return <div>Brands are not available.</div>;
   }
 
-  if (!imagesFetched) {
-    return <div>Loading images...</div>;
-  }
+
 
   if (!Array.isArray(images)) {
     return <div>Images are not available.</div>;
@@ -127,15 +107,16 @@ function UserBrands() {
         </div>
       ) : (
        
-          <div className="product-container">
+          <div className="brand-container">
             {brands
               .filter((brand) =>
                 brand.brandName.toLowerCase().includes(searchTerm.toLowerCase())
               )
               .map((brand) => (
-                <div key={brand.brandID} className="product-card">
-                  <div className="product-name">{brand.brandName}</div>
+                <div key={brand.brandID} className="brand-card">
+                  <div className="brand-name">{brand.brandName}</div>
                 </div>
+                
               ))}
           </div>
    

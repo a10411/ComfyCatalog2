@@ -2,7 +2,7 @@
 .product-container {
   display: flex;
   flex-wrap: wrap;
-  
+  justify-content: center;
   max-width: 1540px; /* 7 cards per row (180px width + 20px margin) */
   margin: 0 auto; /* Center the container horizontally */
   margin-top: 20px;
@@ -11,8 +11,8 @@
 
 .product-card {
   flex-basis: calc((100% - 120px) / 5); /* Calculate width with 6 cards per row */
-  max-width: 200px; /* Limit width of individual cards */
-  height: 240px;
+  max-width: 240px; /* Limit width of individual cards */
+  height: 300px;
   border: 1px solid #292828;
   margin: 20px;
   border-radius: 16px;
@@ -78,8 +78,7 @@
 
   .search-input-wrapper {
     display: flex;
-   
-    margin-left: 175px;
+    margin-left: 245px;
   }
   
   .search-input {
@@ -87,6 +86,6 @@
     max-width: 300px; /* Adjust the max-width as desired */
     padding: 10px;
     border-radius: 8px;
-    border: 1px solid #ccc;
   }
+
   

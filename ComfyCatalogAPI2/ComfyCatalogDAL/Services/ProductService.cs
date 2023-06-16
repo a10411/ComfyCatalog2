@@ -87,12 +87,12 @@ namespace ComfyCatalogDAL.Services
 
         
 
-        public static async Task<List<Product>> GetProductBySport(string conString, string sport)
+        public static async Task<List<Product>> GetProductBySport(string conString, string sportName)
         {
             var productList = new List<Product>();
             using (SqlConnection con = new SqlConnection( conString))
             {
-                SqlCommand cmd = new SqlCommand($"SELECT * FROM Product WHERE sport = '{sport}'", con);
+                SqlCommand cmd = new SqlCommand($"SELECT p.* FROM Product p INNER JOIN Sport s ON p.sportID = s.sportID WHERE s.SportName = '{sportName}'", con);
                 cmd.CommandType = CommandType.Text;
                 con.Open();
 
@@ -178,7 +178,7 @@ namespace ComfyCatalogDAL.Services
             {
                 using (SqlConnection con = new SqlConnection( conString ))
                 {
-                    string addProduct = "INSERT INTO Product (brandID, estadoID, productName, sport, composition, colour, clientNumber, productType) VALUES (@brandID, @estadoID, @productName, @sport, @composition, @colour, @clientNumber, @productType)";
+                    string addProduct = "INSERT INTO Product (brandID, estadoID, productName, composition, colour, clientNumber, productType, sportID) VALUES (@brandID, @estadoID, @productName,  @composition, @colour, @clientNumber, @productType, @sportID)";
                     using (SqlCommand queryAddProduct = new SqlCommand(addProduct))
                     {
                         queryAddProduct.Connection = con;
@@ -189,6 +189,7 @@ namespace ComfyCatalogDAL.Services
                         queryAddProduct.Parameters.Add("@colour", SqlDbType.Char).Value = productToAdd.Colour;
                         queryAddProduct.Parameters.Add("@clientNumber", SqlDbType.Int).Value =productToAdd.ClientNumber;
                         queryAddProduct.Parameters.Add("@productType", SqlDbType.Char).Value = productToAdd.ProductType;
+                        queryAddProduct.Parameters.Add("@sportID", SqlDbType.Int).Value = productToAdd.SportID;
                         con.Open();
                         queryAddProduct.ExecuteNonQuery();
                         con.Close();
