@@ -105,7 +105,8 @@ namespace ComfyCatalogAPI.Controllers
         }
 
 
-        [HttpPost("addImage")]
+        [HttpPost]
+        [Route("/api/addImage")]
         public async Task<IActionResult> AddImage(IFormFile file, int productID)
         {
             string CS = _configuration.GetConnectionString("WebApiDatabase");

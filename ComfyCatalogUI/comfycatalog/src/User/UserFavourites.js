@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { variables } from '../Utils/Variables';
 import { useNavigate } from 'react-router-dom';
+import '../CSS/UserProducts.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInfoCircle } from '@fortawesome/free-solid-svg-icons';
 import Sidebar from '../Sidebar';
@@ -25,6 +26,11 @@ function UserFavourites() {
 
   const handleSearch = (e) => {
     setSearchTerm(e.target.value);
+  };
+
+  const navigateToProductDetails = (productID) => {
+    const imageURL = images.find(image => image.productID === productID)?.imageName;
+    navigate('/UserProductDetail', { state: { productID, imageURL } });
   };
 
   const fetchFavorites = async () => {
@@ -161,9 +167,7 @@ function UserFavourites() {
                   <FontAwesomeIcon
                     icon={faInfoCircle}
                     className="product-icon"
-                    onClick={() => {
-                      // Handle the action when the info icon is clicked
-                    }}
+                    onClick={() => navigateToProductDetails(favorite.productID)}
                   />
                 </div>
               </div>
