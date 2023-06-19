@@ -275,7 +275,7 @@ function UserProducts() {
         <div className="sidebar-title">Sports</div>
         <ul className="sport-list">
           <li
-            className={selectedBrand === '' ? 'selected' : ''}
+            className={selectedSport === '' ? 'selected' : ''}
             onClick={() => handleFilterBySport('')}
           >
             All Sports
