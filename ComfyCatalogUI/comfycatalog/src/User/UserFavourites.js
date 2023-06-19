@@ -146,7 +146,7 @@ function UserFavourites() {
           </button>
         </div>
       ) : (
-        <div className="product-container">
+        <div className="product-containerFav">
           {favorites.length === 0 ? (
             <div className="no-favorites">No favorites found.</div>
           ) : (

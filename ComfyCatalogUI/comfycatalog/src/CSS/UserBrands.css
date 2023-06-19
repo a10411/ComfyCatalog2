@@ -2,7 +2,7 @@
 .brand-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    
     max-width: 1540px; /* 7 cards per row (180px width + 20px margin) */
     margin: 0 auto; /* Center the container horizontally */
     margin-top: 20px;
@@ -10,11 +10,11 @@
   }
   
   .brand-card {
-    flex-basis: calc((100% - 120px) / 5); /* Calculate width with 6 cards per row */
-    max-width: 240px; /* Limit width of individual cards */
-    height: 240px;
+    flex-basis: calc((100% - 100px) / 5); /* Calculate width with 6 cards per row */
+    max-width: 200px; /* Limit width of individual cards */
+    height: 200px;
     border: 1px solid #292828;
-    margin: 20px;
+    margin: 50px;
     border-radius: 16px;
     position: relative;
     animation: cardAppear 0.8s forwards;

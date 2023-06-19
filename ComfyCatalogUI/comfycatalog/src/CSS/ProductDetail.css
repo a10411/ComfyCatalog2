@@ -31,12 +31,12 @@
   align-items: center; 
   margin-top: 10vh;
   background-color: #d1d1d1;
-  margin-left: 500px;
-  margin-right: 25px;
+  margin-left: 450px;
+  margin-right: 150px;
   border: solid 1px black;
   border-radius: 16px;
   height: 80vh;
-  width: 50vw;
+  width: 55vw;
   opacity: 0; /* Initially hidden */
   transform: translateY(-50px); /* Initially shifted up */
   animation: scrollOpen 1s forwards; /* Apply the animation */

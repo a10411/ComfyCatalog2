@@ -2,19 +2,36 @@
 .product-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  max-width: 1540px; /* 7 cards per row (180px width + 20px margin) */
+  position: relative;
+   /* Adjust the width based on the sidebar width */
   margin: 0 auto; /* Center the container horizontally */
-  margin-top: 20px;
-  margin-left: 285px;
+  margin-top: 140px;
+  margin-left: 105px;
+  margin-right: 495px;
+  /* border: 1px solid black; */
+  border-radius: 16px;
+}
+
+.product-containerFav {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+   /* Adjust the width based on the sidebar width */
+  margin: 0 auto; /* Center the container horizontally */
+  margin-top: 140px;
+  margin-left: 105px;
+  margin-right: 5px;
+  /* border: 1px solid black; */
+  border-radius: 16px;
 }
 
 .product-card {
-  flex-basis: calc((100% - 100px) / 5); /* Calculate width with 6 cards per row */
-  max-width: 200px; /* Limit width of individual cards */
-  height: 250px;
+  flex-basis: calc((100% - 100px) / 4); /* Calculate width with 6 cards per row */
+  max-width: 200px;
+  min-width: 200px; /* Limit width of individual cards */
+  height: 240px;
   border: 1px solid #292828;
-  margin: 20px;
+  margin: 40px;
   border-radius: 16px;
   position: relative;
   animation: cardAppear 0.8s forwards;
@@ -54,6 +71,7 @@
 }
 
 
+
   
   .product-card img {
     width: 100%;
@@ -78,8 +96,11 @@
 
 
   .search-input-wrapper {
+    position: absolute;
     display: flex;
     margin-left: 243px;
+    top:0;
+    left: 0;
   }
   
   .search-input {
@@ -87,6 +108,151 @@
      /* Adjust the max-width as desired */
     padding: 10px;
     border-radius: 8px;
+    position: absolute;
+    left: 0;
   }
 
   
+  /* UserProducts.css */
+
+/* UserProducts.css */
+
+.sidebarBrands {
+  width: 250px;
+  background-color: #f5f5f5;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  overflow-y: auto;
+}
+
+
+.sidebarBrands-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.brand-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 30px;
+}
+
+.brand-list li {
+  cursor: pointer;
+  padding: 5px;
+  width: 150px;
+  margin-right: 40px;
+  height: 35px;
+  margin-bottom: 5px;
+  border: 1px solid black;
+}
+
+
+
+.brand-list li.selected {
+  background-color: #ccc;
+  color: #fff;
+}
+
+
+
+.no-products {
+  text-align: center;
+  padding: 20px;
+  font-weight: bold;
+}
+
+.sidebarSports {
+  width: 240px;
+  background-color: black;
+  padding: 5px;
+  position: fixed;
+  top: 0;
+  right: 250px;
+  height: 100%;
+  overflow-y: auto;
+  color: white;
+}
+
+.sidebarSports-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+  
+}
+
+.sport-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 30px;
+}
+
+.sport-list li {
+  cursor: pointer;
+  padding: 5px;
+  width: 150px;
+  margin-right: 430px;
+  height: 36px;
+  margin-bottom: 15px;
+  border: 1px solid white;
+}
+
+
+
+.sport-list li.selected {
+  background-color: #ccc;
+  color: #fff;
+}
+
+/* For Webkit browsers */
+::-webkit-scrollbar {
+  width: 10px; /* Set the width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Set the background color of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #840000; /* Set the color of the scrollbar thumb */
+   /* Set the border radius of the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Set the color of the scrollbar thumb on hover */
+}
+
+
+
+
+body {
+  background: transparent; /* Color of the track */
+  overflow: hidden;
+}
+
+body {
+  overflow-y: scroll; /* Enable vertical scrollbar */
+  scrollbar-width: thin; /* Set the width of the scrollbar */
+  scrollbar-color: #c6c6c6 #f1f1f1; /* Set the color of the scrollbar thumb and track */
+}
+
+body::-webkit-scrollbar {
+  width: 10px; /* Set the width of the scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Set the background color of the scrollbar track */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #e1e1e1; /* Set the color of the scrollbar thumb */
+   /* Set the border radius of the scrollbar thumb */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Set the color of the scrollbar thumb on hover */
+}
