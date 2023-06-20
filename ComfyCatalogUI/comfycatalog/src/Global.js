@@ -17,3 +17,12 @@ export function getUserID(){
   const UserID = localStorage.getItem('UserID');
   return UserID;
 }
+
+export function setAdminID(newAdminID){
+  localStorage.setItem('AdminID', newAdminID);
+}
+
+export function getAdminID(){
+  const AdminID = localStorage.getItem('AdminID');
+  return AdminID;
+}

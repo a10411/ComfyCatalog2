@@ -18,33 +18,53 @@ function LoginComponent() {
 
   const handleLogin = async () => {
     try {
-      const response = await fetch(`${API_URL}/api/Login${loginType === 'admin' ? 'Admin' : 'User'}?username=${username}&password=${password}`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-      });
+      const response = await fetch(
+        `${API_URL}/api/Login${loginType === 'admin' ? 'Admin' : 'User'}?username=${username}&password=${password}`,
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+        }
+      );
       const data = await response.json();
   
       if (response.ok) {
         const token = data.data;
-        
+  
         // Retrieve the user ID from the backend
-        const userIDResponse = await fetch(`${API_URL}/api/GetUserIDFromCredentials?username=${username}`, {
-          method: 'GET',
-          headers: {
-            'Content-Type': 'application/json',
-            'Authorization': `Bearer ${token}` // Include the token in the request headers
-          },
-        });
+        const userIDResponse = await fetch(
+          `${API_URL}/api/Get${loginType === 'admin' ? 'Admin' : 'User'}IDFromCredentials?username=${username}`,
+          {
+            method: 'GET',
+            headers: {
+              'Content-Type': 'application/json',
+              Authorization: `Bearer ${token}`, // Include the token in the request headers
+            },
+          }
+        );
         const userIDData = await userIDResponse.json();
         const userID = userIDData.data; // Access the 'userID' property from 'userIDData'
-        
-        setUserID(userID);  
+  
+        setUserID(userID);
         console.log(userID);
         setToken(token);
         console.log(token);
-        
+  
+        if (loginType === 'admin') {
+          const adminIDData = await adminIDResponse.json();
+          const adminID = adminIDData.data; // Access the 'adminID' property from 'adminIDData'
+  
+          setAdminID(adminID);
+          console.log(adminID);
+        }
+        else{
+          setUserID(userID);
+          console.log(userID);
+          setToken(token);
+          console.log(token);
+        }
+  
         window.location.href = loginType === 'admin' ? '/AdminComponents' : '/UserComponents';
       } else {
         // Login failed, display error message
@@ -55,6 +75,7 @@ function LoginComponent() {
       setError('An error occurred while logging in.');
     }
   };
+  
   
 
   return (

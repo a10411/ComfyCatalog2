@@ -118,6 +118,11 @@
     left: 0;
   }
 
+  .search-input-wrapper::placeholder {
+    font-family:  sans-serif;
+    text-decoration: double;
+    color: #d80d0d;
+  }
   
   /* UserProducts.css */
 
@@ -138,6 +143,14 @@
 .sidebarBrands-title {
   font-weight: bold;
   margin-bottom: 10px;
+  position: absolute;
+  margin-left: 50px;
+}
+
+.sidebar-title{
+  margin-left: 85px;
+  font-size: larger;
+  font-weight: 900;
 }
 
 .brand-list {
@@ -175,7 +188,7 @@
 .sidebarSports {
   width: 240px;
   background-color: black;
-  padding: 5px;
+  padding: 10px;
   position: fixed;
   top: 0;
   right: 250px;

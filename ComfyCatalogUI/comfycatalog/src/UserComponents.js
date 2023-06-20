@@ -24,6 +24,7 @@ function UserComponents() {
     if (!token) {
       navigate('/'); // Navigate to home page if token is not found
     }
+    else{console.log(userID);}
   }, [token, navigate]);
   
     return (

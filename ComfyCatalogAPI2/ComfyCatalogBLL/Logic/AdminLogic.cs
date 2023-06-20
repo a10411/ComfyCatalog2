@@ -66,5 +66,18 @@ namespace ComfyCatalogBLL.Logic
             }
             return response;
         }
+
+        public static async Task<Response> GetAdminIDFromCredentials(string conString, string username)
+        {
+            Response response = new Response();
+            int adminID = await ComfyCatalogDAL.Services.AdminService.GetAdminIDFromCredentials(conString, username);
+            if (adminID > 0)
+            {
+                response.StatusCode = StatusCodes.SUCCESS;
+                response.Message = "AdminID obtido";
+                response.Data = adminID;
+            }
+            return response;
+        }
     }
 }

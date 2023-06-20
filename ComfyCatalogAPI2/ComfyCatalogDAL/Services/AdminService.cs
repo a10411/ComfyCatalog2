@@ -89,6 +89,30 @@ namespace ComfyCatalogDAL.Services
             }
         }
 
+        public static async Task<int> GetAdminIDFromCredentials(string conString, string username)
+        {
+            int adminID = 0;
+
+            using (SqlConnection con = new SqlConnection(conString))
+            {
+                string query = $"SELECT AdminID FROM [Admin] WHERE username = '{username}'";
+                SqlCommand cmd = new SqlCommand(query, con);
+                cmd.CommandType = CommandType.Text;
+                con.Open();
+
+                SqlDataReader rdr = cmd.ExecuteReader();
+                while (rdr.Read())
+                {
+                    adminID = rdr.GetInt32(0);
+                }
+                rdr.Close();
+                con.Close();
+            }
+
+            return adminID;
+        }
+
+
         #endregion
 
 

@@ -7,12 +7,15 @@ import {AdminAllObservations} from './Admin/AdminAllObservations';
 import {AdminObservationDetail} from './Admin/AdminObservationDetail'
 import {AdminBrands} from './Admin/AdminBrands';
 import {AdminSports} from './Admin/AdminSports';
+import Sidebar from './Sidebar';
 
 
 function AdminComponents() {
     return (
       <div>
-        <h2>Admin Components</h2>
+          <div className='sidebarContainer'>
+            <Sidebar /> 
+          </div>
         {/* add Admin components here */}
       </div>
     );

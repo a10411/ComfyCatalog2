@@ -34,6 +34,8 @@ function UserProducts() {
     setSearchTerm(e.target.value);
   };
 
+  
+
   const handleFilterByBrand = (brand) => {
     if (!brand) {
       fetchProducts();
@@ -248,6 +250,7 @@ function UserProducts() {
             onChange={handleSearch}
             placeholder="Search product..."
             className="search-input"
+            style={{ fontFamily: "sans-serif",textDecoration: "none" }}
           />
         </div>
       </h1>
