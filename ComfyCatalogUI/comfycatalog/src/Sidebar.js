@@ -16,13 +16,12 @@ const Sidebar = ({ handleLogout }) => {
  
 
   return (
-    <div className={`sidebar ${expanded ? 'expanded' : ''}`}>
+    <div className= "sidebar">
       <ul className="ulSidebar">
         <li className="liSidebar">
           <NavLink to="/UserFavourites" className="nav-linkSidebar">
             <div className="nav-link-icon-container">
               <img src={heart} alt="Favorites Icon" className="nav-icon" title="Favorites" />
-              {expanded && <span className="nav-link-title">Favorites</span>}
             </div>
           </NavLink>
         </li>
@@ -30,7 +29,6 @@ const Sidebar = ({ handleLogout }) => {
           <NavLink to="/UserObservations" className="nav-linkSidebar">
             <div className="nav-link-icon-container">
               <img src={pencil3} alt="Observations Icon" className="nav-icon" title="Observations" />
-              {expanded && <span className="nav-link-title">Observations</span>}
             </div>
           </NavLink>
         </li>
@@ -38,7 +36,6 @@ const Sidebar = ({ handleLogout }) => {
           <NavLink to="/UserComponents" className="nav-linkSidebar">
             <div className="nav-link-icon-container">
               <img src={sock} alt="Products Icon" className="nav-icon" title="Products" />
-              {expanded && <span className="nav-link-title">Products</span>}
             </div>
           </NavLink>
         </li>
@@ -47,7 +44,6 @@ const Sidebar = ({ handleLogout }) => {
         <NavLink to="/Logout" className="nav-linkSidebar">
           <div className="nav-link-icon-container">
             <img src={logoutIcon} alt="Logout Icon" className="nav-icon" title="Logout" />
-            {expanded && <span className="nav-link-title">Logout</span>}
           </div>
         </NavLink>
       </div>

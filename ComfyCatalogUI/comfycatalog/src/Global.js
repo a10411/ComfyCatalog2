@@ -1,5 +1,7 @@
 let token = null;
 let UserID = null;
+let AdminID = null;
+
 export function setToken(newToken) {
   localStorage.setItem('token', newToken);
 }
@@ -9,20 +11,20 @@ export function getToken() {
   return token;
 }
 
-export function setUserID(newUserID){
+export function setUserID(newUserID) {
   localStorage.setItem('UserID', newUserID);
 }
 
-export function getUserID(){
-  const UserID = localStorage.getItem('UserID');
-  return UserID;
+export function getUserID() {
+  const userID = localStorage.getItem('UserID');
+  return userID;
 }
 
-export function setAdminID(newAdminID){
+export function setAdminID(newAdminID) {
   localStorage.setItem('AdminID', newAdminID);
 }
 
-export function getAdminID(){
-  const AdminID = localStorage.getItem('AdminID');
-  return AdminID;
+export function getAdminID() {
+  const adminID = localStorage.getItem('AdminID');
+  return adminID;
 }

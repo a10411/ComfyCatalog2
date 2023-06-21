@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './CSS/Login.css';
 import { variables } from './Utils/Variables';
-import { setUserID, setToken } from './Global.js';
+import { setAdminID, setUserID, setToken } from './Global.js';
 
 
 
@@ -32,8 +32,8 @@ function LoginComponent() {
       if (response.ok) {
         const token = data.data;
   
-        // Retrieve the user ID from the backend
-        const userIDResponse = await fetch(
+       
+        const IDResponse = await fetch(
           `${API_URL}/api/Get${loginType === 'admin' ? 'Admin' : 'User'}IDFromCredentials?username=${username}`,
           {
             method: 'GET',
@@ -43,22 +43,18 @@ function LoginComponent() {
             },
           }
         );
-        const userIDData = await userIDResponse.json();
-        const userID = userIDData.data; // Access the 'userID' property from 'userIDData'
-  
-        setUserID(userID);
-        console.log(userID);
-        setToken(token);
-        console.log(token);
   
         if (loginType === 'admin') {
-          const adminIDData = await adminIDResponse.json();
+          const adminIDData = await IDResponse.json();
           const adminID = adminIDData.data; // Access the 'adminID' property from 'adminIDData'
   
           setAdminID(adminID);
           console.log(adminID);
+          setToken(token);
         }
         else{
+          const userIDData = await IDResponse.json();
+          const userID = userIDData.data; // Access the 'userID' property from 'userIDData'
           setUserID(userID);
           console.log(userID);
           setToken(token);
@@ -81,6 +77,7 @@ function LoginComponent() {
   return (
     <div>
       {error && <div className="error">{error}</div>}
+      <div className='form-container'>
       <form>
         <label>
           Username:
@@ -104,6 +101,7 @@ function LoginComponent() {
           Submit
         </button>
       </form>
+      </div>
     </div>
   );
 }

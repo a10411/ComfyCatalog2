@@ -4,11 +4,14 @@ import LoginComponent from './LoginComponent';
 import RegisterComponent from './RegisterComponent';
 import UserComponents from './UserComponents';
 import AdminComponents from './AdminComponents';
+import AdminProductDetailComponent from './Admin/AdminProductDetail';
+import AdminAllObservationsComponent  from './Admin/AdminAllObservations';
+import AdminAddProductsComponent  from './Admin/AdminAddProduct';
+import AdminAllFavouritesComponent from './Admin/AdminAllFavourites';
+import AdminObservationDetailComponent  from './Admin/AdminObservationDetail';
 import HomeComponent from './HomeComponent';
 import UserProductsDetailComponent from './User/UserProductDetail';
-import UserBrandsComponent from './User/UserBrands';
 import UserFavouritesComponent from './User/UserFavourites';
-import UserSportsComponent from './User/UserSports';
 import UserObservationsComponent from './User/UserObservations';
 import UserObservationDetailsComponent from './User/UserObservationDetails';
 import UserAddObservationComponent from './User/UserAddObservation';
@@ -46,9 +49,12 @@ function App() {
         <Route path="/RegisterComponent" element={<RegisterComponent />} />
         <Route path="/UserComponents" element={<UserComponents />} />
         <Route path="/AdminComponents" element={<AdminComponents />} />
-        <Route path="/UserBrands" element={<UserBrandsComponent />} />
+        <Route path="/AdminAddProduct" element={<AdminAddProductsComponent/>} />
+        <Route path="/AdminProductDetail" element={<AdminProductDetailComponent />} />
+        <Route path="/AdminAllObservations" element={<AdminAllObservationsComponent/>} />
+        <Route path="/AdminAllFavourites" element={<AdminAllFavouritesComponent/>} />
+        <Route path="/AdminObservationDetail" element={<AdminObservationDetailComponent/>} />
         <Route path="/UserFavourites" element={<UserFavouritesComponent />} />
-        <Route path="/UserSports" element={<UserSportsComponent />} />
         <Route path="/UserObservations" element={<UserObservationsComponent />} />
         <Route path="/UserObservationDetails" element={<UserObservationDetailsComponent />} />
         <Route path="/UserAddObservation" element={<UserAddObservationComponent/>} />

@@ -45,5 +45,26 @@ namespace ComfyCatalogAPI.Controllers
             return new JsonResult(response);
         }
 
+
+        [SwaggerResponse(StatusCodes.Status200OK, Description = "Method successfully executed.")]
+        [SwaggerResponse(StatusCodes.Status204NoContent, Description = "No content was found.")]
+        [SwaggerResponse(StatusCodes.Status400BadRequest, Description = "The endpoint or data structure is not in line with expectations.")]
+        [SwaggerResponse(StatusCodes.Status401Unauthorized, Description = "Api key authentication was not provided or it is not valid.")]
+        [SwaggerResponse(StatusCodes.Status403Forbidden, Description = "You do not have permissions to perform the operation.")]
+        [SwaggerResponse(StatusCodes.Status404NotFound, Description = "The requested resource was not found.")]
+        [SwaggerResponse(StatusCodes.Status500InternalServerError, Description = "An unexpected API error has occurred.")]
+        [Route("/api/GetAllFavourites")]
+        [HttpGet]
+        public async Task<IActionResult> GetAllFavourites()
+        {
+            string CS = _configuration.GetConnectionString("WebApiDatabase");
+            Response response = await FavouriteLogic.GetAllFavourite(CS);
+            if (response.StatusCode != ComfyCatalogBLL.Utils.StatusCodes.SUCCESS)
+            {
+                return StatusCode((int)response.StatusCode);
+            }
+            return new JsonResult(response);
+        }
     }
 }
+

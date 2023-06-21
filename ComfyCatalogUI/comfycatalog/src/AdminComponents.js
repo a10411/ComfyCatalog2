@@ -1,22 +1,33 @@
-import React from 'react';
-
-import {AdminAddProduct} from './Admin/AdminAddProduct';
-import {AdminProductDetail} from './Admin/AdminProductDetail';
-import {AdminProducts} from './Admin/AdminProducts';
-import {AdminAllObservations} from './Admin/AdminAllObservations';
-import {AdminObservationDetail} from './Admin/AdminObservationDetail'
-import {AdminBrands} from './Admin/AdminBrands';
-import {AdminSports} from './Admin/AdminSports';
-import Sidebar from './Sidebar';
-
+import AdminProducts from './Admin/AdminProducts';
+import SidebarAdmin from './SidebarAdmin';
+import { useNavigate } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import {getToken, getAdminID} from './Global';
+import loading from './Utils/Icons/loading.svg';
 
 function AdminComponents() {
+
+  const token = getToken();
+  const adminID = getAdminID();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (!token) {
+      navigate('/'); // Navigate to home page if token is not found
+    }
+    else{console.log(adminID);}
+  }, [token, navigate]);
+
+
+
     return (
       <div>
           <div className='sidebarContainer'>
-            <Sidebar /> 
+              <SidebarAdmin /> 
           </div>
-        {/* add Admin components here */}
+          <div >
+              <AdminProducts/>  
+          </div>
       </div>
     );
   }

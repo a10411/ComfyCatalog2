@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './CSS/Login.css';
+import './CSS/Register.css';
 import { variables } from './Utils/Variables';
 import { setUserID, setToken } from './Global.js';
 
@@ -75,7 +75,8 @@ function RegisterComponent() {
   return (
     <div>
       {error && <div className="error">{error}</div>}
-      <form>
+      <div className='form-container'>
+      <form className='form-register'>
         <label>
           Username:
           <input type="text" value={username} onChange={(event) => setUsername(event.target.value)} />
@@ -105,6 +106,7 @@ function RegisterComponent() {
           Register
         </button>
       </form>
+      </div>
     </div>
   );
 }
