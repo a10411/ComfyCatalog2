@@ -1,0 +1,13 @@
+-CodAmostra
+-Data
+-NomeCliente
+-DesignColor
+-DesignSize
+-DesignCertification
+-DesignComposition
+-DesignBrand
+-DesignLenght
+-DesignActType(sport)
+-DesignKnittingType
+-DesignMachGroup
+
