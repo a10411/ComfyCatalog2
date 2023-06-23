@@ -15,23 +15,23 @@ const SidebarAdmin = ({ handleLogout }) => {
     <div className= "sidebarAdmin">
       <ul className="ulSidebarAdmin">
         <li className="liSidebarAdmin">
-          <NavLink to="/AdminAllFavourites" className="nav-linkSidebarAdmin">
+          <NavLink exact to="/AdminAllFavourites" className="nav-linkSidebarAdmin">
             <div className="nav-link-icon-containerAdmin">
-              <img src={heart} alt="Favorites Icon" className="nav-icon" title="All Favorites" />
+              <img src={heart} alt="Favorites Icon" className="nav-iconAdmin" title="All Favorites" />
             </div>
           </NavLink>
         </li>
         <li className="liSidebarAdmin">
-          <NavLink to="/AdminAllObservations" className="nav-linkSidebarAdmin">
+          <NavLink exact to="/AdminAllObservations" className="nav-linkSidebarAdmin">
             <div className="nav-link-icon-containerAdmin">
-              <img src={pencil3} alt="Observations Icon" className="nav-icon" title="All Observations" />
+              <img src={pencil3} alt="Observations Icon" className="nav-iconAdmin" title="All Observations" />
             </div>
           </NavLink>
         </li>
         <li className="liSidebarAdmin">
-          <NavLink to="/AdminComponents" className="nav-linkSidebarAdmin">
+          <NavLink exact to="/AdminComponents" className="nav-linkSidebarAdmin">
             <div className="nav-link-icon-containerAdmin">
-              <img src={sock} alt="Products Icon" className="nav-icon" title="Products" />
+              <img src={sock} alt="Products Icon" className="nav-iconAdmin" title="Products" />
             </div>
           </NavLink>
         </li>
@@ -39,7 +39,7 @@ const SidebarAdmin = ({ handleLogout }) => {
       <div className="liSidebarOut">
         <NavLink to="/Logout" className="nav-linkSidebarAdmin">
           <div className="nav-link-icon-containerAdmin">
-            <img src={logoutIcon} alt="Logout Icon" className="nav-icon" title="Logout" />
+            <img src={logoutIcon} alt="Logout Icon" className="nav-iconAdmin" title="Logout" />
           </div>
         </NavLink>
       </div>

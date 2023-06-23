@@ -22,7 +22,7 @@ function AdminComponents() {
 
     return (
       <div>
-          <div className='sidebarContainer'>
+          <div className='sidebarContainerAdmin'>
               <SidebarAdmin /> 
           </div>
           <div >

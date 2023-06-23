@@ -48,11 +48,11 @@ function App() {
         <Route path="/LoginComponent" element={<LoginComponent />} />
         <Route path="/RegisterComponent" element={<RegisterComponent />} />
         <Route path="/UserComponents" element={<UserComponents />} />
-        <Route path="/AdminComponents" element={<AdminComponents />} />
-        <Route path="/AdminAddProduct" element={<AdminAddProductsComponent/>} />
-        <Route path="/AdminProductDetail" element={<AdminProductDetailComponent />} />
-        <Route path="/AdminAllObservations" element={<AdminAllObservationsComponent/>} />
-        <Route path="/AdminAllFavourites" element={<AdminAllFavouritesComponent/>} />
+        <Route exact path="/AdminComponents" element={<AdminComponents />} />
+        <Route exact path="/AdminAddProduct" element={<AdminAddProductsComponent/>} />
+        <Route exact path="/AdminProductDetail" element={<AdminProductDetailComponent />} />
+        <Route exact path="/AdminAllObservations" element={<AdminAllObservationsComponent/>} />
+        <Route exact path="/AdminAllFavourites" element={<AdminAllFavouritesComponent/>} />
         <Route path="/AdminObservationDetail" element={<AdminObservationDetailComponent/>} />
         <Route path="/UserFavourites" element={<UserFavouritesComponent />} />
         <Route path="/UserObservations" element={<UserObservationsComponent />} />

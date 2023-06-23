@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { variables } from '../Utils/Variables';
-import Sidebar from '../Sidebar';
+import SidebarAdmin from '../SidebarAdmin';
 import { getUserID } from '../Global';
 import '../CSS/ProductDetail.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -154,7 +154,7 @@ const handleFavoriteClick = async () => {
   return (
     <div>
       <div>
-        <Sidebar />
+        <SidebarAdmin />
       </div>
       <div className="productDetail-container">
         <div className="productDetail-content">

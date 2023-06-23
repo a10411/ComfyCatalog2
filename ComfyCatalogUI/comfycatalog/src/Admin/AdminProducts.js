@@ -34,7 +34,7 @@ function AdminProducts() {
     setSearchTerm(e.target.value);
   };
 
-  
+ 
 
   const handleFilterByBrand = (brand) => {
     if (!brand) {

@@ -4,8 +4,8 @@ import { useNavigate } from 'react-router-dom';
 import '../CSS/UserProducts.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInfoCircle } from '@fortawesome/free-solid-svg-icons';
-import SidebarAdmin from '../Sidebar';
-import { getUserID } from '../Global';
+import SidebarAdmin from '../SidebarAdmin';
+
 
 function AdminAllFavourites() {
   const API_URL = variables.API_URL;
@@ -28,7 +28,7 @@ function AdminAllFavourites() {
     setSearchTerm(e.target.value);
   };
 
-  const navigateToProductDetails = (productID) => {
+  const navigateToProductDetailsAdmin = (productID) => {
     const imageURL = images.find(image => image.productID === productID)?.imageName;
     navigate('/AdminProductDetail', { state: { productID, imageURL } });
   };
@@ -167,7 +167,7 @@ function AdminAllFavourites() {
                   <FontAwesomeIcon
                     icon={faInfoCircle}
                     className="product-icon"
-                    onClick={() => navigateToProductDetails(favorite.productID)}
+                    onClick={() => navigateToProductDetailsAdmin(favorite.productID)}
                   />
                 </div>
               </div>
