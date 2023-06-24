@@ -1,0 +1,791 @@
+﻿IDX,nomeCliente,composition,color,size,certification,brand,designLenght,sport,knittingType
+1,Domestik ApS,,White,L (43-46),Conventional,N/A,Crew/Mid Calf,Multisports,Flat Knit
+2,Franz Ziener GmbH & Co. KG,62% Wool; 34% Polyamide; 4% Elastane,Bitter Lemon,39-42,Conventional,N/A,Knee High,Ski,Selected Terry
+3,INCYLENCE oHG,67% Organic Cotton; 32% Polyamide; 1% Elastane,Green 63383,39-42,Sustainable,Incylence,Crew/Mid Calf,Multisports,Half Terry
+4,INCYLENCE oHG,64% Organic Cotton; 35% Polyamide; 1% Elastane,Brick C63381,35-38,Sustainable,Incylence,Crew/Mid Calf,Multisports,Half Terry
+5,INCYLENCE oHG,64% Organic Cotton; 35% Polyamide; 1% Elastane,Brick C63381,39-42,Sustainable,Incylence,Crew/Mid Calf,Multisports,Half Terry
+6,INCYLENCE oHG,64% Organic Cotton; 35% Polyamide; 1% Elastane,Brick C63381,43-46,Sustainable,Incylence,Crew/Mid Calf,Multisports,Half Terry
+7,INCYLENCE oHG,64% Organic Cotton; 35% Polyamide; 1% Elastane,Brick C63381,47-50,Sustainable,Incylence,Crew/Mid Calf,Multisports,Half Terry
+8,Domestik ApS,97% Recycled Polyamide; 2% Recycled Elastane; 1% Elastane,White,L (43-46),Conventional,Domestik,Crew/Mid Calf,Multisports,Flat Knit
+9,GripGrab ApS,50% Acrylic; 25% Polyamide; 23% Recycled Polyester; 2% Elastane,Black,41-44,Conventional,GripGrab,Liner,Cycling,Flat Knit
+10,GripGrab ApS,50% Acrylic; 33% Polyamide; 14% Recycled Polyester; 3% Elastane,Black,41-44,Conventional,GripGrab,Crew/Mid Calf,Cycling,Flat Knit
+11,GripGrab ApS,49% Acrylic; 32% Polyamide; 16% Recycled Polyester; 3% Elastane,Black,41-44,Conventional,GripGrab,Crew/Mid Calf,Cycling,Flat Knit
+12,GripGrab ApS,66% Recycled Polyester; 31% Polyamide; 3% Elastane,Black,41-44,Conventional,GripGrab,Crew/Mid Calf,Cycling,Flat Knit
+13,Franz Ziener GmbH & Co. KG,35% Acrylic; 35% Wool; 26% Polyamide; 4% Elastane,338 Bitter Lemon,39-42,Conventional,N/A,Knee High,Ski,Selected Terry
+14,Sidas,35% Polypropylene; 30% Polyamide; 25% Cotton; 6% Silicone; 4% Elastane,White,42-44,Sustainable,Sidas,Crew/Mid Calf,Multisports,Half Terry
+15,Sidas,35% Polypropylene; 30% Polyamide; 25% Cotton; 6% Silicone; 4% Elastane,Black,42-44,Sustainable,Sidas,Crew/Mid Calf,Multisports,Half Terry
+16,Sidas,35% Polypropylene; 30% Polyamide; 25% Cotton; 6% Silicone; 4% Elastane,Black,42-44,Sustainable,Sidas,Crew/Mid Calf,Multisports,Half Terry
+17,GripGrab ApS,74% Polyester; 24% Polyamide; 2% Elastane,Black,41-44,Conventional,GripGrab,Crew/Mid Calf,Cycling,Half Terry
+18,GripGrab ApS,36% Merino Wool; 36% Acrylic; 26% Polyamide; 2% Elastane,Black,41-44,Conventional,GripGrab,Crew/Mid Calf,Cycling,Half Terry
+19,Boards&More GmbH,98% Polyamide; 2% Elastane,Black,M/39-42,Conventional,ION BIKE,Crew/Mid Calf,Cycling,Flat Knit
+20,Boards&More GmbH,79% Recycled Polyamide; 19% Polyamide; 2% Elastane,Black,M/39-42,Conventional,ION BIKE,Crew/Mid Calf,Cycling,Flat Knit
+21,INCYLENCE oHG,66% Recycled Polyamide; 31% Polyamide; 3% Elastane,White/Blue,35-38,Conventional,Incylence,Crew/Mid Calf,Running,Selected Terry
+22,INCYLENCE oHG,66% Recycled Polyamide; 31% Polyamide; 3% Elastane,White/Blue,39-42,Conventional,Incylence,Crew/Mid Calf,Running,Selected Terry
+23,INCYLENCE oHG,66% Recycled Polyamide; 31% Polyamide; 3% Elastane,White/Blue,43-46,Conventional,Incylence,Crew/Mid Calf,Running,Selected Terry
+24,MAAP Co. Pty. Ltd,69% Q-Skin Polyamide; 27% Polyamide; 4% Elastane,Black,43-45,Conventional,MAAP,Crew/Mid Calf,Cycling,Selected Terry
+25,MAAP Co. Pty. Ltd,69% Q-Skin Polyamide; 27% Polyamide; 4% Elastane,White,"36,5-42",Conventional,MAAP,Crew/Mid Calf,Cycling,Selected Terry
+26,Boards&More GmbH,49% Polyamide; 45% Merino Wool; 6% Elastane,Black,M/39-42,Conventional,ION BIKE,Crew/Mid Calf,Cycling,Flat Knit
+27,Boards&More GmbH,63% Merino Wool; 30% Polyamide; 7% Elastane,Black,M/39-42,Conventional,ION BIKE,Crew/Mid Calf,Cycling,Flat Knit
+28,Sidas,79% Polyamide; 8% Poly Glow; 7% Silicone; 6% Elastane,White,42-43,Conventional,Sidas,Crew/Mid Calf,Multisports,Half Terry
+29,Sidas,79% Polyamide; 8% Poly Glow; 7% Silicone; 6% Elastane,Black,42-43,Conventional,Sidas,Crew/Mid Calf,Multisports,Half Terry
+30,BERGMENSCH GmbH,,Heather Grey,38-42,Conventional,BERGMENSCH,Crew/Mid Calf,Hiking/Trekking,Half Terry
+31,BERGMENSCH GmbH,,Heather Grey,38-42,Conventional,BERGMENSCH,Crew/Mid Calf,Hiking/Trekking,Half Terry
+32,Canyon Bicycles GmbH,73% Cotton; 24% Polyamide; 3% Elastane,Maritime Blue,L/43-45,Conventional,N/A,Short,Cycling,Half Terry
+33,Fingerscrossed GmbH,51% Polyamide; 47% Merino Wool; 2% Elastane,Pink,35-38,Conventional,Fingerscrossed,Crew/Mid Calf,Basic,Half Terry
+34,Fingerscrossed GmbH,51% Polyamide; 47% Merino Wool; 2% Elastane,Pink,43-46,Conventional,Fingerscrossed,Crew/Mid Calf,Basic,Half Terry
+35,Scan Trade Ltd.,97% Polyamide; 3% Elastane,Black,40--44,Conventional,Umbro,Over the Knee,Football,Half Terry
+36,JLION CLOTHING SL,46% Polyamide; 43% Wool; 8% Silk; 3% Elastane,Black,M (36-40),Conventional,Jimmy Lion,Knee High,Ski,Half Terry
+37,JLION CLOTHING SL,46% Polyamide; 43% Wool; 8% Silk; 3% Elastane,Black,L (41-46),Conventional,Jimmy Lion,Knee High,Ski,Half Terry
+38,JLION CLOTHING SL,36% Wool; 27% Polyamide; 27% Viscose; 9% Cashmere; 1% Elastane,Red,L (41-46),Conventional,Jimmy Lion,Crew/Mid Calf,Basic,Flat Knit
+39,JLION CLOTHING SL,47% Polyamide; 46% Multifilament Polyamide; 5% Elastane; 2% Silicone,Black,L (41-46),Conventional,Jimmy Lion,Crew/Mid Calf,Cycling,Flat Knit
+40,JLION CLOTHING SL,47% Polyamide; 46% Multifilament Polyamide; 5% Elastane; 2% Silicone,Black,M (36-40),Conventional,Jimmy Lion,Crew/Mid Calf,Cycling,Flat Knit
+41,JLION CLOTHING SL,48% Econyl; 47% Polyamide; 5% Elastane,Black,L (41-46),Conventional,Jimmy Lion,Crew/Mid Calf,Cycling,Flat Knit
+42,JLION CLOTHING SL,48% Econyl; 47% Polyamide; 5% Elastane,Black,M (36-40),Conventional,Jimmy Lion,Crew/Mid Calf,Cycling,Flat Knit
+43,Gococo AB,,Black,S,Conventional,n/a,Crew/Mid Calf,Equestrianism,Flat Knit
+44,Gococo AB,,Black,M,Conventional,n/a,Crew/Mid Calf,Equestrianism,Flat Knit
+45,Gococo AB,,Black,L,Conventional,n/a,Crew/Mid Calf,Equestrianism,Flat Knit
+46,Gococo AB,,Black,S,Conventional,n/a,Crew/Mid Calf,Equestrianism,Flat Knit
+47,Gococo AB,,Black,M,Conventional,n/a,Crew/Mid Calf,Equestrianism,Flat Knit
+48,Gococo AB,,Black,L,Conventional,n/a,Crew/Mid Calf,Equestrianism,Flat Knit
+49,VAUDE Sport GmbH & Co. KG,,White,39-41,Conventional,Vaude,Crew/Mid Calf,Cycling,Half Terry
+50,VAUDE Sport GmbH & Co. KG,,Black,39-41,Conventional,Vaude,Invisible,Cycling,Flat Knit
+51,INCYLENCE oHG,73% Recycled Polyamide; 23% Polyamide; 4% Elastane,Rainbow,43-46,Conventional,Incylence,Crew/Mid Calf,Cycling,Selected Terry
+52,INCYLENCE oHG,73% Recycled Polyamide; 23% Polyamide; 4% Elastane,White/Red,43-46,Conventional,Incylence,Crew/Mid Calf,Cycling,Selected Terry
+53,INCYLENCE oHG,71% Recycled Polyamide; 25% Polyamide; 4% Elastane,White/Purple,43-46,Conventional,Incylence,Crew/Mid Calf,Cycling,Selected Terry
+54,Orange Sport,,Navy/Pink,43-47,Conventional,Orange Sport,Crew/Mid Calf,Basic,Flat Knit
+55,Select Sport A/S,,White/Red,28-31,Conventional,Select Sport,Crew/Mid Calf,Football,Selected Terry
+56,Select Sport A/S,,White/Red,32-35,Conventional,Select Sport,Crew/Mid Calf,Football,Selected Terry
+57,Select Sport A/S,,White/Red,36-40,Conventional,Select Sport,Crew/Mid Calf,Football,Selected Terry
+58,Select Sport A/S,,White/Red,41-45,Conventional,Select Sport,Crew/Mid Calf,Football,Selected Terry
+59,Fingerscrossed GmbH,,Black,35-38,Conventional,Fingerscrossed,Crew/Mid Calf,Multisports,Flat Knit
+60,Fingerscrossed GmbH,,Black,43-46,Conventional,Fingerscrossed,Crew/Mid Calf,Multisports,Flat Knit
+61,Fingerscrossed GmbH,,White,35-38,Conventional,Fingerscrossed,Crew/Mid Calf,Multisports,Flat Knit
+62,Fingerscrossed GmbH,,White,43-46,Conventional,Fingerscrossed,Crew/Mid Calf,Multisports,Flat Knit
+63,INCYLENCE oHG,55% Recycled Polyamide; 41% Polyamide; 4% Elastane,White,43-46,Conventional,Incylence,Crew/Mid Calf,Cycling,Selected Terry
+64,INCYLENCE oHG,55% Recycled Polyamide; 41% Polyamide; 4% Elastane,Blue,43-46,Conventional,Incylence,Crew/Mid Calf,Cycling,Selected Terry
+65,INCYLENCE oHG,66% Recycled Polyamide; 31% Polyamide; 3% Elastane,Neon Yellow,43-46,Conventional,Incylence,Crew/Mid Calf,Cycling,Selected Terry
+66,INCYLENCE oHG,66% Recycled Polyamide; 31% Polyamide; 3% Elastane,Lilac,43-46,Conventional,Incylence,Crew/Mid Calf,Cycling,Selected Terry
+67,Kirpte UAB,62% Multifilament Polyamide; 31% Polyamide; 7% Elastane,Black,XL,Conventional,N/A,N/A,Multisports,Flat Knit
+68,Kirpte UAB,62% Multifilament Polyamide; 31% Polyamide; 7% Elastane,Black,L,Conventional,N/A,N/A,Multisports,Flat Knit
+69,Sidas,53% Polyamide; 32% Multifilament Polyamide; 9% Silicone; 5% Elastane; 1% Reflective Yarns,Grey/Neon Orange,42-43,Conventional,Sidas,Crew/Mid Calf,Multisports,Half Terry
+70,JLION CLOTHING SL,,Black/Pink,M (36-40),Conventional,Jimmy Lion,Crew/Mid Calf,Multisports,Flat Knit
+71,JLION CLOTHING SL,,Bitter Lemon/Blue,M (36-40),Conventional,Jimmy Lion,Crew/Mid Calf,Multisports,Flat Knit
+72,JLION CLOTHING SL,,Pink/Beige,M (36-40),Conventional,Jimmy Lion,Crew/Mid Calf,Multisports,Flat Knit
+73,JLION CLOTHING SL,,White/Black,M (36-40),Conventional,Jimmy Lion,Crew/Mid Calf,Multisports,Flat Knit
+74,Boards&More GmbH,,Black,M/39-42,Conventional,ION BIKE,Crew/Mid Calf,Cycling,Flat Knit
+75,Boards&More GmbH,,Black,M/39-42,Conventional,ION BIKE,Crew/Mid Calf,Cycling,Flat Knit
+76,Fingerscrossed GmbH,96% Polyamide; 2% Elastane; 2% Polypropylene,White,35-38,Conventional,Fingerscrossed,Crew/Mid Calf,Multisports,Flat Knit
+77,Fingerscrossed GmbH,96% Polyamide; 2% Elastane; 2% Polypropylene,White,43-46,Conventional,Fingerscrossed,Crew/Mid Calf,Multisports,Flat Knit
+78,Fingerscrossed GmbH,,Black,35-38,Conventional,Fingerscrossed,Crew/Mid Calf,Basic,Half Terry
+79,Fingerscrossed GmbH,,Black,43-46,Conventional,Fingerscrossed,Crew/Mid Calf,Basic,Half Terry
+80,Fingerscrossed GmbH,,Red,35-38,Conventional,Fingerscrossed,Crew/Mid Calf,Basic,Half Terry
+81,Fingerscrossed GmbH,,Red,43-46,Conventional,Fingerscrossed,Crew/Mid Calf,Basic,Half Terry
+82,Fingerscrossed GmbH,,Black,35-38,Conventional,Fingerscrossed,Crew/Mid Calf,Basic,Half Terry
+83,Fingerscrossed GmbH,,Black,43-46,Conventional,Fingerscrossed,Crew/Mid Calf,Basic,Half Terry
+84,JLION CLOTHING SL,48% Econyl Polyamide; 48% Polyamide; 4% Elastane,Lazuli Blue/Orange,M (36-40),Conventional,Jimmy Lion,Crew/Mid Calf,Multisports,Flat Knit
+85,JLION CLOTHING SL,48% Econyl Polyamide; 48% Polyamide; 4% Elastane,Seafoam/Bitter Lemon,M (36-40),Conventional,Jimmy Lion,Crew/Mid Calf,Multisports,Flat Knit
+86,JLION CLOTHING SL,48% Econyl Polyamide; 48% Polyamide; 4% Elastane,Black/Pink,L (41-46),Conventional,Jimmy Lion,Crew/Mid Calf,Multisports,Flat Knit
+87,JLION CLOTHING SL,48% Econyl Polyamide; 48% Polyamide; 4% Elastane,Lazuli Blue/Orange,L (41-46),Conventional,Jimmy Lion,Crew/Mid Calf,Multisports,Flat Knit
+88,JLION CLOTHING SL,48% Econyl Polyamide; 48% Polyamide; 4% Elastane,Seafoam/Bitter Lemon,L (41-46),Conventional,Jimmy Lion,Crew/Mid Calf,Multisports,Flat Knit
+89,JLION CLOTHING SL,48% Econyl Polyamide; 48% Polyamide; 4% Elastane,Bitter Lemon/Blue,L (41-46),Conventional,Jimmy Lion,Crew/Mid Calf,Multisports,Flat Knit
+90,JLION CLOTHING SL,48% Econyl Polyamide; 48% Polyamide; 4% Elastane,White/Black,L (41-46),Conventional,Jimmy Lion,Crew/Mid Calf,Multisports,Flat Knit
+91,JLION CLOTHING SL,48% Econyl Polyamide; 48% Polyamide; 4% Elastane,Pink/Beige,L (41-46),Conventional,Jimmy Lion,Crew/Mid Calf,Multisports,Flat Knit
+92,Comfysocks A/S,70% Cotton; 27% Polyamide; 3% Elastane,White,39-42,Conventional,N/A,Liner,Basic,Flat Knit
+93,Comfysocks A/S,70% Cotton; 27% Polyamide; 3% Elastane,Black,39-42,Conventional,N/A,Liner,Basic,Flat Knit
+94,Comfysocks A/S,71% Cotton; 26% Polyamide; 3% Elastane,White,39-42,Conventional,N/A,Invisible,Basic,Flat Knit
+95,Comfysocks A/S,71% Cotton; 26% Polyamide; 3% Elastane,Black,39-42,Conventional,N/A,Invisible,Basic,Flat Knit
+96,Devold of Norway AS,52% Merino Wool; 23% Recycled Polyester; 22% Polyamide; 3% Elastane,Black,41-46,Conventional,Devold,Crew/Mid Calf,Basic,Flat Knit
+97,Devold of Norway AS,50% Merino Wool; 26% Polyamide; 21% Recycled Polyester; 3% Elastane,Black,41-46,Conventional,Devold,Liner,Basic,Flat Knit
+98,Devold of Norway AS,53% Merino Wool; 23% Recycled Polyester; 22% Polyamide; 2% Elastane,Black,41-46,Conventional,Devold,Liner,Basic,Half Terry
+99,JLION CLOTHING SL,53% Econyl; 43% Polyamide; 4% Elastane,Black,L (41-46),Conventional,Jimmy Lion,Crew/Mid Calf,Cycling,Flat Knit
+100,JLION CLOTHING SL,,Black,M (36-40),Conventional,Jimmy Lion,Crew/Mid Calf,Cycling,Flat Knit
+101,JLION CLOTHING SL,49% Econyl; 46% Polyamide; 5% Elastane,Pink,M (36-40),Conventional,Jimmy Lion,Crew/Mid Calf,Multisports,Flat Knit
+102,JLION CLOTHING SL,49% Econyl; 46% Polyamide; 5% Elastane,Pink,L (41-46),Conventional,Jimmy Lion,Crew/Mid Calf,Multisports,Flat Knit
+103,JLION CLOTHING SL,49% Econyl; 46% Polyamide; 5% Elastane,Yellow,M (36-40),Conventional,Jimmy Lion,Crew/Mid Calf,Multisports,Flat Knit
+104,JLION CLOTHING SL,49% Econyl; 46% Polyamide; 5% Elastane,Yellow,L (41-46),Conventional,Jimmy Lion,Crew/Mid Calf,Multisports,Flat Knit
+105,JLION CLOTHING SL,49% Econyl; 46% Polyamide; 5% Elastane,Orange,M (36-40),Conventional,Jimmy Lion,Crew/Mid Calf,Multisports,Flat Knit
+106,JLION CLOTHING SL,49% Econyl; 46% Polyamide; 5% Elastane,Orange,L (41-46),Conventional,Jimmy Lion,Crew/Mid Calf,Multisports,Flat Knit
+107,VAUDE Sport GmbH & Co. KG,,White,39-41,Conventional,Vaude,Crew/Mid Calf,Cycling,Half Terry
+108,VAUDE Sport GmbH & Co. KG,72% Recycled Polyamide; 25% Polyamide; 3% Elastane,Black/Black,39-41,Conventional,Vaude,Crew/Mid Calf,Cycling,Half Terry
+109,VAUDE Sport GmbH & Co. KG,72% Recycled Polyamide; 25% Polyamide; 3% Elastane,Khaki,39-41,Conventional,Vaude,Crew/Mid Calf,Cycling,Half Terry
+110,VAUDE Sport GmbH & Co. KG,72% Recycled Polyamide; 25% Polyamide; 3% Elastane,Cassis uni,39-41,Conventional,Vaude,Crew/Mid Calf,Cycling,Half Terry
+111,VAUDE Sport GmbH & Co. KG,72% Recycled Polyamide; 25% Polyamide; 3% Elastane,Nordic Blue,39-41,Conventional,Vaude,Crew/Mid Calf,Cycling,Half Terry
+112,Sidas,53% Polyamide; 32% Multifilament Polyamide; 9% Silicone; 5% Elastane; 1% Reflective Yarns,Navy/Grey,42-43,Conventional,Sidas,Crew/Mid Calf,Multisports,Half Terry
+113,Sidas,,Black/Grey,42-43,Conventional,Sidas,Crew/Mid Calf,Multisports,Half Terry
+114,Sidas,90% Polyamide; 5% Elastane; 4% Silicone; 1% Reflective Yarns,Green/Lilac,42-43,Conventional,Sidas,Ankle/Quarter,Running,Half Terry
+115,Sidas,90% Polyamide; 5% Elastane; 4% Silicone; 1% Reflective Yarns,Lilac/Green,42-43,Conventional,Sidas,Ankle/Quarter,Running,Half Terry
+116,Sidas,90% Polyamide; 5% Elastane; 4% Silicone; 1% Reflective Yarns,Grey/Black,42-43,Conventional,Sidas,Ankle/Quarter,Running,Half Terry
+117,INCYLENCE oHG,73% Recycled Polyamide; 23% Polyamide; 4% Elastane,Rainbow,35-38,Conventional,Incylence,Crew/Mid Calf,Cycling,Selected Terry
+118,INCYLENCE oHG,73% Recycled Polyamide; 23% Polyamide; 4% Elastane,Rainbow,39-42,Conventional,Incylence,Crew/Mid Calf,Cycling,Selected Terry
+119,INCYLENCE oHG,73% Recycled Polyamide; 23% Polyamide; 4% Elastane,Rainbow,47-50,Conventional,Incylence,Crew/Mid Calf,Cycling,Selected Terry
+120,JLION CLOTHING SL,49% Econyl; 46% Polyamide; 5% Elastane,Orange,M (36-40),Conventional,Jimmy Lion,Crew/Mid Calf,Multisports,Flat Knit
+121,JLION CLOTHING SL,49% Econyl; 46% Polyamide; 5% Elastane,Orange,L (41-46),Conventional,Jimmy Lion,Crew/Mid Calf,Multisports,Flat Knit
+122,Compressport International SA,95% Polyamide; 5% Elastane,Black/Red,T1/ 35-38,Conventional,N/A,Crew/Mid Calf,Running,Half Terry
+123,Compressport International SA,95% Polyamide; 5% Elastane,Black/Red,T2/ 39-41,Conventional,N/A,Crew/Mid Calf,Running,Half Terry
+124,Compressport International SA,95% Polyamide; 5% Elastane,Black/Red,T3/ 42-44,Conventional,N/A,Crew/Mid Calf,Running,Half Terry
+125,Compressport International SA,95% Polyamide; 5% Elastane,Black/Red,T4/ 45-48,Conventional,N/A,Crew/Mid Calf,Running,Half Terry
+126,VAUDE Sport GmbH & Co. KG,60% Wool; 38% Polyamide; 2% Elastane,Cassis Uni,39-41,Conventional,Vaude,Crew/Mid Calf,Cycling,Half Terry
+127,VAUDE Sport GmbH & Co. KG,60% Wool; 38% Polyamide; 2% Elastane,Heron,39-41,Conventional,Vaude,Crew/Mid Calf,Cycling,Half Terry
+128,VAUDE Sport GmbH & Co. KG,60% Wool; 38% Polyamide; 2% Elastane,Willow Green,39-41,Conventional,Vaude,Crew/Mid Calf,Cycling,Half Terry
+129,VAUDE Sport GmbH & Co. KG,60% Wool; 38% Polyamide; 2% Elastane,Carmine,39-41,Conventional,Vaude,Crew/Mid Calf,Cycling,Half Terry
+130,ID Identity,72% Polypropylene; 25% Polyamide; 3% Elastane,Black,37-38,Conventional,ID Identity,Crew/Mid Calf,Running,Flat Knit
+131,ID Identity,72% Polypropylene; 25% Polyamide; 3% Elastane,Black,41-42,Conventional,ID Identity,Crew/Mid Calf,Running,Flat Knit
+132,ID Identity,72% Polypropylene; 25% Polyamide; 3% Elastane,Black,43-44,Conventional,ID Identity,Crew/Mid Calf,Running,Flat Knit
+133,ID Identity,72% Polypropylene; 25% Polyamide; 3% Elastane,Black,35-36,Conventional,ID Identity,Crew/Mid Calf,Running,Flat Knit
+134,ID Identity,72% Polypropylene; 25% Polyamide; 3% Elastane,Black,39-40,Conventional,ID Identity,Crew/Mid Calf,Running,Flat Knit
+135,ID Identity,72% Polypropylene; 25% Polyamide; 3% Elastane,Black,45-46,Conventional,ID Identity,Crew/Mid Calf,Running,Flat Knit
+136,ID Identity,72% Polypropylene; 25% Polyamide; 3% Elastane,Black,47-48,Conventional,ID Identity,Crew/Mid Calf,Running,Flat Knit
+137,ID Identity,72% Polypropylene; 25% Polyamide; 3% Elastane,Black,49-50,Conventional,ID Identity,Crew/Mid Calf,Running,Flat Knit
+138,ID Identity,72% Polypropylene; 25% Polyamide; 3% Elastane,Black,51-52,Conventional,ID Identity,Crew/Mid Calf,Running,Flat Knit
+139,Sidas,55% Merino Wool; 41% Polyamide; 3% Elastane; 1% Silicone,Lemon Curry,L/42-43,Conventional,Sidas,Crew/Mid Calf,Hiking/Trekking,Half Terry
+140,Sidas,95% Polyamide; 5% Elastane,White,42-44,Conventional,Sidas,Crew/Mid Calf,Multisports,Half Terry
+141,Sidas,95% Polyamide; 5% Elastane,White,42-44,Conventional,Sidas,Ankle/Quarter,Multisports,Half Terry
+142,Sidas,95% Polyamide; 5% Elastane,White,42-44,Conventional,Sidas,Liner,Multisports,Half Terry
+143,GripGrab ApS,,Black,41-44,Conventional,GripGrab,Crew/Mid Calf,Cycling,Half Terry
+144,Sidas,,White,42-44,Sustainable,Sidas,Crew/Mid Calf,Multisports,Half Terry
+145,Sidas,,Black,42-44,Sustainable,Sidas,Crew/Mid Calf,Multisports,Half Terry
+146,Sidas,,Black,42-44,Conventional,Sidas,Ankle/Quarter,Hiking/Trekking,Half Terry
+147,Sidas,34% Polypropylene; 30% Polyamide; 27% Cotton; 5% Silicone; 4% Elastane,Black,XS/35-36,Conventional,Sidas,Crew/Mid Calf,Football,Half Terry
+148,Sidas,34% Polypropylene; 30% Polyamide; 27% Cotton; 5% Silicone; 4% Elastane,Black,S/37-38,Conventional,Sidas,Crew/Mid Calf,Football,Half Terry
+149,Sidas,34% Polypropylene; 30% Polyamide; 27% Cotton; 5% Silicone; 4% Elastane,Black,SM/39-40,Conventional,Sidas,Crew/Mid Calf,Football,Half Terry
+150,Sidas,34% Polypropylene; 30% Polyamide; 27% Cotton; 5% Silicone; 4% Elastane,Black,ML/40-41,Conventional,Sidas,Crew/Mid Calf,Football,Half Terry
+151,Sidas,34% Polypropylene; 30% Polyamide; 27% Cotton; 5% Silicone; 4% Elastane,Black,L/42-43,Conventional,Sidas,Crew/Mid Calf,Football,Half Terry
+152,Sidas,34% Polypropylene; 30% Polyamide; 27% Cotton; 5% Silicone; 4% Elastane,Black,XL/44-46,Conventional,Sidas,Crew/Mid Calf,Football,Half Terry
+153,Sidas,34% Polypropylene; 30% Polyamide; 27% Cotton; 5% Silicone; 4% Elastane,Black,XXL/47-49,Conventional,Sidas,Crew/Mid Calf,Football,Half Terry
+154,Sidas,34% Polypropylene; 30% Polyamide; 27% Cotton; 5% Silicone; 4% Elastane,White,L/42-43,Conventional,Sidas,Crew/Mid Calf,Football,Half Terry
+155,KIWAMI SARL,50% Polyamide; 39% Polyester; 11% Elastane,Black,35-38,Conventional,Kiwami SARL,Calf Sleeve,Multisports,Flat Knit
+156,KIWAMI SARL,50% Polyamide; 39% Polyester; 11% Elastane,Black,39-42,Conventional,Kiwami SARL,Calf Sleeve,Multisports,Flat Knit
+157,GripGrab ApS,,Black,41-44,Conventional,GripGrab,Crew/Mid Calf,Cycling,Half Terry
+158,Gococo AB,59% Polyamide; 18% Cotton; 18% Polyester; 5% Elastane,Black,35-38,Conventional,n/a,Crew/Mid Calf,Equestrianism,Half Terry
+159,Gococo AB,59% Polyamide; 18% Cotton; 18% Polyester; 5% Elastane,Black,35-38,Conventional,n/a,Crew/Mid Calf,Equestrianism,Half Terry
+160,Gococo AB,59% Polyamide; 18% Cotton; 18% Polyester; 5% Elastane,Black,35-38,Conventional,n/a,Crew/Mid Calf,Equestrianism,Half Terry
+161,WaterNlife ApS,92% Recycled Polyamide; 4% Elastane; 4% Polyamide,Black,35-38,Sustainable,Danish Endurance,Ankle/Quarter,Running,Flat Knit
+162,WaterNlife ApS,,Black,39-42,Sustainable,Danish Endurance,Ankle/Quarter,Running,Flat Knit
+163,WaterNlife ApS,,Black,43-47,Sustainable,Danish Endurance,Ankle/Quarter,Running,Flat Knit
+164,WaterNlife ApS,92% Recycled Polyamide; 4% Elastane; 4% Polyamide,White,35-38,Sustainable,Danish Endurance,Ankle/Quarter,Running,Flat Knit
+165,WaterNlife ApS,,White,39-42,Sustainable,Danish Endurance,Ankle/Quarter,Running,Flat Knit
+166,WaterNlife ApS,,White,43-47,Sustainable,Danish Endurance,Ankle/Quarter,Running,Flat Knit
+167,WaterNlife ApS,,Grey,35-38,Sustainable,Danish Endurance,Ankle/Quarter,Running,Flat Knit
+168,WaterNlife ApS,,Grey,39-42,Sustainable,Danish Endurance,Ankle/Quarter,Running,Flat Knit
+169,WaterNlife ApS,,Grey,43-47,Sustainable,Danish Endurance,Ankle/Quarter,Running,Flat Knit
+170,WaterNlife ApS,92% Recycled Polyamide; 4% Elastane; 4% Polyamide,Caribbean Blue,35-38,Sustainable,Danish Endurance,Ankle/Quarter,Running,Flat Knit
+171,WaterNlife ApS,,Caribbean Blue,39-42,Sustainable,Danish Endurance,Ankle/Quarter,Running,Flat Knit
+172,WaterNlife ApS,,Caribbean Blue,43-47,Sustainable,Danish Endurance,Ankle/Quarter,Running,Flat Knit
+173,WaterNlife ApS,92% Recycled Polyamide; 4% Elastane; 4% Polyamide,Blue/Neon Yellow,35-38,Sustainable,Danish Endurance,Ankle/Quarter,Running,Flat Knit
+174,WaterNlife ApS,92% Recycled Polyamide; 4% Elastane; 4% Polyamide,Blue/Neon Yellow,39-42,Sustainable,Danish Endurance,Ankle/Quarter,Running,Flat Knit
+175,WaterNlife ApS,92% Recycled Polyamide; 4% Elastane; 4% Polyamide,Blue/Neon Yellow,43-47,Sustainable,Danish Endurance,Ankle/Quarter,Running,Flat Knit
+176,WaterNlife ApS,,Blue/Orange,43-47,Sustainable,Danish Endurance,Ankle/Quarter,Running,Flat Knit
+177,WaterNlife ApS,,Black,35-38,Sustainable,Danish Endurance,Ankle/Quarter,Running,Flat Knit
+178,WaterNlife ApS,,Black,39-42,Sustainable,Danish Endurance,Ankle/Quarter,Running,Flat Knit
+179,WaterNlife ApS,92% Recycled Polyamide; 4% Elastane; 4% Polyamide,Black,43-47,Sustainable,Danish Endurance,Ankle/Quarter,Running,Flat Knit
+180,WaterNlife ApS,,White,43-47,Sustainable,Danish Endurance,Ankle/Quarter,Running,Flat Knit
+181,WaterNlife ApS,87% Recycled Polyamide; 8% Polyamide; 5% Elastane,Blue/Orange,39-42,Sustainable,Danish Endurance,Ankle/Quarter,Running,Flat Knit
+182,INCYLENCE oHG,,White,35-38,Conventional,Incylence,Crew/Mid Calf,Running,Selected Terry
+183,INCYLENCE oHG,58% Microlon; 29% Polyamide; 9% Recycled Polyamide; 4% Elastane,White,39-42,Conventional,Incylence,Crew/Mid Calf,Running,Selected Terry
+184,INCYLENCE oHG,58% Microlon; 29% Polyamide; 9% Recycled Polyamide; 4% Elastane,White,43-46,Conventional,Incylence,Crew/Mid Calf,Running,Selected Terry
+185,Ecco Accessories Ltd,,Black,42-44,Oeko-Tex,N/A,Liner,Multisports,Half Terry
+186,GripGrab ApS,,Black,41-44,Conventional,GripGrab,Crew/Mid Calf,Cycling,Flat Knit
+187,INCYLENCE oHG,66% Recycled Polyamide; 31% Polyamide; 3% Elastane,White,43-46,Conventional,Incylence,Crew/Mid Calf,Running,Selected Terry
+188,GripGrab ApS,,Black,41-44,Conventional,GripGrab,Liner,Cycling,Flat Knit
+189,Sidas,72% Polyamide; 24% Polypropylene; 4% Elastane,Black,L/42-43,Conventional,Thermic,Crew/Mid Calf,Hiking/Trekking,Flat Knit
+190,Sidas,94% Polyamide; 6% Elastane,Bordeaux,37-38,Conventional,Sidas,Crew/Mid Calf,Ski,Selected Terry
+191,INCYLENCE oHG,58% Microlon; 29% Polyamide; 9% Recycled Polyamide; 4% Elastane,White,35-38,Conventional,Incylence,Crew/Mid Calf,Running,Selected Terry
+192,INCYLENCE oHG,,White,39-42,Conventional,Incylence,Crew/Mid Calf,Running,Selected Terry
+193,INCYLENCE oHG,,White,43-46,Conventional,Incylence,Crew/Mid Calf,Running,Selected Terry
+194,INCYLENCE oHG,58% Microlon; 29% Polyamide; 9% Recycled Polyamide; 4% Elastane,White,35-38,Conventional,Incylence,Crew/Mid Calf,Running,Selected Terry
+195,INCYLENCE oHG,,White,39-42,Conventional,Incylence,Crew/Mid Calf,Running,Selected Terry
+196,INCYLENCE oHG,,White,43-46,Conventional,Incylence,Crew/Mid Calf,Running,Selected Terry
+197,INCYLENCE oHG,,White,35-38,Conventional,Incylence,Crew/Mid Calf,Running,Selected Terry
+198,INCYLENCE oHG,,White,39-42,Conventional,Incylence,Crew/Mid Calf,Running,Selected Terry
+199,INCYLENCE oHG,,White,43-46,Conventional,Incylence,Crew/Mid Calf,Running,Selected Terry
+200,KIWAMI SARL,50% Polyamide; 39% Polyester; 11% Elastane,Black,43-47,Conventional,Kiwami SARL,Calf Sleeve,Multisports,Flat Knit
+201,Comfysocks A/S,,Black/Grey,41-45,Conventional,N/A,Knee High,Athleisure,Half Terry
+202,Comfysocks A/S,43% Cotton; 27% Polypropylene; 25% Polyamide; 5% Elastane,Pink/Purple,32-35,Conventional,N/A,Crew/Mid Calf,Athleisure,Half Terry
+203,Sidas,36% Merino Wool; 28% Polyamide; 13% Reconylon; 12% Mulberry Silk; 9% Elastane; 2% Silicone,Black,L/42/43,Conventional,Strolz,Knee High,Ski,Flat Knit
+204,INCYLENCE oHG,49% Recycled Polyamide; 44% Econyl; 7% Recycled Elastane,Black,43-46,Conventional,Incylence,Crew/Mid Calf,Running,Selected Terry
+205,Ecco Accessories Ltd,,Bright White,42-44,Oeko-Tex,N/A,Liner,Multisports,Half Terry
+206,INCYLENCE oHG,56% Polyamide; 40% Dryarn; 4% Elastane,Black,43-46,Conventional,Incylence,Crew/Mid Calf,Running,Flat Knit
+207,Kirpte UAB,92% Polyamide; 8% Elastane,Black,T2 (M),Conventional,N/A,N/A,Running,Flat Knit
+208,Gococo AB,,Black,S,Conventional,n/a,Crew/Mid Calf,Equestrianism,Flat Knit
+209,Gococo AB,,Black,M,Conventional,n/a,Crew/Mid Calf,Equestrianism,Flat Knit
+210,Gococo AB,,Black,L,Conventional,n/a,Crew/Mid Calf,Equestrianism,Flat Knit
+211,INCYLENCE oHG,55% Recycled Polyamide; 41% Polyamide; 4% Elastane,White Pink,43-46,Conventional,Incylence,Crew/Mid Calf,Cycling,Selected Terry
+212,Ecco Accessories Ltd,,Bright White,42-44,Conventional,N/A,Liner,Multisports,Half Terry
+213,Ecco Accessories Ltd,,Black,42-44,Conventional,N/A,Liner,Multisports,Half Terry
+214,Ecco Accessories Ltd,,Bright White,39-41,Conventional,N/A,Liner,Multisports,Half Terry
+215,Ecco Accessories Ltd,,Black,39-41,Conventional,N/A,Liner,Multisports,Half Terry
+216,Compressport International SA,96% Polyamide; 4% Elastane,Imperial Blue,T3/42-44,Conventional,N/A,Crew/Mid Calf,Running,Half Terry
+217,Ecco Accessories Ltd,,Black,42-44,Oeko-Tex,N/A,Liner,Multisports,Half Terry
+218,Trimtex Baltic OÜ,86% Polyester; 10% Polyamide; 4% Elastane,White,35-38,Conventional,Trimtex,Crew/Mid Calf,Multisports,Half Terry
+219,Trimtex Baltic OÜ,86% Polyester; 10% Polyamide; 4% Elastane,White,39-42,Conventional,Trimtex,Crew/Mid Calf,Multisports,Half Terry
+220,Trimtex Baltic OÜ,86% Polyester; 10% Polyamide; 4% Elastane,White,43-46,Conventional,Trimtex,Crew/Mid Calf,Multisports,Half Terry
+221,Boards&More GmbH,,Black,M/39-42,Conventional,ION BIKE,Crew/Mid Calf,Cycling,Flat Knit
+222,Boards&More GmbH,63% Merino Wool; 30% Polyamide; 7% Elastane,Black,M/39-42,Conventional,ION BIKE,Crew/Mid Calf,Cycling,Flat Knit
+223,INCYLENCE oHG,,White Pink,35-38,Conventional,Incylence,Crew/Mid Calf,Cycling,Selected Terry
+224,INCYLENCE oHG,55% Recycled Polyamide; 41% Polyamide; 4% Elastane,White Pink,35-38,Conventional,Incylence,Crew/Mid Calf,Cycling,Selected Terry
+225,INCYLENCE oHG,55% Recycled Polyamide; 41% Polyamide; 4% Elastane,White Pink,39-42,Conventional,Incylence,Crew/Mid Calf,Cycling,Selected Terry
+226,INCYLENCE oHG,,White Pink,47-50,Conventional,Incylence,Crew/Mid Calf,Cycling,Selected Terry
+227,INCYLENCE oHG,50% Reconylon; 46% Polyamide; 4% Elastane,Grey/Neon Green,43-46,Conventional,Incylence,Crew/Mid Calf,Running,Selected Terry
+228,Sidas,,Grey/Black,42-43,Conventional,Sidas,Ankle/Quarter,Running,Half Terry
+229,INCYLENCE oHG,61% Polyamide; 35% Dryarn; 4% Elastane,Blue,43-46,Conventional,Incylence,Crew/Mid Calf,Cycling,Flat Knit
+230,WaterNlife ApS,46% Polyamide; 30% Merino Wool; 21% Acrylic; 3% Elastane,Black,43-47,Conventional,Danish Endurance,Crew/Mid Calf,Work,Flat Knit
+231,INCYLENCE oHG,59% Polyamide; 37% Dryarn; 4% Elastane,Black,43-46,Conventional,Incylence,Crew/Mid Calf,Cycling,Flat Knit
+232,Sidas,,Lilac/Green,42-43,Conventional,Sidas,Ankle/Quarter,Running,Half Terry
+233,Picture Organic Clothing,90% Cotton; 7% Polyamide; 3% Elastane,Grey Melange,40-43,Conventional,Picture Organic Clothing,Crew/Mid Calf,Ski,Flat Knit
+234,Sidas,38% Organic Merino Wool; 24% Econyl; 19% Reconylon; 10% Polyamide; 4% Recycled Elastane; 3% Elastane; 2% Silicone,White,42-43,Conventional,Sidas,Knee High,Ski,Selected Terry
+235,Sidas,44% Recycled Polyamide; 41% Organic Merino Wool; 10% Polyamide; 3% Recycled Elastane; 2% Elastane,Storm Grey,42-44,Conventional,Sidas,Knee High,Ski,Selected Terry
+236,Sidas,44% Recycled Polyamide; 41% Organic Merino Wool; 10% Polyamide; 3% Recycled Elastane; 2% Elastane,Bege,37-38,Conventional,Sidas,Knee High,Ski,Selected Terry
+237,Ecco Accessories Ltd,,Air,42-44,Oeko-Tex,N/A,Liner,Multisports,Half Terry
+238,Domestik ApS,97% Recycled Polyamide; 2% Recycled Elastane; 1% Elastane,White,L (43-46),Conventional,Domestik,Crew/Mid Calf,Multisports,Flat Knit
+239,Sidas,42% Polyamide; 38% Merino Wool; 17% Polypropylene; 3% Elastane,Grey/Mint,42-44,Conventional,Thermic,Knee High,Multisports,Full Terry
+240,Orange Sport,73% Merino Wool; 25% Polyamide; 2% Elastane,Olive Green,36-39,Conventional,Orange Sport,Knee High,Hunting,Full Terry
+241,Orange Sport,67% Merino Wool; 32% Polyamide; 1% Elastane,Olive Green,44-45,Conventional,Orange Sport,Crew/Mid Calf,Hunting,Half Terry
+242,Sidas,,Black,L,Conventional,Sidas,Knee High,Multisports,Half Terry
+243,Comfysocks A/S,43% Cotton; 27% Polypropylene; 25% Polyamide; 5% Elastane,Black/Grey,41-45,Conventional,N/A,Crew/Mid Calf,Athleisure,Half Terry
+244,Canyon Bicycles GmbH,50% Multifilament Polyamide; 17% Polyamide; 17% Polypropylene; 16% Elastane,Black,S/M,Conventional,N/A,Calf Sleeve,Multisports,Flat Knit
+245,NoBrakes ApS,67% Organic Cotton; 31% Polyamide; 2% Elastane,White/Black,40-46,Conventional,Woodbird,Crew/Mid Calf,Basic,Half Terry
+246,NoBrakes ApS,71% Organic Cotton; 26% Polyamide; 3% Elastane,White,40-46,Sustainable,Woodbird,Crew/Mid Calf,Tennis,Half Terry
+247,NoBrakes ApS,71% Organic Cotton; 26% Polyamide; 3% Elastane,Black,40-46,Sustainable,Woodbird,Crew/Mid Calf,Tennis,Half Terry
+248,NoBrakes ApS,71% Organic Cotton; 26% Polyamide; 3% Elastane,Butter,40-46,Sustainable,Woodbird,Crew/Mid Calf,Tennis,Half Terry
+249,Sidas,44% Polyamide; 35% Merino Wool; 18% Polypropylene; 3% Elastane,Grey/Mint,42-44,Conventional,Thermic,Crew/Mid Calf,Multisports,Full Terry
+250,Sidas,33% Polyamide; 29% Lyocell; 19% Merino Wool; 16% Polypropylene; 3% Elastane,Blue/Mint,42-44,Conventional,Thermic,Knee High,Multisports,Full Terry
+251,Sidas,36% Merino Wool; 28% Polyamide; 13% Reconylon; 12% Mulberry Silk; 9% Elastane; 2% Silicone,Black/Neon Yellow,L/43-44,Conventional,Sidas,Knee High,Multisports,Flat Knit
+252,Sidas,29% Polyamide; 28% Tencel; 19% Merino Wool; 11% Elastane; 11% Reconylon; 2% Silicone,Blue/Neon Yellow,L/43-44,Conventional,Sidas,Knee High,Multisports,Flat Knit
+253,Compressport International SA,36% Multifilament Polyamide; 35% Elastane; 29% Polyamide,Black,T3/42-44,Conventional,N/A,Knee High,Multisports,Half Terry
+254,Compressport International SA,61% Polyamide; 29% Multifilament Polyamide; 10% Elastane,Black,T3/42-44,Conventional,N/A,Knee High,Multisports,Half Terry
+255,Pas Normal Studios ApS,90% Recycled Polyamide; 8% Polyamide; 2% Elastane,White/Black,M,Sustainable,Pas Normal Studios,Crew/Mid Calf,Cycling,Flat Knit
+256,WaterNlife ApS,,Black/Grey,43-47,Conventional,Danish Endurance,Crew/Mid Calf,Hiking/Trekking,Half Terry
+257,Scan Trade Scandinavia AB,89% Polyamide; 11% Elastane,Black,30-34,Conventional,Scan Trade Umbro,Over the Knee,Football,Full Terry
+258,Norrøna Sport AS,,Indigo Night /Flintsone,40-42,Conventional,Norrona Sokker,Crew/Mid Calf,Hiking/Trekking,Flat Knit
+259,Ryzon GmbH,97% Polyamide; 3% Elastane,White,T2,Conventional,Ryzon,N/A,Cycling,Flat Knit
+260,Ryzon GmbH,97% Polyamide; 3% Elastane,White,T2,Conventional,Ryzon,N/A,Cycling,Flat Knit
+261,Ryzon GmbH,94% Polyamide; 6% Elastane,White,39-42,Conventional,Ryzon,Crew/Mid Calf,Cycling,Flat Knit
+262,Ryzon GmbH,94% Polyamide; 6% Elastane,White,39-42,Conventional,Ryzon,Crew/Mid Calf,Cycling,Flat Knit
+263,BERGMENSCH GmbH,,Heather Grey,38-42,Conventional,BERGMENSCH,Crew/Mid Calf,Hiking/Trekking,Half Terry
+264,VAUDE Sport GmbH & Co. KG,,White,39-41,Conventional,Vaude,Crew/Mid Calf,Cycling,Flat Knit
+265,Sidas,53% Polyamide; 32% Multifilament Polyamide; 9% Silicone; 5% Elastane; 1% Reflective Yarns,Grey/Neon Orange,42-43,Conventional,Sidas,Crew/Mid Calf,Multisports,Half Terry
+266,Sidas,53% Polyamide; 32% Multifilament Polyamide; 9% Silicone; 5% Elastane; 1% Reflective Yarns,Navy/Grey,42-43,Conventional,Sidas,Crew/Mid Calf,Multisports,Half Terry
+267,Compressport International SA,98% Polyamide; 2% Elastane,Black,TU,Conventional,N/A,N/A,Multisports,Half Terry
+268,VAUDE Sport GmbH & Co. KG,69% Recycled Polyamide; 26% Polyamide; 5% Elastane,White,39-41,Conventional,Vaude,Crew/Mid Calf,Cycling,Half Terry
+269,Compressport International SA,96% Polyamide; 4% Elastane,White/Blue/Yellow,T3/42-44,Conventional,N/A,Crew/Mid Calf,Multisports,Half Terry
+270,Sidas,,White,42-44,Conventional,Sidas,Crew/Mid Calf,Multisports,Half Terry
+271,Sidas,,White,42-44,Conventional,Sidas,Ankle/Quarter,Multisports,Half Terry
+272,Sidas,,White,42-44,Conventional,Sidas,Liner,Multisports,Half Terry
+273,Sidas,,Blue,42-44,Conventional,Sidas,Crew/Mid Calf,Multisports,Half Terry
+274,Sidas,,Black,39-41,Conventional,Sidas,Crew/Mid Calf,Multisports,Half Terry
+275,Sidas,,Pink,37-38,Conventional,Sidas,Crew/Mid Calf,Multisports,Half Terry
+276,Sidas,,Blue,42-44,Conventional,Sidas,Ankle/Quarter,Multisports,Half Terry
+277,Sidas,,Black,39-41,Conventional,Sidas,Ankle/Quarter,Multisports,Half Terry
+278,Sidas,,Pink,37-38,Conventional,Sidas,Ankle/Quarter,Multisports,Half Terry
+279,Sidas,,Blue,42-44,Conventional,Sidas,Liner,Multisports,Half Terry
+280,Sidas,,Black,39-41,Conventional,Sidas,Liner,Multisports,Half Terry
+281,Sidas,,Pink,37-38,Conventional,Sidas,Liner,Multisports,Half Terry
+282,Sidas,53% Polyamide; 32% Multifilament Polyamide; 9% Silicone; 5% Elastane; 1% Reflective Yarns,Grey/ Neon Orange,35-36,Conventional,Sidas,Crew/Mid Calf,Multisports,Half Terry
+283,Sidas,53% Polyamide; 32% Multifilament Polyamide; 9% Silicone; 5% Elastane; 1% Reflective Yarns,Grey/Neon Orange,37-38,Conventional,Sidas,Crew/Mid Calf,Multisports,Half Terry
+284,Sidas,53% Polyamide; 32% Multifilament Polyamide; 9% Silicone; 5% Elastane; 1% Reflective Yarns,Grey/Neon Orange,44-46,Conventional,Sidas,Crew/Mid Calf,Multisports,Half Terry
+285,Sidas,53% Polyamide; 32% Multifilament Polyamide; 9% Silicone; 5% Elastane; 1% Reflective Yarns,Grey/Neon Orange,47-49,Conventional,Sidas,Crew/Mid Calf,Multisports,Half Terry
+286,Sidas,53% Polyamide; 32% Multifilament Polyamide; 9% Silicone; 5% Elastane; 1% Reflective Yarns,Grey/Neon Orange,40-41,Conventional,Sidas,Crew/Mid Calf,Multisports,Half Terry
+287,Sidas,53% Polyamide; 32% Multifilament Polyamide; 9% Silicone; 5% Elastane; 1% Reflective Yarns,Grey/Neon Orange,39-40,Conventional,Sidas,Crew/Mid Calf,Multisports,Half Terry
+288,Norrøna Sport AS,66% Merino Wool; 31% Polyamide; 3% Elastane,Black,43-45,RWS,Norrona Sokker,Knee High,Multisports,Half Terry
+289,Sidas,95% Polyamide; 5% Elastane,Grey/Blue,40-41,Conventional,Sidas,Ankle/Quarter,Running,Half Terry
+290,Compressport International SA,,White,T1,Conventional,N/A,Calf Sleeve,Multisports,Flat Knit
+291,Compressport International SA,,White,T2,Conventional,N/A,Calf Sleeve,Multisports,Flat Knit
+292,Compressport International SA,,White,T3,Conventional,N/A,Calf Sleeve,Multisports,Flat Knit
+293,Compressport International SA,,White,T4,Conventional,N/A,Calf Sleeve,Multisports,Flat Knit
+294,Sidas,67% Polyamide; 27% Multifilament Polyamide; 3% Elastane; 2% Silicone; 1% Reflective,Black/Turquoise,35-36,Conventional,Sidas,Crew/Mid Calf,Multisports,Half Terry
+295,Sidas,67% Polyamide; 27% Multifilament Polyamide; 3% Elastane; 2% Silicone; 1% Reflective,Black/Turquoise,37-38,Conventional,Sidas,Crew/Mid Calf,Multisports,Half Terry
+296,Sidas,67% Polyamide; 27% Multifilament Polyamide; 3% Elastane; 2% Silicone; 1% Reflective,Black/Turquoise,39-40,Conventional,Sidas,Crew/Mid Calf,Multisports,Half Terry
+297,Sidas,67% Polyamide; 27% Multifilament Polyamide; 3% Elastane; 2% Silicone; 1% Reflective,Black/Turquoise,40-41,Conventional,Sidas,Crew/Mid Calf,Multisports,Half Terry
+298,Sidas,67% Polyamide; 27% Multifilament Polyamide; 3% Elastane; 2% Silicone; 1% Reflective,Black/Turquoise,42-43,Conventional,Sidas,Crew/Mid Calf,Multisports,Half Terry
+299,Sidas,67% Polyamide; 27% Multifilament Polyamide; 3% Elastane; 2% Silicone; 1% Reflective,Black/Turquoise,44-46,Conventional,Sidas,Crew/Mid Calf,Multisports,Half Terry
+300,Sidas,67% Polyamide; 27% Multifilament Polyamide; 3% Elastane; 2% Silicone; 1% Reflective,Black/Turquoise,47-49,Conventional,Sidas,Crew/Mid Calf,Multisports,Half Terry
+301,INCYLENCE oHG,,White,35-38,Conventional,Incylence,Crew/Mid Calf,Running,Flat Knit
+302,INCYLENCE oHG,,White,39-42,Conventional,Incylence,Crew/Mid Calf,Running,Flat Knit
+303,INCYLENCE oHG,,White,43-46,Conventional,Incylence,Crew/Mid Calf,Running,Flat Knit
+304,INCYLENCE oHG,,White,47-50,Conventional,Incylence,Crew/Mid Calf,Running,Flat Knit
+305,Pas Normal Studios ApS,90% Recycled Polyamide; 8% Polyamide; 2% Elastane,Off White,M,Sustainable,Pas Normal Studios,Crew/Mid Calf,Cycling,Flat Knit
+306,Fusion ApS,48% Polypropylene; 44% Polyamide; 8% Elastane,White,38-40,Conventional,N/A,Crew/Mid Calf,Cycling,Flat Knit
+307,Fusion ApS,48% Polypropylene; 44% Polyamide; 8% Elastane,White,41-43,Conventional,N/A,Crew/Mid Calf,Cycling,Flat Knit
+308,Fusion ApS,48% Polypropylene; 44% Polyamide; 8% Elastane,White,44-46,Conventional,N/A,Crew/Mid Calf,Cycling,Flat Knit
+309,Gococo AB,86% Polyamide; 14% Elastane,Cerise,M,Conventional,n/a,Calf Sleeve,Multisports,Flat Knit
+310,INCYLENCE oHG,,Navy Coral,35-38,Conventional,Incylence,Crew/Mid Calf,Running,Selected Terry
+311,INCYLENCE oHG,,Navy Coral,39-42,Conventional,Incylence,Crew/Mid Calf,Running,Selected Terry
+312,INCYLENCE oHG,,Navy Coral,47-50,Conventional,Incylence,Crew/Mid Calf,Running,Selected Terry
+313,Scan Trade Ltd.,,White/Green,30-34 POIK,Conventional,Umbro,Knee High,Football,Half Terry
+314,Scan Trade Ltd.,,White/Green,35-39 JR,Conventional,Umbro,Knee High,Football,Half Terry
+315,Scan Trade Ltd.,89% Polyamide; 11% Elastane,White/Green,40-44 SR,Conventional,Umbro,Knee High,Football,Half Terry
+316,First Light Pty Ltd,49% Merino Wool; 48% Polyamide; 3% Elastane,Black,MED,Conventional,SNUX,Knee High,Ski,Selected Terry
+317,Fingerscrossed GmbH,58% Merino Wool; 40% Polyamide; 2% Elastane,Black,35-38,Conventional,Fingerscrossed,Crew/Mid Calf,Basic,Half Terry
+318,Fingerscrossed GmbH,58% Merino Wool; 40% Polyamide; 2% Elastane,Black,43-46,Conventional,Fingerscrossed,Crew/Mid Calf,Basic,Half Terry
+319,Compressport International SA,96% Polyamide; 4% Elastane,Imperial Blue,T3/42-44,Conventional,N/A,Crew/Mid Calf,Running,Half Terry
+320,USWE Sports AB,44% Recycled Polyamide; 24% Polyester; 19% Polyamide; 9% Recycled Polyester; 4% Elastane,Black/Asphalt,40-42,Sustainable,USWE Sports,Crew/Mid Calf,Cycling,Selected Terry
+321,USWE Sports AB,60% Recycled Polyamide; 35% Polyamide; 5% Elastane,Black/Asphalt,40-42,Sustainable,USWE Sports,Ankle/Quarter,Trail Running,Selected Terry
+322,Ecco Accessories Ltd,,Black,42-44,Conventional,N/A,Liner,Multisports,Half Terry
+323,Ecco Accessories Ltd,80% Polyamide; 15% Polypropylene; 5% Elastane,Bright White,42-44,Conventional,N/A,Liner,Multisports,Half Terry
+324,Ecco Accessories Ltd,59% Polyamide; 36% Polypropylene; 5% Elastane,Black,39-41,Conventional,N/A,Liner,Multisports,Half Terry
+325,Ecco Accessories Ltd,59% Polyamide; 36% Polypropylene; 5% Elastane,Bright White,39-41,Conventional,N/A,Liner,Multisports,Half Terry
+326,Ecco Accessories Ltd,86% Polyamide; 10% Polypropylene; 4% Elastane,Black,42-44,Oeko-Tex,N/A,Liner,Multisports,Half Terry
+327,Sidas,76% Polyamide; 20% Merino Wool; 4% Elastane,Grey,42-44,Conventional,Thermic,Crew/Mid Calf,Multisports,Full Terry
+328,NoBrakes ApS,,Butter,40-46,Sustainable,Woodbird,Crew/Mid Calf,Tennis,Half Terry
+329,NoBrakes ApS,,White,40-46,Sustainable,Woodbird,Crew/Mid Calf,Tennis,Half Terry
+330,NoBrakes ApS,,White/Black,40-46,Conventional,Woodbird,Crew/Mid Calf,Basic,Half Terry
+331,NoBrakes ApS,,Black,40-46,Sustainable,Woodbird,Crew/Mid Calf,Tennis,Half Terry
+332,NoBrakes ApS,,Black-White,36-40,Sustainable,Woodbird,Crew/Mid Calf,Tennis,Half Terry
+333,NoBrakes ApS,80% Organic Cotton; 17% Polyamide; 3% Elastane,White-Black,36-40,Conventional,Woodbird,Crew/Mid Calf,Tennis,Half Terry
+334,NoBrakes ApS,80% Organic Cotton; 17% Polyamide; 3% Elastane,White-Navy-Red,36-40,Sustainable,Woodbird,Crew/Mid Calf,Tennis,Half Terry
+335,NoBrakes ApS,80% Organic Cotton; 17% Polyamide; 3% Elastane,White,36-40,Sustainable,Woodbird,Crew/Mid Calf,Tennis,Half Terry
+336,NoBrakes ApS,80% Organic Cotton; 17% Polyamide; 3% Elastane,Black,36-40,Sustainable,Woodbird,Crew/Mid Calf,Tennis,Half Terry
+337,Select Sport A/S,42% Polypropylene; 29% Cotton; 27% Polyamide; 2% Elastane,White,41-45,Conventional,Select Sport,Crew/Mid Calf,Multisports,Half Terry
+338,Angry Pablo LTD,53% Econyl; 33% Polyamide; 8% Elastane; 6% Recycled Polyamide,White,"39-42,5",Conventional,Angry Pablo,Crew/Mid Calf,Basic,Flat Knit
+339,Angry Pablo LTD,53% Econyl; 33% Polyamide; 8% Elastane; 6% Recycled Polyamide,Eggnog,"39-42,5",Conventional,Angry Pablo,Crew/Mid Calf,Basic,Flat Knit
+340,Angry Pablo LTD,39% Econyl; 38% Polyamide; 13% Recycled Polyamide; 10% Elastane,White/Eggnog,"39-42,5",Conventional,Angry Pablo,Crew/Mid Calf,Basic,Half Terry
+341,Angry Pablo LTD,70% Cotton; 22% Polyamide; 5% Recycled Polyamide; 3% Elastane,Gravel,"39-42,5",Conventional,Angry Pablo,Crew/Mid Calf,Basic,Half Terry
+342,Sidas,,Blue,40-41,Conventional,Sidas,Crew/Mid Calf,Multisports,Half Terry
+343,Sidas,60% Polyamide; 25% Multifilament Polyamide; 9% Elastane; 5% Silicone; 1% Reflective,Pink,24-26,Conventional,Sidas,Knee High,Ski,Half Terry
+344,Sidas,60% Polyamide; 25% Multifilament Polyamide; 9% Elastane; 5% Silicone; 1% Reflective,Pink,27-30,Conventional,Sidas,Knee High,Ski,Half Terry
+345,Sidas,60% Polyamide; 25% Multifilament Polyamide; 9% Elastane; 5% Silicone; 1% Reflective,Pink,31-34,Conventional,Sidas,Knee High,Ski,Half Terry
+346,Sidas,60% Polyamide; 25% Multifilament Polyamide; 9% Elastane; 5% Silicone; 1% Reflective,Pink,35-38,Conventional,Sidas,Knee High,Ski,Half Terry
+347,Sidas,90% Polyamide; 5% Elastane; 4% Silicone; 1% Reflective Yarns,Lilac/Green,35-36,Conventional,Sidas,Ankle/Quarter,Running,Half Terry
+348,Sidas,90% Polyamide; 5% Elastane; 4% Silicone; 1% Reflective Yarns,Lilac/Green,37-38,Conventional,Sidas,Ankle/Quarter,Running,Half Terry
+349,Sidas,90% Polyamide; 5% Elastane; 4% Silicone; 1% Reflective Yarns,Lilac/Green,39-40,Conventional,Sidas,Ankle/Quarter,Running,Half Terry
+350,Sidas,90% Polyamide; 5% Elastane; 4% Silicone; 1% Reflective Yarns,Lilac/Green,40-41,Conventional,Sidas,Ankle/Quarter,Running,Half Terry
+351,Sidas,90% Polyamide; 5% Elastane; 4% Silicone; 1% Reflective Yarns,Lilac/Green,44-46,Conventional,Sidas,Ankle/Quarter,Running,Half Terry
+352,Sidas,90% Polyamide; 5% Elastane; 4% Silicone; 1% Reflective Yarns,Lilac/Green,47-49,Conventional,Sidas,Ankle/Quarter,Running,Half Terry
+353,Sidas,90% Polyamide; 5% Elastane; 4% Silicone; 1% Reflective Yarns,Lilac/Green,42-43,Conventional,Sidas,Ankle/Quarter,Running,Half Terry
+354,Sidas,75% Polyamide; 25% Elastane,Blue/Turquoise,2,Conventional,Sidas,Calf Sleeve,Multisports,Flat Knit
+355,Sidas,60% Polyamide; 25% Multifilament Polyamide; 9% Elastane; 5% Silicone; 1% Reflective,Blue,L/42-43,Conventional,Sidas,Crew/Mid Calf,Multisports,Half Terry
+356,Sidas,94% Polyamide; 6% Elastane,Bordeaux,37-38,Conventional,Sidas,Crew/Mid Calf,Ski,Selected Terry
+357,Hultafors Group AB,"33% Polyamide; 19% Cotton; 19% Polyester; 18% Cocona 37,5 Polyester; 11% Elastane",Black/Grey Melange,37-39,Conventional,Snickers,Knee High,Work,Flat Knit
+358,Hultafors Group AB,"33% Polyamide; 19% Cotton; 19% Polyester; 18% Cocona 37,5 Polyester; 11% Elastane",Black/Grey Melange,43-45,Conventional,Snickers,Knee High,Work,Flat Knit
+359,Gococo AB,,Blue,L/42-44,Conventional,n/a,Knee High,Multisports,Half Terry
+360,BERGMENSCH GmbH,73% Merino Wool; 25% Polyamide; 2% Elastane,Heather Grey,38-42,Conventional,BERGMENSCH,Crew/Mid Calf,Hiking/Trekking,Half Terry
+361,BERGMENSCH GmbH,73% Merino Wool; 25% Polyamide; 2% Elastane,Heather Grey,35-37,Conventional,BERGMENSCH,Crew/Mid Calf,Hiking/Trekking,Half Terry
+362,BERGMENSCH GmbH,73% Merino Wool; 25% Polyamide; 2% Elastane,Heather Grey,43-46,Conventional,BERGMENSCH,Crew/Mid Calf,Hiking/Trekking,Half Terry
+363,Ryzon GmbH,94% Polyamide; 6% Elastane,White,43-45,Conventional,Ryzon,Crew/Mid Calf,Cycling,Flat Knit
+364,Ryzon GmbH,94% Polyamide; 6% Elastane,White,43-45,Conventional,Ryzon,Crew/Mid Calf,Cycling,Flat Knit
+365,Select Sport A/S,42% Polypropylene; 29% Cotton; 27% Polyamide; 2% Elastane,White,28-31,Conventional,Select Sport,Crew/Mid Calf,Multisports,Half Terry
+366,Select Sport A/S,42% Polypropylene; 29% Cotton; 27% Polyamide; 2% Elastane,White,32-35,Conventional,Select Sport,Crew/Mid Calf,Multisports,Half Terry
+367,Select Sport A/S,42% Polypropylene; 29% Cotton; 27% Polyamide; 2% Elastane,White,36-40,Conventional,Select Sport,Crew/Mid Calf,Multisports,Half Terry
+368,Select Sport A/S,42% Polypropylene; 29% Cotton; 27% Polyamide; 2% Elastane,White,46-48,Conventional,Select Sport,Crew/Mid Calf,Multisports,Half Terry
+369,UAB Audimas Brand,"40% Polyamide; 23% Acrylic; 23% Merino Wool; 12% Cocona 37,5 Polyester; 2% Elastane",Black/Grey,38-40,Sustainable,Audimas,Crew/Mid Calf,Multisports,Selected Terry
+370,UAB Audimas Brand,35% Cotton; 35% Polyester; 28% Polyamide; 2% Elastane,Black,38-40,Conventional,Audimas,Ankle/Quarter,Multisports,Full Terry
+371,UAB Audimas Brand,33% Cotton; 33% Polyester; 31% Polyamide; 3% Elastane,Black,38-40,Conventional,Audimas,Crew/Mid Calf,Multisports,Full Terry
+372,Comfysocks A/S,43% Cotton; 27% Polypropylene; 25% Polyamide; 5% Elastane,Black/Gold,41-45,Conventional,N/A,Crew/Mid Calf,Athleisure,Half Terry
+373,Fingerscrossed GmbH,,Red,35-38,Conventional,Fingerscrossed,Crew/Mid Calf,Basic,Half Terry
+374,Fingerscrossed GmbH,,Red,43-46,Conventional,Fingerscrossed,Crew/Mid Calf,Basic,Half Terry
+375,Ecco Accessories Ltd,80% Polyamide; 15% Polypropylene; 5% Elastane,Black,42-44,Conventional,N/A,Liner,Multisports,Half Terry
+376,Ecco Accessories Ltd,,Black,42-44,Conventional,N/A,Liner,Multisports,Half Terry
+377,WaterNlife ApS,75% Organic Cotton; 23% Recycled Polyamide; 2% Elastane,Black,39-42,Sustainable,Danish Endurance,Crew/Mid Calf,Tennis,Half Terry
+378,Picture Organic Clothing,90% Cotton; 7% Polyamide; 3% Elastane,Classic Green,40-43,Conventional,Picture Organic Clothing,Crew/Mid Calf,Ski,Flat Knit
+379,Picture Organic Clothing,90% Cotton; 7% Polyamide; 3% Elastane,Orange,40-43,Conventional,Picture Organic Clothing,Crew/Mid Calf,Ski,Flat Knit
+380,Picture Organic Clothing,90% Cotton; 7% Polyamide; 3% Elastane,Brown,40-43,Conventional,Picture Organic Clothing,Crew/Mid Calf,Ski,Flat Knit
+381,WaterNlife ApS,75% Organic Cotton; 23% Recycled Polyamide; 2% Elastane,Black,39-42,Sustainable,Danish Endurance,Crew/Mid Calf,Tennis,Half Terry
+382,WaterNlife ApS,75% Organic Cotton; 23% Recycled Polyamide; 2% Elastane,Black,35-38,Sustainable,Danish Endurance,Crew/Mid Calf,Tennis,Half Terry
+383,WaterNlife ApS,75% Organic Cotton; 23% Recycled Polyamide; 2% Elastane,Black,43-47,Sustainable,Danish Endurance,Crew/Mid Calf,Tennis,Half Terry
+384,Design & Development GmbH,75% Cotton; 23% Polyamide; 2% Elastane,Olive,35-38,Sustainable,Safersox,Crew/Mid Calf,Multisports,Half Terry
+385,Design & Development GmbH,75% Cotton; 23% Polyamide; 2% Elastane,Olive,35-38,Conventional,Safersox,Crew/Mid Calf,Multisports,Half Terry
+386,Design & Development GmbH,75% Cotton; 23% Polyamide; 2% Elastane,Grey Melange,43-46,Conventional,Safersox,Crew/Mid Calf,Multisports,Half Terry
+387,Sidas,53% Polyamide; 32% Multifilament Polyamide; 9% Silicone; 5% Elastane; 1% Reflective Yarns,Navy/Grey,40-41,Conventional,Sidas,Crew/Mid Calf,Multisports,Half Terry
+388,TruSox LLC,75% Cotton; 23% Polyamide; 2% Elastane,Royal Blue/White,SM,Conventional,N/A,Knee High,Football,Half Terry
+389,Sidas,53% Polyamide; 32% Multifilament Polyamide; 9% Silicone; 5% Elastane; 1% Reflective Yarns,Black/Grey,42-43,Conventional,Sidas,Crew/Mid Calf,Multisports,Half Terry
+390,JLION CLOTHING SL,49% Econyl; 46% Polyamide; 5% Elastane,Pink,L (41-46),Conventional,Jimmy Lion,Crew/Mid Calf,Multisports,Flat Knit
+391,TruSox LLC,63% Polyamide; 35% Cotton; 2% Elastane,Sky Blue/Black,LG,Conventional,N/A,Crew/Mid Calf,Football,Half Terry
+392,VAUDE Sport GmbH & Co. KG,69% Recycled Polyamide; 26% Polyamide; 5% Elastane,White,36-38,Sustainable,Vaude,Crew/Mid Calf,Cycling,Half Terry
+393,VAUDE Sport GmbH & Co. KG,69% Recycled Polyamide; 26% Polyamide; 5% Elastane,White,42-44,Sustainable,Vaude,Crew/Mid Calf,Cycling,Half Terry
+394,VAUDE Sport GmbH & Co. KG,69% Recycled Polyamide; 26% Polyamide; 5% Elastane,White,45-47,Sustainable,Vaude,Crew/Mid Calf,Cycling,Half Terry
+395,Canyon Bicycles GmbH,72% Cotton; 26% Polyamide; 2% Elastane,Black,43-45,Conventional,N/A,Crew/Mid Calf,Multisports,Selected Terry
+396,Canyon Bicycles GmbH,72% Cotton; 26% Polyamide; 2% Elastane,White,43-45,Conventional,N/A,Crew/Mid Calf,Multisports,Selected Terry
+397,POC Sweden AB,94% Polyamide; 6% Elastane,White,40-41,Conventional,POC,Knee High,Ski,Flat Knit
+398,POC Sweden AB,65% Merino Wool; 33% Polyamide; 2% Elastane,Black,40-41,Conventional,POC,Knee High,Ski,Flat Knit
+399,INCYLENCE oHG,49% Recycled Polyamide; 44% Econyl; 7% Recycled Elastane,Black,35-38,Conventional,Incylence,Crew/Mid Calf,Running,Selected Terry
+400,INCYLENCE oHG,49% Recycled Polyamide; 44% Econyl; 7% Recycled Elastane,Black,39-42,Conventional,Incylence,Crew/Mid Calf,Running,Selected Terry
+401,INCYLENCE oHG,49% Recycled Polyamide; 44% Econyl; 7% Recycled Elastane,Black,47-50,Conventional,Incylence,Crew/Mid Calf,Running,Selected Terry
+402,Ryzon GmbH,97% Polyamide; 3% Elastane,Abyss Blue/Velvet Red,39-42,Conventional,Ryzon,Crew/Mid Calf,Multisports,Flat Knit
+403,Ryzon GmbH,,Violet Dusk/ Arctic White,39-42,Conventional,Ryzon,Crew/Mid Calf,Multisports,Flat Knit
+404,Ryzon GmbH,,Hidden Pine/ Arctic White,39-42,Conventional,Ryzon,Crew/Mid Calf,Multisports,Flat Knit
+405,New Retex A/S,,Indigo,40-43,Sustainable,N/A,Crew/Mid Calf,Basic,Flat Knit
+406,Design & Development GmbH,75% Cotton; 23% Polyamide; 2% Elastane,Navy,43-46,Conventional,Safersox,Crew/Mid Calf,Multisports,Half Terry
+407,Picture Organic Clothing,,Bayberry,40-43,Conventional,Picture Organic Clothing,Crew/Mid Calf,Multisports,Half Terry
+408,Picture Organic Clothing,,Bison,40-43,Conventional,Picture Organic Clothing,Crew/Mid Calf,Multisports,Half Terry
+409,TruSox LLC,72% Polyamide; 26% Cotton; 2% Elastane,Navy/White,LG,Conventional,N/A,Knee High,Football,Half Terry
+410,TruSox LLC,72% Polyamide; 26% Cotton; 2% Elastane,Red/White,MD,Conventional,N/A,Knee High,Football,Half Terry
+411,WaterNlife ApS,38% Merino Wool; 30% Acrylic; 30% Polyamide; 2% Elastane,Black,43-47,Conventional,Danish Endurance,Crew/Mid Calf,Hiking/Trekking,Half Terry
+412,WaterNlife ApS,38% Merino Wool; 30% Acrylic; 30% Polyamide; 2% Elastane,Black/Grey,35-38,Conventional,Danish Endurance,Crew/Mid Calf,Hiking/Trekking,Half Terry
+413,WaterNlife ApS,38% Merino Wool; 30% Acrylic; 30% Polyamide; 2% Elastane,Black/Grey,39-42,Conventional,Danish Endurance,Crew/Mid Calf,Hiking/Trekking,Half Terry
+414,WaterNlife ApS,38% Merino Wool; 30% Acrylic; 30% Polyamide; 2% Elastane,Black/Grey,43-47,Conventional,Danish Endurance,Crew/Mid Calf,Hiking/Trekking,Half Terry
+415,Ecco Accessories Ltd,80% Polyamide; 15% Polypropylene; 5% Elastane,Air,42-44,Conventional,N/A,Crew/Mid Calf,Multisports,Selected Terry
+416,Canyon Bicycles GmbH,,Black,43-46,Conventional,N/A,Crew/Mid Calf,Multisports,Selected Terry
+417,Ecco Accessories Ltd,,Bright White,42-44,Conventional,N/A,Liner,Multisports,Half Terry
+418,Ecco Accessories Ltd,59% Polyamide; 36% Polypropylene; 5% Elastane,Air,39-41,Conventional,N/A,Ankle/Quarter,Multisports,Half Terry
+419,Sidas,60% Polyamide; 25% Multifilament Polyamide; 9% Elastane; 5% Silicone; 1% Reflective,Black,XL 44-46,Conventional,Sidas,Crew/Mid Calf,Multisports,Half Terry
+420,WaterNlife ApS,75% Organic Cotton; 23% Recycled Polyamide; 2% Elastane,Grey,43-47,Sustainable,Danish Endurance,Crew/Mid Calf,Tennis,Half Terry
+421,WaterNlife ApS,75% Organic Cotton; 23% Recycled Polyamide; 2% Elastane,Grey,43-47,Sustainable,Danish Endurance,Crew/Mid Calf,Tennis,Half Terry
+422,WaterNlife ApS,38% Merino Wool; 30% Acrylic; 30% Polyamide; 2% Elastane,Forest Green,43-47,Conventional,Danish Endurance,Crew/Mid Calf,Hiking/Trekking,Half Terry
+423,WaterNlife ApS,38% Merino Wool; 30% Acrylic; 30% Polyamide; 2% Elastane,Oak Brown,43-47,Conventional,Danish Endurance,Crew/Mid Calf,Hiking/Trekking,Half Terry
+424,WaterNlife ApS,38% Merino Wool; 30% Acrylic; 30% Polyamide; 2% Elastane,Red,39-42,Conventional,Danish Endurance,Crew/Mid Calf,Hiking/Trekking,Half Terry
+425,Comfysocks A/S,,White/Grey,41-45,Conventional,N/A,Crew/Mid Calf,Athleisure,Half Terry
+426,Canyon Bicycles GmbH,97% Polyamide; 3% Elastane,Black,43-45,Conventional,N/A,Crew/Mid Calf,Cycling,Flat Knit
+427,Compressport International SA,98% Polyamide; 2% Elastane,White/Red,TU,Conventional,N/A,N/A,Multisports,Flat Knit
+428,Sidas,94% Polyamide; 6% Elastane,Black/Pink,31-34,Conventional,Sidas,Knee High,Ski,Half Terry
+429,Norrøna Sport AS,,Black,43-45,RWS,Norrona Sokker,Knee High,Ski,Flat Knit
+430,Norrøna Sport AS,51% Polyamide; 45% Merino Wool; 4% Elastane,Black,43-45,RWS,Norrona Sokker,Knee High,Ski,Half Terry
+431,Sidas,,Black/White,L/ 42-43,Conventional,Sidas,Crew/Mid Calf,Multisports,Half Terry
+432,Norrøna Sport AS,58% Merino Wool; 40% Polyamide; 2% Elastane,Black,43-45,RWS,Norrona Sokker,Knee High,Ski,Half Terry
+433,Pas Normal Studios ApS,90% Recycled Polyamide; 8% Polyamide; 2% Elastane,Off White,S,Sustainable,Pas Normal Studios,Crew/Mid Calf,Cycling,Flat Knit
+434,Sidas,87% Polyamide; 6% Poly Glow; 5% Elastane; 2% Silicone,White,42-43,Conventional,Sidas,Crew/Mid Calf,Multisports,Half Terry
+435,Sidas,87% Polyamide; 6% Poly Glow; 5% Elastane; 2% Silicone,White,42-43,Conventional,Sidas,Crew/Mid Calf,Multisports,Half Terry
+436,New Retex A/S,,Lino,40-43,Sustainable,N/A,Crew/Mid Calf,Basic,Flat Knit
+437,New Retex A/S,,Rosa,40-43,Sustainable,N/A,Crew/Mid Calf,Basic,Flat Knit
+438,New Retex A/S,,Echo Light Bluee,40-43,Sustainable,N/A,Crew/Mid Calf,Basic,Flat Knit
+439,Brav Norway AS,,Stock,37-39,Conventional,Ulvang,Crew/Mid Calf,Multisports,Flat Knit
+440,Brav Norway AS,,Stock,37-39,Conventional,Ulvang,Crew/Mid Calf,Multisports,Flat Knit
+441,Brav Norway AS,,Stock,37-39,Conventional,Ulvang,Knee High,Multisports,Flat Knit
+442,Brav Norway AS,,Stock,37-39,Conventional,Ulvang,Knee High,Multisports,Flat Knit
+443,Brav Norway AS,,Stock,37-39,Conventional,Ulvang,Crew/Mid Calf,Multisports,Half Terry
+444,Brav Norway AS,,Stock,37-39,Conventional,Ulvang,Crew/Mid Calf,Multisports,Half Terry
+445,Gococo AB,59% Polyamide; 18% Cotton; 18% Polyester; 5% Elastane,Black,29-33,Conventional,n/a,Knee High,Equestrianism,Half Terry
+446,Gococo AB,59% Polyamide; 18% Cotton; 18% Polyester; 5% Elastane,Black,34-36,Conventional,n/a,Knee High,Equestrianism,Half Terry
+447,Gococo AB,59% Polyamide; 18% Cotton; 18% Polyester; 5% Elastane,Black,37-39,Conventional,n/a,Knee High,Equestrianism,Half Terry
+448,Gococo AB,59% Polyamide; 18% Cotton; 18% Polyester; 5% Elastane,Black,40-42,Conventional,n/a,Knee High,Equestrianism,Half Terry
+449,Gococo AB,59% Polyamide; 18% Cotton; 18% Polyester; 5% Elastane,Black,43-46,Conventional,n/a,Knee High,Equestrianism,Half Terry
+450,JLION CLOTHING SL,53% Econyl; 43% Polyamide; 4% Elastane,Black,M (36-40),Sustainable,Jimmy Lion,Crew/Mid Calf,Cycling,Flat Knit
+451,JLION CLOTHING SL,53% Econyl; 43% Polyamide; 4% Elastane,White,L (41-46),Sustainable,Jimmy Lion,Crew/Mid Calf,Cycling,Flat Knit
+452,Compressport International SA,95% Polyamide; 5% Elastane,White/Black,T3/42-44,Conventional,N/A,Crew/Mid Calf,Multisports,Half Terry
+453,Compressport International SA,95% Polyamide; 5% Elastane,Black/Safety Yellow/Neon Pink,T3/42-44,Conventional,N/A,Crew/Mid Calf,Multisports,Half Terry
+454,Compressport International SA,95% Polyamide; 5% Elastane,Mood Indigo/Magenta,T2/ 39-41,Conventional,N/A,Crew/Mid Calf,Multisports,Half Terry
+455,Norrøna Sport AS,,Black,43-45,RWS,Norrona Sokker,Crew/Mid Calf,Hiking/Trekking,Flat Knit
+456,Norrøna Sport AS,,Black,43-45,RWS,Norrona Sokker,Crew/Mid Calf,Hiking/Trekking,Flat Knit
+457,Norrøna Sport AS,,Black/Brown,43-45,RWS,Norrona Sokker,Ankle/Quarter,Hiking/Trekking,Flat Knit
+458,Norrøna Sport AS,52% Merino Wool; 47% Polyamide; 1% Elastane,Black/Brown,43-45,RWS,Norrona Sokker,Crew/Mid Calf,Hiking/Trekking,Full Terry
+459,Compressport International SA,96% Polyamide; 4% Elastane,Mood Indigo/Magenta,T2/ 39-41,Conventional,N/A,Ankle/Quarter,Multisports,Half Terry
+460,Norrøna Sport AS,58% Merino Wool; 40% Polyamide; 2% Elastane,Black,43-45,RWS,Norrona Sokker,Crew/Mid Calf,Hiking/Trekking,Full Terry
+461,Norrøna Sport AS,60% Polyamide; 37% Merino Wool; 3% Elastane,Bkack,43-45,RWS,Norrona Sokker,Knee High,Multisports,Selected Terry
+462,Compressport International SA,61% Polyamide; 29% Multifilament Polyamide; 10% Elastane,Khaki/Blue/Lime,T3/ 42-44,Conventional,N/A,Crew/Mid Calf,Multisports,Half Terry
+463,Compressport International SA,61% Polyamide; 29% Multifilament Polyamide; 10% Elastane,Orange/Marron,T4/ 45-48,Conventional,N/A,Crew/Mid Calf,Multisports,Half Terry
+464,Compressport International SA,87% Polyamide; 13% Elastane,Olive,T4/ 45-48,Conventional,N/A,Knee High,Multisports,Half Terry
+465,Compressport International SA,87% Polyamide; 13% Elastane,Blue,T3/ 42-44,Conventional,N/A,Knee High,Multisports,Half Terry
+466,Design & Development GmbH,75% Cotton; 23% Polyamide; 2% Elastane,Pink,35-38,Conventional,Safersox,Crew/Mid Calf,Multisports,Half Terry
+467,Kirpte UAB,62% Multifilament Polyamide; 31% Polyamide; 7% Elastane,Black,XS (T0),Conventional,N/A,N/A,Running,Flat Knit
+468,Kirpte UAB,62% Multifilament Polyamide; 31% Polyamide; 7% Elastane,Black,S (T1),Conventional,N/A,N/A,Running,Flat Knit
+469,Kirpte UAB,62% Multifilament Polyamide; 31% Polyamide; 7% Elastane,Black,M (T2),Conventional,N/A,N/A,Running,Flat Knit
+470,Kirpte UAB,62% Multifilament Polyamide; 31% Polyamide; 7% Elastane,Black,L (T3),Conventional,N/A,N/A,Running,Flat Knit
+471,Kirpte UAB,62% Multifilament Polyamide; 31% Polyamide; 7% Elastane,Black,XL (T4),Conventional,N/A,N/A,Running,Flat Knit
+472,Hultafors Group AB,51% Merino Wool; 47% Polyamide; 2% Elastane,Black/Steel Grey,41-44,Conventional,Snickers,Crew/Mid Calf,Work,Full Terry
+473,Pas Normal Studios ApS,91% Recycled Polyamide; 4% Econyl; 3% Recycled Elastane; 2% Elastane,White,XS,Sustainable,Pas Normal Studios,Crew/Mid Calf,Cycling,Flat Knit
+474,Ecco Accessories Ltd,,Black,42-44,Oeko-Tex,N/A,Liner,Multisports,Half Terry
+475,Ecco Accessories Ltd,,Air,42-44,Oeko-Tex,N/A,Liner,Multisports,Half Terry
+476,Ecco Accessories Ltd,,Bright White,42-44,Oeko-Tex,N/A,Liner,Multisports,Half Terry
+477,Ecco Accessories Ltd,,Black,42-44,Conventional,N/A,Liner,Multisports,Half Terry
+478,Ecco Accessories Ltd,,Bright White,42-44,Conventional,N/A,Liner,Multisports,Half Terry
+479,Ecco Accessories Ltd,,Air,42-44,Conventional,N/A,Crew/Mid Calf,Multisports,Selected Terry
+480,Compressport International SA,95% Polyamide; 5% Elastane,Magnet/Magenta,T2/ 39-41,Conventional,N/A,Crew/Mid Calf,Multisports,Half Terry
+481,Performance Socks ApS,86% Polyamide; 14% Elastane,Black,M,Conventional,CFA,Over the Knee,Multisports,Half Terry
+482,Kirpte UAB,,Black,T2 (M),Conventional,N/A,N/A,Running,Flat Knit
+483,Ryzon GmbH,,White,39-42,Conventional,Ryzon,Crew/Mid Calf,Cycling,Flat Knit
+484,Boards&More GmbH,79% Recycled Polyamide; 19% Polyamide; 2% Elastane,Black,M/39-42,Conventional,ION BIKE,Crew/Mid Calf,Cycling,Flat Knit
+485,Compressport International SA,95% Polyamide; 5% Elastane,Mosaic Blue/Magnet,T3/ 42-44,Conventional,N/A,Crew/Mid Calf,Multisports,Half Terry
+486,Compressport International SA,96% Polyamide; 4% Elastane,Mosaic Blue/Magnet,T3/ 42-44,Conventional,N/A,Crew/Mid Calf,Multisports,Half Terry
+487,Compressport International SA,87% Polyamide; 13% Elastane,Dazzling Blue/Sugar Swizzle,T3/ 42-44,Conventional,N/A,Knee High,Multisports,Half Terry
+488,USWE Sports AB,60% Recycled Polyamide; 35% Polyamide; 5% Elastane,Black Asphalt,40-42,Sustainable,USWE Sports,Ankle/Quarter,Cycling,Selected Terry
+489,Comfysocks A/S,,White/Gold,46-48,Conventional,N/A,Crew/Mid Calf,Athleisure,Half Terry
+490,UAB Audimas Brand,"40% Polyamide; 23% Acrylic; 23% Merino Wool; 12% Cocona 37,5 Polyester; 2% Elastane",Grey,38-40,Conventional,Audimas,Crew/Mid Calf,Multisports,Selected Terry
+491,WaterNlife ApS,75% Organic Cotton; 23% Recycled Polyamide; 2% Elastane,Grey,43-47,Sustainable,Danish Endurance,Crew/Mid Calf,Tennis,Half Terry
+492,USWE Sports AB,44% Recycled Polyamide; 24% Polyester; 19% Polyamide; 9% Recycled Polyester; 4% Elastane,Pink + Black,40-42,Sustainable,USWE Sports,Crew/Mid Calf,Cycling,Selected Terry
+493,USWE Sports AB,44% Recycled Polyamide; 24% Polyester; 19% Polyamide; 9% Recycled Polyester; 4% Elastane,White + Black,40-42,Sustainable,USWE Sports,Crew/Mid Calf,Cycling,Selected Terry
+494,Compressport International SA,98% Polyamide; 2% Elastane,Magnet/ Autum Glory,T3,Conventional,N/A,Calf Sleeve,Multisports,Half Terry
+495,Compressport International SA,98% Polyamide; 2% Elastane,Magenta/Mood Indigo,T2,Conventional,N/A,Calf Sleeve,Multisports,Half Terry
+496,Devold of Norway AS,,Black,41-46,Conventional,Devold,Crew/Mid Calf,Basic,Flat Knit
+497,Compressport International SA,60% Polyamide; 29% Multifilament Polyamide; 11% Elastane,White/Black,T3/ 42-44,Conventional,N/A,Crew/Mid Calf,Multisports,Half Terry
+498,Compressport International SA,60% Polyamide; 29% Multifilament Polyamide; 11% Elastane,Iron Gate/Rust,T2,Conventional,N/A,Calf Sleeve,Multisports,Flat Knit
+499,Compressport International SA,43% Multifilament Polyamide; 35% Elastane; 22% Polyamide,Mood Indigo/Magenta,T2,Conventional,N/A,Calf Sleeve,Multisports,Flat Knit
+500,Compressport International SA,43% Multifilament Polyamide; 35% Elastane; 22% Polyamide,Magenta/Autumn Glory,T2,Conventional,N/A,Calf Sleeve,Multisports,Flat Knit
+501,Compressport International SA,43% Multifilament Polyamide; 35% Elastane; 22% Polyamide,Black/Fluo Yellow,T2,Conventional,N/A,Calf Sleeve,Multisports,Flat Knit
+502,Compressport International SA,36% Multifilament Polyamide; 35% Elastane; 29% Polyamide,Black,T2,Conventional,N/A,Calf Sleeve,Multisports,Flat Knit
+503,INCYLENCE oHG,61% Polyamide; 35% Dryarn; 4% Elastane,Blue,43-46,Conventional,Incylence,Crew/Mid Calf,Cycling,Flat Knit
+504,Fusion ApS,,White,38-40,Conventional,N/A,Ankle/Quarter,Cycling,Flat Knit
+505,Fusion ApS,,White,41-43,Conventional,N/A,Ankle/Quarter,Cycling,Flat Knit
+506,GYMNATION Sportswear Oy,,White,36-39,Conventional,N/A,Crew/Mid Calf,Multisports,Half Terry
+507,GYMNATION Sportswear Oy,,White,40-42,Conventional,N/A,Crew/Mid Calf,Multisports,Half Terry
+508,GYMNATION Sportswear Oy,,White,43-46,Conventional,N/A,Crew/Mid Calf,Multisports,Half Terry
+509,GYMNATION Sportswear Oy,,Black,36-39,Conventional,N/A,Ankle/Quarter,Multisports,Half Terry
+510,GYMNATION Sportswear Oy,,Black,40-42,Conventional,N/A,Ankle/Quarter,Multisports,Half Terry
+511,GYMNATION Sportswear Oy,,Black,43-46,Conventional,N/A,Ankle/Quarter,Multisports,Half Terry
+512,GYMNATION Sportswear Oy,,Black,36-39,Conventional,N/A,Crew/Mid Calf,Multisports,Half Terry
+513,GYMNATION Sportswear Oy,,Black,40-42,Conventional,N/A,Crew/Mid Calf,Multisports,Half Terry
+514,GYMNATION Sportswear Oy,,Black,43-46,Conventional,N/A,Crew/Mid Calf,Multisports,Half Terry
+515,VAUDE Sport GmbH & Co. KG,74% Recycled Polyamide; 24% Polyamide; 2% Elastane,Black,39-41,Sustainable,Vaude,Short,Trail Running,Selected Terry
+516,VAUDE Sport GmbH & Co. KG,74% Recycled Polyamide; 24% Polyamide; 2% Elastane,Black,36-38,Sustainable,Vaude,Short,Trail Running,Selected Terry
+517,VAUDE Sport GmbH & Co. KG,74% Recycled Polyamide; 24% Polyamide; 2% Elastane,Black,42-44,Sustainable,Vaude,Short,Trail Running,Selected Terry
+518,VAUDE Sport GmbH & Co. KG,74% Recycled Polyamide; 24% Polyamide; 2% Elastane,Black,45-47,Sustainable,Vaude,Short,Trail Running,Selected Terry
+519,Design & Development GmbH,75% Cotton; 23% Polyamide; 2% Elastane,Pink,39-42,Conventional,Safersox,Crew/Mid Calf,Multisports,Half Terry
+528,Sidas,36% Merino Wool; 28% Polyamide; 13% Reconylon; 12% Mulberry Silk; 9% Elastane; 2% Silicone,Black/Neon Yellow,L/42-43,Conventional,Sidas,Knee High,Multisports,Flat Knit
+530,Sidas,36% Merino Wool; 28% Polyamide; 13% Reconylon; 12% Mulberry Silk; 9% Elastane; 2% Silicone,Black/Neon Yellow,L/42-43,Conventional,Sidas,Knee High,Multisports,Flat Knit
+531,Orange Sport,,Black/Grey,40-43,Conventional,N/A,Crew/Mid Calf,Hiking/Trekking,Half Terry
+532,Compressport International SA,,Black,T3/42-44,Conventional,N/A,Knee High,Multisports,Half Terry
+533,VAUDE Sport GmbH & Co. KG,74% Recycled Polyamide; 24% Polyamide; 2% Elastane,White,42-44,Sustainable,Vaude,Short,Trail Running,Selected Terry
+534,AMI PARIS,,white/Black,39-42,Conventional,AMI PARIS,Knee High,Basic,Flat Knit
+535,AMI PARIS,,White/Black,39-42,Conventional,AMI PARIS,Knee High,Basic,Flat Knit
+536,AMI PARIS,,Black,39-42,Conventional,AMI PARIS,Knee High,Basic,Flat Knit
+537,Orange Sport,67% Merino Wool; 32% Polyamide; 1% Elastane,Olive Green,46-48,Conventional,Orange Sport,Crew/Mid Calf,Hunting,Half Terry
+538,INCYLENCE oHG,,Black,43-46,Conventional,Incylence,Crew/Mid Calf,Running,Half Terry
+539,INCYLENCE oHG,,White,43-46,Conventional,Incylence,Crew/Mid Calf,Running,Half Terry
+540,Ecco Accessories Ltd,80% Polyamide; 15% Polypropylene; 5% Elastane,Bright White,42-44,Conventional,N/A,Liner,Multisports,Half Terry
+541,Ecco Accessories Ltd,80% Polyamide; 15% Polypropylene; 5% Elastane,Air,42-44,Conventional,N/A,Liner,Multisports,Half Terry
+542,Boards&More GmbH,79% Recycled Polyamide; 19% Polyamide; 2% Elastane,Infused Green,M/39-42,Conventional,ION BIKE,Crew/Mid Calf,Cycling,Flat Knit
+543,Boards&More GmbH,79% Recycled Polyamide; 19% Polyamide; 2% Elastane,Evil Amber,M/39-42,Conventional,ION BIKE,Crew/Mid Calf,Cycling,Flat Knit
+544,INCYLENCE oHG,,Black,35-38,Conventional,Incylence,Crew/Mid Calf,Running,Half Terry
+545,INCYLENCE oHG,,Black,39-42,Conventional,Incylence,Crew/Mid Calf,Running,Flat Knit
+546,INCYLENCE oHG,,White,35-38,Conventional,Incylence,Crew/Mid Calf,Running,Flat Knit
+547,INCYLENCE oHG,,White,39-42,Conventional,Incylence,Crew/Mid Calf,Running,Flat Knit
+548,INCYLENCE oHG,,White,47-50,Conventional,Incylence,Crew/Mid Calf,Running,Flat Knit
+549,Ecco Accessories Ltd,59% Polyamide; 36% Polypropylene; 5% Elastane,Black,42-44,Conventional,N/A,Ankle/Quarter,Multisports,Half Terry
+550,Ecco Accessories Ltd,59% Polyamide; 36% Polypropylene; 5% Elastane,Air,42-44,Conventional,N/A,Ankle/Quarter,Multisports,Half Terry
+551,Ecco Accessories Ltd,59% Polyamide; 36% Polypropylene; 5% Elastane,Bright White,42-44,Conventional,N/A,Ankle/Quarter,Multisports,Half Terry
+552,Ecco Accessories Ltd,86% Polyamide; 10% Polypropylene; 4% Elastane,Black,42-44,Conventional,N/A,Liner,Multisports,Half Terry
+553,Ecco Accessories Ltd,86% Polyamide; 10% Polypropylene; 4% Elastane,Air,42-44,Conventional,N/A,Liner,Multisports,Half Terry
+554,Ecco Accessories Ltd,86% Polyamide; 10% Polypropylene; 4% Elastane,Bright White,42-44,Conventional,N/A,Liner,Multisports,Half Terry
+555,NoBrakes ApS,80% Organic Cotton; 17% Polyamide; 3% Elastane,Black-White,41-46,Sustainable,Woodbird,Crew/Mid Calf,Tennis,Half Terry
+556,Klazig ApS,,Black,36-39,Conventional,n/a,Crew/Mid Calf,Work,Half Terry
+557,Klazig ApS,,Black,40-43,Conventional,n/a,Crew/Mid Calf,Work,Half Terry
+558,Klazig ApS,,Black,44-47,Conventional,n/a,Crew/Mid Calf,Work,Half Terry
+559,Klazig ApS,,Black,36-39,Conventional,n/a,Crew/Mid Calf,Work,Half Terry
+560,Klazig ApS,,Black,40-43,Conventional,n/a,Crew/Mid Calf,Work,Half Terry
+561,Klazig ApS,,Black,44-47,Conventional,n/a,Crew/Mid Calf,Work,Half Terry
+562,Klazig ApS,,Black/Grey,36-39,Conventional,n/a,Crew/Mid Calf,Work,Half Terry
+563,Klazig ApS,,Black/Grey,40-43,Conventional,n/a,Crew/Mid Calf,Work,Full Terry
+564,Klazig ApS,,Black/Grey,44-47,Conventional,n/a,Crew/Mid Calf,Multisports,Full Terry
+565,Klazig ApS,,Black/Grey,48-51,Conventional,n/a,Crew/Mid Calf,Multisports,Full Terry
+566,Klazig ApS,,Antracite,36-39,Conventional,n/a,Crew/Mid Calf,Work,Half Terry
+567,Klazig ApS,,Antracite,40-43,Conventional,n/a,Crew/Mid Calf,Work,Half Terry
+568,Klazig ApS,,Antracite,44-47,Conventional,n/a,Crew/Mid Calf,Work,Half Terry
+569,Klazig ApS,,Antracite,36-39,Conventional,n/a,Knee High,Work,Half Terry
+570,Klazig ApS,,Antracite,40-43,Conventional,n/a,Knee High,Work,Half Terry
+571,Klazig ApS,,Antracite,44-47,Conventional,n/a,Knee High,Work,Half Terry
+572,Compressport International SA,60% Polyamide; 29% Multifilament Polyamide; 11% Elastane,Black/White,T3/ 42-44,Conventional,N/A,Crew/Mid Calf,Multisports,Flat Knit
+573,Design & Development GmbH,75% Cotton; 23% Polyamide; 2% Elastane,Beige,35-38,Conventional,Safersox,Crew/Mid Calf,Multisports,Half Terry
+574,Design & Development GmbH,75% Cotton; 23% Polyamide; 2% Elastane,Beige,39-42,Conventional,Safersox,Crew/Mid Calf,Multisports,Half Terry
+575,Design & Development GmbH,75% Cotton; 23% Polyamide; 2% Elastane,Beige,43-46,Conventional,Safersox,Crew/Mid Calf,Multisports,Half Terry
+576,Design & Development GmbH,75% Cotton; 23% Polyamide; 2% Elastane,Grey Melange,39-42,Conventional,Safersox,Crew/Mid Calf,Multisports,Half Terry
+577,Sidas,60% Polyamide; 25% Multifilament Polyamide; 9% Elastane; 5% Silicone; 1% Reflective,Pink,24-26,Conventional,Sidas,Knee High,Ski,Half Terry
+578,Sidas,60% Polyamide; 25% Multifilament Polyamide; 9% Elastane; 5% Silicone; 1% Reflective,Pink,31-34,Conventional,Sidas,Knee High,Ski,Half Terry
+579,Sidas,60% Polyamide; 25% Multifilament Polyamide; 9% Elastane; 5% Silicone; 1% Reflective,Pink,27-30,Conventional,Sidas,Knee High,Ski,Half Terry
+580,Sidas,60% Polyamide; 25% Multifilament Polyamide; 9% Elastane; 5% Silicone; 1% Reflective,Pink,35-38,Conventional,Sidas,Knee High,Ski,Half Terry
+581,Design & Development GmbH,75% Cotton; 23% Polyamide; 2% Elastane,Olive,39-42,Conventional,Safersox,Crew/Mid Calf,Multisports,Half Terry
+582,Design & Development GmbH,75% Cotton; 23% Polyamide; 2% Elastane,Olive,43-46,Conventional,Safersox,Crew/Mid Calf,Multisports,Half Terry
+583,Design & Development GmbH,75% Cotton; 23% Polyamide; 2% Elastane,White,35-38,Conventional,Safersox,Crew/Mid Calf,Multisports,Half Terry
+584,Design & Development GmbH,75% Cotton; 23% Polyamide; 2% Elastane,White,39-42,Conventional,Safersox,Crew/Mid Calf,Multisports,Half Terry
+585,Design & Development GmbH,75% Cotton; 23% Polyamide; 2% Elastane,White,43-46,Conventional,Safersox,Crew/Mid Calf,Multisports,Half Terry
+586,Design & Development GmbH,75% Cotton; 23% Polyamide; 2% Elastane,Navy,35-38,Conventional,Safersox,Crew/Mid Calf,Multisports,Half Terry
+587,Design & Development GmbH,75% Cotton; 23% Polyamide; 2% Elastane,Navy,39-42,Conventional,Safersox,Crew/Mid Calf,Multisports,Half Terry
+588,Design & Development GmbH,75% Cotton; 23% Polyamide; 2% Elastane,Black,35-38,Conventional,Safersox,Crew/Mid Calf,Multisports,Half Terry
+589,Design & Development GmbH,75% Cotton; 23% Polyamide; 2% Elastane,Black,39-42,Conventional,Safersox,Crew/Mid Calf,Multisports,Half Terry
+590,Design & Development GmbH,75% Cotton; 23% Polyamide; 2% Elastane,Black,43-46,Conventional,Safersox,Crew/Mid Calf,Multisports,Half Terry
+591,Design & Development GmbH,75% Cotton; 23% Polyamide; 2% Elastane,Anthracite,35-38,Conventional,Safersox,Crew/Mid Calf,Multisports,Half Terry
+592,Design & Development GmbH,75% Cotton; 23% Polyamide; 2% Elastane,Anthracite,39-42,Conventional,Safersox,Crew/Mid Calf,Multisports,Half Terry
+593,Design & Development GmbH,75% Cotton; 23% Polyamide; 2% Elastane,Anthracite,43-46,Conventional,Safersox,Crew/Mid Calf,Multisports,Half Terry
+594,Klazig ApS,,Black,36-39,Conventional,n/a,Crew/Mid Calf,Work,Flat Knit
+595,Klazig ApS,,Black,40-43,Conventional,n/a,Crew/Mid Calf,Work,Flat Knit
+596,Klazig ApS,,Black,44-47,Conventional,n/a,Crew/Mid Calf,Work,Flat Knit
+597,Sidas,,Black/White,L/ 42-43,Conventional,Sidas,Crew/Mid Calf,Multisports,Half Terry
+598,Sidas,,Black/White,L/ 42-43,Conventional,Sidas,Crew/Mid Calf,Multisports,Half Terry
+599,Supersox,,Black,40-44,Conventional,N/A,Ankle/Quarter,Running,Selected Terry
+600,Supersox,,Black,45-48,Conventional,N/A,Ankle/Quarter,Running,Selected Terry
+601,Supersox,,White,40-44,Conventional,N/A,Crew/Mid Calf,Football,Half Terry
+602,Supersox,,White,45-48,Conventional,N/A,Crew/Mid Calf,Football,Half Terry
+603,Pas Normal Studios ApS,,White,S,Sustainable,Pas Normal Studios,Crew/Mid Calf,Cycling,Flat Knit
+604,Pas Normal Studios ApS,,White,M,Sustainable,Pas Normal Studios,Crew/Mid Calf,Cycling,Flat Knit
+605,Pas Normal Studios ApS,,White,L,Sustainable,Pas Normal Studios,Crew/Mid Calf,Cycling,Flat Knit
+606,Compressport International SA,,Faded Denim/Poseidon/White reflective,T2,Conventional,N/A,N/A,Multisports,Half Terry
+607,Compressport International SA,,Faded Denim/Poseidon/White reflective,T3,Conventional,N/A,N/A,Multisports,Half Terry
+608,Compressport International SA,,Safety Yellow/White,T2,Conventional,N/A,Calf Sleeve,Multisports,Flat Knit
+609,Compressport International SA,,Safety Yellow/White,T3,Conventional,N/A,Calf Sleeve,Multisports,Flat Knit
+610,Compressport International SA,,Storm/White/Neon Pink,T2,Conventional,N/A,Calf Sleeve,Multisports,Flat Knit
+611,Compressport International SA,,Storm/White/Neon Pink,T3,Conventional,N/A,Calf Sleeve,Multisports,Flat Knit
+612,Compressport International SA,,Parachute Purple/Very Grape/Eggshell Blue,T2,Conventional,N/A,Calf Sleeve,Multisports,Flat Knit
+613,Compressport International SA,,Parachute Purple/Very Grape/Eggshell Blue,T3,Conventional,N/A,Calf Sleeve,Multisports,Flat Knit
+614,Devold of Norway AS,,Black,41-46,Conventional,Devold,Crew/Mid Calf,Basic,Flat Knit
+615,Kirpte UAB,,Black,T2 (M),Conventional,N/A,N/A,Running,Flat Knit
+616,Kirpte UAB,,Black,T2 (M),Conventional,N/A,N/A,Running,Flat Knit
+617,Pas Normal Studios ApS,56% Polyamide; 41% Merino Wool; 3% Elastane,Cream,S,Conventional,Pas Normal Studios,Crew/Mid Calf,Cycling,Flat Knit
+618,Shapewear Europe B.V.,83% Polyamide; 17% Elastane,Black/Grey,L,Conventional,N/A,Calf Sleeve,Multisports,Flat Knit
+619,Pas Normal Studios ApS,56% Polyamide; 41% Merino Wool; 3% Elastane,Cream,M,Conventional,Pas Normal Studios,Crew/Mid Calf,Cycling,Flat Knit
+620,Pas Normal Studios ApS,56% Polyamide; 41% Merino Wool; 3% Elastane,Cream,L,Conventional,Pas Normal Studios,Crew/Mid Calf,Cycling,Flat Knit
+621,INCYLENCE oHG,50% Reconylon; 46% Polyamide; 4% Elastane,Green,43-46,Conventional,Incylence,Crew/Mid Calf,Running,Selected Terry
+622,Shapewear Europe B.V.,78% Polyamide; 22% Elastane,Black/Grey,L,Conventional,N/A,Calf Sleeve,Multisports,Flat Knit
+623,INCYLENCE oHG,50% Reconylon; 46% Polyamide; 4% Elastane,Canary,35-38,Conventional,Incylence,Crew/Mid Calf,Running,Selected Terry
+624,INCYLENCE oHG,,Canary,39-42,Conventional,Incylence,Crew/Mid Calf,Running,Selected Terry
+625,INCYLENCE oHG,,Canary,43-46,Conventional,Incylence,Crew/Mid Calf,Running,Selected Terry
+626,INCYLENCE oHG,,Canary,47-50,Conventional,Incylence,Crew/Mid Calf,Running,Selected Terry
+627,INCYLENCE oHG,,Green,35-38,Conventional,Incylence,Crew/Mid Calf,Running,Selected Terry
+628,INCYLENCE oHG,50% Reconylon; 46% Polyamide; 4% Elastane,Green,39-42,Conventional,Incylence,Crew/Mid Calf,Running,Selected Terry
+629,INCYLENCE oHG,,Green,43-46,Conventional,Incylence,Crew/Mid Calf,Running,Selected Terry
+630,INCYLENCE oHG,,Green,47-50,Conventional,Incylence,Crew/Mid Calf,Running,Selected Terry
+631,INCYLENCE oHG,,Pink,35-38,Conventional,Incylence,Crew/Mid Calf,Running,Selected Terry
+632,INCYLENCE oHG,50% Reconylon; 46% Polyamide; 4% Elastane,Pink,39-42,Conventional,Incylence,Crew/Mid Calf,Running,Selected Terry
+633,INCYLENCE oHG,,Pink,43-46,Conventional,Incylence,Crew/Mid Calf,Running,Selected Terry
+634,INCYLENCE oHG,,Pink,47-50,Conventional,Incylence,Crew/Mid Calf,Running,Selected Terry
+635,INCYLENCE oHG,,Blue,35-38,Conventional,Incylence,Crew/Mid Calf,Running,Selected Terry
+636,INCYLENCE oHG,,Blue,39-42,Conventional,Incylence,Crew/Mid Calf,Running,Selected Terry
+637,INCYLENCE oHG,,Blue,47-50,Conventional,Incylence,Crew/Mid Calf,Running,Selected Terry
+638,WaterNlife ApS,75% Organic Cotton; 23% Recycled Polyamide; 2% Elastane,White/Black,43-47,Sustainable,Danish Endurance,Crew/Mid Calf,Tennis,Selected Terry
+639,Compressport International SA,,Dragon Fire/White,T2/ 39-41,Conventional,N/A,Ankle/Quarter,Multisports,Half Terry
+640,Compressport International SA,,Dragon Fire/White,T3/ 42-44,Conventional,N/A,Ankle/Quarter,Multisports,Half Terry
+641,WaterNlife ApS,75% Organic Cotton; 23% Recycled Polyamide; 2% Elastane,Red/Blue Stripe,43-47,Sustainable,Danish Endurance,Crew/Mid Calf,Tennis,Selected Terry
+642,Boards&More GmbH,63% Merino Wool; 30% Polyamide; 7% Elastane,Dusty Leaves,M/39-42,Conventional,ION BIKE,Crew/Mid Calf,Cycling,Flat Knit
+643,Pas Normal Studios ApS,56% Polyamide; 41% Merino Wool; 3% Elastane,Burgundy,M,Conventional,Pas Normal Studios,Crew/Mid Calf,Cycling,Flat Knit
+644,Pas Normal Studios ApS,56% Polyamide; 41% Merino Wool; 3% Elastane,Mauve,M,Conventional,Pas Normal Studios,Crew/Mid Calf,Cycling,Flat Knit
+645,Compressport International SA,,Dragon Fire/White,T2/ 39-41,Conventional,N/A,Crew/Mid Calf,Multisports,Half Terry
+646,Compressport International SA,,Dragon Fire/White,T3/ 42-44,Conventional,N/A,Crew/Mid Calf,Multisports,Half Terry
+647,Compressport International SA,95% Polyamide; 5% Elastane,Magnet/White,T3/ 42-44,Conventional,N/A,Crew/Mid Calf,Multisports,Half Terry
+648,Compressport International SA,,Dazzing Blue/White/Dragon fire,T2/ 39-41,Conventional,N/A,Ankle/Quarter,Multisports,Half Terry
+649,Compressport International SA,,Dazzing Blue/White/Dragon fire,T3/ 42-44,Conventional,N/A,Ankle/Quarter,Multisports,Half Terry
+650,Compressport International SA,,Saffron/Dazzing Blue/Neon Pink,T2/ 39-41,Conventional,N/A,Ankle/Quarter,Multisports,Half Terry
+651,Compressport International SA,,Saffron/Dazzing Blue/Neon Pink,T3/ 42-44,Conventional,N/A,Ankle/Quarter,Multisports,Half Terry
+652,Compressport International SA,,Eggshell Blue/Parachute Purple/Very Grape,T2/ 39-41,Conventional,N/A,Ankle/Quarter,Multisports,Half Terry
+653,Compressport International SA,,Eggshell Blue/Parachute Purple/Very Grape,T3/ 42-44,Conventional,N/A,Ankle/Quarter,Multisports,Half Terry
+654,Compressport International SA,,Dazzing Blue/White/Dragon Fire,T2/ 39-41,Conventional,N/A,Crew/Mid Calf,Multisports,Half Terry
+655,Compressport International SA,,Dazzing Blue/White/Dragon Fire,T3/ 42-44,Conventional,N/A,Crew/Mid Calf,Multisports,Half Terry
+656,Compressport International SA,,Saffron/Dazzing Blue/Neon Pink,T2/ 39-41,Conventional,N/A,Crew/Mid Calf,Multisports,Half Terry
+657,Compressport International SA,,Saffron/Dazzing Blue/Neon Pink,T3/ 42-44,Conventional,N/A,Crew/Mid Calf,Multisports,Half Terry
+658,Compressport International SA,,Eggshell Blue/Parachute Purple/Very Grape,T2/ 39-41,Conventional,N/A,Crew/Mid Calf,Multisports,Half Terry
+659,Compressport International SA,,Eggshell Blue/Parachute Purple/Very Grape,T3/ 42-44,Conventional,N/A,Crew/Mid Calf,Multisports,Half Terry
+660,JLION CLOTHING SL,53% Econyl; 43% Polyamide; 4% Elastane,White,M (36-40),Sustainable,Jimmy Lion,Crew/Mid Calf,Cycling,Flat Knit
+661,Tracksmith,97% Polyamide; 3% Elastane,Sky Gray,XS/35-37,Conventional,Tracksmith,Short,Basic,Flat Knit
+662,Kirpte UAB,,Black,T2 (M),Conventional,N/A,N/A,Running,Flat Knit
+666,Kirpte UAB,88% Polyamide; 12% Elastane,Black,T2 (M),Conventional,N/A,N/A,Running,Flat Knit
+667,Kirpte UAB,,Black/Olive,T2 (M),Conventional,N/A,N/A,Running,Flat Knit
+668,Kirpte UAB,,Black/Olive,T2 (M),Conventional,N/A,N/A,Running,Flat Knit
+669,Compressport International SA,60% Polyamide; 29% Multifilament Polyamide; 11% Elastane,Mosaic Blue/Black,T3/ 42-44,Conventional,N/A,Crew/Mid Calf,Multisports,Flat Knit
+670,Compressport International SA,95% Polyamide; 5% Elastane,Grey Melange,T2/ 39-41,Conventional,N/A,Crew/Mid Calf,Multisports,Half Terry
+671,Compressport International SA,96% Polyamide; 4% Elastane,Grey Melange,T1/ 35-38,Conventional,N/A,Ankle/Quarter,Multisports,Half Terry
+672,Pas Normal Studios ApS,90% Recycled Polyamide; 8% Polyamide; 2% Elastane,Off White,L,Sustainable,Pas Normal Studios,Crew/Mid Calf,Cycling,Flat Knit
+673,Pas Normal Studios ApS,,Matt Blue,S,Sustainable,Pas Normal Studios,Crew/Mid Calf,Cycling,Flat Knit
+674,Pas Normal Studios ApS,,Matt Blue,M,Sustainable,Pas Normal Studios,Crew/Mid Calf,Cycling,Flat Knit
+675,Pas Normal Studios ApS,,Matt Blue,L,Sustainable,Pas Normal Studios,Crew/Mid Calf,Cycling,Flat Knit
+676,Gococo AB,"57% 37,5 Technology; 31% Econyl; 10% Recycled Polyamide; 2% Recycled Elastane",Turquoise/Orange,39-41,Conventional,n/a,Crew/Mid Calf,Multisports,Half Terry
+677,Sidas,44% Recycled Polyamide; 41% Organic Merino Wool; 10% Polyamide; 3% Recycled Elastane; 2% Elastane,Bege,37-38,Conventional,Sidas,Knee High,Ski,Selected Terry
+678,Lipati ApS,,White,38-39,Conventional,n/a,Crew/Mid Calf,Multisports,Selected Terry
+679,Lipati ApS,,White,42-44,Conventional,n/a,Crew/Mid Calf,Multisports,Selected Terry
+680,Sidas,44% Recycled Polyamide; 41% Organic Merino Wool; 10% Polyamide; 3% Recycled Elastane; 2% Elastane,Storm Grey,42-44,Conventional,Sidas,Knee High,Ski,Selected Terry
+681,Compressport International SA,55% Polyamide; 20% Polyester; 14% Multifilament Polyamide; 11% Elastane,Black/White,T1/35-38,Conventional,N/A,Crew/Mid Calf,Multisports,Flat Knit
+682,Compressport International SA,55% Polyamide; 20% Polyester; 14% Multifilament Polyamide; 11% Elastane,Black/White,T2/39-41,Conventional,N/A,Crew/Mid Calf,Multisports,Flat Knit
+683,Compressport International SA,55% Polyamide; 20% Polyester; 14% Multifilament Polyamide; 11% Elastane,Black/White,T3/42-44,Conventional,N/A,Crew/Mid Calf,Multisports,Flat Knit
+684,Compressport International SA,55% Polyamide; 20% Polyester; 14% Multifilament Polyamide; 11% Elastane,Black/White,T4/45-48,Conventional,N/A,Crew/Mid Calf,Multisports,Flat Knit
+685,WaterNlife ApS,87% Recycled Polyamide; 8% Polyamide; 5% Elastane,Blue/Orange,43-47,Sustainable,Danish Endurance,Ankle/Quarter,Running,Flat Knit
+686,Ecco Accessories Ltd,70% Polyamide; 13% Cotton; 13% Polyester; 4% Elastane,Limestone,42-44,Conventional,Ecco,Crew/Mid Calf,Hiking/Trekking,Half Terry
+687,Ecco Accessories Ltd,70% Polyamide; 13% Cotton; 13% Polyester; 4% Elastane,Limestone,42-44,Conventional,Ecco,Ankle/Quarter,Hiking/Trekking,Half Terry
+688,Tracksmith,56% Merino Wool; 41% Polyamide; 3% Elastane,Black Iris/Antique White,XS/35-37,Conventional,Tracksmith,Short,Basic,Half Terry
+689,Ecco Accessories Ltd,96% Polyamide; 4% Elastane,Black,35-38,Conventional,Ecco,Crew/Mid Calf,Hiking/Trekking,Half Terry
+690,Ecco Accessories Ltd,96% Polyamide; 4% Elastane,Black,39-41,Conventional,Ecco,Crew/Mid Calf,Hiking/Trekking,Half Terry
+691,Ecco Accessories Ltd,96% Polyamide; 4% Elastane,Bright White,35-38,Conventional,Ecco,Crew/Mid Calf,Hiking/Trekking,Half Terry
+692,Ecco Accessories Ltd,96% Polyamide; 4% Elastane,Black,35-38,Conventional,Ecco,Ankle/Quarter,Hiking/Trekking,Half Terry
+693,Ecco Accessories Ltd,96% Polyamide; 4% Elastane,Bright White,35-38,Conventional,Ecco,Ankle/Quarter,Hiking/Trekking,Half Terry
+694,Compressport International SA,,Black/Cored Red,T3/ 42-422,Conventional,N/A,Knee High,Multisports,Half Terry
+695,POULET VINAIGRETTE,,"À MOI, À MOI, À MOI",37/42,Conventional,JOSETTTE & TIC,Crew/Mid Calf,Basic,Flat Knit
+696,POULET VINAIGRETTE,,FLAMMES DE PÊCHE,37/42,Conventional,JOSETTTE & TIC,Crew/Mid Calf,Basic,Flat Knit
+697,POULET VINAIGRETTE,,SORTIE MER,37/42,Conventional,JOSETTTE & TIC,Crew/Mid Calf,Basic,Flat Knit
+698,Compressport International SA,95% Polyamide; 5% Elastane,Grey melange/Hawaiin Ocean,T3/ 42-44,Conventional,N/A,Crew/Mid Calf,Multisports,Half Terry
+699,POULET VINAIGRETTE,,AU BOUT DU FIL,37/42,Conventional,JOSETTTE & TIC,Crew/Mid Calf,Basic,Flat Knit
+700,Compressport International SA,74% Polyamide; 12% Elastane; 12% Merino Wool; 2% Mulberry Silk,Black/Estate Blue,T3/ 42-44,Conventional,N/A,Knee High,Multisports,Half Terry
+701,New Retex A/S,,Ecru/Rose,MED (39-42),Sustainable,N/A,Liner,Basic,Selected Terry
+702,Compressport International SA,,Slate Grey/Storm/Saffron,T2/ 39-41,Conventional,N/A,Ankle/Quarter,Multisports,Half Terry
+703,Compressport International SA,,Slate Grey/Storm/Saffron,T3/ 42-44,Conventional,N/A,Ankle/Quarter,Multisports,Half Terry
+704,Compressport International SA,,Slate Grey/Storm/Saffron,T2/ 39-41,Conventional,N/A,Crew/Mid Calf,Multisports,Half Terry
+705,Compressport International SA,,Slate Grey/Storm/Saffron,T3/ 42-44,Conventional,N/A,Crew/Mid Calf,Multisports,Half Terry
+706,POULET VINAIGRETTE,,PHARE OUEST,37/42,Conventional,JOSETTTE & TIC,Crew/Mid Calf,Basic,Flat Knit
+707,POULET VINAIGRETTE,,PIÈGE EN EAUX TROUBLES,37/42,Conventional,JOSETTTE & TIC,Crew/Mid Calf,Basic,Flat Knit
+708,Compressport International SA,,Black/Safety Yellow,T2/ 39-41,Conventional,N/A,Knee High,Multisports,Half Terry
+709,Compressport International SA,,Black/Safety Yellow,T3/ 42-44,Conventional,N/A,Knee High,Multisports,Half Terry
+710,POULET VINAIGRETTE,,PÊCHE À LA LIGNE,37/42,Conventional,JOSETTTE & TIC,Crew/Mid Calf,Basic,Flat Knit
+711,POULET VINAIGRETTE,,PÊCHEUR DU DIMANCHE,37/42,Conventional,JOSETTTE & TIC,Crew/Mid Calf,Basic,Flat Knit
+712,POULET VINAIGRETTE,,J'EN AI PLEIN LE CASIER,37/42,Conventional,JOSETTTE & TIC,Crew/Mid Calf,Basic,Flat Knit
+713,POULET VINAIGRETTE,,PÊCHE AU GROS,37/42,Conventional,JOSETTTE & TIC,Crew/Mid Calf,Basic,Flat Knit
+714,POULET VINAIGRETTE,,BANC D'ÉCAILLES,37/42,Conventional,JOSETTTE & TIC,Crew/Mid Calf,Basic,Flat Knit
+715,POULET VINAIGRETTE,,REMUER CIEL ET MER,37/42,Conventional,JOSETTTE & TIC,Crew/Mid Calf,Basic,Flat Knit
+716,Angry Pablo LTD,39% Econyl; 38% Polyamide; 13% Recycled Polyamide; 10% Elastane,White/Eggnog,"39-42,5",Conventional,Angry Pablo,Crew/Mid Calf,Basic,Half Terry
+717,VAUDE Sport GmbH & Co. KG,56% Polyamide; 43% Merino Wool; 1% Elastane,Phantom Black,39-41,Sustainable,Vaude,Over the Knee,Hiking/Trekking,Half Terry
+718,Angry Pablo LTD,,Eggnog,"39-42,5",Conventional,Angry Pablo,Crew/Mid Calf,Basic,Flat Knit
+719,Angry Pablo LTD,,White,"39-42,5",Conventional,Angry Pablo,Crew/Mid Calf,Basic,Flat Knit
+720,VAUDE Sport GmbH & Co. KG,56% Polyamide; 43% Merino Wool; 1% Elastane,Linen,39-41,Sustainable,Vaude,Over the Knee,Hiking/Trekking,Half Terry
+721,Ryzon GmbH,97% Polyamide; 3% Elastane,Hidden Pine/ Arctic White,35-38,Conventional,Ryzon,Crew/Mid Calf,Multisports,Flat Knit
+722,Tracksmith,95% Polyamide; 5% Elastane,Lunar/Spicy Mustard,LG/44-46,Conventional,Tracksmith,Crew/Mid Calf,Basic,Selected Terry
+723,Tracksmith,56% Merino Wool; 41% Polyamide; 3% Elastane,Birch/London Fog,LG/44-46,Conventional,Tracksmith,Short,Basic,Half Terry
+724,Tracksmith,56% Merino Wool; 41% Polyamide; 3% Elastane,Birch/London Fog,XS/35-37,Conventional,Tracksmith,Crew/Mid Calf,Basic,Half Terry
+725,Picture Organic Clothing,,Camel,36-39,Conventional,Picture Organic Clothing,Crew/Mid Calf,Ski,Full Terry
+726,Boards&More GmbH,,Dusty Leaves,L/43-46,Conventional,ION BIKE,Crew/Mid Calf,Cycling,Flat Knit
+727,Shapewear Europe B.V.,,White,S/ 35-38,Conventional,N/A,Crew/Mid Calf,Multisports,Half Terry
+728,Shapewear Europe B.V.,,White,M/ 39-41,Conventional,N/A,Crew/Mid Calf,Multisports,Half Terry
+730,Kirpte UAB,91% Polyamide; 9% Elastane,Black,T2 (M),Conventional,N/A,N/A,Running,Flat Knit
+731,POULET VINAIGRETTE,76% Cotton; 23% Polyamide; 1% Elastane,"À MOI, À MOI, À MOI",37/42,Sustainable,JOSETTTE & TIC,Crew/Mid Calf,Basic,Flat Knit
+732,POULET VINAIGRETTE,77% Cotton; 22% Polyamide; 1% Elastane,SORTIE MER,37/42,Sustainable,JOSETTTE & TIC,Crew/Mid Calf,Basic,Flat Knit
+733,POULET VINAIGRETTE,83% Cotton; 16% Polyamide; 1% Elastane,FLAMMES DE PÊCHE,37/42,Sustainable,JOSETTTE & TIC,Crew/Mid Calf,Basic,Flat Knit
+734,POULET VINAIGRETTE,77% Cotton; 22% Polyamide; 1% Elastane,AU BOUT DU FIL,37/42,Sustainable,JOSETTTE & TIC,Crew/Mid Calf,Basic,Flat Knit
+735,POULET VINAIGRETTE,78% Cotton; 21% Polyamide; 1% Elastane,PHARE OUEST,37/42,Sustainable,JOSETTTE & TIC,Crew/Mid Calf,Basic,Flat Knit
+736,POULET VINAIGRETTE,78% Cotton; 21% Polyamide; 1% Elastane,REMUER CIEL ET MER,37/42,Sustainable,JOSETTTE & TIC,Crew/Mid Calf,Basic,Flat Knit
+737,POULET VINAIGRETTE,75% Cotton; 24% Polyamide; 1% Elastane,BANC D'ÉCAILLES,37/42,Sustainable,JOSETTTE & TIC,Crew/Mid Calf,Basic,Flat Knit
+738,POULET VINAIGRETTE,78% Cotton; 21% Polyamide; 1% Elastane,PÊCHE AU GROS,37/42,Sustainable,JOSETTTE & TIC,Crew/Mid Calf,Basic,Flat Knit
+739,POULET VINAIGRETTE,83% Cotton; 16% Polyamide; 1% Elastane,J'EN AI PLEIN LE CASIER,37/42,Sustainable,JOSETTTE & TIC,Crew/Mid Calf,Basic,Flat Knit
+740,POULET VINAIGRETTE,83% Cotton; 16% Polyamide; 1% Elastane,PÊCHEUR DU DIMANCHE,37/42,Sustainable,JOSETTTE & TIC,Crew/Mid Calf,Basic,Flat Knit
+741,POULET VINAIGRETTE,83% Cotton; 16% Polyamide; 1% Elastane,PÊCHE À LA LIGNE,37/42,Sustainable,JOSETTTE & TIC,Crew/Mid Calf,Basic,Flat Knit
+742,POULET VINAIGRETTE,79% Cotton; 20% Polyamide; 1% Elastane,PIÈGE EN EAUX TROUBLES,37/42,Sustainable,JOSETTTE & TIC,Crew/Mid Calf,Basic,Flat Knit
+743,Brav Norway AS,,Stock,37-39,Conventional,Ulvang,Crew/Mid Calf,Multisports,Flat Knit
+744,Brav Norway AS,,Stock,37-39,Conventional,Ulvang,Knee High,Multisports,Flat Knit
+745,POULET VINAIGRETTE,,"À MOI, À MOI, À MOI",31/36,Sustainable,JOSETTTE & TIC,Crew/Mid Calf,Basic,Flat Knit
+746,POULET VINAIGRETTE,,"À MOI, À MOI, À MOI",43/47,Sustainable,JOSETTTE & TIC,Crew/Mid Calf,Basic,Flat Knit
+747,Lipati ApS,,White,41-43,Conventional,n/a,Crew/Mid Calf,Multisports,Selected Terry
+748,POULET VINAIGRETTE,,DIS OUI À DINAN,37/42,Sustainable,JOSETTTE & TIC,Crew/Mid Calf,Basic,Flat Knit
+749,POULET VINAIGRETTE,,DIS OUI À DINAN,37/42,Sustainable,JOSETTTE & TIC,Crew/Mid Calf,Basic,Flat Knit
+750,Compressport International SA,65% Polyamide; 35% Elastane,Magnet/Autumn Glory,T4,Conventional,N/A,Calf Sleeve,Multisports,Flat Knit
+751,WaterNlife ApS,,Navy Blue,43-47,Conventional,Danish Endurance,Crew/Mid Calf,Hiking/Trekking,Half Terry
+752,VAUDE Sport GmbH & Co. KG,56% Recycled Polyamide; 43% Merino Wool; 1% Elastane,Grey Melange,39-41,Sustainable,Vaude,Ankle/Quarter,Hiking/Trekking,Half Terry
+753,Tracksmith,56% Merino Wool; 41% Polyamide; 3% Elastane,Anthracite/Birch,SM/38-40,Conventional,Tracksmith,Crew/Mid Calf,Basic,Half Terry
+754,Compressport International SA,,Faded Denim/Poseidon/Safety Yellow,T2/ 39-41,Conventional,N/A,Crew/Mid Calf,Multisports,Half Terry
+755,Compressport International SA,,Faded Denim/Poseidon/Safety Yellow,T3/ 42-44,Conventional,N/A,Crew/Mid Calf,Multisports,Half Terry
+756,VAUDE Sport GmbH & Co. KG,56% Recycled Polyamide; 43% Merino Wool; 1% Elastane,Grey Melange,42-44,Sustainable,Vaude,Ankle/Quarter,Hiking/Trekking,Half Terry
+757,VAUDE Sport GmbH & Co. KG,56% Recycled Polyamide; 43% Merino Wool; 1% Elastane,Dark Sea,39-41,Sustainable,Vaude,Ankle/Quarter,Hiking/Trekking,Half Terry
+758,VAUDE Sport GmbH & Co. KG,56% Recycled Polyamide; 43% Merino Wool; 1% Elastane,Dark Sea,36-38,Sustainable,Vaude,Ankle/Quarter,Hiking/Trekking,Half Terry
+759,VAUDE Sport GmbH & Co. KG,56% Recycled Polyamide; 43% Merino Wool; 1% Elastane,Dark Sea,45-47,Sustainable,Vaude,Ankle/Quarter,Hiking/Trekking,Half Terry
+760,VAUDE Sport GmbH & Co. KG,56% Polyamide; 43% Merino Wool; 1% Elastane,Linen,42-44,Sustainable,Vaude,Ankle/Quarter,Hiking/Trekking,Half Terry
+761,Hultafors Group AB,,Grey Melange,37-40,Conventional,Snickers,Crew/Mid Calf,Work,Half Terry
+762,Hultafors Group AB,,Grey Melange,41-44,Conventional,Snickers,Crew/Mid Calf,Work,Half Terry
+763,Hultafors Group AB,,Grey Melange,45-48,Conventional,Snickers,Crew/Mid Calf,Work,Half Terry
+764,Hultafors Group AB,,White,37-40,Conventional,Snickers,Crew/Mid Calf,Work,Half Terry
+765,Hultafors Group AB,,White,41-44,Conventional,Snickers,Crew/Mid Calf,Work,Half Terry
+766,Hultafors Group AB,,White,45-48,Conventional,Snickers,Crew/Mid Calf,Work,Half Terry
+767,Hultafors Group AB,,Black,37-40,Conventional,Snickers,Crew/Mid Calf,Work,Half Terry
+768,Hultafors Group AB,,Black,41-44,Conventional,Snickers,Crew/Mid Calf,Work,Half Terry
+769,Hultafors Group AB,,Black,45-48,Conventional,Snickers,Crew/Mid Calf,Work,Half Terry
+770,USWE Sports AB,44% Recycled Polyamide; 24% Polyester; 19% Polyamide; 9% Recycled Polyester; 4% Elastane,Olive Night + Black,40-42,Sustainable,USWE Sports,Crew/Mid Calf,Cycling,Selected Terry
+771,Ecco Accessories Ltd,,Grey,43-46,Conventional,Ecco,Invisible,Multisports,Half Terry
+772,Ecco Accessories Ltd,,Black,39-42,Conventional,Ecco,Invisible,Multisports,Half Terry
+773,Hultafors Group AB,,White,37-40,Conventional,Snickers,Ankle/Quarter,Work,Half Terry
+774,Hultafors Group AB,,White,41-44,Conventional,Snickers,Ankle/Quarter,Work,Half Terry
+775,Hultafors Group AB,,White,45-48,Conventional,Snickers,Ankle/Quarter,Work,Half Terry
+776,Hultafors Group AB,,Black,37-40,Conventional,Snickers,Ankle/Quarter,Work,Half Terry
+777,Hultafors Group AB,,Black,41-44,Conventional,Snickers,Ankle/Quarter,Work,Half Terry
+778,Hultafors Group AB,,Black,45-48,Conventional,Snickers,Ankle/Quarter,Work,Half Terry
+779,GripGrab ApS,,Black,41-44,Conventional,GripGrab,Crew/Mid Calf,Cycling,Flat Knit
+780,Ryzon GmbH,,White,39-42,Conventional,Ryzon,Crew/Mid Calf,Cycling,Flat Knit
+781,Ryzon GmbH,,White,43-45,Conventional,Ryzon,Crew/Mid Calf,Cycling,Flat Knit
+782,Ryzon GmbH,,White,35-38,Conventional,Ryzon,Crew/Mid Calf,Cycling,Flat Knit
+783,Sidas,,Pink,24-26,Conventional,Sidas,Knee High,Ski,Half Terry
+784,Sidas,49% Reconylon; 25% Organic Cotton; 11% Polyamide; 8% Econyl; 5% Recycled Elastane; 2% Elastane,Pink,35-38,Conventional,Sidas,Knee High,Ski,Half Terry
+785,Sidas,,Pink,27-30,Conventional,Sidas,Knee High,Ski,Half Terry
+786,Sidas,,Pink,24-26,Conventional,Sidas,Knee High,Ski,Half Terry
+787,Sidas,,Pink,35-38,Conventional,Sidas,Knee High,Ski,Half Terry
+788,Sidas,,Pink,31-34,Conventional,Sidas,Knee High,Ski,Half Terry
+789,POULET VINAIGRETTE,,LE POULET SPORTIF,43/47,Sustainable,JOSETTTE & TIC,Crew/Mid Calf,Multisports,Half Terry
+790,INCYLENCE oHG,,White,35-38,Conventional,Incylence,Crew/Mid Calf,Running,Half Terry
+791,INCYLENCE oHG,,Black,39-42,Conventional,Incylence,Crew/Mid Calf,Running,Half Terry
+792,INCYLENCE oHG,,White,39-42,Conventional,Incylence,Crew/Mid Calf,Running,Half Terry
+793,INCYLENCE oHG,,Black,43-46,Conventional,Incylence,Crew/Mid Calf,Running,Half Terry
+794,INCYLENCE oHG,,White,47-50,Conventional,Incylence,Crew/Mid Calf,Running,Half Terry
+795,INCYLENCE oHG,,Black,47-50,Conventional,Incylence,Crew/Mid Calf,Running,Half Terry
+796,INCYLENCE oHG,,White,43-46,Conventional,Incylence,Crew/Mid Calf,Running,Half Terry
+797,INCYLENCE oHG,,Black,35-38,Conventional,Incylence,Crew/Mid Calf,Running,Half Terry
+798,INCYLENCE oHG,,White,43-46,Conventional,Incylence,Crew/Mid Calf,Running,Half Terry
+799,INCYLENCE oHG,,Black,43-46,Conventional,Incylence,Crew/Mid Calf,Running,Half Terry
+800,Sidas,,Blue/Purple,35-36,Conventional,Sidas,Knee High,Multisports,Half Terry
+801,Sidas,,Blue/Purple,37-38,Conventional,Sidas,Knee High,Multisports,Half Terry
+802,Sidas,,Blue/Purple,39-40,Conventional,Sidas,Knee High,Multisports,Half Terry
+803,Sidas,,Blue/Purple,41-42,Conventional,Sidas,Knee High,Multisports,Half Terry

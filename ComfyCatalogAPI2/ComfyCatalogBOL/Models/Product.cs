@@ -23,7 +23,6 @@ namespace ComfyCatalogBOL.Models
         public string Color { get; set; }
         public string Size { get; set; }
         public string Certification { get; set; }  
-        public string DesignLength { get; set; }
         public string KnittingType { get; set; }
      
         
@@ -45,7 +44,6 @@ namespace ComfyCatalogBOL.Models
             this.Color = rdr["color"].ToString() ?? string.Empty;
             this.Size = rdr["size"].ToString() ?? string.Empty;
             this.Certification = rdr["certification"].ToString() ?? string.Empty;
-            this.DesignLength = rdr["designLenght"].ToString() ?? string.Empty;
             this.KnittingType = rdr["knittingType"].ToString() ?? string.Empty;
           
             

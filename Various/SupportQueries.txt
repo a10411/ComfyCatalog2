@@ -27,3 +27,11 @@ ADD designLength VARCHAR(255);
 
 ALTER TABLE Product
 ADD knittingType VARCHAR(255);
+
+
+
+INSERT INTO Product (brandID, sportID, estadoID, nomeCliente, composition, color, size, certification, knittingType)
+SELECT B.brandID, S.sportID, 1, A.nomeCliente, A.composition, A.color, A.size, A.certification, A.knittingType
+FROM TbAmostras A
+JOIN Brand B ON A.brand = B.brandName
+JOIN Sport S ON A.sport = S.sportName;

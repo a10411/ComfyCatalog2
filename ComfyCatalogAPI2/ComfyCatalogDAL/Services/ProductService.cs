@@ -184,12 +184,14 @@ namespace ComfyCatalogDAL.Services
                         queryAddProduct.Connection = con;
                         queryAddProduct.Parameters.Add("@brandID", SqlDbType.Int).Value = productToAdd.BrandID;
                         queryAddProduct.Parameters.Add("@estadoID", SqlDbType.Int).Value = productToAdd.EstadoID;
-                        queryAddProduct.Parameters.Add("@productName", SqlDbType.Char).Value = productToAdd.ProductName;
-                        queryAddProduct.Parameters.Add("@composition", SqlDbType.Char).Value = productToAdd.Composition;
-                        queryAddProduct.Parameters.Add("@colour", SqlDbType.Char).Value = productToAdd.Colour;
-                        queryAddProduct.Parameters.Add("@clientNumber", SqlDbType.Int).Value =productToAdd.ClientNumber;
-                        queryAddProduct.Parameters.Add("@productType", SqlDbType.Char).Value = productToAdd.ProductType;
                         queryAddProduct.Parameters.Add("@sportID", SqlDbType.Int).Value = productToAdd.SportID;
+                        queryAddProduct.Parameters.Add("@nomeCliente", SqlDbType.Char).Value = productToAdd.NomeCliente;
+                        queryAddProduct.Parameters.Add("@composition", SqlDbType.Char).Value = productToAdd.Composition;
+                        queryAddProduct.Parameters.Add("@colour", SqlDbType.Char).Value = productToAdd.Color;
+                        queryAddProduct.Parameters.Add("@clientNumber", SqlDbType.Int).Value =productToAdd.Size;
+                        queryAddProduct.Parameters.Add("@certification", SqlDbType.Char).Value = productToAdd.Certification;
+                        queryAddProduct.Parameters.Add("@knittingType", SqlDbType.Char).Value = productToAdd.KnittingType;
+
                         con.Open();
                         queryAddProduct.ExecuteNonQuery();
                         con.Close();
@@ -288,12 +290,12 @@ namespace ComfyCatalogDAL.Services
             productUpdated.ProductID = productUpdated.ProductID != 0 ? productUpdated.ProductID : productCurrent.ProductID;
             productUpdated.BrandID = productUpdated.BrandID != 0 ? productUpdated.BrandID : productCurrent.BrandID;
             productUpdated.EstadoID = productUpdated.EstadoID != 0 ? productUpdated.EstadoID : productCurrent.EstadoID;
-            productUpdated.ProductName = productUpdated.ProductName != String.Empty && productUpdated.ProductName != null ? productUpdated.ProductName : productCurrent.ProductName;
+            productUpdated.NomeCliente = productUpdated.NomeCliente != String.Empty && productUpdated.NomeCliente != null ? productUpdated.NomeCliente : productCurrent.NomeCliente;
             productUpdated.Composition = productUpdated.Composition != String.Empty && productUpdated.Composition != null ? productUpdated.Composition : productCurrent.Composition;
-            productUpdated.Colour = productUpdated.Colour != String.Empty && productUpdated.Colour != null ? productUpdated.Colour : productCurrent.Colour;
-            productUpdated.ClientNumber = productUpdated.ClientNumber != 0 ? productUpdated.ClientNumber : productCurrent.ClientNumber;
-            productUpdated.ProductType = productUpdated.ProductType != String.Empty && productUpdated.ProductType != null ? productUpdated.ProductType : productCurrent.ProductType;
-
+            productUpdated.Color = productUpdated.Color != String.Empty && productUpdated.Color != null ? productUpdated.Color : productCurrent.Color;
+            productUpdated.Size = productUpdated.Size != String.Empty && productUpdated.Size != null ? productUpdated.Size : productCurrent.Size;
+            productUpdated.Certification = productUpdated.Certification != String.Empty && productUpdated.Certification != null ? productUpdated.Certification : productCurrent.Certification;
+            productUpdated.KnittingType = productUpdated.KnittingType != String.Empty && productUpdated.KnittingType != null ? productUpdated.KnittingType : productCurrent.KnittingType;
             try
             {
                 using (SqlConnection con = new SqlConnection(conString))
@@ -304,12 +306,14 @@ namespace ComfyCatalogDAL.Services
                         queryUpdateProduct.Connection = con;
                         queryUpdateProduct.Parameters.Add("@productID", SqlDbType.Int).Value = productUpdated.ProductID;
                         queryUpdateProduct.Parameters.Add("@brandID", SqlDbType.Int).Value = productUpdated.BrandID;
-                        queryUpdateProduct.Parameters.Add("@estadoID", SqlDbType.Int).Value = productCurrent.EstadoID;
-                        queryUpdateProduct.Parameters.Add("productName", SqlDbType.Char).Value = productUpdated.ProductName;
+                        queryUpdateProduct.Parameters.Add("@estadoID", SqlDbType.Int).Value = productUpdated.EstadoID;
+                        queryUpdateProduct.Parameters.Add("@sportID", SqlDbType.Int).Value = productUpdated.SportID;
+                        queryUpdateProduct.Parameters.Add("@nomeCliente", SqlDbType.Char).Value = productUpdated.NomeCliente;
                         queryUpdateProduct.Parameters.Add("@composition", SqlDbType.Char).Value = productUpdated.Composition;
-                        queryUpdateProduct.Parameters.Add("@colour", SqlDbType.Char).Value = productUpdated.Colour;
-                        queryUpdateProduct.Parameters.Add("@clientNumber", SqlDbType.Int).Value = productUpdated.ClientNumber;
-                        queryUpdateProduct.Parameters.Add("@productType", SqlDbType.Char).Value = productUpdated.ProductType;
+                        queryUpdateProduct.Parameters.Add("@color", SqlDbType.Char).Value = productUpdated.Color;
+                        queryUpdateProduct.Parameters.Add("@clientNumber", SqlDbType.Int).Value = productUpdated.Size;
+                        queryUpdateProduct.Parameters.Add("@certification", SqlDbType.Char).Value = productUpdated.Certification;
+                        queryUpdateProduct.Parameters.Add("@knittingType", SqlDbType.Char).Value = productUpdated.KnittingType;
                         con.Open();
                         queryUpdateProduct.ExecuteNonQuery();
                         con.Close();
