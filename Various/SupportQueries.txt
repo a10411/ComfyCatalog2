@@ -1,0 +1,29 @@
+DELETE FROM Product
+
+DELETE FROM Favourite
+
+DELETE FROM Observation
+
+DELETE FROM Image
+
+
+ALTER TABLE Product
+ADD nomeCliente VARCHAR(255);
+
+ALTER TABLE Product
+ADD composition VARCHAR(255);
+
+ALTER TABLE Product
+ADD color VARCHAR(255);
+
+ALTER TABLE Product
+ADD size VARCHAR(255);
+
+ALTER TABLE Product
+ADD certification VARCHAR(255);
+
+ALTER TABLE Product
+ADD designLength VARCHAR(255);
+
+ALTER TABLE Product
+ADD knittingType VARCHAR(255);

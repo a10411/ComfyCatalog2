@@ -17,12 +17,15 @@ namespace ComfyCatalogBOL.Models
         public int ProductID { get; set; }
         public int BrandID { get; set; }
         public int EstadoID { get; set; }
-        public string ProductName { get; set; }
-        public string Composition { get; set; }
-        public string Colour { get; set; }
-        public int ClientNumber { get; set; }
-        public string ProductType { get; set; }  
         public int SportID { get; set; }
+        public string NomeCliente { get; set; }
+        public string Composition { get; set; }
+        public string Color { get; set; }
+        public string Size { get; set; }
+        public string Certification { get; set; }  
+        public string DesignLength { get; set; }
+        public string KnittingType { get; set; }
+     
         
         public Product() { }
 
@@ -36,12 +39,17 @@ namespace ComfyCatalogBOL.Models
             this.ProductID = Convert.ToInt32(rdr["productID"]);
             this.BrandID = Convert.ToInt32(rdr["brandID"]);
             this.EstadoID = Convert.ToInt32(rdr["estadoID"]);
-            this.ProductName = rdr["productName"].ToString() ?? string.Empty;
-            this.Composition = rdr["composition"].ToString() ?? string.Empty;
-            this.Colour = rdr["colour"].ToString() ?? string.Empty;
-            this.ClientNumber = Convert.ToInt32(rdr["clientNumber"]);
-            this.ProductType = rdr["productType"].ToString() ?? string.Empty;
             this.SportID = Convert.ToInt32(rdr["sportID"]);
+            this.NomeCliente = rdr["nomeCliente"].ToString() ?? string.Empty;
+            this.Composition = rdr["composition"].ToString() ?? string.Empty;
+            this.Color = rdr["color"].ToString() ?? string.Empty;
+            this.Size = rdr["size"].ToString() ?? string.Empty;
+            this.Certification = rdr["certification"].ToString() ?? string.Empty;
+            this.DesignLength = rdr["designLenght"].ToString() ?? string.Empty;
+            this.KnittingType = rdr["knittingType"].ToString() ?? string.Empty;
+          
+            
+
 
 
         }
