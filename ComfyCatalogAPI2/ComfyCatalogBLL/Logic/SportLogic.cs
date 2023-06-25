@@ -1,6 +1,7 @@
 ﻿using ComfyCatalogBLL.Utils;
 using ComfyCatalogBOL.Models;
 using ComfyCatalogDAL.Services;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,6 +24,20 @@ namespace ComfyCatalogBLL.Logic
             }
             return response;
         }
+
+        public static async Task<Response> GetSport(string conString, int sportID)
+        {
+            Response response = new Response();
+            Sport sport = await SportService.GetSport(conString, sportID);
+            if (sport.SportID > 0)
+            {
+                response.StatusCode = StatusCodes.SUCCESS;
+                response.Message = "Sucesso na obtenção dos dados";
+                response.Data = sport;
+            }
+            return response;
+        }
+
 
         public static async Task<Response> AddSport(string conString, Sport sportToAdd)
         {

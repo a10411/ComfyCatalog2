@@ -167,10 +167,6 @@ const handleFavoriteClick = async () => {
           <table className="product-table">
             <tbody>
               <tr>
-                <td className="product-label">Product Name:</td>
-                <td className="product-value">{product.productName}</td>
-              </tr>
-              <tr>
                 <td className="product-label">Brand Name:</td>
                 <td className="product-value">{product.brandName}</td>
               </tr>
@@ -183,16 +179,16 @@ const handleFavoriteClick = async () => {
                 <td className="product-value">{product.composition}</td>
               </tr>
               <tr>
-                <td className="product-label">Colour:</td>
-                <td className="product-value">{product.colour}</td>
+                <td className="product-label">Color:</td>
+                <td className="product-value">{product.color}</td>
               </tr>
               <tr>
-                <td className="product-label">Client Number:</td>
-                <td className="product-value">{product.clientNumber}</td>
+                <td className="product-label">Certification:</td>
+                <td className="product-value">{product.certification}</td>
               </tr>
               <tr>
-                <td className="product-label">Product Type:</td>
-                <td className="product-value">{product.productType}</td>
+                <td className="product-label">Knitting Type:</td>
+                <td className="product-value">{product.knittingType}</td>
               </tr>
             </tbody>
           </table>

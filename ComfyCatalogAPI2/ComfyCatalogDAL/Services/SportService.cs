@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Reflection.PortableExecutable;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -33,6 +34,25 @@ namespace ComfyCatalogDAL.Services
             return sportList;
         }
 
+        public static async Task<Sport> GetSport(string conString, int sportID)
+        {
+            Sport sport = new Sport();
+            using(SqlConnection con = new SqlConnection(conString))
+            {
+                SqlCommand cmd = new SqlCommand($"SELECT * FROM Sport WHERE sportID ={sportID}", con);
+                cmd.CommandType = CommandType.Text;
+                con.Open();
+
+                SqlDataReader rdr = cmd.ExecuteReader();
+                while (rdr.Read())
+                {
+                    sport = new Sport(rdr);
+                }
+                rdr.Close();
+                con.Close();
+            }
+            return sport;
+        }
 
         public static async Task<Boolean> AddSport(string conString, Sport sportToAdd)
         {

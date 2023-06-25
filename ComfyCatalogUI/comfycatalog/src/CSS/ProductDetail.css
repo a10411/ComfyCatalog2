@@ -42,6 +42,7 @@
   animation: scrollOpen 1s forwards; /* Apply the animation */
   overflow: auto;
   padding: 40px;
+  box-shadow:  gray 6px 6px 0px 0px;
 }
 
 @keyframes scrollOpen {
