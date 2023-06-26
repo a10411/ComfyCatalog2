@@ -11,7 +11,7 @@
   position: relative;
    /* Adjust the width based on the sidebar width */
   margin: 0 auto; /* Center the container horizontally */
-  margin-top: 115px;
+  margin-top: px;
   margin-left: 105px;
   margin-right: 495px;
   /* border: 1px solid black; */
@@ -276,4 +276,27 @@ body::-webkit-scrollbar-thumb {
 
 body::-webkit-scrollbar-thumb:hover {
   background-color: #555; /* Set the color of the scrollbar thumb on hover */
+}
+
+.add-product-button {
+  display: flex;
+  justify-content: center;
+  color: #020202;
+  margin-bottom: 20px;
+  border-radius: 16px;
+  margin-top: 50px;
+}
+
+.add-product-link {
+  display: flex;
+  align-items: center;
+  background-color: #7a7a7a;
+  color: #020202;
+  padding: 8px 16px;
+  border-radius: 16px;
+  text-decoration: none;
+}
+
+.add-product-icon {
+  margin-right: 8px;
 }

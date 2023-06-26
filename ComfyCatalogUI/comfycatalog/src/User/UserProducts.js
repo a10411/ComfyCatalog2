@@ -59,10 +59,11 @@ function UserProducts() {
     if (!searchTerm) {
       return true; // No search term provided, include all products
     }
-
-    const productName = product.productName || '';
-    return productName.toLowerCase().includes(searchTerm.toLowerCase());
+  
+    const productID = product.productID.toString(); // Convert productID to a string before comparison
+    return productID.includes(searchTerm);
   };
+  
 
   const filterByBrand = (product, selectedBrand) => {
     if (!selectedBrand) {
@@ -318,7 +319,7 @@ function UserProducts() {
                       className="product-image"
                     />
                   ))}
-                <div className="product-name">{product.productName}</div>
+                <div className="product-name">{product.productID}</div>
                 <div className="product-icons">
                   <FontAwesomeIcon
                     icon={faInfoCircle}

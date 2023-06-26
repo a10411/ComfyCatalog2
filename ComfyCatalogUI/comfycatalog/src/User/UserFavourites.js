@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 import { variables } from '../Utils/Variables';
 import { useNavigate } from 'react-router-dom';
-import '../CSS/UserProducts.css'
+import '../CSS/UserProducts.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInfoCircle } from '@fortawesome/free-solid-svg-icons';
+import { faInfoCircle, faTrash } from '@fortawesome/free-solid-svg-icons'; // Import the trash icon
 import Sidebar from '../Sidebar';
 import { getUserID } from '../Global';
 
@@ -11,17 +11,19 @@ function UserFavourites() {
   const API_URL = variables.API_URL;
   const [favorites, setFavorites] = useState([]);
   const [images, setImages] = useState([]);
-  const [products, setProducts] = useState([]);
-
   const [imagesFetched, setImagesFetched] = useState(false);
   const [unauthorized, setUnauthorized] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetchFavorites();
-    fetchImages();
-    // Retrieve the logged-in user's ID (e.g., from session, local storage, or context)
+    const fetchFavoritesData = async () => {
+      const fetchedFavorites = await fetchFavorites();
+      setFavorites(fetchedFavorites);
+      fetchImages();
+    };
+  
+    fetchFavoritesData();
   }, []);
 
   const handleSearch = (e) => {
@@ -29,8 +31,29 @@ function UserFavourites() {
   };
 
   const navigateToProductDetails = (productID) => {
-    const imageURL = images.find(image => image.productID === productID)?.imageName;
+    const imageURL = images.find((image) => image.productID === productID)?.imageName;
     navigate('/UserProductDetail', { state: { productID, imageURL } });
+  };
+
+  const deleteFavorite = async (productID) => {
+    try {
+      // Send a request to delete the favorite from the backend
+      const userID = getUserID();
+      const response = await fetch(`${API_URL}/api/DeleteFavourite?userID=${userID}&productID=${productID}`, {
+        method: 'DELETE',
+      });
+
+      if (response.ok) {
+        // If the deletion is successful, update the favorites state
+        const updatedFavorites = favorites.filter((favorite) => favorite.productID !== productID);
+        setFavorites(updatedFavorites);
+        fetchFavorites();
+      } else {
+        console.error('Failed to delete favorite:', response.statusText);
+      }
+    } catch (error) {
+      console.error('An error occurred while deleting favorite:', error);
+    }
   };
 
   const fetchFavorites = async () => {
@@ -39,9 +62,8 @@ function UserFavourites() {
       const response = await fetch(`${API_URL}/api/GetFavouritesByUser?userID=${userID}`);
       if (response.ok) {
         const responseData = await response.json();
-
         if (Array.isArray(responseData.data)) {
-          setFavorites(responseData.data);
+          return responseData.data; // Return the fetched favorites data
         } else {
           console.error('Favorites data is not in the expected format:', responseData);
         }
@@ -53,6 +75,8 @@ function UserFavourites() {
     } catch (error) {
       console.error('An error occurred while fetching favorites:', error);
     }
+  
+    return []; // Return an empty array if the fetch operation fails
   };
 
   const fetchProductDetails = async (productID) => {
@@ -60,7 +84,7 @@ function UserFavourites() {
       const response = await fetch(`${API_URL}/api/GetProduct?productID=${productID}`);
       if (response.ok) {
         const responseData = await response.json();
-        return responseData.data.productName; // Return the product name
+        return responseData.data.nomeCliente; // Return the product name
       } else {
         console.error('Failed to fetch product details:', response.statusText);
       }
@@ -74,7 +98,6 @@ function UserFavourites() {
       const response = await fetch(`${API_URL}/api/GetAllImages`);
       if (response.ok) {
         const responseData = await response.json();
-        console.log(responseData);
         if (Array.isArray(responseData.data)) {
           setImages(responseData.data);
           setImagesFetched(true);
@@ -93,9 +116,9 @@ function UserFavourites() {
     const fetchProductData = async () => {
       const updatedFavorites = [];
       for (const favorite of favorites) {
-        const productName = await fetchProductDetails(favorite.productID);
-        if (productName) {
-          updatedFavorites.push({ ...favorite, productName });
+        const nomeCliente = await fetchProductDetails(favorite.productID);
+        if (nomeCliente) {
+          updatedFavorites.push({ ...favorite, nomeCliente });
         }
       }
       setFavorites(updatedFavorites);
@@ -162,12 +185,17 @@ function UserFavourites() {
                       className="product-image"
                     />
                   ))}
-                <div className="product-name">{favorite.productName}</div>
+                <div className="product-name">{favorite.nomeCliente}</div>
                 <div className="product-icons">
                   <FontAwesomeIcon
                     icon={faInfoCircle}
                     className="product-icon"
                     onClick={() => navigateToProductDetails(favorite.productID)}
+                  />
+                  <FontAwesomeIcon
+                    icon={faTrash}
+                    className="product-icon"
+                    onClick={() => deleteFavorite(favorite.productID)}
                   />
                 </div>
               </div>
@@ -180,4 +208,5 @@ function UserFavourites() {
 }
 
 export default UserFavourites;
+
 

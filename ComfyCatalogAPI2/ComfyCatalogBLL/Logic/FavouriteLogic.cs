@@ -39,6 +39,24 @@ namespace ComfyCatalogBLL.Logic
             return response;
         }
 
-
+        public static async Task<Response> DeleteFavourite(string conString, int userID, int productID)
+        {
+            Response response = new Response();
+            try
+            {
+                if (await FavouriteService.DeleteFavourite(conString, userID, productID))
+                {
+                    response.StatusCode = StatusCodes.SUCCESS;
+                    response.Message = "Favourite was deleted from DB";
+                }
+            }
+            catch (Exception ex)
+            {
+                response.StatusCode = StatusCodes.INTERNALSERVERERROR;
+                response.Message = ex.ToString();
+            }
+            return response;
+        }
+        
     }
 }

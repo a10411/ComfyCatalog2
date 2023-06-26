@@ -75,7 +75,28 @@ namespace ComfyCatalogDAL.Services
 
 
         #region DELETE
-
+        public static async Task<Boolean> DeleteFavourite(string conString, int userID, int productID)
+        {
+            try
+            {
+                using(SqlConnection con = new SqlConnection( conString ))
+                {
+                    string deleteFav = $"DELETE FROM Favourite WHERE userID={userID} AND productID={productID}";
+                    using (SqlCommand queryDeleteFav = new SqlCommand(deleteFav))
+                    {
+                        queryDeleteFav.Connection = con;
+                        con.Open();
+                        queryDeleteFav.ExecuteNonQuery();
+                        con.Close();
+                        return true;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+        }
 
 
         #endregion

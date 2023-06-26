@@ -178,7 +178,7 @@ namespace ComfyCatalogDAL.Services
             {
                 using (SqlConnection con = new SqlConnection( conString ))
                 {
-                    string addProduct = "INSERT INTO Product (brandID, estadoID, productName, composition, colour, clientNumber, productType, sportID) VALUES (@brandID, @estadoID, @productName,  @composition, @colour, @clientNumber, @productType, @sportID)";
+                    string addProduct = "INSERT INTO Product (brandID, estadoID,  sportID, nomeCliente, composition, color, size, certification, knittingType) VALUES (@brandID, @estadoID,  @sportID, @nomeCliente, @composition, @color, @size, @certification, @knittingType)";
                     using (SqlCommand queryAddProduct = new SqlCommand(addProduct))
                     {
                         queryAddProduct.Connection = con;
@@ -187,8 +187,8 @@ namespace ComfyCatalogDAL.Services
                         queryAddProduct.Parameters.Add("@sportID", SqlDbType.Int).Value = productToAdd.SportID;
                         queryAddProduct.Parameters.Add("@nomeCliente", SqlDbType.Char).Value = productToAdd.NomeCliente;
                         queryAddProduct.Parameters.Add("@composition", SqlDbType.Char).Value = productToAdd.Composition;
-                        queryAddProduct.Parameters.Add("@colour", SqlDbType.Char).Value = productToAdd.Color;
-                        queryAddProduct.Parameters.Add("@clientNumber", SqlDbType.Int).Value =productToAdd.Size;
+                        queryAddProduct.Parameters.Add("@color", SqlDbType.Char).Value = productToAdd.Color;
+                        queryAddProduct.Parameters.Add("@size", SqlDbType.Char).Value =productToAdd.Size;
                         queryAddProduct.Parameters.Add("@certification", SqlDbType.Char).Value = productToAdd.Certification;
                         queryAddProduct.Parameters.Add("@knittingType", SqlDbType.Char).Value = productToAdd.KnittingType;
 
@@ -383,10 +383,8 @@ namespace ComfyCatalogDAL.Services
                         queryDeleteProduct.ExecuteNonQuery();
                         con.Close();
                         return true;
-
                     }
                 }
-
             }
             catch (Exception ex)
             {

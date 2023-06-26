@@ -22,6 +22,7 @@ function UserProductDetail() {
     fetchImageURL();
     checkIfProductIsFavorite();
     fetchBrand();
+    fetchSport();
   }, []);
 
   const checkIfProductIsFavorite = async () => {
@@ -61,7 +62,9 @@ function UserProductDetail() {
         if (response.ok) {
           const productData = await response.json();
           const brandName = await fetchBrand(productData.data?.brandID);
+          const sportName = await fetchSport(productData.data?.sportID);
           setProduct({ ...productData.data, brandName });
+          setProduct({ ...productData.data, sportName });
           setLoading(false);
         } else if (response.status === 401) {
           console.error('Unauthorized: Please login to access this page.');
@@ -104,6 +107,21 @@ function UserProductDetail() {
       }
     } catch (error) {
       console.error('An error occurred while fetching brand:', error);
+    }
+    return null;
+  };
+
+  const fetchSport = async (sportID) => {
+    try{
+      const response = await fetch(`${API_URL}/api/GetSport?sportID=${sportID}`);
+      if(response.ok){
+        const sportData = await response.json();
+        return sportData.data.sportName;
+        } else {
+          console.error('Failed to fetch brand:', response.statusText);
+        }
+    } catch (error) {
+      console.error('An error occurred while fetching sport:', error);
     }
     return null;
   };
@@ -162,17 +180,21 @@ const handleFavoriteClick = async () => {
           className={`favorite-icon ${isFavorite ? 'favorite' : ''}`}
           onClick={handleFavoriteClick}
         />
-      
+  
         <div className="productDetail-content">
           <table className="product-table">
             <tbody>
               <tr>
-                <td className="product-label">Brand Name:</td>
-                <td className="product-value">{product.brandName}</td>
+                <td className="product-label">Brand:</td>
+                <td className="product-value">
+                  {product.brandName ? product.brandName : 'n/a'}
+                </td>
               </tr>
               <tr>
                 <td className="product-label">Sport:</td>
-                {/* <td className="product-value">{product.sport}</td> SUBSTITUIR */}
+                <td className="product-value">
+                  {product.sportName ? product.sportName : 'n/a'}
+                </td>
               </tr>
               <tr>
                 <td className="product-label">Composition:</td>
@@ -194,13 +216,12 @@ const handleFavoriteClick = async () => {
           </table>
         </div>
         <div className="productDetail-image-container">
-          {imageURL && (
-            <img className="productDetail-image" src={`${API_URL}/api/GetImage/${imageURL}`} />
-          )}
+          {imageURL && <img className="productDetail-image" src={`${API_URL}/api/GetImage/${imageURL}`} />}
         </div>
       </div>
     </div>
   );
+  
 }
 
 export default UserProductDetail;

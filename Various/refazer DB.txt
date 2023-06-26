@@ -1,0 +1,100 @@
+DELETE FROM Favourite
+
+DELETE FROM Observation
+
+DELETE FROM Image
+
+DELETE FROM Product
+
+DELETE FROM Brand
+
+DELETE FROM Sport
+
+DBCC CHECKIDENT (Product, RESEED, 0)
+
+DBCC CHECKIDENT (Image, RESEED, 0)
+
+DBCC CHECKIDENT (Observation, RESEED, 0)
+
+DBCC CHECKIDENT (Favourite, RESEED, 0)
+
+DBCC CHECKIDENT (Brand, RESEED, 0)
+
+DBCC CHECKIDENT (Sport, RESEED, 0)
+
+ALTER TABLE Product
+ADD nomeCliente VARCHAR(255),
+    composition VARCHAR(255),
+    color VARCHAR(255),
+    size VARCHAR(255),
+    certification VARCHAR(255),
+    knittingType VARCHAR(255);
+
+
+INSERT INTO Product (brandID, sportID, estadoID, nomeCliente, composition, color, size, certification, knittingType)
+SELECT B.brandID, S.sportID, 1, A.nomeCliente, A.composition, A.color, A.size, A.certification, A.knittingType
+FROM TbAmostras A
+JOIN Brand B ON A.brand = B.brandName
+JOIN Sport S ON A.sport = S.sportName;
+
+SELECT DISTINCT brand
+FROM TbAmostras;
+		
+INSERT INTO Sport VALUES
+('Athleisure'),
+('Basic'),
+('Cycling'),
+('Equestrianism'),
+('Football'),
+('Hiking/Trekking'),
+('Hunting'),
+('Multisports'),
+('Running'),
+('Ski'),
+('Tennis'),
+('Trail Running'),
+('Work');
+
+
+INSERT INTO Brand VALUES
+('AMI PARIS'),
+('Angry Pablo'),
+('Audimas'),
+('BERGMENSCH'),
+('CFA'),
+('Danish Endurance'),
+('Devold'),
+('Domestik'),
+('Ecco'),
+('Fingerscrossed'),
+('GripGrab'),
+('ID Identity'),
+('Incylence'),
+('ION BIKE'),
+('Jimmy Lion'),
+('JOSETTTE & TIC'),
+('Kiwami SARL'),
+('MAAP'),
+('n/a'),
+('Norrona Sokker'),
+('Orange Sport'),
+('Pas Normal Studios'),
+('Picture Organic Clothing'),
+('POC'),
+('Ryzon'),
+('Safersox'),
+('Scan Trade Umbro'),
+('Select Sport'),
+('Sidas'),
+('Snickers'),
+('SNUX'),
+('Strolz'),
+('Thermic'),
+('Tracksmith'),
+('Trimtex'),
+('Ulvang'),
+('Umbro'),
+('USWE Sports'),
+('Vaude'),
+('Woodbird');
+	

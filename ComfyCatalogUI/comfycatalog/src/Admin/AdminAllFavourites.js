@@ -19,10 +19,15 @@ function AdminAllFavourites() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetchFavorites();
-    fetchImages();
-    // Retrieve the logged-in user's ID (e.g., from session, local storage, or context)
+    const fetchFavoritesData = async () => {
+      const fetchedFavorites = await fetchFavorites();
+      setFavorites(fetchedFavorites);
+      fetchImages();
+    };
+  
+    fetchFavoritesData();
   }, []);
+  
 
   const handleSearch = (e) => {
     setSearchTerm(e.target.value);
@@ -35,13 +40,11 @@ function AdminAllFavourites() {
 
   const fetchFavorites = async () => {
     try {
-      
       const response = await fetch(`${API_URL}/api/GetAllFavourites`);
       if (response.ok) {
         const responseData = await response.json();
-
         if (Array.isArray(responseData.data)) {
-          setFavorites(responseData.data);
+          return responseData.data;
         } else {
           console.error('Favorites data is not in the expected format:', responseData);
         }
@@ -54,13 +57,13 @@ function AdminAllFavourites() {
       console.error('An error occurred while fetching favorites:', error);
     }
   };
-
+  
   const fetchProductDetails = async (productID) => {
     try {
       const response = await fetch(`${API_URL}/api/GetProduct?productID=${productID}`);
       if (response.ok) {
         const responseData = await response.json();
-        return responseData.data.productName; // Return the product name
+        return responseData.data.nomeCliente; // Return the product name
       } else {
         console.error('Failed to fetch product details:', response.statusText);
       }
@@ -93,9 +96,9 @@ function AdminAllFavourites() {
     const fetchProductData = async () => {
       const updatedFavorites = [];
       for (const favorite of favorites) {
-        const productName = await fetchProductDetails(favorite.productID);
-        if (productName) {
-          updatedFavorites.push({ ...favorite, productName });
+        const nomeCliente= await fetchProductDetails(favorite.productID);
+        if (nomeCliente) {
+          updatedFavorites.push({ ...favorite, nomeCliente });
         }
       }
       setFavorites(updatedFavorites);
@@ -106,10 +109,10 @@ function AdminAllFavourites() {
     }
   }, [favorites]);
 
-  if (!Array.isArray(favorites)) {
-    return <div>Favorites are not available.</div>;
+  if (!Array.isArray(favorites) || favorites.length === 0) {
+    return <div>No favorites found.</div>;
   }
-
+  
   if (!imagesFetched) {
     return (
       <div>
@@ -117,10 +120,11 @@ function AdminAllFavourites() {
       </div>
     );
   }
-
-  if (!Array.isArray(images)) {
-    return <div>Images are not available.</div>;
+  
+  if (!Array.isArray(images) || images.length === 0) {
+    return <div>No images found.</div>;
   }
+  
 
   return (
     <div>
@@ -162,7 +166,7 @@ function AdminAllFavourites() {
                       className="product-image"
                     />
                   ))}
-                <div className="product-name">{favorite.productName}</div>
+                <div className="product-name">{favorite.nomeCliente}</div>
                 <div className="product-icons">
                   <FontAwesomeIcon
                     icon={faInfoCircle}
