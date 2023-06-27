@@ -25,7 +25,7 @@ namespace ComfyCatalogBLL.Logic
         /// </summary>
         /// <param name="conString">Connection String da base de dados, que reside no appsettings.json do projeto ComfyCatalogAPI</param>
         /// <returns>Response com Status Code, mensagem e dados (Utilizadores recebidos do DAL)</returns>
-        public static async Task<Response> GetUsers(string conString)
+        public static async Task<Response> GetAllUsers(string conString)
         {
             Response response = new Response();
             List<User> usersList = await ComfyCatalogDAL.Services.UserService.GetAllUsers(conString);
@@ -34,6 +34,19 @@ namespace ComfyCatalogBLL.Logic
                 response.StatusCode = StatusCodes.SUCCESS;
                 response.Message = "Sucesso na obtenção dos dados";
                 response.Data = usersList;
+            }
+            return response;
+        }
+
+        public static async Task<Response> GetUser(string conString, int userID)
+        {
+            Response response = new Response();
+            User user = await UserService.GetUser(conString, userID);
+            if (user.UserID > 0) 
+            {
+                response.StatusCode = StatusCodes.SUCCESS;
+                response.Message = "Sucesso na obtenção dos dados";
+                response.Data = user;
             }
             return response;
         }

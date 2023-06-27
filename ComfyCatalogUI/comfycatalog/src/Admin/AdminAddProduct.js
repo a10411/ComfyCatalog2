@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { variables } from '../Utils/Variables';
 import '../CSS/AddProductForm.css';
+import { useNavigate } from 'react-router-dom';
 
 function AdminAddProduct() {
   const API_URL = variables.API_URL;
@@ -18,32 +19,64 @@ function AdminAddProduct() {
   const [brands, setBrands] = useState([]);
   const [sports, setSports] = useState([]);
   const [products, setProducts] = useState([]);
+  const [notification, setNotification] = useState(null); // State variable for notification message
+
+  const navigate = useNavigate(); // Initialize the useNavigate hook
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
+    console.log(`Input changed - Name: ${name}, Value: ${value}`);
+
+    // Convert the value to a number for estadoID field
+    const processedValue = name === 'estadoID' ? parseInt(value, 10) : value;
+
     setProduct((prevState) => ({
       ...prevState,
-      [name]: value,
+      [name]: processedValue,
     }));
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    // Create a product object with the necessary properties
+    const productToAdd = {
+      brandID: product.brandID,
+      estadoID: product.estadoID,
+      sportID: product.sportID,
+      nomeCliente: product.nomeCliente,
+      composition: product.composition,
+      color: product.color,
+      size: product.size,
+      certification: product.certification,
+      knittingType: product.knittingType,
+    };
+
+    console.log(productToAdd);
+
     try {
       const response = await fetch(`${API_URL}/api/AddProduct`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(product),
+        body: JSON.stringify(productToAdd), // Pass the product object in the request body as JSON
       });
 
       if (response.ok) {
         // Product added successfully
-        // Handle success scenario (e.g., show a success message)
+        setNotification('Product added successfully'); // Set the notification message
+        navigate('/AdminComponents'); // Navigate to the AdminProducts page
       } else {
         // Failed to add product
-        // Handle error scenario (e.g., show an error message)
+        const errorData = await response.json();
+        console.error('Failed to add product:', errorData);
+        // Display the error message to the user
+        if (errorData.errors) {
+          Object.values(errorData.errors).forEach((error) => {
+            console.error(error);
+          });
+        }
       }
     } catch (error) {
       console.error('An error occurred while adding the product:', error);
@@ -51,16 +84,23 @@ function AdminAddProduct() {
   };
 
   useEffect(() => {
-    // Fetch brands and products data from the API
+    // Fetch brands and sports data from the API
     const fetchData = async () => {
       try {
-        const brandsResponse = await fetch(`${API_URL}/api/brands`);
+        const brandsResponse = await fetch(`${API_URL}/api/GetAllBrands`);
         const brandsData = await brandsResponse.json();
-        setBrands(brandsData);
+        setBrands(brandsData.data); // Assuming the API response has a 'brands' property that contains the array
 
-        const productsResponse = await fetch(`${API_URL}/api/products`);
-        const productsData = await productsResponse.json();
-        setProducts(productsData);
+        const sportsResponse = await fetch(`${API_URL}/api/GetAllSports`);
+        const sportsData = await sportsResponse.json();
+        setSports(sportsData.data); // Assuming the API response is an array
+
+        // Set initial values for brandID and sportID in the product state
+        setProduct((prevState) => ({
+          ...prevState,
+          brandID: brandsData.data[0].brandID, // Set the first brand ID as the initial value
+          sportID: sportsData.data[0].sportID, // Set the first sport ID as the initial value
+        }));
       } catch (error) {
         console.error('An error occurred while fetching data:', error);
       }
@@ -80,12 +120,25 @@ function AdminAddProduct() {
               value={product.brandID}
               onChange={handleInputChange}
             >
-              <option value="">Select Brand</option>
               {brands.map((brand) => (
                 <option key={brand.brandID} value={brand.brandID}>
                   {brand.brandName}
                 </option>
               ))}
+            </select>
+          </label>
+          <label>
+            Estado ID:
+            <select
+              name="estadoID"
+              value={product.estadoID}
+              onChange={handleInputChange}
+            >
+              <option disabled value="">
+                Select estado
+              </option>
+              <option value="1">1</option>
+              <option value="2">2</option>
             </select>
           </label>
           <label>
@@ -95,8 +148,7 @@ function AdminAddProduct() {
               value={product.sportID}
               onChange={handleInputChange}
             >
-              <option value="">Select Sport</option>
-              {products.map((sport) => (
+              {sports.map((sport) => (
                 <option key={sport.sportID} value={sport.sportID}>
                   {sport.sportName}
                 </option>
@@ -159,10 +211,10 @@ function AdminAddProduct() {
           </label>
           <button type="submit">Add Product</button>
         </form>
+        {notification && <p>{notification}</p>} {/* Display the notification if it is not null */}
       </div>
     </div>
   );
 }
 
 export default AdminAddProduct;
-

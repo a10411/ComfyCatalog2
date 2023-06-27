@@ -58,10 +58,19 @@ function AdminProductDetail() {
             Authorization: `Bearer ${token}`,
           },
         });
+  
         if (response.ok) {
           const productData = await response.json();
+          const sportName = await fetchSport(productData.data?.sportID);
           const brandName = await fetchBrand(productData.data?.brandID);
-          setProduct({ ...productData.data, brandName });
+  
+          const updatedProductData = {
+            ...productData.data,
+            sportName,
+            brandName
+          };
+  
+          setProduct(updatedProductData);
           setLoading(false);
         } else if (response.status === 401) {
           console.error('Unauthorized: Please login to access this page.');
@@ -108,40 +117,20 @@ function AdminProductDetail() {
     return null;
   };
 
-const handleFavoriteClick = async () => {
-  try {
-    const userID = getUserID();
-    const token = localStorage.getItem('token');
-    if (token) {
-      if (isFavorite) {
-        setShowFavoriteMessage(true); 
-        console.log('This product is already a favorite.');
-      } else {
-        const response = await fetch(
-          `${API_URL}/api/SetFavoriteProductToUser?userID=${userID}&productID=${productID}`,
-          {
-            method: 'POST',
-            headers: {
-              Authorization: `Bearer ${token}`,
-            },
-          }
-        );
-        if (response.ok) {
-          setIsFavorite(!isFavorite);
-        } else if (response.status === 401) {
-          console.error('Unauthorized: Please login to access this page.');
+  const fetchSport = async (sportID) => {
+    try{
+      const response = await fetch(`${API_URL}/api/GetSport?sportID=${sportID}`);
+      if(response.ok){
+        const sportData = await response.json();
+        return sportData.data.sportName;
         } else {
-          console.error('Failed to set favorite product:', response.statusText);
+          console.error('Failed to fetch brand:', response.statusText);
         }
-      }
-    } else {
-      console.error('Unauthorized: Please login to access this page.');
+    } catch (error) {
+      console.error('An error occurred while fetching sport:', error);
     }
-  } catch (error) {
-    console.error('An error occurred while setting favorite product:', error);
-  }
-};
-
+    return null;
+  };
 
   if (loading) {
     return <div>Loading product details...</div>;
@@ -157,36 +146,36 @@ const handleFavoriteClick = async () => {
         <SidebarAdmin />
       </div>
       <div className="productDetail-container">
-        <div className="productDetail-content">
+      <div className="productDetail-content">
           <table className="product-table">
             <tbody>
               <tr>
-                <td className="product-label">Product Name:</td>
-                <td className="product-value">{product.productName}</td>
-              </tr>
-              <tr>
-                <td className="product-label">Brand Name:</td>
-                <td className="product-value">{product.brandName}</td>
+                <td className="product-label">Brand:</td>
+                <td className="product-value">
+                  {product.brandName ? product.brandName : 'n/a'}
+                </td>
               </tr>
               <tr>
                 <td className="product-label">Sport:</td>
-                {/* <td className="product-value">{product.sport}</td> SUBSTITUIR */}
+                <td className="product-value">
+                  {product.sportName ? product.sportName : 'n/a'}
+                </td>
               </tr>
               <tr>
                 <td className="product-label">Composition:</td>
                 <td className="product-value">{product.composition}</td>
               </tr>
               <tr>
-                <td className="product-label">Colour:</td>
-                <td className="product-value">{product.colour}</td>
+                <td className="product-label">Color:</td>
+                <td className="product-value">{product.color}</td>
               </tr>
               <tr>
-                <td className="product-label">Client Number:</td>
-                <td className="product-value">{product.clientNumber}</td>
+                <td className="product-label">Certification:</td>
+                <td className="product-value">{product.certification}</td>
               </tr>
               <tr>
-                <td className="product-label">Product Type:</td>
-                <td className="product-value">{product.productType}</td>
+                <td className="product-label">Knitting Type:</td>
+                <td className="product-value">{product.knittingType}</td>
               </tr>
             </tbody>
           </table>

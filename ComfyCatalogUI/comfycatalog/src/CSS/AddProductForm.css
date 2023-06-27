@@ -4,14 +4,17 @@ body {
     padding: 0;
   }
   
+
   .mainContainerAddProduct {
-    margin-right: 28vw;
-    margin-top: -200px;
+    position: absolute;
+    margin-top: -150px;
+    margin-left: -75px;
+    
   }
 
   .form-containerAddProduct {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    
+    
     align-items: flex-start;
     max-width: 400px;
     margin: 0 auto;
@@ -24,6 +27,7 @@ body {
     margin-bottom: 10px;
     font-weight: bold;
     width: 100%;
+    font-size: small;
   }
   
   .form-containerAddProduct input {
@@ -31,6 +35,7 @@ body {
     padding: 6px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    height: 30px;
   }
 
   .form-containerAddProduct select {

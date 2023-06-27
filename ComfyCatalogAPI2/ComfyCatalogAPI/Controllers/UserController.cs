@@ -77,16 +77,38 @@ namespace ComfyCatalogAPI.Controllers
         [SwaggerResponse(StatusCodes.Status404NotFound, Description = "The requested resource was not found.")]
         [SwaggerResponse(StatusCodes.Status500InternalServerError, Description = "An unexpected API error has occurred.")]
         [HttpGet]
+        [Route("api/GetAllUsers")]
         public async Task<IActionResult> GetAllUsers()
         {
             string CS = _configuration.GetConnectionString("WebApiDatabase");
-            Response response = await UserLogic.GetUsers(CS);
+            Response response = await UserLogic.GetAllUsers(CS);
             if(response.StatusCode != ComfyCatalogBLL.Utils.StatusCodes.SUCCESS)
             {
                 return StatusCode((int)response.StatusCode);
             }
             return new JsonResult(response);
         }
+
+        [SwaggerResponse(StatusCodes.Status200OK, Description = "Method successfully executed.")]
+        [SwaggerResponse(StatusCodes.Status204NoContent, Description = "No content was found.")]
+        [SwaggerResponse(StatusCodes.Status400BadRequest, Description = "The endpoint or data structure is not in line with expectations.")]
+        [SwaggerResponse(StatusCodes.Status401Unauthorized, Description = "Api key authentication was not provided or it is not valid.")]
+        [SwaggerResponse(StatusCodes.Status403Forbidden, Description = "You do not have permissions to perform the operation.")]
+        [SwaggerResponse(StatusCodes.Status404NotFound, Description = "The requested resource was not found.")]
+        [SwaggerResponse(StatusCodes.Status500InternalServerError, Description = "An unexpected API error has occurred.")]
+        [HttpGet]
+        [Route("api/GetUser")]
+        public async Task<IActionResult> GetUser(int userID)
+        {
+            string CS = _configuration.GetConnectionString("WebApiDatabase");
+            Response response = await UserLogic.GetUser(CS, userID);
+            if (response.StatusCode != ComfyCatalogBLL.Utils.StatusCodes.SUCCESS)
+            {
+                return StatusCode((int)response.StatusCode);
+            }
+            return new JsonResult(response);
+        }
+
 
         [SwaggerResponse(StatusCodes.Status200OK, Description = "Method successfully executed.")]
         [SwaggerResponse(StatusCodes.Status204NoContent, Description = "No content was found.")]

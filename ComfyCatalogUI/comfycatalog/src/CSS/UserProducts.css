@@ -11,7 +11,7 @@
   position: relative;
    /* Adjust the width based on the sidebar width */
   margin: 0 auto; /* Center the container horizontally */
-  margin-top: px;
+  margin-top: 50px;
   margin-left: 105px;
   margin-right: 495px;
   /* border: 1px solid black; */
@@ -24,7 +24,7 @@
   position: relative;
    /* Adjust the width based on the sidebar width */
   margin: 0 auto; /* Center the container horizontally */
-  margin-top: 115px;
+  margin-top: 50px;
   margin-left: 105px;
   margin-right: 5px;
   /* border: 1px solid black; */

@@ -66,6 +66,7 @@ namespace ComfyCatalogDAL.Services
             return user;
         }
 
+
         public static async Task<int> GetUserIDFromCredentials(string conString, string username)
         {
             int userID = 0;

@@ -59,12 +59,19 @@ function UserProductDetail() {
             Authorization: `Bearer ${token}`,
           },
         });
+  
         if (response.ok) {
           const productData = await response.json();
-          const brandName = await fetchBrand(productData.data?.brandID);
           const sportName = await fetchSport(productData.data?.sportID);
-          setProduct({ ...productData.data, brandName });
-          setProduct({ ...productData.data, sportName });
+          const brandName = await fetchBrand(productData.data?.brandID);
+  
+          const updatedProductData = {
+            ...productData.data,
+            sportName,
+            brandName
+          };
+  
+          setProduct(updatedProductData);
           setLoading(false);
         } else if (response.status === 401) {
           console.error('Unauthorized: Please login to access this page.');
@@ -78,6 +85,7 @@ function UserProductDetail() {
       console.error('An error occurred while fetching product:', error);
     }
   };
+  
   
 
   const fetchImageURL = async () => {
