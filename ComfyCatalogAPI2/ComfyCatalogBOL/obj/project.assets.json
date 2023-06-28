@@ -602,19 +602,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\nuno.veloso\\.nuget\\packages\\": {}
+    "C:\\Users\\mjare\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nuno.veloso\\Desktop\\ComfyCatalog2\\ComfyCatalogAPI2\\ComfyCatalogBOL\\ComfyCatalogBOL.csproj",
+      "projectUniqueName": "C:\\Users\\mjare\\Desktop\\ComfyCatalog2\\ComfyCatalogAPI2\\ComfyCatalogBOL\\ComfyCatalogBOL.csproj",
       "projectName": "ComfyCatalogBOL",
-      "projectPath": "C:\\Users\\nuno.veloso\\Desktop\\ComfyCatalog2\\ComfyCatalogAPI2\\ComfyCatalogBOL\\ComfyCatalogBOL.csproj",
-      "packagesPath": "C:\\Users\\nuno.veloso\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nuno.veloso\\Desktop\\ComfyCatalog2\\ComfyCatalogAPI2\\ComfyCatalogBOL\\obj\\",
+      "projectPath": "C:\\Users\\mjare\\Desktop\\ComfyCatalog2\\ComfyCatalogAPI2\\ComfyCatalogBOL\\ComfyCatalogBOL.csproj",
+      "packagesPath": "C:\\Users\\mjare\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mjare\\Desktop\\ComfyCatalog2\\ComfyCatalogAPI2\\ComfyCatalogBOL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\nuno.veloso\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\mjare\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -665,7 +665,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

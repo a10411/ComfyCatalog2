@@ -81,10 +81,10 @@ namespace ComfyCatalogDAL.Services
         }
 
         public static async Task<Image> AddImage(string conString, IFormFile file, int productID)
-        {
+        {   
             try
             {
-                string path = Path.Combine(@"C:\Users\nuno.veloso\Desktop\ComfyCatalog2\ComfyCatalogAPI2\ComfyCatalogAPI\Images", file.FileName);
+                string path = Path.Combine(@"C:\Users\mjare\Desktop\ComfyCatalog2\ComfyCatalogAPI2\ComfyCatalogAPI\Images", file.FileName);
                 //string path = Path.Combine(@"Q:\ComfyCatalog Images\Product_Images", file.FileName); // PATH DO SERVIDOR DA EMPRESA
                 SaveFile(path, file);
 

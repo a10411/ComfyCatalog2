@@ -34,8 +34,8 @@
 .product-card {
   flex-basis: calc((100% - 100px) / 4); /* Calculate width with 6 cards per row */
   max-width: 200px;
-  min-width: 200px; /* Limit width of individual cards */
-  height: 240px;
+  min-width: 170px; /* Limit width of individual cards */
+  height: 220px;
   border: 1px solid #292828;
   margin: 40px;
   border-radius: 16px;
@@ -52,7 +52,7 @@
 @media (max-width: 900px) {
   .product-card {
     flex-basis: calc((100% - 20px) / 3); /* 4 cards per row */
-    height: 200px;
+  
   }
 }
 
