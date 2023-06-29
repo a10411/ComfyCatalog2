@@ -233,6 +233,7 @@ namespace ComfyCatalogAPI.Controllers
         [SwaggerResponse(StatusCodes.Status500InternalServerError, Description = "An unexpected API error has occurred.")]
         //[Authorize]
         [HttpPatch]
+        [Route("/api/UpdateProduct")]
         public async Task<IActionResult> UpdateProduct(Product productToUpdate)
         {
             string CS = _configuration.GetConnectionString("WebApiDatabase");

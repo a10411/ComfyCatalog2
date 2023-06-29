@@ -39,6 +39,19 @@ namespace ComfyCatalogBLL.Logic
             return response;
         }
 
+        public static async Task<Response> GetAllFavRelations(string conString)
+        {
+            Response response = new Response();
+            List<Favourite> favList = await FavouriteService.GetAllFavRelations(conString);
+            if (favList.Count != 0)
+            {
+                response.StatusCode = StatusCodes.SUCCESS;
+                response.Message = "Sucesso na obtenção dos dados";
+                response.Data = favList;
+            }
+            return response;
+        }
+
         public static async Task<Response> DeleteFavourite(string conString, int userID, int productID)
         {
             Response response = new Response();

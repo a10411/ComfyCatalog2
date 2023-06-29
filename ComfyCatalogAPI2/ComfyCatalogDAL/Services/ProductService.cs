@@ -221,12 +221,13 @@ namespace ComfyCatalogDAL.Services
 
                 using (SqlConnection con = new SqlConnection(conString))
                 {
-                    string addFavourite = "INSERT INTO Favourite (userID, productID) VALUES (@userID, @productID)";
+                    string addFavourite = "INSERT INTO Favourite (userID, productID, username) VALUES (@userID, @productID, @username)";
                     using (SqlCommand queryAddFavourite = new SqlCommand(addFavourite))
                     {
                         queryAddFavourite.Connection = con;
                         queryAddFavourite.Parameters.Add("@userID", SqlDbType.Int).Value = user.UserID;
                         queryAddFavourite.Parameters.Add("@productID", SqlDbType.Int).Value = product.ProductID;
+                        queryAddFavourite.Parameters.Add("@username", SqlDbType.VarChar).Value = user.Username;
 
                         con.Open();
                         queryAddFavourite.ExecuteNonQuery();
@@ -298,9 +299,10 @@ namespace ComfyCatalogDAL.Services
             productUpdated.KnittingType = productUpdated.KnittingType != String.Empty && productUpdated.KnittingType != null ? productUpdated.KnittingType : productCurrent.KnittingType;
             try
             {
-                using (SqlConnection con = new SqlConnection(conString))
+                using 
+                    (SqlConnection con = new SqlConnection(conString))
                 {
-                    string updateProduct = "UPDATE Product Set brandID = @brandID, estadoID = @estadoID, productName = @productName, sport = @sport, composition = @composition, colour = @colour, clientNumber = @clientNumber, productType = @productType WHERE productID = @productID";
+                    string updateProduct = "UPDATE Product Set brandID = @brandID, estadoID = @estadoID,  sportID = @sportID, nomeCliente = @nomeCliente, composition = @composition, color = @color, certification = @certification, knittingType = @knittingType  WHERE productID = @productID";
                     using (SqlCommand queryUpdateProduct = new SqlCommand(updateProduct))
                     {
                         queryUpdateProduct.Connection = con;
@@ -311,7 +313,6 @@ namespace ComfyCatalogDAL.Services
                         queryUpdateProduct.Parameters.Add("@nomeCliente", SqlDbType.Char).Value = productUpdated.NomeCliente;
                         queryUpdateProduct.Parameters.Add("@composition", SqlDbType.Char).Value = productUpdated.Composition;
                         queryUpdateProduct.Parameters.Add("@color", SqlDbType.Char).Value = productUpdated.Color;
-                        queryUpdateProduct.Parameters.Add("@clientNumber", SqlDbType.Int).Value = productUpdated.Size;
                         queryUpdateProduct.Parameters.Add("@certification", SqlDbType.Char).Value = productUpdated.Certification;
                         queryUpdateProduct.Parameters.Add("@knittingType", SqlDbType.Char).Value = productUpdated.KnittingType;
                         con.Open();

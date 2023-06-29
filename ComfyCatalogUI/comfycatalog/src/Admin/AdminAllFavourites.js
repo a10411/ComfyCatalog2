@@ -1,18 +1,15 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { variables } from '../Utils/Variables';
 import { useNavigate } from 'react-router-dom';
-import '../CSS/UserProducts.css'
+import '../CSS/UserProducts.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInfoCircle } from '@fortawesome/free-solid-svg-icons';
 import SidebarAdmin from '../SidebarAdmin';
 
-
-function AdminAllFavourites() {
+function AdminAllFavorites() {
   const API_URL = variables.API_URL;
   const [favorites, setFavorites] = useState([]);
   const [images, setImages] = useState([]);
-  const [products, setProducts] = useState([]);
-
   const [imagesFetched, setImagesFetched] = useState(false);
   const [unauthorized, setUnauthorized] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
@@ -24,27 +21,27 @@ function AdminAllFavourites() {
       setFavorites(fetchedFavorites);
       fetchImages();
     };
-  
+
     fetchFavoritesData();
   }, []);
-  
 
   const handleSearch = (e) => {
     setSearchTerm(e.target.value);
   };
 
   const navigateToProductDetailsAdmin = (productID) => {
-    const imageURL = images.find(image => image.productID === productID)?.imageName;
+    const imageURL = images.find((image) => image.productID === productID)?.imageName;
     navigate('/AdminProductDetail', { state: { productID, imageURL } });
   };
 
   const fetchFavorites = async () => {
     try {
-      const response = await fetch(`${API_URL}/api/GetAllFavourites`);
+      const response = await fetch(`${API_URL}/api/GetAllFavRelations`);
       if (response.ok) {
         const responseData = await response.json();
         if (Array.isArray(responseData.data)) {
-          return responseData.data;
+          const fetchedFavorites = responseData.data;
+          return fetchedFavorites;
         } else {
           console.error('Favorites data is not in the expected format:', responseData);
         }
@@ -56,20 +53,8 @@ function AdminAllFavourites() {
     } catch (error) {
       console.error('An error occurred while fetching favorites:', error);
     }
-  };
-  
-  const fetchProductDetails = async (productID) => {
-    try {
-      const response = await fetch(`${API_URL}/api/GetProduct?productID=${productID}`);
-      if (response.ok) {
-        const responseData = await response.json();
-        return responseData.data.nomeCliente; // Return the product name
-      } else {
-        console.error('Failed to fetch product details:', response.statusText);
-      }
-    } catch (error) {
-      console.error('An error occurred while fetching product details:', error);
-    }
+
+    return [];
   };
 
   const fetchImages = async () => {
@@ -77,7 +62,6 @@ function AdminAllFavourites() {
       const response = await fetch(`${API_URL}/api/GetAllImages`);
       if (response.ok) {
         const responseData = await response.json();
-        console.log(responseData);
         if (Array.isArray(responseData.data)) {
           setImages(responseData.data);
           setImagesFetched(true);
@@ -92,27 +76,15 @@ function AdminAllFavourites() {
     }
   };
 
-  useEffect(() => {
-    const fetchProductData = async () => {
-      const updatedFavorites = [];
-      for (const favorite of favorites) {
-        const nomeCliente= await fetchProductDetails(favorite.productID);
-        if (nomeCliente) {
-          updatedFavorites.push({ ...favorite, nomeCliente });
-        }
-      }
-      setFavorites(updatedFavorites);
-    };
-
-    if (favorites.length > 0) {
-      fetchProductData();
-    }
-  }, [favorites]);
+  const filteredFavorites = favorites.filter((favorite) => {
+    const username = favorite.username || '';
+    return username.toLowerCase().includes(searchTerm.toLowerCase());
+  });
 
   if (!Array.isArray(favorites) || favorites.length === 0) {
     return <div>No favorites found.</div>;
   }
-  
+
   if (!imagesFetched) {
     return (
       <div>
@@ -120,11 +92,6 @@ function AdminAllFavourites() {
       </div>
     );
   }
-  
-  if (!Array.isArray(images) || images.length === 0) {
-    return <div>No images found.</div>;
-  }
-  
 
   return (
     <div>
@@ -134,7 +101,7 @@ function AdminAllFavourites() {
             type="text"
             value={searchTerm}
             onChange={handleSearch}
-            placeholder="Search product..."
+            placeholder="Search by username..."
             className="search-input"
           />
         </div>
@@ -151,10 +118,10 @@ function AdminAllFavourites() {
         </div>
       ) : (
         <div className="product-containerFav">
-          {favorites.length === 0 ? (
+          {filteredFavorites.length === 0 ? (
             <div className="no-favorites">No favorites found.</div>
           ) : (
-            favorites.map((favorite) => (
+            filteredFavorites.map((favorite) => (
               <div key={favorite.productID} className="product-card">
                 {images
                   .filter((image) => image.productID === favorite.productID)
@@ -162,11 +129,11 @@ function AdminAllFavourites() {
                     <img
                       key={image.imageID}
                       src={`${API_URL}/api/GetImage/${image.imageName}`}
-                      alt={favorite.productName}
+                      alt={favorite.productInfo?.productName}
                       className="product-image"
                     />
                   ))}
-                <div className="product-name">{favorite.nomeCliente}</div>
+                <div className="product-name">{favorite.username}</div>
                 <div className="product-icons">
                   <FontAwesomeIcon
                     icon={faInfoCircle}
@@ -183,4 +150,4 @@ function AdminAllFavourites() {
   );
 }
 
-export default AdminAllFavourites;
+export default AdminAllFavorites;

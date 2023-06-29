@@ -26,7 +26,7 @@ namespace ComfyCatalogDAL.Services
             var obsList = new List<Observation>();
             using (SqlConnection con = new SqlConnection(conString))
             {
-                SqlCommand cmd = new SqlCommand("SELECT * FROM Observation", con);
+                SqlCommand cmd = new SqlCommand("SELECT * FROM Observation ORDER BY obsID DESC", con);
                 cmd.CommandType = CommandType.Text; 
                 con.Open();
 

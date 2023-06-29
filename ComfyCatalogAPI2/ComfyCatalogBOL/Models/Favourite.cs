@@ -17,6 +17,7 @@ namespace ComfyCatalogBOL.Models
         public int FavouriteID  { get; set; }
         public int UserID { get; set; } 
         public int ProductID { get; set; }
+        public string Username { get; set; }
         public Favourite() { }
 
 
@@ -30,6 +31,7 @@ namespace ComfyCatalogBOL.Models
             this.FavouriteID = Convert.ToInt32(rdr["favouriteID"]);
             this.UserID = Convert.ToInt32(rdr["userID"]);
             this.ProductID = Convert.ToInt32(rdr["productID"]);
+            this.Username = rdr["username"].ToString() ?? String.Empty;
         }
 
 

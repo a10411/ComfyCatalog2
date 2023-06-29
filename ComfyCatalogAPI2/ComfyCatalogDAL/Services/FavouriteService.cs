@@ -55,8 +55,27 @@ namespace ComfyCatalogDAL.Services
 
             return favList;
         }
-        
 
+        public static async Task<List<Favourite>> GetAllFavRelations(string conString)
+        {
+            var favList = new List<Favourite>();
+            using (SqlConnection con = new SqlConnection(conString))
+            {
+                SqlCommand cmd = new SqlCommand("SELECT * FROM Favourite", con);
+                cmd.CommandType = CommandType.Text;
+                con.Open();
+                SqlDataReader rdr = cmd.ExecuteReader();
+                while (rdr.Read())
+                {
+                    Favourite prod = new Favourite(rdr);
+                    favList.Add(prod);
+                }
+                rdr.Close();
+                con.Close();
+            }
+
+            return favList;
+        }
         #endregion
 
 

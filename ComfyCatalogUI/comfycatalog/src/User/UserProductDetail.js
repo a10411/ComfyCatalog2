@@ -193,6 +193,10 @@ const handleFavoriteClick = async () => {
           <table className="product-table">
             <tbody>
               <tr>
+                <td className="product-label">Product ID:</td>
+                <td className="product-value">{product.productID}</td>
+              </tr>
+              <tr>
                 <td className="product-label">Brand:</td>
                 <td className="product-value">
                   {product.brandName ? product.brandName : 'n/a'}
