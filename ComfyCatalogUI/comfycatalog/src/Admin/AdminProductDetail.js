@@ -234,24 +234,27 @@ function AdminProductDetail() {
                 <td className="product-value">{product.productID}</td>
               </tr>
               <tr>
-                <td className="product-label">Estado:</td>
-                <td className="product-value">
-                  {isEditing ? (
-                    <input
-                      type="text"
-                      value={product.estadoID}
-                      onChange={(e) =>
-                        setProduct((prevProduct) => ({
-                          ...prevProduct,
-                          estadoID: e.target.value,
-                        }))
-                      }
-                    />
-                  ) : (
-                    <span>{product.estadoID}</span>
-                  )}
-                </td>
-              </tr>
+                  <td className="product-label">Estado:</td>
+                  <td className="product-value">
+                    {isEditing ? (
+                      <select
+                        value={product.estadoID}
+                        onChange={(e) =>
+                          setProduct((prevProduct) => ({
+                            ...prevProduct,
+                            estadoID: e.target.value,
+                          }))
+                        }
+                      >
+                        <option value="1">Ativo</option>
+                        <option value="2">Inativo</option>
+                      </select>
+                    ) : (
+                      <span>{product.estadoID === 1 ? "Ativo" : "Inativo"}</span>
+                    )}
+                  </td>
+                </tr>
+
               <tr>
                 <td className="product-label">Brand:</td>
                 <td className="product-value">

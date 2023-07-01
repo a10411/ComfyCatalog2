@@ -81,10 +81,6 @@ function AdminAllFavorites() {
     return username.toLowerCase().includes(searchTerm.toLowerCase());
   });
 
-  if (!Array.isArray(favorites) || favorites.length === 0) {
-    return <div>No favorites found.</div>;
-  }
-
   if (!imagesFetched) {
     return (
       <div>
@@ -121,8 +117,8 @@ function AdminAllFavorites() {
           {filteredFavorites.length === 0 ? (
             <div className="no-favorites">No favorites found.</div>
           ) : (
-            filteredFavorites.map((favorite) => (
-              <div key={favorite.productID} className="product-card">
+            filteredFavorites.map((favorite, index) => (
+              <div key={`${favorite.productID}-${index}`} className="product-card">
                 {images
                   .filter((image) => image.productID === favorite.productID)
                   .map((image) => (

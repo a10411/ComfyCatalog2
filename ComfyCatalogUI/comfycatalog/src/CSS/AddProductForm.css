@@ -50,11 +50,16 @@ body {
     margin-top: 15px;
     padding: 10px 15px;
     background-color: #4caf50;
+    
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
   }
+
+button.add-product-button{
+  margin-left: 180px;
+}
   
   .form-containerAddProduct button[type="submit"]:hover {
     background-color: #45a049;

@@ -57,7 +57,7 @@ namespace ComfyCatalogDAL.Services
         }
 
         public static async Task<List<Favourite>> GetAllFavRelations(string conString)
-        {
+            {
             var favList = new List<Favourite>();
             using (SqlConnection con = new SqlConnection(conString))
             {
