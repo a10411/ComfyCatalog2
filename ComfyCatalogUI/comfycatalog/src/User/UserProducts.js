@@ -83,7 +83,8 @@ function UserProducts() {
     const productNameMatch = filterByProductName(product, searchTerm);
     const brandMatch = filterByBrand(product, selectedBrand);
     const sportMatch = filterBySport(product, selectedSport);
-    return productNameMatch && brandMatch && sportMatch;
+    const isActive = product.estadoID === 1; // Filter products by estadoID
+    return productNameMatch && brandMatch && sportMatch && isActive;
   });
 
 

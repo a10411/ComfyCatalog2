@@ -4,6 +4,7 @@ import { variables } from '../Utils/Variables';
 import SidebarAdmin from '../SidebarAdmin';
 import { getUserID } from '../Global';
 import '../CSS/ProductDetail.css';
+import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
 
@@ -21,6 +22,9 @@ function AdminProductDetail() {
   const [sports, setSports] = useState([]);
   const [selectedBrand, setSelectedBrand] = useState('');
   const [selectedSport, setSelectedSport] = useState('');
+  const [selectedFile, setSelectedFile] = useState(null);
+  const [notification, setNotification] = useState('');
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetchProduct();
@@ -141,7 +145,8 @@ function AdminProductDetail() {
   const fetchBrands = async () => {
     try {
       const response = await fetch(`${API_URL}/api/GetAllBrands`);
-      if (response.ok) {
+      if
+(response.ok) {
         const brandData = await response.json();
         setBrands(brandData.data);
       } else {
@@ -172,16 +177,55 @@ function AdminProductDetail() {
       setProduct(updatedProduct);
       setIsEditing(false);
       fetchProduct();
+  
+      // Navigate to the admin component
+      navigate('/AdminComponents'); // Replace '/admin' with the desired route
+  
     } catch (error) {
       console.error('Failed to update product:', error);
     }
   };
 
   const handleFileChange = (e) => {
-    const file = e.target.files[0];
-    setImageURL(file.name);
+    setSelectedFile(e.target.files[0]);
   };
 
+  const handleFileUpload = async () => {
+    try {
+      const formData = new FormData();
+      formData.append('file', selectedFile);
+  
+      const response = await fetch(`${API_URL}/api/addImage?productID=${productID}`, {
+        method: 'POST',
+        body: formData,
+      });
+  
+      if (response.ok) {
+        const imageData = await response.json();
+        if (imageData.data) {
+          const imageID = imageData.data.imageID;
+  
+          // Update the product with the new image information
+          const updatedProduct = {
+            ...product,
+            imageID: imageID,
+          };
+          await updateProduct(updatedProduct);
+          setProduct(updatedProduct);
+        }
+  
+        setNotification('Image uploaded successfully!');
+      } else {
+        console.error('Failed to upload image:', response.statusText);
+      }
+    } catch (error) {
+      console.error('An error occurred while uploading image:', error);
+    }
+  };
+  
+  
+  
+  
 
   const updateProduct = async (updatedProduct) => {
     try {
@@ -234,27 +278,26 @@ function AdminProductDetail() {
                 <td className="product-value">{product.productID}</td>
               </tr>
               <tr>
-                  <td className="product-label">Estado:</td>
-                  <td className="product-value">
-                    {isEditing ? (
-                      <select
-                        value={product.estadoID}
-                        onChange={(e) =>
-                          setProduct((prevProduct) => ({
-                            ...prevProduct,
-                            estadoID: e.target.value,
-                          }))
-                        }
-                      >
-                        <option value="1">Ativo</option>
-                        <option value="2">Inativo</option>
-                      </select>
-                    ) : (
-                      <span>{product.estadoID === 1 ? "Ativo" : "Inativo"}</span>
-                    )}
-                  </td>
-                </tr>
-
+                <td className="product-label">Estado:</td>
+                <td className="product-value">
+                  {isEditing ? (
+                    <select
+                      value={product.estadoID}
+                      onChange={(e) =>
+                        setProduct((prevProduct) => ({
+                          ...prevProduct,
+                          estadoID: e.target.value,
+                        }))
+                      }
+                    >
+                      <option value="1">Ativo</option>
+                      <option value="2">Inativo</option>
+                    </select>
+                  ) : (
+                    <span>{product.estadoID === 1 ? 'Ativo' : 'Inativo'}</span>
+                  )}
+                </td>
+              </tr>
               <tr>
                 <td className="product-label">Brand:</td>
                 <td className="product-value">
@@ -265,7 +308,8 @@ function AdminProductDetail() {
                         setProduct((prevProduct) => ({
                           ...prevProduct,
                           brandID: e.target.value,
-                          brandName: brands.find((brand) => brand.brandID === e.target.value)?.brandName || '',
+                          brandName:
+                            brands.find((brand) => brand.brandID === e.target.value)?.brandName || '',
                         }))
                       }
                     >
@@ -290,7 +334,9 @@ function AdminProductDetail() {
                         setProduct((prevProduct) => ({
                           ...prevProduct,
                           sportID: e.target.value,
-                          sportName: sports.find((sport) => sport.sportID === e.target.value)?.sportName || '',
+                          sportName:
+                            sports.find((sport) => sport.sportID === e.target.value)?.sportName ||
+                            '',
                         }))
                       }
                     >
@@ -362,19 +408,22 @@ function AdminProductDetail() {
                   )}
                 </td>
               </tr>
- <tr>
+              <tr>
                 <td className="product-label">Image:</td>
                 <td className="product-value">
                   {isEditing ? (
                     <div>
-                      <input
-                        type="file"
-                        accept="image/*"
-                        onChange={handleFileChange}
-                      />
+                      <input type="file" onChange={handleFileChange} />
+                      <button className="product-button upload-button" onClick={handleFileUpload}>
+                        Upload
+                      </button>
                     </div>
                   ) : (
-                    <img src={`${variables.API_URL}/api/GetImage/${imageURL}`} alt="product" />
+                    <div>
+                      {imageURL && (
+                        <img src={`${API_URL}/api/GetImage/${imageURL}`} alt="Product Image" />
+                      )}
+                    </div>
                   )}
                 </td>
               </tr>
@@ -394,20 +443,22 @@ function AdminProductDetail() {
                 </button>
               </>
             ) : (
-              <button
-                className="product-button update-button"
-                onClick={() => setIsEditing(true)}
-              >
+              <button className="product-button update-button" onClick={() => setIsEditing(true)}>
                 Edit
               </button>
             )}
           </div>
+          {notification && (
+            <div>
+              <p>{notification}</p>
+            </div>
+          )}
         </div>
-      </div>
+        </div>
     </div>
   );
+  
 }
 
 export default AdminProductDetail;
-
 

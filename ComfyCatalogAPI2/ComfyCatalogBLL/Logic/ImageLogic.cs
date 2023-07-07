@@ -88,9 +88,33 @@ namespace ComfyCatalogBLL.Logic
             Response response = new Response();
             try
             {
-                Image image = await ImageService.AddImage(conString, file, productID);
+                bool imageExists = await ImageService.CheckImageExistence(conString, productID);
 
-                response.Data = image;
+                if (imageExists)
+                {
+                    // Delete the existing image file
+                    Image existingImage = await ImageService.GetImageByProductID(conString, productID);
+                    bool success = await ImageService.DeleteImage(conString, productID);
+
+                    if(success)
+                    {
+                        bool update = await ImageService.UpdateImage(conString, file, productID);
+                        if (update)
+                        {
+
+                            response.StatusCode = StatusCodes.SUCCESS;
+                            response.Message = "Image was updated";
+                        }
+                    }
+                
+                }
+                else
+                {
+                    // Add the new image
+                    Image newImage = await ImageService.AddImage(conString, file, productID);
+                    response.Data = newImage;
+                }
+
                 response.StatusCode = StatusCodes.SUCCESS;
                 response.Message = "Image was added";
             }
@@ -102,7 +126,7 @@ namespace ComfyCatalogBLL.Logic
             return response;
         }
 
-    
+
 
 
         /// <summary>
@@ -112,12 +136,12 @@ namespace ComfyCatalogBLL.Logic
         /// <param name="conString">Connection String da base de dados, que reside no appsettings.json do projeto ComfyCatalogAPI</param>
         /// <param name="obsID">ID da imagem a remover</param>
         /// <returns>Response com Status Code e mensagem (indicando que a imagem foi apagada)</returns>
-        public static async Task<Response> DeleteImage(string conString, int imageID)
+        public static async Task<Response> DeleteImage(string conString, int productID)
         {
             Response response= new Response();
             try
             {
-                if(await ImageService.DeleteImage(conString, imageID))
+                if(await ImageService.DeleteImage(conString, productID))
                 {
                     response.StatusCode = StatusCodes.SUCCESS;
                     response.Message = "Image was deleted";

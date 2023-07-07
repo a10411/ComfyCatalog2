@@ -84,7 +84,7 @@ namespace ComfyCatalogDAL.Services
         {   
             try
             {
-                string path = Path.Combine(@"C:\Users\mjare\Desktop\ComfyCatalog2\ComfyCatalogAPI2\ComfyCatalogAPI\Images", file.FileName);
+                string path = Path.Combine(@"C:\Users\nuno.veloso\Desktop\ComfyCatalog2\ComfyCatalogAPI2\ComfyCatalogAPI\Images", file.FileName);
                 //string path = Path.Combine(@"Q:\ComfyCatalog Images\Product_Images", file.FileName); // PATH DO SERVIDOR DA EMPRESA
                 SaveFile(path, file);
 
@@ -170,13 +170,13 @@ namespace ComfyCatalogDAL.Services
 
         #region DELETE
 
-        public static async Task<Boolean> CheckImageExistence(string conString, int imageID)
+        public static async Task<Boolean> CheckImageExistence(string conString, int productID)
         {
             try
             {
                 using (SqlConnection con = new SqlConnection(conString))
                 {
-                    string checkImage = $"SELECT COUNT(*) FROM [Image] WHERE imageID = {imageID}";
+                    string checkImage = $"SELECT COUNT(*) FROM [Image] WHERE productID = {productID}";
                     using (SqlCommand queryCheckImage = new SqlCommand(checkImage))
                     {
                         queryCheckImage.Connection = con;
@@ -186,7 +186,7 @@ namespace ComfyCatalogDAL.Services
 
                         if (count == 0)
                         {
-                            // Image does not exist
+                          
                             return false;
                         }
                     }
@@ -229,6 +229,36 @@ namespace ComfyCatalogDAL.Services
             }
         }
 
+        public static async Task<bool> UpdateImage(string conString, IFormFile file, int productID)
+        {
+            try
+            {
+                string path = Path.Combine(@"C:\Users\nuno.veloso\Desktop\ComfyCatalog2\ComfyCatalogAPI2\ComfyCatalogAPI\Images", file.FileName);
+                //string path = Path.Combine(@"Q:\ComfyCatalog Images\Product_Images", file.FileName); // PATH DO SERVIDOR DA EMPRESA
+                SaveFile(path, file);
+
+                using (SqlConnection con = new SqlConnection(conString))
+                {
+                    string updateImage = "UPDATE dbo.[Image] SET  imagePath = @imagePath, imageName = @imageName, productID = @productID WHERE productID = @productID";
+                    using (SqlCommand queryUpdateImage = new SqlCommand(updateImage))
+                    {
+                        queryUpdateImage.Connection = con;
+                        queryUpdateImage.Parameters.Add("@imagePath", SqlDbType.VarChar).Value = path;
+                        queryUpdateImage.Parameters.Add("@imageName", SqlDbType.VarChar).Value = file.FileName;
+                        queryUpdateImage.Parameters.Add("@productID", SqlDbType.Int).Value = productID;
+                        con.Open();
+                        int rowsAffected = await queryUpdateImage.ExecuteNonQueryAsync();
+                        con.Close();
+
+                        return rowsAffected > 0;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+        }
 
 
         /// <summary>
@@ -237,16 +267,11 @@ namespace ComfyCatalogDAL.Services
         /// <param name="conString">String de conexão à base de dados, presente no projeto "ComfyCatalogAPI", no ficheiro appsettings.json</param>
         /// <param name="obsID">ID da imagem a apagar</param>
         /// <returns>True caso tudo tenha corrido bem (imagem removida), algum erro caso a imagem não tenha sido removida.</returns>
-        public static async Task<Boolean> DeleteImage(string conString, int imageID)
+        public static async Task<Boolean> DeleteImage(string conString, int productID)
         {
             try
             {
-                if (!await CheckImageExistence(conString, imageID))
-                {
-                    return false;
-                }
-
-                if(!await CheckImageRelations(conString, imageID))
+                if (!await CheckImageExistence(conString, productID))
                 {
                     return false;
                 }
@@ -254,7 +279,7 @@ namespace ComfyCatalogDAL.Services
                 using (SqlConnection con = new SqlConnection(conString))
                 {
          
-                    string deleteImage = $"DELETE FROM [Image] WHERE imageID = {imageID}";
+                    string deleteImage = $"DELETE FROM [Image] WHERE imageID = {productID}";
                     using(SqlCommand queryDeleteImage = new SqlCommand(deleteImage))
                     {
                         queryDeleteImage.Connection = con;

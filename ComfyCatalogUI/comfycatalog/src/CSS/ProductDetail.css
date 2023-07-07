@@ -137,6 +137,12 @@
   border-radius: 4px;
 }
 
+.upload-button{
+  background-color: #333;
+  margin-left: 2px;
+  border-radius: 8px;
+}
+
 
 @media (max-width: 1366px) {
   .product-detail {
@@ -153,5 +159,10 @@
   .productDetail-image-container {
     margin-left: 100px;
   }
+}
+
+
+.notification p {
+  margin-bottom: 5px;
 }
 

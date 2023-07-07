@@ -132,10 +132,10 @@ namespace ComfyCatalogAPI.Controllers
         [SwaggerResponse(StatusCodes.Status404NotFound, Description = "The requested resource was not found.")]
         [SwaggerResponse(StatusCodes.Status500InternalServerError, Description = "An unexpected API error has occurred.")]
         [HttpDelete]
-        public async Task <IActionResult> DeleteImage(int imageID)
+        public async Task <IActionResult> DeleteImage(int productID)
         {
             string CS = _configuration.GetConnectionString("WebApiDatabase");
-            Response response = await ImageLogic.DeleteImage(CS, imageID);
+            Response response = await ImageLogic.DeleteImage(CS, productID);
             if(response.StatusCode != ComfyCatalogBLL.Utils.StatusCodes.SUCCESS)
             {
                 return StatusCode((int)response.StatusCode);
